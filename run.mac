@@ -1,0 +1,13 @@
+# Clean run macro for coincidence detection testing
+# Reduced verbosity for cleaner debug output
+
+/tracking/verbose 0
+/run/verbose 0  
+/event/verbose 0
+/process/verbose 0
+
+# Initialize the simulation
+/run/initialize
+
+# Run events
+/run/beamOn 1000

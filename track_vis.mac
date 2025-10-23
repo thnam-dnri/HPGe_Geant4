@@ -1,0 +1,23 @@
+# ==============================================================================
+# track_vis.mac - Interactive visualization session with trajectories
+# ==============================================================================
+#
+# Use from an interactive HPGeSingle session:
+#   Idle> /control/execute track_vis.mac
+#   Idle> /run/beamOn 10        # or any event count you want to inspect
+# (Set /run/numberOfThreads before this macro if you want to force 1 thread.)
+#
+
+# Bring up the standard detector view (opens Qt OpenGL viewer, draws geometry)
+/control/execute init_vis.mac
+
+# Store trajectories so they can be drawn after each event (required in MT mode)
+/tracking/storeTrajectory 1
+
+# Keep the run single-threaded for easier debugging of tracks (optional)
+# Accumulate trajectories so multiple events can be overlaid
+/vis/scene/endOfEventAction accumulate
+
+# Ensure we start with an empty scene and refresh the viewer
+/vis/scene/notifyHandlers
+/vis/viewer/update
