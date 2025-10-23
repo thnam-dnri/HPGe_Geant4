@@ -48,9 +48,10 @@ Geant4-based simulation of a High-Purity Germanium (HPGe) detector for gamma-ray
   - Modern target-based configuration using target_include_directories
   - Added compiler warnings (-Wall -Wextra -pedantic) for better code quality
   - Status messages showing Geant4 version and multithreading support
+- Removed generated `build/` directory from version control and added a `.gitignore` rule to keep build artifacts untracked
 
 ### Current State
-- **Build Status**: Successfully compiling and linking
+- **Build Status**: Successfully compiling and linking; build artifacts now only in the working tree
 - **Executable**: /home/nam/Dropbox/HPGe_ORTEC/Single_Det/build/HPGeSingle (329KB)
 - **Known Warnings**:
   - Unused variables in DetectorConstruction.cc:122-125, 147
@@ -58,7 +59,8 @@ Geant4-based simulation of a High-Purity Germanium (HPGe) detector for gamma-ray
 
 ### Files Modified
 - CMakeLists.txt - Updated with modern CMake practices
-- .claude/docs/context.md - Created project documentation
+- .gitignore - Added rule to ignore the `build/` directory
+- .claude/docs/context.md - Created project documentation; refreshed with current progress
 
 ### Build Instructions
 ```bash
@@ -78,6 +80,7 @@ cmake --build build -j4
 ### Issues Resolved
 - **CMake cache mismatch**: Removed stale CMakeCache.txt from old path (/Users/namtran/OneDrive/DNRI/GEANT4/HPGe_ORTEC/SingleDec/)
 - **Build in source directory**: Cleaned CMake files accidentally generated in project root
+- **Tracked build artifacts**: Removed `build/` directory contents from Git history going forward
 
 ### TODO
 - Address unused variable warnings in DetectorConstruction.cc
@@ -90,6 +93,7 @@ cmake --build build -j4
 - OpenGL (for visualization)
 - X11 (for GUI)
 - Threads (for multithreading support)
+- No new dependencies introduced in the latest update
 
 ### Last Updated
-2025-10-23 - Fixed CMake configuration and updated build system for Geant4 11.3.2
+2025-10-23 - Removed tracked build artifacts and added ignore rule; build system remains configured for Geant4 11.3.2
