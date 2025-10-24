@@ -16,6 +16,9 @@
 #include "SteppingAction.hh"
 
 #include <string>
+#include <sstream>
+#include <cctype>
+#include "G4SystemOfUnits.hh"
 
 int main(int argc, char** argv)
 {
@@ -38,16 +41,54 @@ int main(int argc, char** argv)
     PhysicsList* physicsList = new PhysicsList();
     runManager->SetUserInitialization(physicsList);
 
-    // Primary generator action
-    std::string rainierFile = "";
-    if (argc > 1) {
-        rainierFile = std::string(argv[1]);
+    // Parse arguments: --rainier <file>, --src-gap <value[mm|cm|m]>, <macro.mac>
+    std::string rainierFile;
+    G4String macroFile;
+    G4double srcGap = 0.0; // default 0 distance (touching surfaces)
+
+    auto parseLength = [](const std::string& s)->G4double {
+        // Accept forms: 10mm, 1cm, 0.5m, or plain number = mm
+        std::string num, unit;
+        for (char c : s) {
+            if (std::isdigit(c) || c=='.' || c=='e' || c=='E' || c=='+' || c=='-') num.push_back(c);
+            else unit.push_back(c);
+        }
+        double val = 0.0;
+        std::istringstream(num) >> val;
+        if (unit == "mm" || unit.empty()) return val * mm;
+        if (unit == "cm") return val * cm;
+        if (unit == "m")  return val * m;
+        // Fallback: treat as mm
+        return val * mm;
+    };
+
+    for (int i = 1; i < argc; ++i) {
+        std::string arg = argv[i];
+        if (arg == "--rainier" || arg == "-r") {
+            if (i+1 < argc) rainierFile = argv[++i];
+        } else if (arg.rfind("--rainier=",0)==0) {
+            rainierFile = arg.substr(10);
+        } else if (arg == "--src-gap" || arg == "-g") {
+            if (i+1 < argc) srcGap = parseLength(argv[++i]);
+        } else if (arg.rfind("--src-gap=",0)==0) {
+            srcGap = parseLength(arg.substr(10));
+        } else if (arg.size() > 4 && arg.substr(arg.size()-4) == ".mac") {
+            macroFile = arg.c_str();
+        } else if (rainierFile.empty()) {
+            // Backward-compat: first bare arg as RAINIER file if not a macro
+            rainierFile = arg;
+        }
+    }
+
+    if (!rainierFile.empty()) {
         G4cout << "Using RAINIER input file: " << rainierFile << G4endl;
     } else {
         G4cout << "No RAINIER file specified. Using test Co-60 cascade." << G4endl;
     }
     
     PrimaryGeneratorAction* primaryGenerator = new PrimaryGeneratorAction(rainierFile);
+    primaryGenerator->SetDetectorConstruction(detConstruction);
+    primaryGenerator->SetSourceSurfaceGap(srcGap);
     runManager->SetUserAction(primaryGenerator);
 
     // Set user action classes
@@ -68,17 +109,10 @@ int main(int argc, char** argv)
     G4UImanager* UImanager = G4UImanager::GetUIpointer();
 
     // Process macro or start UI session
-    if (argc != 1) {
+    if (!macroFile.empty()) {
         // batch mode
         G4String command = "/control/execute ";
-        G4String fileName = argv[argc-1];
-    if (fileName.find(".mac") != G4String::npos) {
-            UImanager->ApplyCommand(command + fileName);
-        } else {
-            // Run with default parameters
-            UImanager->ApplyCommand("/run/initialize");
-            UImanager->ApplyCommand("/run/beamOn 10000");
-        }
+        UImanager->ApplyCommand(command + macroFile);
     } else {
         // interactive mode
         G4UIExecutive* ui = new G4UIExecutive(argc, argv);

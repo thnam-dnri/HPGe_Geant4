@@ -12,6 +12,8 @@
 #include <vector>
 #include <random>
 
+class DetectorConstruction; // forward declaration
+
 class G4ParticleGun;
 class G4Event;
 
@@ -31,6 +33,10 @@ public:
 
     const G4ParticleGun* GetParticleGun() const { return fParticleGun; }
 
+    // Configuration hooks
+    void SetDetectorConstruction(const DetectorConstruction* det) { fDetConstruction = det; }
+    void SetSourceSurfaceGap(G4double gap) { fSourceSurfaceGap = gap; }
+
 private:
     G4ParticleGun* fParticleGun;
     std::string fRAINIERFile;
@@ -45,5 +51,9 @@ private:
     // Position and direction sampling
     G4ThreeVector SampleSourcePosition();
     G4ThreeVector SampleDirection();
+
+    // Geometry coupling
+    const DetectorConstruction* fDetConstruction {nullptr};
+    G4double fSourceSurfaceGap {0.0}; // surface-to-surface distance to detector front window
 };
 #endif

@@ -4,6 +4,7 @@
 // ==============================================================================
 
 #include "PrimaryGeneratorAction.hh"
+#include "DetectorConstruction.hh"
 
 #include "G4ParticleGun.hh"
 #include "G4ParticleTable.hh"
@@ -186,9 +187,35 @@ GammaData PrimaryGeneratorAction::SampleGamma()
 
 G4ThreeVector PrimaryGeneratorAction::SampleSourcePosition()
 {
-    // Point source at origin for now
-    // TODO: Add extended source options
-    return G4ThreeVector(0., 0., 0.);
+    // Disk source: 2 cm diameter (R=10 mm), 1 mm thickness
+    static const G4double R = 10.0 * mm;         // radius
+    static const G4double T = 1.0 * mm;          // thickness
+
+    std::uniform_real_distribution<double> dist(0.0, 1.0);
+
+    // Sample uniformly over disk area: r = R * sqrt(u), phi = 2*pi*v
+    const double u = dist(fRandomGenerator);
+    const double v = dist(fRandomGenerator);
+    const double r = R * std::sqrt(u);
+    const double phi = 2.0 * pi * v;
+    const double x = r * std::cos(phi);
+    const double y = r * std::sin(phi);
+
+    // Sample uniformly along thickness around z=0
+    const double w = dist(fRandomGenerator);
+    const double zLocal = (w - 0.5) * T; // range [-T/2, +T/2]
+
+    // Place disk in front of detector window, at surface-to-surface gap
+    // Detector surface Z comes from DetectorConstruction (window front face)
+    G4double surfaceZ = 0.0;
+    if (fDetConstruction) {
+        surfaceZ = fDetConstruction->GetDetectorSurfaceZ();
+    }
+    // Center of disk sits at: surfaceZ - (gap + T/2)
+    const G4double centerZ = surfaceZ - (fSourceSurfaceGap + 0.5*T);
+    const G4double z = centerZ + zLocal;
+
+    return G4ThreeVector(x, y, z);
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
