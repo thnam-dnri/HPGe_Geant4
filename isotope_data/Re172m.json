@@ -1,0 +1,68 @@
+{
+  "symbol": "Re172m",
+  "Z": 75,
+  "A": 172,
+  "atomic_mass": 171.955422961,
+  "half_life": {
+    "value": 55.0,
+    "unit": "seconds",
+    "seconds": 55.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "W172",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 123.3,
+          "absolute_intensity": 1.35,
+          "intensity_percent": 135.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 253.8,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.3597
+            }
+          ]
+        },
+        {
+          "energy_keV": 350.4,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.3597
+            },
+            {
+              "id": "1",
+              "correlation": 0.8749
+            }
+          ]
+        },
+        {
+          "energy_keV": 743.0,
+          "absolute_intensity": 0.26,
+          "intensity_percent": 26.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

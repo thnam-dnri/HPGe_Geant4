@@ -1,0 +1,72 @@
+{
+  "symbol": "Re186m",
+  "Z": 75,
+  "A": 186,
+  "atomic_mass": 185.955146042,
+  "half_life": {
+    "value": 200136.98630136985,
+    "unit": "years",
+    "seconds": 6311520000000.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Re186",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 40.35,
+          "absolute_intensity": 0.050382,
+          "intensity_percent": 5.038200000000001,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.1677
+            }
+          ]
+        },
+        {
+          "energy_keV": 50.0,
+          "absolute_intensity": 2.439e-07,
+          "intensity_percent": 2.4390000000000002e-05,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.01037
+            },
+            {
+              "id": "2",
+              "correlation": 0.1395
+            },
+            {
+              "id": "0",
+              "correlation": 0.04866
+            }
+          ]
+        },
+        {
+          "energy_keV": 59.01,
+          "absolute_intensity": 0.17829,
+          "intensity_percent": 17.829,
+          "id": "2"
+        },
+        {
+          "energy_keV": 99.36,
+          "absolute_intensity": 0.010733,
+          "intensity_percent": 1.0733,
+          "id": "3"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "symbol": "Zn69m",
+  "Z": 30,
+  "A": 69,
+  "atomic_mass": 68.927021176,
+  "half_life": {
+    "value": 13.76,
+    "unit": "hours",
+    "seconds": 49536.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ga69",
+      "branching_ratio": 0.00033,
+      "gammas": [
+        {
+          "energy_keV": 573.9,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Zn69",
+      "branching_ratio": 0.99967,
+      "gammas": [
+        {
+          "energy_keV": 438.63,
+          "absolute_intensity": 0.948,
+          "intensity_percent": 94.8,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "Bi203m",
+  "Z": 83,
+  "A": 203,
+  "atomic_mass": 202.978054881,
+  "half_life": {
+    "value": 0.305,
+    "unit": "seconds",
+    "seconds": 0.305
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Bi203",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 189.5,
+          "absolute_intensity": 0.13579,
+          "intensity_percent": 13.578999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.9676
+            }
+          ]
+        },
+        {
+          "energy_keV": 204.7,
+          "absolute_intensity": 0.015744,
+          "intensity_percent": 1.5744,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.9754
+            }
+          ]
+        },
+        {
+          "energy_keV": 893.5,
+          "absolute_intensity": 0.0984,
+          "intensity_percent": 9.84,
+          "id": "2"
+        },
+        {
+          "energy_keV": 908.6,
+          "absolute_intensity": 0.8856,
+          "intensity_percent": 88.56,
+          "id": "3"
+        },
+        {
+          "energy_keV": 1098.1,
+          "absolute_intensity": 0.000984,
+          "intensity_percent": 0.0984,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

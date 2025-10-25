@@ -1,0 +1,27 @@
+{
+  "symbol": "Pt166",
+  "Z": 78,
+  "A": 166,
+  "atomic_mass": 165.994855,
+  "half_life": {
+    "value": 0.0003,
+    "unit": "seconds",
+    "seconds": 0.0003
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Os162",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "symbol": "Hg180",
+  "Z": 80,
+  "A": 180,
+  "atomic_mass": 179.978266394,
+  "half_life": {
+    "value": 2.58,
+    "unit": "seconds",
+    "seconds": 2.58
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Au180",
+      "branching_ratio": 0.52,
+      "gammas": [
+        {
+          "energy_keV": 125.0,
+          "absolute_intensity": 0.097,
+          "intensity_percent": 9.700000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 300.5,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 381.2,
+          "absolute_intensity": 0.69,
+          "intensity_percent": 69.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 405.0,
+          "absolute_intensity": 0.17,
+          "intensity_percent": 17.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 450.5,
+          "absolute_intensity": 0.16,
+          "intensity_percent": 16.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 479.9,
+          "absolute_intensity": 0.23,
+          "intensity_percent": 23.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Pt176",
+      "branching_ratio": 0.48,
+      "gammas": [
+        {
+          "energy_keV": 179.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 263.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 443.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 9
+  }
+}

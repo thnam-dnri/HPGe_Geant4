@@ -1,0 +1,27 @@
+{
+  "symbol": "Cl34",
+  "Z": 17,
+  "A": 34,
+  "atomic_mass": 33.973762819,
+  "half_life": {
+    "value": 1.5264,
+    "unit": "seconds",
+    "seconds": 1.5264
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "S34",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

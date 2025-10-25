@@ -1,0 +1,172 @@
+{
+  "symbol": "Pr153",
+  "Z": 59,
+  "A": 153,
+  "atomic_mass": 152.933838905,
+  "half_life": {
+    "value": 4.28,
+    "unit": "seconds",
+    "seconds": 4.28
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Nd153",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 50.0,
+          "absolute_intensity": 0.14,
+          "intensity_percent": 14.000000000000002,
+          "id": "0"
+        },
+        {
+          "energy_keV": 70.2,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 141.7,
+          "absolute_intensity": 0.275,
+          "intensity_percent": 27.500000000000004,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.5
+            }
+          ]
+        },
+        {
+          "energy_keV": 185.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 191.7,
+          "absolute_intensity": 0.5,
+          "intensity_percent": 50.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 263.7,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 485.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 609.6,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 695.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 836.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 887.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 896.6,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 915.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 930.6,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 957.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 965.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 966.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1013.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1099.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1150.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1399.2,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1449.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1496.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 23
+  }
+}

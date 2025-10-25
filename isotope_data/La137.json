@@ -1,0 +1,27 @@
+{
+  "symbol": "La137",
+  "Z": 57,
+  "A": 137,
+  "atomic_mass": 136.906493598,
+  "half_life": {
+    "value": 60041.22272957889,
+    "unit": "years",
+    "seconds": 1893460000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ba137",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

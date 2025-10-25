@@ -1,0 +1,90 @@
+{
+  "symbol": "Xe133",
+  "Z": 54,
+  "A": 133,
+  "atomic_mass": 132.905910722,
+  "half_life": {
+    "value": 5.242997685185185,
+    "unit": "days",
+    "seconds": 452995.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cs133",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 79.623,
+          "absolute_intensity": 0.0027,
+          "intensity_percent": 0.27,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3676
+            }
+          ]
+        },
+        {
+          "energy_keV": 80.997,
+          "absolute_intensity": 0.38,
+          "intensity_percent": 38.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 160.613,
+          "absolute_intensity": 0.00066,
+          "intensity_percent": 0.066,
+          "id": "2"
+        },
+        {
+          "energy_keV": 223.234,
+          "absolute_intensity": 1.2e-06,
+          "intensity_percent": 0.00011999999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3302
+            },
+            {
+              "id": "0",
+              "correlation": 0.3219
+            },
+            {
+              "id": "2",
+              "correlation": 0.07868
+            }
+          ]
+        },
+        {
+          "energy_keV": 302.852,
+          "absolute_intensity": 4.8e-05,
+          "intensity_percent": 0.0048000000000000004,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3676
+            }
+          ]
+        },
+        {
+          "energy_keV": 383.851,
+          "absolute_intensity": 2.4e-05,
+          "intensity_percent": 0.0024000000000000002,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

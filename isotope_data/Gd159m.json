@@ -1,0 +1,52 @@
+{
+  "symbol": "Gd159m",
+  "Z": 64,
+  "A": 159,
+  "atomic_mass": 158.926461412,
+  "half_life": {
+    "value": 2.62e-08,
+    "unit": "seconds",
+    "seconds": 2.62e-08
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Gd159",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 17.1,
+          "absolute_intensity": 0.047,
+          "intensity_percent": 4.7,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.06711
+            }
+          ]
+        },
+        {
+          "energy_keV": 50.7,
+          "absolute_intensity": 0.0235,
+          "intensity_percent": 2.35,
+          "id": "1"
+        },
+        {
+          "energy_keV": 67.8,
+          "absolute_intensity": 0.358,
+          "intensity_percent": 35.8,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

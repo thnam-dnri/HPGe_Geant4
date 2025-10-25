@@ -1,0 +1,62 @@
+{
+  "symbol": "Cs123m",
+  "Z": 55,
+  "A": 123,
+  "atomic_mass": 122.913163799,
+  "half_life": {
+    "value": 1.64,
+    "unit": "seconds",
+    "seconds": 1.64
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Cs123",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 30.6,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 61.7,
+          "absolute_intensity": 0.0036,
+          "intensity_percent": 0.36,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.001304
+            },
+            {
+              "id": "3",
+              "correlation": 0.008696
+            }
+          ]
+        },
+        {
+          "energy_keV": 64.0,
+          "absolute_intensity": 0.045,
+          "intensity_percent": 4.5,
+          "id": "2"
+        },
+        {
+          "energy_keV": 94.6,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": "3"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

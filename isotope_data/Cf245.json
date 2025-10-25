@@ -1,0 +1,40 @@
+{
+  "symbol": "Cf245",
+  "Z": 98,
+  "A": 245,
+  "atomic_mass": 245.068048612,
+  "half_life": {
+    "value": 45.0,
+    "unit": "minutes",
+    "seconds": 2700.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cm241",
+      "branching_ratio": 0.336,
+      "gammas": [
+        {
+          "energy_keV": 56.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Bk245",
+      "branching_ratio": 0.64,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

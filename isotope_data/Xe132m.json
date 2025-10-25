@@ -1,0 +1,106 @@
+{
+  "symbol": "Xe132m",
+  "Z": 54,
+  "A": 132,
+  "atomic_mass": 131.907108076,
+  "half_life": {
+    "value": 0.00839,
+    "unit": "seconds",
+    "seconds": 0.00839
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Xe132",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 173.6,
+          "absolute_intensity": 0.96,
+          "intensity_percent": 96.0,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.998
+            },
+            {
+              "id": "3",
+              "correlation": 0.9958
+            },
+            {
+              "id": "4",
+              "correlation": 0.9971
+            }
+          ]
+        },
+        {
+          "energy_keV": 538.1,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.7924
+            },
+            {
+              "id": "2",
+              "correlation": 0.998
+            },
+            {
+              "id": "3",
+              "correlation": 0.9958
+            },
+            {
+              "id": "4",
+              "correlation": 0.9971
+            }
+          ]
+        },
+        {
+          "energy_keV": 600.1,
+          "absolute_intensity": 0.97,
+          "intensity_percent": 97.0,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.9971
+            },
+            {
+              "id": "3",
+              "correlation": 0.9958
+            }
+          ]
+        },
+        {
+          "energy_keV": 667.75,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": "3"
+        },
+        {
+          "energy_keV": 772.6,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.9958
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

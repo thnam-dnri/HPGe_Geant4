@@ -1,0 +1,84 @@
+{
+  "symbol": "Ta182m2",
+  "Z": 73,
+  "A": 182,
+  "atomic_mass": 181.950709638,
+  "half_life": {
+    "value": 15.84,
+    "unit": "minutes",
+    "seconds": 950.4
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ta182m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 146.78,
+          "absolute_intensity": 0.3648,
+          "intensity_percent": 36.480000000000004,
+          "id": "0"
+        },
+        {
+          "energy_keV": 171.59,
+          "absolute_intensity": 0.48,
+          "intensity_percent": 48.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.192
+            }
+          ]
+        },
+        {
+          "energy_keV": 184.95,
+          "absolute_intensity": 0.24,
+          "intensity_percent": 24.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0317
+            },
+            {
+              "id": "1",
+              "correlation": 0.2264
+            },
+            {
+              "id": "0",
+              "correlation": 0.08744
+            }
+          ]
+        },
+        {
+          "energy_keV": 318.4,
+          "absolute_intensity": 0.0672,
+          "intensity_percent": 6.72,
+          "id": "3"
+        },
+        {
+          "energy_keV": 356.47,
+          "absolute_intensity": 0.00288,
+          "intensity_percent": 0.28800000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.192
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

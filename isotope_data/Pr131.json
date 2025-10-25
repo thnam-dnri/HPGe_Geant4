@@ -1,0 +1,27 @@
+{
+  "symbol": "Pr131",
+  "Z": 59,
+  "A": 131,
+  "atomic_mass": 130.920259,
+  "half_life": {
+    "value": 1.51,
+    "unit": "minutes",
+    "seconds": 90.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ce131",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "symbol": "Bk243",
+  "Z": 97,
+  "A": 243,
+  "atomic_mass": 243.063007572,
+  "half_life": {
+    "value": 4.5,
+    "unit": "hours",
+    "seconds": 16200.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Am239",
+      "branching_ratio": 0.0015,
+      "gammas": [
+        {
+          "energy_keV": 42.0,
+          "absolute_intensity": 0.04,
+          "intensity_percent": 4.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 146.4,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01163
+            }
+          ]
+        },
+        {
+          "energy_keV": 187.1,
+          "absolute_intensity": 0.4,
+          "intensity_percent": 40.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 536.0,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 536.0,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Cm243",
+      "branching_ratio": 0.9985,
+      "gammas": [
+        {
+          "energy_keV": 755.0,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 840.0,
+          "absolute_intensity": 0.03,
+          "intensity_percent": 3.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 946.0,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 8
+  }
+}

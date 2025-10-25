@@ -1,0 +1,34 @@
+{
+  "symbol": "Bi208",
+  "Z": 83,
+  "A": 208,
+  "atomic_mass": 207.979742196,
+  "half_life": {
+    "value": 368252.1562658549,
+    "unit": "years",
+    "seconds": 11613200000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pb208",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 2614.5,
+          "absolute_intensity": 0.99785,
+          "intensity_percent": 99.785,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

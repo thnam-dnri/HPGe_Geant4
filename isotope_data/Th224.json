@@ -1,0 +1,64 @@
+{
+  "symbol": "Th224",
+  "Z": 90,
+  "A": 224,
+  "atomic_mass": 224.021466895,
+  "half_life": {
+    "value": 1.05,
+    "unit": "seconds",
+    "seconds": 1.05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ra220",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 177.0,
+          "absolute_intensity": 0.09,
+          "intensity_percent": 9.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 235.0,
+          "absolute_intensity": 0.004,
+          "intensity_percent": 0.4,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.5219
+            }
+          ]
+        },
+        {
+          "energy_keV": 297.0,
+          "absolute_intensity": 0.003,
+          "intensity_percent": 0.3,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.5219
+            }
+          ]
+        },
+        {
+          "energy_keV": 410.0,
+          "absolute_intensity": 0.008,
+          "intensity_percent": 0.8,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

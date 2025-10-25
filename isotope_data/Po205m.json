@@ -1,0 +1,27 @@
+{
+  "symbol": "Po205m",
+  "Z": 84,
+  "A": 205,
+  "atomic_mass": 204.982771996,
+  "half_life": {
+    "value": 0.000645,
+    "unit": "seconds",
+    "seconds": 0.000645
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Po205",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

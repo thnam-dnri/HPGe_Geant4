@@ -1,0 +1,46 @@
+{
+  "symbol": "Lu170m",
+  "Z": 71,
+  "A": 170,
+  "atomic_mass": 169.938574711,
+  "half_life": {
+    "value": 0.67,
+    "unit": "seconds",
+    "seconds": 0.67
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Lu170",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 44.52,
+          "absolute_intensity": 0.00845,
+          "intensity_percent": 0.845,
+          "id": "0"
+        },
+        {
+          "energy_keV": 48.42,
+          "absolute_intensity": 0.0043095,
+          "intensity_percent": 0.43095,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 7.137e-05
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

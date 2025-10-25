@@ -1,0 +1,27 @@
+{
+  "symbol": "Pa212",
+  "Z": 91,
+  "A": 212,
+  "atomic_mass": 212.023204138,
+  "half_life": {
+    "value": 0.0051,
+    "unit": "seconds",
+    "seconds": 0.0051
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ac208",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

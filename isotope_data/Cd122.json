@@ -1,0 +1,39 @@
+{
+  "symbol": "Cd122",
+  "Z": 48,
+  "A": 122,
+  "atomic_mass": 121.913332432,
+  "half_life": {
+    "value": 5.24,
+    "unit": "seconds",
+    "seconds": 5.24
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "In122m2",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "In122m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "In122",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

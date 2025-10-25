@@ -1,0 +1,27 @@
+{
+  "symbol": "Sr73",
+  "Z": 38,
+  "A": 73,
+  "atomic_mass": 72.96597,
+  "half_life": {
+    "value": 0.025,
+    "unit": "seconds",
+    "seconds": 0.025
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Rb73",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "Pd114",
+  "Z": 46,
+  "A": 114,
+  "atomic_mass": 113.910362638,
+  "half_life": {
+    "value": 2.42,
+    "unit": "minutes",
+    "seconds": 145.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ag114",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 126.7,
+          "absolute_intensity": 0.04488,
+          "intensity_percent": 4.488,
+          "id": "0"
+        },
+        {
+          "energy_keV": 136.7,
+          "absolute_intensity": 0.008976,
+          "intensity_percent": 0.8976,
+          "id": "1"
+        },
+        {
+          "energy_keV": 222.0,
+          "absolute_intensity": 0.006936,
+          "intensity_percent": 0.6936,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.914
+            }
+          ]
+        },
+        {
+          "energy_keV": 232.0,
+          "absolute_intensity": 0.04896,
+          "intensity_percent": 4.896,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.675
+            }
+          ]
+        },
+        {
+          "energy_keV": 358.5,
+          "absolute_intensity": 0.01632,
+          "intensity_percent": 1.6320000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

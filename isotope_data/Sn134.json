@@ -1,0 +1,76 @@
+{
+  "symbol": "Sn134",
+  "Z": 50,
+  "A": 134,
+  "atomic_mass": 133.928291765,
+  "half_life": {
+    "value": 1.05,
+    "unit": "seconds",
+    "seconds": 1.05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sb134",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 52.8,
+          "absolute_intensity": 0.0036,
+          "intensity_percent": 0.36,
+          "id": ""
+        },
+        {
+          "energy_keV": 317.7,
+          "absolute_intensity": 0.036,
+          "intensity_percent": 3.5999999999999996,
+          "id": ""
+        },
+        {
+          "energy_keV": 551.6,
+          "absolute_intensity": 0.00294,
+          "intensity_percent": 0.294,
+          "id": ""
+        },
+        {
+          "energy_keV": 554.5,
+          "absolute_intensity": 0.0186,
+          "intensity_percent": 1.8599999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 604.0,
+          "absolute_intensity": 0.00144,
+          "intensity_percent": 0.14400000000000002,
+          "id": ""
+        },
+        {
+          "energy_keV": 872.1,
+          "absolute_intensity": 0.06,
+          "intensity_percent": 6.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 885.0,
+          "absolute_intensity": 0.0108,
+          "intensity_percent": 1.08,
+          "id": ""
+        },
+        {
+          "energy_keV": 922.4,
+          "absolute_intensity": 0.0048,
+          "intensity_percent": 0.48,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 8
+  }
+}

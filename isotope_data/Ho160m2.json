@@ -1,0 +1,52 @@
+{
+  "symbol": "Ho160m2",
+  "Z": 67,
+  "A": 160,
+  "atomic_mass": 159.928911551,
+  "half_life": {
+    "value": 3.0,
+    "unit": "seconds",
+    "seconds": 3.0
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ho160",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 11.13,
+          "absolute_intensity": 0.0131,
+          "intensity_percent": 1.31,
+          "id": ""
+        },
+        {
+          "energy_keV": 51.15,
+          "absolute_intensity": 0.215,
+          "intensity_percent": 21.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 107.28,
+          "absolute_intensity": 0.102,
+          "intensity_percent": 10.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 118.41,
+          "absolute_intensity": 0.565,
+          "intensity_percent": 56.49999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

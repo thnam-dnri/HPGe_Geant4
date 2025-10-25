@@ -1,0 +1,27 @@
+{
+  "symbol": "Ra204",
+  "Z": 88,
+  "A": 204,
+  "atomic_mass": 204.006499668,
+  "half_life": {
+    "value": 0.057,
+    "unit": "seconds",
+    "seconds": 0.057
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Rn200",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

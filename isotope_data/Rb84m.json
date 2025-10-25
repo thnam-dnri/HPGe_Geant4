@@ -1,0 +1,52 @@
+{
+  "symbol": "Rb84m",
+  "Z": 37,
+  "A": 84,
+  "atomic_mass": 83.914882505,
+  "half_life": {
+    "value": 20.259999999999998,
+    "unit": "minutes",
+    "seconds": 1215.6
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Rb84",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 215.61,
+          "absolute_intensity": 0.31311,
+          "intensity_percent": 31.311,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.6082
+            }
+          ]
+        },
+        {
+          "energy_keV": 248.02,
+          "absolute_intensity": 0.63,
+          "intensity_percent": 63.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 463.62,
+          "absolute_intensity": 0.33075,
+          "intensity_percent": 33.074999999999996,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

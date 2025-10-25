@@ -1,0 +1,27 @@
+{
+  "symbol": "Hg172",
+  "Z": 80,
+  "A": 172,
+  "atomic_mass": 171.998832686,
+  "half_life": {
+    "value": 0.000231,
+    "unit": "seconds",
+    "seconds": 0.000231
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pt168",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

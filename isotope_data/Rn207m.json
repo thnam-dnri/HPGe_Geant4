@@ -1,0 +1,46 @@
+{
+  "symbol": "Rn207m",
+  "Z": 86,
+  "A": 207,
+  "atomic_mass": 206.991699341,
+  "half_life": {
+    "value": 0.000181,
+    "unit": "seconds",
+    "seconds": 0.000181
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Rn207",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 234.0,
+          "absolute_intensity": 0.21,
+          "intensity_percent": 21.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9816
+            }
+          ]
+        },
+        {
+          "energy_keV": 665.1,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

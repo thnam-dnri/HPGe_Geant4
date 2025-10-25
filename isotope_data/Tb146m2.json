@@ -1,0 +1,92 @@
+{
+  "symbol": "Tb146m2",
+  "Z": 65,
+  "A": 146,
+  "atomic_mass": 145.928083519,
+  "half_life": {
+    "value": 0.00118,
+    "unit": "seconds",
+    "seconds": 0.00118
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tb146m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 18.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 138.0,
+          "absolute_intensity": 0.015,
+          "intensity_percent": 1.5,
+          "id": "1"
+        },
+        {
+          "energy_keV": 156.7,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 205.2,
+          "absolute_intensity": 0.076,
+          "intensity_percent": 7.6,
+          "id": "3",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.1367
+            },
+            {
+              "id": "2",
+              "correlation": 0.4557
+            }
+          ]
+        },
+        {
+          "energy_keV": 343.1,
+          "absolute_intensity": 0.91,
+          "intensity_percent": 91.0,
+          "id": "4"
+        },
+        {
+          "energy_keV": 417.7,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.8457
+            },
+            {
+              "id": "3",
+              "correlation": 0.07063
+            },
+            {
+              "id": "1",
+              "correlation": 0.01251
+            },
+            {
+              "id": "2",
+              "correlation": 0.04171
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

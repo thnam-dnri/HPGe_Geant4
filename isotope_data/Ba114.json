@@ -1,0 +1,33 @@
+{
+  "symbol": "Ba114",
+  "Z": 56,
+  "A": 114,
+  "atomic_mass": 113.950675405,
+  "half_life": {
+    "value": 0.43,
+    "unit": "seconds",
+    "seconds": 0.43
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Xe110",
+      "branching_ratio": 0.009,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Cs114",
+      "branching_ratio": 0.991,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "Ar41",
+  "Z": 18,
+  "A": 41,
+  "atomic_mass": 40.964500611,
+  "half_life": {
+    "value": 1.8268333333333335,
+    "unit": "hours",
+    "seconds": 6576.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "K41",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1293.63,
+          "absolute_intensity": 0.9916,
+          "intensity_percent": 99.16,
+          "id": ""
+        },
+        {
+          "energy_keV": 1677.0,
+          "absolute_intensity": 0.000515632,
+          "intensity_percent": 0.051563200000000003,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

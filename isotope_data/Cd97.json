@@ -1,0 +1,27 @@
+{
+  "symbol": "Cd97",
+  "Z": 48,
+  "A": 97,
+  "atomic_mass": 96.93494,
+  "half_life": {
+    "value": 2.8,
+    "unit": "seconds",
+    "seconds": 2.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Pd96",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Tb149m2",
+  "Z": 65,
+  "A": 149,
+  "atomic_mass": 148.92328885076682,
+  "half_life": {
+    "value": 4.16,
+    "unit": "minutes",
+    "seconds": 249.6
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Eu145",
+      "branching_ratio": 0.00022,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

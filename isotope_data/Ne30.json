@@ -1,0 +1,70 @@
+{
+  "symbol": "Ne30",
+  "Z": 10,
+  "A": 30,
+  "atomic_mass": 30.024801045,
+  "half_life": {
+    "value": 0.0073,
+    "unit": "seconds",
+    "seconds": 0.0073
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Na30",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 150.6,
+          "absolute_intensity": 0.78,
+          "intensity_percent": 78.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 365.5,
+          "absolute_intensity": 0.09,
+          "intensity_percent": 9.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 410.0,
+          "absolute_intensity": 0.063,
+          "intensity_percent": 6.3,
+          "id": ""
+        },
+        {
+          "energy_keV": 775.0,
+          "absolute_intensity": 0.014,
+          "intensity_percent": 1.4000000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 1597.0,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1963.0,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2114.0,
+          "absolute_intensity": 0.04,
+          "intensity_percent": 4.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

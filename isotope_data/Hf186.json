@@ -1,0 +1,27 @@
+{
+  "symbol": "Hf186",
+  "Z": 72,
+  "A": 186,
+  "atomic_mass": 185.96089,
+  "half_life": {
+    "value": 2.6,
+    "unit": "minutes",
+    "seconds": 156.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ta186",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

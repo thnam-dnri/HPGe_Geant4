@@ -1,0 +1,70 @@
+{
+  "symbol": "Ac216m",
+  "Z": 89,
+  "A": 216,
+  "atomic_mass": 216.008771605,
+  "half_life": {
+    "value": 0.000441,
+    "unit": "seconds",
+    "seconds": 0.000441
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Fr212",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 82.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 537.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 770.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 777.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 826.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 853.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 937.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

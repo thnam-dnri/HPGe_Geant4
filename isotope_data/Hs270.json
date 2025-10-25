@@ -1,0 +1,27 @@
+{
+  "symbol": "Hs270",
+  "Z": 108,
+  "A": 270,
+  "atomic_mass": 270.13465,
+  "half_life": {
+    "value": 3.6,
+    "unit": "seconds",
+    "seconds": 3.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Sg266",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

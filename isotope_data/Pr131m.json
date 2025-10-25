@@ -1,0 +1,52 @@
+{
+  "symbol": "Pr131m",
+  "Z": 59,
+  "A": 131,
+  "atomic_mass": 130.920422608,
+  "half_life": {
+    "value": 5.73,
+    "unit": "seconds",
+    "seconds": 5.73
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pr131",
+      "branching_ratio": 0.964,
+      "gammas": [
+        {
+          "energy_keV": 64.8,
+          "absolute_intensity": 0.0033,
+          "intensity_percent": 0.33,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3406
+            }
+          ]
+        },
+        {
+          "energy_keV": 87.6,
+          "absolute_intensity": 0.341,
+          "intensity_percent": 34.1,
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Ce131",
+      "branching_ratio": 0.036,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

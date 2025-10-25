@@ -1,0 +1,114 @@
+{
+  "symbol": "Tm154m",
+  "Z": 69,
+  "A": 154,
+  "atomic_mass": 153.941567808,
+  "half_life": {
+    "value": 3.3,
+    "unit": "seconds",
+    "seconds": 3.3
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Er154",
+      "branching_ratio": 0.42,
+      "gammas": [
+        {
+          "energy_keV": 460.5,
+          "absolute_intensity": 0.0792,
+          "intensity_percent": 7.920000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 541.9,
+          "absolute_intensity": 0.5643,
+          "intensity_percent": 56.43,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.9806
+            },
+            {
+              "id": "2",
+              "correlation": 0.9583
+            },
+            {
+              "id": "3",
+              "correlation": 0.9699
+            }
+          ]
+        },
+        {
+          "energy_keV": 560.8,
+          "absolute_intensity": 0.99,
+          "intensity_percent": 99.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 601.4,
+          "absolute_intensity": 0.9405,
+          "intensity_percent": 94.05,
+          "id": "3",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.9778
+            }
+          ]
+        },
+        {
+          "energy_keV": 625.4,
+          "absolute_intensity": 0.8712,
+          "intensity_percent": 87.12,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.9797
+            },
+            {
+              "id": "2",
+              "correlation": 0.968
+            }
+          ]
+        },
+        {
+          "energy_keV": 796.0,
+          "absolute_intensity": 0.198,
+          "intensity_percent": 19.8,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.9806
+            },
+            {
+              "id": "2",
+              "correlation": 0.9583
+            },
+            {
+              "id": "3",
+              "correlation": 0.9699
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Ho150m",
+      "branching_ratio": 0.9,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

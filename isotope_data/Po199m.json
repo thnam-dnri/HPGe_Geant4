@@ -1,0 +1,46 @@
+{
+  "symbol": "Po199m",
+  "Z": 84,
+  "A": 199,
+  "atomic_mass": 198.983998862,
+  "half_life": {
+    "value": 4.17,
+    "unit": "minutes",
+    "seconds": 250.2
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Po199",
+      "branching_ratio": 0.025,
+      "gammas": [
+        {
+          "energy_keV": 72.0,
+          "absolute_intensity": 0.050005,
+          "intensity_percent": 5.0005,
+          "id": ""
+        },
+        {
+          "energy_keV": 238.0,
+          "absolute_intensity": 0.0146,
+          "intensity_percent": 1.46,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Pb195m",
+      "branching_ratio": 0.39,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

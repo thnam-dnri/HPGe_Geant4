@@ -1,0 +1,64 @@
+{
+  "symbol": "Nd134m",
+  "Z": 60,
+  "A": 134,
+  "atomic_mass": 133.921251818,
+  "half_life": {
+    "value": 0.00041,
+    "unit": "seconds",
+    "seconds": 0.00041
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Nd134",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 166.5,
+          "absolute_intensity": 0.9,
+          "intensity_percent": 90.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 294.2,
+          "absolute_intensity": 0.94697,
+          "intensity_percent": 94.697,
+          "id": ""
+        },
+        {
+          "energy_keV": 494.7,
+          "absolute_intensity": 0.98804,
+          "intensity_percent": 98.804,
+          "id": ""
+        },
+        {
+          "energy_keV": 631.1,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 707.5,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 874.0,
+          "absolute_intensity": 0.063,
+          "intensity_percent": 6.3,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

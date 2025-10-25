@@ -1,0 +1,46 @@
+{
+  "symbol": "Cs122m2",
+  "Z": 55,
+  "A": 122,
+  "atomic_mass": 121.91626373,
+  "half_life": {
+    "value": 3.7,
+    "unit": "minutes",
+    "seconds": 222.0
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Cs122",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 45.85,
+          "absolute_intensity": 0.01664,
+          "intensity_percent": 1.664,
+          "id": "0"
+        },
+        {
+          "energy_keV": 81.2,
+          "absolute_intensity": 0.047008,
+          "intensity_percent": 4.7008,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.05977
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

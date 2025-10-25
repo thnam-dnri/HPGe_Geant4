@@ -1,0 +1,27 @@
+{
+  "symbol": "Pm129",
+  "Z": 61,
+  "A": 129,
+  "atomic_mass": 128.94316,
+  "half_life": {
+    "value": 2.4,
+    "unit": "seconds",
+    "seconds": 2.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Nd129",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

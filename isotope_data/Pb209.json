@@ -1,0 +1,27 @@
+{
+  "symbol": "Pb209",
+  "Z": 82,
+  "A": 209,
+  "atomic_mass": 208.98109012,
+  "half_life": {
+    "value": 3.2529999999999997,
+    "unit": "hours",
+    "seconds": 11710.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Bi209",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

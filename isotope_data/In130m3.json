@@ -1,0 +1,70 @@
+{
+  "symbol": "In130m3",
+  "Z": 49,
+  "A": 130,
+  "atomic_mass": 129.925399467,
+  "half_life": {
+    "value": 0.54,
+    "unit": "seconds",
+    "seconds": 0.54
+  },
+  "isomer_state": 3,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sn130",
+      "branching_ratio": 0.799278384427252,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Sn130m",
+      "branching_ratio": 0.200721615572748,
+      "gammas": [
+        {
+          "energy_keV": 129.8,
+          "absolute_intensity": 0.15145,
+          "intensity_percent": 15.145,
+          "id": ""
+        },
+        {
+          "energy_keV": 137.96,
+          "absolute_intensity": 0.49272,
+          "intensity_percent": 49.272,
+          "id": ""
+        },
+        {
+          "energy_keV": 278.31,
+          "absolute_intensity": 0.026845,
+          "intensity_percent": 2.6845,
+          "id": ""
+        },
+        {
+          "energy_keV": 408.16,
+          "absolute_intensity": 0.14331,
+          "intensity_percent": 14.331,
+          "id": ""
+        },
+        {
+          "energy_keV": 980.43,
+          "absolute_intensity": 0.011705,
+          "intensity_percent": 1.1705,
+          "id": ""
+        },
+        {
+          "energy_keV": 1340.19,
+          "absolute_intensity": 0.07491,
+          "intensity_percent": 7.4910000000000005,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Te108",
+  "Z": 52,
+  "A": 108,
+  "atomic_mass": 107.929444597,
+  "half_life": {
+    "value": 2.1,
+    "unit": "seconds",
+    "seconds": 2.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Sn104",
+      "branching_ratio": 0.49,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

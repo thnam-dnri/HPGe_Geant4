@@ -1,0 +1,33 @@
+{
+  "symbol": "Np230",
+  "Z": 93,
+  "A": 230,
+  "atomic_mass": 230.037827597,
+  "half_life": {
+    "value": 4.6,
+    "unit": "minutes",
+    "seconds": 276.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "U230",
+      "branching_ratio": 0.97,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Pa226",
+      "branching_ratio": 0.03,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

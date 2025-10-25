@@ -1,0 +1,39 @@
+{
+  "symbol": "Bi212m",
+  "Z": 83,
+  "A": 212,
+  "atomic_mass": 211.99155411,
+  "half_life": {
+    "value": 25.0,
+    "unit": "minutes",
+    "seconds": 1500.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-a",
+      "daughter": "Pb208",
+      "branching_ratio": 0.3,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Tl208",
+      "branching_ratio": 0.67,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Po212",
+      "branching_ratio": 0.33,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

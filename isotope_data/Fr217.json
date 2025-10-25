@@ -1,0 +1,27 @@
+{
+  "symbol": "Fr217",
+  "Z": 87,
+  "A": 217,
+  "atomic_mass": 217.004631951,
+  "half_life": {
+    "value": 1.9e-05,
+    "unit": "seconds",
+    "seconds": 1.9e-05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "At213",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

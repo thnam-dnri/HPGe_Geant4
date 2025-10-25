@@ -1,0 +1,27 @@
+{
+  "symbol": "Mt278",
+  "Z": 109,
+  "A": 278,
+  "atomic_mass": 278.154812,
+  "half_life": {
+    "value": 7.6,
+    "unit": "seconds",
+    "seconds": 7.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bh274",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Fe47",
+  "Z": 26,
+  "A": 47,
+  "atomic_mass": 46.99289,
+  "half_life": {
+    "value": 0.0218,
+    "unit": "seconds",
+    "seconds": 0.0218
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Cr46",
+      "branching_ratio": 0.884,
+      "gammas": [
+        {
+          "energy_keV": 892.1,
+          "absolute_intensity": 0.76,
+          "intensity_percent": 76.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1094.9,
+          "absolute_intensity": 0.22,
+          "intensity_percent": 22.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2304.5,
+          "absolute_intensity": 0.035,
+          "intensity_percent": 3.5000000000000004,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b+",
+      "daughter": "Mn47",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

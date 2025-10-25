@@ -1,0 +1,47 @@
+{
+  "symbol": "Nb91m",
+  "Z": 41,
+  "A": 91,
+  "atomic_mass": 90.907108536,
+  "half_life": {
+    "value": 60.8599537037037,
+    "unit": "days",
+    "seconds": 5258300.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Nb91",
+      "branching_ratio": 0.966,
+      "gammas": [
+        {
+          "energy_keV": 104.62,
+          "absolute_intensity": 0.00599,
+          "intensity_percent": 0.599,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Zr91",
+      "branching_ratio": 0.034,
+      "gammas": [
+        {
+          "energy_keV": 1204.67,
+          "absolute_intensity": 0.59412,
+          "intensity_percent": 59.412,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

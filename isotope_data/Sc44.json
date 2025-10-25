@@ -1,0 +1,82 @@
+{
+  "symbol": "Sc44",
+  "Z": 21,
+  "A": 44,
+  "atomic_mass": 43.959402752,
+  "half_life": {
+    "value": 3.97,
+    "unit": "hours",
+    "seconds": 14292.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ca44",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1157.02,
+          "absolute_intensity": 0.999,
+          "intensity_percent": 99.9,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1499.46,
+          "absolute_intensity": 0.0090809,
+          "intensity_percent": 0.90809,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.09989
+            }
+          ]
+        },
+        {
+          "energy_keV": 2144.3,
+          "absolute_intensity": 2.997e-05,
+          "intensity_percent": 0.002997,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.09989
+            }
+          ]
+        },
+        {
+          "energy_keV": 2150.84,
+          "absolute_intensity": 1.0989e-05,
+          "intensity_percent": 0.0010988999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.09989
+            }
+          ]
+        },
+        {
+          "energy_keV": 2656.48,
+          "absolute_intensity": 0.0011189,
+          "intensity_percent": 0.11188999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 3301.35,
+          "absolute_intensity": 1.3986e-05,
+          "intensity_percent": 0.0013986,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

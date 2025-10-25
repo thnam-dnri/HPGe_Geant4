@@ -1,0 +1,40 @@
+{
+  "symbol": "Ra225",
+  "Z": 88,
+  "A": 225,
+  "atomic_mass": 225.023611564,
+  "half_life": {
+    "value": 14.9,
+    "unit": "days",
+    "seconds": 1287360.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ac225",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 40.0,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Rn221",
+      "branching_ratio": 0.00026,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

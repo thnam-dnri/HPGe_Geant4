@@ -1,0 +1,40 @@
+{
+  "symbol": "Y90",
+  "Z": 39,
+  "A": 90,
+  "atomic_mass": 89.907151886,
+  "half_life": {
+    "value": 2.6666666666666665,
+    "unit": "days",
+    "seconds": 230400.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Zr90",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1760.7,
+          "absolute_intensity": 5.75e-11,
+          "intensity_percent": 5.75e-09,
+          "id": ""
+        },
+        {
+          "energy_keV": 2186.24,
+          "absolute_intensity": 1.4e-08,
+          "intensity_percent": 1.4e-06,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

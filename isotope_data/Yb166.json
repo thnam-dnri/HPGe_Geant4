@@ -1,0 +1,34 @@
+{
+  "symbol": "Yb166",
+  "Z": 70,
+  "A": 166,
+  "atomic_mass": 165.933882042,
+  "half_life": {
+    "value": 2.3625,
+    "unit": "days",
+    "seconds": 204120.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tm166",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 82.29,
+          "absolute_intensity": 0.15552,
+          "intensity_percent": 15.552,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

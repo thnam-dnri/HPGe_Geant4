@@ -1,0 +1,76 @@
+{
+  "symbol": "Os174",
+  "Z": 76,
+  "A": 174,
+  "atomic_mass": 173.957062202,
+  "half_life": {
+    "value": 44.0,
+    "unit": "seconds",
+    "seconds": 44.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Re174",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 118.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 138.0,
+          "absolute_intensity": 0.25,
+          "intensity_percent": 25.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 158.0,
+          "absolute_intensity": 0.15,
+          "intensity_percent": 15.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 302.0,
+          "absolute_intensity": 0.26,
+          "intensity_percent": 26.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 325.0,
+          "absolute_intensity": 0.43,
+          "intensity_percent": 43.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 372.0,
+          "absolute_intensity": 0.2,
+          "intensity_percent": 20.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 387.5,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "W170",
+      "branching_ratio": 0.0002,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 7
+  }
+}

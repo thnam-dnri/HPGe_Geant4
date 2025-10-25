@@ -1,0 +1,46 @@
+{
+  "symbol": "Tc98",
+  "Z": 43,
+  "A": 98,
+  "atomic_mass": 97.907215966,
+  "half_life": {
+    "value": 4202879.2491121255,
+    "unit": "years",
+    "seconds": 132542000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ru98",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 652.41,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 745.35,
+          "absolute_intensity": 1.02,
+          "intensity_percent": 102.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

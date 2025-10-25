@@ -1,0 +1,71 @@
+{
+  "symbol": "Np236m",
+  "Z": 93,
+  "A": 236,
+  "atomic_mass": 236.0465696,
+  "half_life": {
+    "value": 22.5,
+    "unit": "hours",
+    "seconds": 81000.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "U236",
+      "branching_ratio": 0.5,
+      "gammas": [
+        {
+          "energy_keV": 45.24,
+          "absolute_intensity": 0.0003924,
+          "intensity_percent": 0.03924,
+          "id": ""
+        },
+        {
+          "energy_keV": 104.23,
+          "absolute_intensity": 2.3544e-05,
+          "intensity_percent": 0.0023544,
+          "id": ""
+        },
+        {
+          "energy_keV": 538.09,
+          "absolute_intensity": 0.00024634,
+          "intensity_percent": 0.024634,
+          "id": ""
+        },
+        {
+          "energy_keV": 642.33,
+          "absolute_intensity": 0.0218,
+          "intensity_percent": 2.18,
+          "id": ""
+        },
+        {
+          "energy_keV": 687.62,
+          "absolute_intensity": 0.0059296,
+          "intensity_percent": 0.59296,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Pu236",
+      "branching_ratio": 0.5,
+      "gammas": [
+        {
+          "energy_keV": 44.63,
+          "absolute_intensity": 0.00027,
+          "intensity_percent": 0.027,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "W169",
+  "Z": 74,
+  "A": 169,
+  "atomic_mass": 168.95177879,
+  "half_life": {
+    "value": 1.2333333333333334,
+    "unit": "minutes",
+    "seconds": 74.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta169",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

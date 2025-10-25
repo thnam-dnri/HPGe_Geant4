@@ -1,0 +1,40 @@
+{
+  "symbol": "At198",
+  "Z": 85,
+  "A": 198,
+  "atomic_mass": 197.992837202,
+  "half_life": {
+    "value": 3.8,
+    "unit": "seconds",
+    "seconds": 3.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bi194",
+      "branching_ratio": 0.97,
+      "gammas": [
+        {
+          "energy_keV": 181.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 218.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

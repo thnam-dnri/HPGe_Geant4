@@ -1,0 +1,27 @@
+{
+  "symbol": "Re187",
+  "Z": 75,
+  "A": 187,
+  "atomic_mass": 186.955753109,
+  "half_life": {
+    "value": 43329528158.29528,
+    "unit": "years",
+    "seconds": 1.36644e+18
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Os187",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

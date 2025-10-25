@@ -1,0 +1,46 @@
+{
+  "symbol": "Cr56",
+  "Z": 24,
+  "A": 56,
+  "atomic_mass": 55.940653139,
+  "half_life": {
+    "value": 5.9399999999999995,
+    "unit": "minutes",
+    "seconds": 356.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Mn56",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 26.0,
+          "absolute_intensity": 0.446,
+          "intensity_percent": 44.6,
+          "id": "0"
+        },
+        {
+          "energy_keV": 83.0,
+          "absolute_intensity": 0.953,
+          "intensity_percent": 95.3,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.4464
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

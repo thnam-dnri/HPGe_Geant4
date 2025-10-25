@@ -1,0 +1,46 @@
+{
+  "symbol": "Pb188",
+  "Z": 82,
+  "A": 188,
+  "atomic_mass": 187.980874338,
+  "half_life": {
+    "value": 25.1,
+    "unit": "seconds",
+    "seconds": 25.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tl188m",
+      "branching_ratio": 0.907,
+      "gammas": [
+        {
+          "energy_keV": 185.0,
+          "absolute_intensity": 0.58,
+          "intensity_percent": 57.99999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 758.2,
+          "absolute_intensity": 0.37,
+          "intensity_percent": 37.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Hg184",
+      "branching_ratio": 0.093,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

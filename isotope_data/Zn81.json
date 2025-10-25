@@ -1,0 +1,33 @@
+{
+  "symbol": "Zn81",
+  "Z": 30,
+  "A": 81,
+  "atomic_mass": 80.95048,
+  "half_life": {
+    "value": 0.32,
+    "unit": "seconds",
+    "seconds": 0.32
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-n",
+      "daughter": "Ga80",
+      "branching_ratio": 0.075,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Ga81",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

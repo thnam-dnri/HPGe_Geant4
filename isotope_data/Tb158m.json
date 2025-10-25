@@ -1,0 +1,34 @@
+{
+  "symbol": "Tb158m",
+  "Z": 65,
+  "A": 158,
+  "atomic_mass": 157.925531549,
+  "half_life": {
+    "value": 10.7,
+    "unit": "seconds",
+    "seconds": 10.7
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tb158",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 110.3,
+          "absolute_intensity": 0.0092,
+          "intensity_percent": 0.9199999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

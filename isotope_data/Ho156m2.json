@@ -1,0 +1,184 @@
+{
+  "symbol": "Ho156m2",
+  "Z": 67,
+  "A": 156,
+  "atomic_mass": 155.929895254,
+  "half_life": {
+    "value": 7.8,
+    "unit": "minutes",
+    "seconds": 468.0
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Dy156",
+      "branching_ratio": 0.75,
+      "gammas": [
+        {
+          "energy_keV": 137.8,
+          "absolute_intensity": 0.54,
+          "intensity_percent": 54.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 266.2,
+          "absolute_intensity": 0.91,
+          "intensity_percent": 91.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        },
+        {
+          "energy_keV": 366.4,
+          "absolute_intensity": 0.96,
+          "intensity_percent": 96.0,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9141
+            },
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        },
+        {
+          "energy_keV": 445.4,
+          "absolute_intensity": 0.64,
+          "intensity_percent": 64.0,
+          "id": "3",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9141
+            },
+            {
+              "id": "2",
+              "correlation": 0.9655
+            },
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        },
+        {
+          "energy_keV": 508.6,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9141
+            },
+            {
+              "id": "3",
+              "correlation": 0.9797
+            },
+            {
+              "id": "2",
+              "correlation": 0.9655
+            },
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        },
+        {
+          "energy_keV": 1062.5,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.9855
+            },
+            {
+              "id": "1",
+              "correlation": 0.9141
+            },
+            {
+              "id": "3",
+              "correlation": 0.9797
+            },
+            {
+              "id": "2",
+              "correlation": 0.9655
+            },
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        },
+        {
+          "energy_keV": 1572.4,
+          "absolute_intensity": 0.35,
+          "intensity_percent": 35.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9141
+            },
+            {
+              "id": "3",
+              "correlation": 0.9797
+            },
+            {
+              "id": "2",
+              "correlation": 0.9655
+            },
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        },
+        {
+          "energy_keV": 2016.7,
+          "absolute_intensity": 0.35,
+          "intensity_percent": 35.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9141
+            },
+            {
+              "id": "2",
+              "correlation": 0.9655
+            },
+            {
+              "id": "0",
+              "correlation": 0.5376
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Ho156",
+      "branching_ratio": 0.25,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 8
+  }
+}

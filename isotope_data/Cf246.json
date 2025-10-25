@@ -1,0 +1,68 @@
+{
+  "symbol": "Cf246",
+  "Z": 98,
+  "A": 246,
+  "atomic_mass": 246.068805309,
+  "half_life": {
+    "value": 1.4875,
+    "unit": "days",
+    "seconds": 128520.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cm242",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 42.0,
+          "absolute_intensity": 0.00014,
+          "intensity_percent": 0.013999999999999999,
+          "id": "0"
+        },
+        {
+          "energy_keV": 96.0,
+          "absolute_intensity": 0.00012,
+          "intensity_percent": 0.012,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.000854
+            }
+          ]
+        },
+        {
+          "energy_keV": 147.0,
+          "absolute_intensity": 3.5e-05,
+          "intensity_percent": 0.0034999999999999996,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.000854
+            },
+            {
+              "id": "1",
+              "correlation": 0.04136
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 2.3e-06,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

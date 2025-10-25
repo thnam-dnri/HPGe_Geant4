@@ -1,0 +1,27 @@
+{
+  "symbol": "At199",
+  "Z": 85,
+  "A": 199,
+  "atomic_mass": 198.990532254,
+  "half_life": {
+    "value": 7.03,
+    "unit": "seconds",
+    "seconds": 7.03
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bi195",
+      "branching_ratio": 0.9,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

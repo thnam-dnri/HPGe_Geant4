@@ -1,0 +1,27 @@
+{
+  "symbol": "Ir169",
+  "Z": 77,
+  "A": 169,
+  "atomic_mass": 168.976294942,
+  "half_life": {
+    "value": 0.353,
+    "unit": "seconds",
+    "seconds": 0.353
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Re165",
+      "branching_ratio": 0.45,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

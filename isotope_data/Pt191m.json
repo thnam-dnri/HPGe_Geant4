@@ -1,0 +1,52 @@
+{
+  "symbol": "Pt191m",
+  "Z": 78,
+  "A": 191,
+  "atomic_mass": 190.96183666202322,
+  "half_life": {
+    "value": 9.5e-05,
+    "unit": "seconds",
+    "seconds": 9.5e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pt191",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 9.56,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 48.2,
+          "absolute_intensity": 0.00211,
+          "intensity_percent": 0.211,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.1198
+            }
+          ]
+        },
+        {
+          "energy_keV": 91.1,
+          "absolute_intensity": 0.12,
+          "intensity_percent": 12.0,
+          "id": "2"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

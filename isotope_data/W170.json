@@ -1,0 +1,34 @@
+{
+  "symbol": "W170",
+  "Z": 74,
+  "A": 170,
+  "atomic_mass": 169.949228482,
+  "half_life": {
+    "value": 2.42,
+    "unit": "minutes",
+    "seconds": 145.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta170",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 316.2,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

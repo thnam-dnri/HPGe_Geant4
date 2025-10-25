@@ -1,0 +1,58 @@
+{
+  "symbol": "Ir195",
+  "Z": 77,
+  "A": 195,
+  "atomic_mass": 194.965979573,
+  "half_life": {
+    "value": 2.5,
+    "unit": "hours",
+    "seconds": 9000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pt195",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 30.85,
+          "absolute_intensity": 0.013266,
+          "intensity_percent": 1.3266,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.01235
+            }
+          ]
+        },
+        {
+          "energy_keV": 98.85,
+          "absolute_intensity": 0.10058,
+          "intensity_percent": 10.058,
+          "id": "1"
+        },
+        {
+          "energy_keV": 129.7,
+          "absolute_intensity": 0.013235,
+          "intensity_percent": 1.3235000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 211.3,
+          "absolute_intensity": 0.025441,
+          "intensity_percent": 2.5441,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

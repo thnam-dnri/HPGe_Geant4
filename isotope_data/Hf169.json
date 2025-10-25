@@ -1,0 +1,77 @@
+{
+  "symbol": "Hf169",
+  "Z": 72,
+  "A": 169,
+  "atomic_mass": 168.941259,
+  "half_life": {
+    "value": 3.24,
+    "unit": "minutes",
+    "seconds": 194.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Lu169",
+      "branching_ratio": 0.948979591836735,
+      "gammas": [
+        {
+          "energy_keV": 123.6,
+          "absolute_intensity": 0.040717,
+          "intensity_percent": 4.0717,
+          "id": "0"
+        },
+        {
+          "energy_keV": 369.5,
+          "absolute_intensity": 0.10268,
+          "intensity_percent": 10.267999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.3161
+            }
+          ]
+        },
+        {
+          "energy_keV": 492.86,
+          "absolute_intensity": 0.88516,
+          "intensity_percent": 88.51599999999999,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Lu169m",
+      "branching_ratio": 0.0510204081632653,
+      "gammas": [
+        {
+          "energy_keV": 16.4,
+          "absolute_intensity": 0.60917,
+          "intensity_percent": 60.917,
+          "id": ""
+        },
+        {
+          "energy_keV": 68.4,
+          "absolute_intensity": 0.31282,
+          "intensity_percent": 31.282,
+          "id": ""
+        },
+        {
+          "energy_keV": 72.9,
+          "absolute_intensity": 0.11525,
+          "intensity_percent": 11.525,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

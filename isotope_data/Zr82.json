@@ -1,0 +1,64 @@
+{
+  "symbol": "Zr82",
+  "Z": 40,
+  "A": 82,
+  "atomic_mass": 81.931087,
+  "half_life": {
+    "value": 32.0,
+    "unit": "seconds",
+    "seconds": 32.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Y82",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 129.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 144.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 248.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 278.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 397.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 525.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

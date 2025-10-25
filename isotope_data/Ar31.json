@@ -1,0 +1,58 @@
+{
+  "symbol": "Ar31",
+  "Z": 18,
+  "A": 31,
+  "atomic_mass": 31.012123,
+  "half_life": {
+    "value": 0.0144,
+    "unit": "seconds",
+    "seconds": 0.0144
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Cl31",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b+p",
+      "daughter": "S30",
+      "branching_ratio": 0.63,
+      "gammas": [
+        {
+          "energy_keV": 1192.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2211.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b+2p",
+      "daughter": "P29",
+      "branching_ratio": 0.076,
+      "gammas": []
+    },
+    {
+      "mode": "b+3p",
+      "daughter": "Si28",
+      "branching_ratio": 0.021,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 4,
+    "num_gamma_lines": 2
+  }
+}

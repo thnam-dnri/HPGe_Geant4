@@ -1,0 +1,52 @@
+{
+  "symbol": "In111",
+  "Z": 49,
+  "A": 111,
+  "atomic_mass": 110.905103278,
+  "half_life": {
+    "value": 2.8046990740740743,
+    "unit": "days",
+    "seconds": 242326.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cd111m",
+      "branching_ratio": 4.99975001249937e-05,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Cd111",
+      "branching_ratio": 0.999950002499875,
+      "gammas": [
+        {
+          "energy_keV": 171.28,
+          "absolute_intensity": 0.90655,
+          "intensity_percent": 90.655,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9408
+            }
+          ]
+        },
+        {
+          "energy_keV": 245.35,
+          "absolute_intensity": 0.94085,
+          "intensity_percent": 94.085,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

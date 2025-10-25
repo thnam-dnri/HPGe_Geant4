@@ -1,0 +1,64 @@
+{
+  "symbol": "Sb115m2",
+  "Z": 51,
+  "A": 115,
+  "atomic_mass": 114.909599909,
+  "half_life": {
+    "value": 1.59e-07,
+    "unit": "seconds",
+    "seconds": 1.59e-07
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Sb115m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 157.82,
+          "absolute_intensity": 0.22209,
+          "intensity_percent": 22.209,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.673
+            }
+          ]
+        },
+        {
+          "energy_keV": 279.4,
+          "absolute_intensity": 0.673,
+          "intensity_percent": 67.30000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.673
+            }
+          ]
+        },
+        {
+          "energy_keV": 1216.7,
+          "absolute_intensity": 0.70396,
+          "intensity_percent": 70.396,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1338.23,
+          "absolute_intensity": 0.29545,
+          "intensity_percent": 29.544999999999998,
+          "id": "3"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

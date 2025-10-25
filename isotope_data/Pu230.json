@@ -1,0 +1,27 @@
+{
+  "symbol": "Pu230",
+  "Z": 94,
+  "A": 230,
+  "atomic_mass": 230.039649886,
+  "half_life": {
+    "value": 1.7,
+    "unit": "minutes",
+    "seconds": 102.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "U226",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

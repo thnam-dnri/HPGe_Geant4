@@ -1,0 +1,58 @@
+{
+  "symbol": "Te110",
+  "Z": 52,
+  "A": 110,
+  "atomic_mass": 109.922407316,
+  "half_life": {
+    "value": 18.6,
+    "unit": "seconds",
+    "seconds": 18.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sb110",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 107.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 219.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 605.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 894.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Sn106",
+      "branching_ratio": 6.7e-06,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

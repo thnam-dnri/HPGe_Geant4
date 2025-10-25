@@ -1,0 +1,33 @@
+{
+  "symbol": "Es245",
+  "Z": 99,
+  "A": 245,
+  "atomic_mass": 245.071324,
+  "half_life": {
+    "value": 1.1,
+    "unit": "minutes",
+    "seconds": 66.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cf245",
+      "branching_ratio": 0.6,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Bk241",
+      "branching_ratio": 0.4,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

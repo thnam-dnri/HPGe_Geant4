@@ -1,0 +1,27 @@
+{
+  "symbol": "Pm131",
+  "Z": 61,
+  "A": 131,
+  "atomic_mass": 130.93587,
+  "half_life": {
+    "value": 6.3,
+    "unit": "seconds",
+    "seconds": 6.3
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Nd131",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

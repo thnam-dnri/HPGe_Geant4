@@ -1,0 +1,46 @@
+{
+  "symbol": "Ir198",
+  "Z": 77,
+  "A": 198,
+  "atomic_mass": 197.97228,
+  "half_life": {
+    "value": 8.0,
+    "unit": "seconds",
+    "seconds": 8.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pt198",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 407.4,
+          "absolute_intensity": 0.76,
+          "intensity_percent": 76.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 507.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9596
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

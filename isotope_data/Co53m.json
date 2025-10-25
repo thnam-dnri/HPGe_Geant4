@@ -1,0 +1,33 @@
+{
+  "symbol": "Co53m",
+  "Z": 27,
+  "A": 53,
+  "atomic_mass": 52.957651017,
+  "half_life": {
+    "value": 0.247,
+    "unit": "seconds",
+    "seconds": 0.247
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Fe53m",
+      "branching_ratio": 0.985,
+      "gammas": []
+    },
+    {
+      "mode": "p",
+      "daughter": "Fe52",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

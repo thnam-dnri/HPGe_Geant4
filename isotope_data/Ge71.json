@@ -1,0 +1,27 @@
+{
+  "symbol": "Ge71",
+  "Z": 32,
+  "A": 71,
+  "atomic_mass": 70.924950954,
+  "half_life": {
+    "value": 11.43,
+    "unit": "days",
+    "seconds": 987552.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ga71",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

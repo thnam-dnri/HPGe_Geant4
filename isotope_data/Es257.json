@@ -1,0 +1,64 @@
+{
+  "symbol": "Es257",
+  "Z": 99,
+  "A": 257,
+  "atomic_mass": 257.095979,
+  "half_life": {
+    "value": 7.7,
+    "unit": "days",
+    "seconds": 665280.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fm257",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 6.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 7.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 25.7,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 46.0,
+          "absolute_intensity": 0.21,
+          "intensity_percent": 21.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 46.0,
+          "absolute_intensity": 0.21,
+          "intensity_percent": 21.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 49.0,
+          "absolute_intensity": 0.17,
+          "intensity_percent": 17.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

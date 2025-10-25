@@ -1,0 +1,76 @@
+{
+  "symbol": "Os175",
+  "Z": 76,
+  "A": 175,
+  "atomic_mass": 174.956945835,
+  "half_life": {
+    "value": 1.4,
+    "unit": "minutes",
+    "seconds": 84.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Re175",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 125.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 170.1,
+          "absolute_intensity": 0.062,
+          "intensity_percent": 6.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 181.0,
+          "absolute_intensity": 0.108,
+          "intensity_percent": 10.8,
+          "id": ""
+        },
+        {
+          "energy_keV": 226.0,
+          "absolute_intensity": 0.045,
+          "intensity_percent": 4.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 248.0,
+          "absolute_intensity": 0.086,
+          "intensity_percent": 8.6,
+          "id": ""
+        },
+        {
+          "energy_keV": 308.0,
+          "absolute_intensity": 0.034,
+          "intensity_percent": 3.4000000000000004,
+          "id": ""
+        },
+        {
+          "energy_keV": 361.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 410.0,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 8
+  }
+}

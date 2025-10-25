@@ -1,0 +1,46 @@
+{
+  "symbol": "Co64",
+  "Z": 27,
+  "A": 64,
+  "atomic_mass": 63.935809908,
+  "half_life": {
+    "value": 0.3,
+    "unit": "seconds",
+    "seconds": 0.3
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ni64",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 931.1,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.1
+            }
+          ]
+        },
+        {
+          "energy_keV": 1346.1,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

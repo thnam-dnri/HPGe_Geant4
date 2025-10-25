@@ -1,0 +1,33 @@
+{
+  "symbol": "Ir170",
+  "Z": 77,
+  "A": 170,
+  "atomic_mass": 169.974965,
+  "half_life": {
+    "value": 0.87,
+    "unit": "seconds",
+    "seconds": 0.87
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Os170",
+      "branching_ratio": 0.948,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Re166",
+      "branching_ratio": 0.052,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

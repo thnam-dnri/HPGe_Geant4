@@ -1,0 +1,33 @@
+{
+  "symbol": "Tm149",
+  "Z": 69,
+  "A": 149,
+  "atomic_mass": 148.95272,
+  "half_life": {
+    "value": 0.9,
+    "unit": "seconds",
+    "seconds": 0.9
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Ho148",
+      "branching_ratio": 0.002,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Er149",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

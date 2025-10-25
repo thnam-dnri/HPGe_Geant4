@@ -1,0 +1,52 @@
+{
+  "symbol": "Pm147",
+  "Z": 61,
+  "A": 147,
+  "atomic_mass": 146.915138545,
+  "half_life": {
+    "value": 2.625196600710299,
+    "unit": "years",
+    "seconds": 82788200.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sm147",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 76.07,
+          "absolute_intensity": 1.1685e-10,
+          "intensity_percent": 1.1684999999999998e-08,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.001418
+            }
+          ]
+        },
+        {
+          "energy_keV": 121.22,
+          "absolute_intensity": 2.85e-05,
+          "intensity_percent": 0.00285,
+          "id": "1"
+        },
+        {
+          "energy_keV": 197.3,
+          "absolute_intensity": 3.42e-09,
+          "intensity_percent": 3.42e-07,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "Y88m2",
+  "Z": 39,
+  "A": 88,
+  "atomic_mass": 87.910225305,
+  "half_life": {
+    "value": 0.01397,
+    "unit": "seconds",
+    "seconds": 0.01397
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Y88",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 231.93,
+          "absolute_intensity": 0.9809,
+          "intensity_percent": 98.09,
+          "id": ""
+        },
+        {
+          "energy_keV": 442.62,
+          "absolute_intensity": 0.9827,
+          "intensity_percent": 98.27,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

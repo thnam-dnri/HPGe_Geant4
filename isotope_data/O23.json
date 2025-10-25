@@ -1,0 +1,27 @@
+{
+  "symbol": "O23",
+  "Z": 8,
+  "A": 23,
+  "atomic_mass": 23.015687659,
+  "half_life": {
+    "value": 0.082,
+    "unit": "seconds",
+    "seconds": 0.082
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "F23",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

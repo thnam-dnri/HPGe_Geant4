@@ -1,0 +1,27 @@
+{
+  "symbol": "W163",
+  "Z": 74,
+  "A": 163,
+  "atomic_mass": 162.962523542,
+  "half_life": {
+    "value": 2.67,
+    "unit": "seconds",
+    "seconds": 2.67
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Hf159",
+      "branching_ratio": 0.13,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

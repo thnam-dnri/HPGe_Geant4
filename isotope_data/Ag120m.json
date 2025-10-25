@@ -1,0 +1,97 @@
+{
+  "symbol": "Ag120m",
+  "Z": 47,
+  "A": 120,
+  "atomic_mass": 119.919005313,
+  "half_life": {
+    "value": 0.32,
+    "unit": "seconds",
+    "seconds": 0.32
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cd120",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 505.9,
+          "absolute_intensity": 0.57,
+          "intensity_percent": 56.99999999999999,
+          "id": "0"
+        },
+        {
+          "energy_keV": 697.8,
+          "absolute_intensity": 0.57,
+          "intensity_percent": 56.99999999999999,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 830.0,
+          "absolute_intensity": 0.17,
+          "intensity_percent": 17.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            },
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 925.8,
+          "absolute_intensity": 0.4,
+          "intensity_percent": 40.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            },
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1330.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Ag120",
+      "branching_ratio": 0.37,
+      "gammas": [
+        {
+          "energy_keV": 203.0,
+          "absolute_intensity": 0.623,
+          "intensity_percent": 62.3,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

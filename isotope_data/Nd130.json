@@ -1,0 +1,27 @@
+{
+  "symbol": "Nd130",
+  "Z": 60,
+  "A": 130,
+  "atomic_mass": 129.928506,
+  "half_life": {
+    "value": 13.0,
+    "unit": "seconds",
+    "seconds": 13.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pr130",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

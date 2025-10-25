@@ -1,0 +1,40 @@
+{
+  "symbol": "Fe46",
+  "Z": 26,
+  "A": 46,
+  "atomic_mass": 46.00081,
+  "half_life": {
+    "value": 0.013,
+    "unit": "seconds",
+    "seconds": 0.013
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+p",
+      "daughter": "Cr45",
+      "branching_ratio": 0.787,
+      "gammas": [
+        {
+          "energy_keV": 493.6,
+          "absolute_intensity": 0.23,
+          "intensity_percent": 23.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Mn46",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

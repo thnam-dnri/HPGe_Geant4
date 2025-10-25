@@ -1,0 +1,71 @@
+{
+  "symbol": "Ag115m",
+  "Z": 47,
+  "A": 115,
+  "atomic_mass": 114.908806885,
+  "half_life": {
+    "value": 18.0,
+    "unit": "seconds",
+    "seconds": 18.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ag115",
+      "branching_ratio": 0.21,
+      "gammas": [
+        {
+          "energy_keV": 41.1,
+          "absolute_intensity": 0.0007,
+          "intensity_percent": 0.06999999999999999,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Cd115",
+      "branching_ratio": 0.79,
+      "gammas": [
+        {
+          "energy_keV": 113.4,
+          "absolute_intensity": 0.112,
+          "intensity_percent": 11.200000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 131.5,
+          "absolute_intensity": 0.77,
+          "intensity_percent": 77.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 229.1,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 360.7,
+          "absolute_intensity": 0.163,
+          "intensity_percent": 16.3,
+          "id": ""
+        },
+        {
+          "energy_keV": 388.9,
+          "absolute_intensity": 0.52,
+          "intensity_percent": 52.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

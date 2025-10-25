@@ -1,0 +1,27 @@
+{
+  "symbol": "Rb87",
+  "Z": 37,
+  "A": 87,
+  "atomic_mass": 86.909180526,
+  "half_life": {
+    "value": 48132927447.99594,
+    "unit": "years",
+    "seconds": 1.51792e+18
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sr87",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

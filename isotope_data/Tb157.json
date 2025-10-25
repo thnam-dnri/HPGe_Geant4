@@ -1,0 +1,34 @@
+{
+  "symbol": "Tb157",
+  "Z": 65,
+  "A": 157,
+  "atomic_mass": 156.924024604,
+  "half_life": {
+    "value": 71.0486428209031,
+    "unit": "years",
+    "seconds": 2240590000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Gd157",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 54.5,
+          "absolute_intensity": 8.4e-05,
+          "intensity_percent": 0.0084,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "symbol": "Pu232",
+  "Z": 94,
+  "A": 232,
+  "atomic_mass": 232.041187097,
+  "half_life": {
+    "value": 33.8,
+    "unit": "minutes",
+    "seconds": 2028.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Np232",
+      "branching_ratio": 0.8,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "U228",
+      "branching_ratio": 0.23,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

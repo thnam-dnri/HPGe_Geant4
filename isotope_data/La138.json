@@ -1,0 +1,47 @@
+{
+  "symbol": "La138",
+  "Z": 57,
+  "A": 138,
+  "atomic_mass": 137.90711193,
+  "half_life": {
+    "value": 102070015220.70015,
+    "unit": "years",
+    "seconds": 3.21888e+18
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ce138",
+      "branching_ratio": 0.344,
+      "gammas": [
+        {
+          "energy_keV": 788.74,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Ba138",
+      "branching_ratio": 0.656,
+      "gammas": [
+        {
+          "energy_keV": 1435.795,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

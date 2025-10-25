@@ -1,0 +1,33 @@
+{
+  "symbol": "Uut284",
+  "Z": 113,
+  "A": 284,
+  "atomic_mass": 284.17808,
+  "half_life": {
+    "value": 0.48,
+    "unit": "seconds",
+    "seconds": 0.48
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Rg280",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Rg280",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

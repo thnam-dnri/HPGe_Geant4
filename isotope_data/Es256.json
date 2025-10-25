@@ -1,0 +1,33 @@
+{
+  "symbol": "Es256",
+  "Z": 99,
+  "A": 256,
+  "atomic_mass": 256.093598,
+  "half_life": {
+    "value": 25.4,
+    "unit": "minutes",
+    "seconds": 1524.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fm256m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Fm256",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

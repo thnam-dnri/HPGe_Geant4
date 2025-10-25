@@ -1,0 +1,39 @@
+{
+  "symbol": "Sg261",
+  "Z": 106,
+  "A": 261,
+  "atomic_mass": 261.116117,
+  "half_life": {
+    "value": 0.23,
+    "unit": "seconds",
+    "seconds": 0.23
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Rf257m",
+      "branching_ratio": 0.95,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Rf257",
+      "branching_ratio": 0.57,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.1,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

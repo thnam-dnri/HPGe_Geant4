@@ -1,0 +1,40 @@
+{
+  "symbol": "Na24m",
+  "Z": 11,
+  "A": 24,
+  "atomic_mass": 23.991469718,
+  "half_life": {
+    "value": 0.02018,
+    "unit": "seconds",
+    "seconds": 0.02018
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Mg24",
+      "branching_ratio": 0.0005,
+      "gammas": []
+    },
+    {
+      "mode": "it",
+      "daughter": "Na24",
+      "branching_ratio": 0.9995,
+      "gammas": [
+        {
+          "energy_keV": 472.2,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

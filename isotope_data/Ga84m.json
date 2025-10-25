@@ -1,0 +1,40 @@
+{
+  "symbol": "Ga84m",
+  "Z": 31,
+  "A": 84,
+  "atomic_mass": 83.95265,
+  "half_life": {
+    "value": 0.085,
+    "unit": "seconds",
+    "seconds": 0.085
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ge84",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 624.3,
+          "absolute_intensity": 0.38,
+          "intensity_percent": 38.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1046.1,
+          "absolute_intensity": 0.42,
+          "intensity_percent": 42.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

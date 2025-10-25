@@ -1,0 +1,33 @@
+{
+  "symbol": "Cm240",
+  "Z": 96,
+  "A": 240,
+  "atomic_mass": 240.055529539,
+  "half_life": {
+    "value": 27.0,
+    "unit": "days",
+    "seconds": 2332800.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pu236",
+      "branching_ratio": 0.997,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 3.9e-08,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

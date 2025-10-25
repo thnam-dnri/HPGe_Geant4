@@ -1,0 +1,27 @@
+{
+  "symbol": "Bk240",
+  "Z": 97,
+  "A": 240,
+  "atomic_mass": 240.059759,
+  "half_life": {
+    "value": 4.8,
+    "unit": "minutes",
+    "seconds": 288.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cm240",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

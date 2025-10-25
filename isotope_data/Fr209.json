@@ -1,0 +1,33 @@
+{
+  "symbol": "Fr209",
+  "Z": 87,
+  "A": 209,
+  "atomic_mass": 208.995953555,
+  "half_life": {
+    "value": 50.0,
+    "unit": "seconds",
+    "seconds": 50.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Rn209",
+      "branching_ratio": 0.11,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "At205",
+      "branching_ratio": 0.89,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Co61",
+  "Z": 27,
+  "A": 61,
+  "atomic_mass": 60.932475763,
+  "half_life": {
+    "value": 1.65,
+    "unit": "hours",
+    "seconds": 5940.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ni61",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 67.42,
+          "absolute_intensity": 0.84672,
+          "intensity_percent": 84.672,
+          "id": "0"
+        },
+        {
+          "energy_keV": 841.7,
+          "absolute_intensity": 0.007938,
+          "intensity_percent": 0.7938000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.7744
+            }
+          ]
+        },
+        {
+          "energy_keV": 909.2,
+          "absolute_intensity": 0.036162,
+          "intensity_percent": 3.6162,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

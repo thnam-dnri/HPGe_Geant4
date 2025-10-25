@@ -1,0 +1,39 @@
+{
+  "symbol": "No259",
+  "Z": 102,
+  "A": 259,
+  "atomic_mass": 259.101031,
+  "half_life": {
+    "value": 58.0,
+    "unit": "minutes",
+    "seconds": 3480.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Md259",
+      "branching_ratio": 0.25,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Fm255",
+      "branching_ratio": 0.75,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.1,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

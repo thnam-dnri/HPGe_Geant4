@@ -1,0 +1,27 @@
+{
+  "symbol": "Fr215",
+  "Z": 87,
+  "A": 215,
+  "atomic_mass": 215.000341497,
+  "half_life": {
+    "value": 8.6e-08,
+    "unit": "seconds",
+    "seconds": 8.6e-08
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "At211",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

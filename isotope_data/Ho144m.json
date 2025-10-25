@@ -1,0 +1,58 @@
+{
+  "symbol": "Ho144m",
+  "Z": 67,
+  "A": 144,
+  "atomic_mass": 143.951764811,
+  "half_life": {
+    "value": 5.06e-07,
+    "unit": "seconds",
+    "seconds": 5.06e-07
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ho144",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 40.2,
+          "absolute_intensity": 0.4004,
+          "intensity_percent": 40.04,
+          "id": ""
+        },
+        {
+          "energy_keV": 56.4,
+          "absolute_intensity": 0.44,
+          "intensity_percent": 44.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 59.9,
+          "absolute_intensity": 0.0572,
+          "intensity_percent": 5.72,
+          "id": ""
+        },
+        {
+          "energy_keV": 148.1,
+          "absolute_intensity": 0.4356,
+          "intensity_percent": 43.56,
+          "id": ""
+        },
+        {
+          "energy_keV": 208.9,
+          "absolute_intensity": 0.1804,
+          "intensity_percent": 18.04,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

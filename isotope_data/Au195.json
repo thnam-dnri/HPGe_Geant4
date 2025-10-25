@@ -1,0 +1,64 @@
+{
+  "symbol": "Au195",
+  "Z": 79,
+  "A": 195,
+  "atomic_mass": 194.96503464,
+  "half_life": {
+    "value": 186.09837962962962,
+    "unit": "days",
+    "seconds": 16078900.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pt195",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 30.88,
+          "absolute_intensity": 0.0077487,
+          "intensity_percent": 0.77487,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.01383
+            }
+          ]
+        },
+        {
+          "energy_keV": 98.88,
+          "absolute_intensity": 0.1123,
+          "intensity_percent": 11.23,
+          "id": "1"
+        },
+        {
+          "energy_keV": 129.76,
+          "absolute_intensity": 0.0084225,
+          "intensity_percent": 0.8422499999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 199.46,
+          "absolute_intensity": 8.8717e-05,
+          "intensity_percent": 0.0088717,
+          "id": ""
+        },
+        {
+          "energy_keV": 211.36,
+          "absolute_intensity": 0.0001123,
+          "intensity_percent": 0.01123,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

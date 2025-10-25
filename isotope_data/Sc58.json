@@ -1,0 +1,27 @@
+{
+  "symbol": "Sc58",
+  "Z": 21,
+  "A": 58,
+  "atomic_mass": 57.98371,
+  "half_life": {
+    "value": 0.012,
+    "unit": "seconds",
+    "seconds": 0.012
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ti58",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "symbol": "Db261",
+  "Z": 105,
+  "A": 261,
+  "atomic_mass": 261.112056,
+  "half_life": {
+    "value": 1.8,
+    "unit": "seconds",
+    "seconds": 1.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Lr257",
+      "branching_ratio": 0.75,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.5,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

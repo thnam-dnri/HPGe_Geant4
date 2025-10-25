@@ -1,0 +1,33 @@
+{
+  "symbol": "Ni53",
+  "Z": 28,
+  "A": 53,
+  "atomic_mass": 52.96847,
+  "half_life": {
+    "value": 0.045,
+    "unit": "seconds",
+    "seconds": 0.045
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Co53",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Fe52",
+      "branching_ratio": 0.45,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

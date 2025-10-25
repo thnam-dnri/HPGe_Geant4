@@ -1,0 +1,34 @@
+{
+  "symbol": "Hg203",
+  "Z": 80,
+  "A": 203,
+  "atomic_mass": 202.972872484,
+  "half_life": {
+    "value": 46.59398148148148,
+    "unit": "days",
+    "seconds": 4025720.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Tl203",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 279.2,
+          "absolute_intensity": 0.8156,
+          "intensity_percent": 81.56,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

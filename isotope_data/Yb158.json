@@ -1,0 +1,58 @@
+{
+  "symbol": "Yb158",
+  "Z": 70,
+  "A": 158,
+  "atomic_mass": 157.939865617,
+  "half_life": {
+    "value": 1.49,
+    "unit": "minutes",
+    "seconds": 89.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tm158",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 74.1,
+          "absolute_intensity": 0.54,
+          "intensity_percent": 54.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 147.7,
+          "absolute_intensity": 0.00918,
+          "intensity_percent": 0.918,
+          "id": ""
+        },
+        {
+          "energy_keV": 160.3,
+          "absolute_intensity": 0.01134,
+          "intensity_percent": 1.134,
+          "id": ""
+        },
+        {
+          "energy_keV": 252.6,
+          "absolute_intensity": 0.01782,
+          "intensity_percent": 1.7819999999999998,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Er154",
+      "branching_ratio": 2.1e-05,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

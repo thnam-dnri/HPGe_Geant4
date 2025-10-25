@@ -1,0 +1,46 @@
+{
+  "symbol": "Ge73m",
+  "Z": 32,
+  "A": 73,
+  "atomic_mass": 72.923530578,
+  "half_life": {
+    "value": 0.499,
+    "unit": "seconds",
+    "seconds": 0.499
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ge73",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 13.06,
+          "absolute_intensity": 0.00089,
+          "intensity_percent": 0.089,
+          "id": "0"
+        },
+        {
+          "energy_keV": 53.53,
+          "absolute_intensity": 0.1034,
+          "intensity_percent": 10.34,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0008921
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

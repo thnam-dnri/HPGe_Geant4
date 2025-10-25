@@ -1,0 +1,46 @@
+{
+  "symbol": "Pt175",
+  "Z": 78,
+  "A": 175,
+  "atomic_mass": 174.972420552,
+  "half_life": {
+    "value": 2.53,
+    "unit": "seconds",
+    "seconds": 2.53
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Os171",
+      "branching_ratio": 0.64,
+      "gammas": [
+        {
+          "energy_keV": 76.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 134.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 211.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

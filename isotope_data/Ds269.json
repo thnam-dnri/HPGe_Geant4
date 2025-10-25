@@ -1,0 +1,33 @@
+{
+  "symbol": "Ds269",
+  "Z": 110,
+  "A": 269,
+  "atomic_mass": 269.145124,
+  "half_life": {
+    "value": 0.000179,
+    "unit": "seconds",
+    "seconds": 0.000179
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Hs265m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Hs265",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

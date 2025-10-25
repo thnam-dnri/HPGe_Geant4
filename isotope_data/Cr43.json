@@ -1,0 +1,39 @@
+{
+  "symbol": "Cr43",
+  "Z": 24,
+  "A": 43,
+  "atomic_mass": 42.99771,
+  "half_life": {
+    "value": 0.0216,
+    "unit": "seconds",
+    "seconds": 0.0216
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "V43",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Ti42",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "ec2p",
+      "daughter": "Sc41",
+      "branching_ratio": 0.06,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

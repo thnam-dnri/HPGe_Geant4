@@ -1,0 +1,52 @@
+{
+  "symbol": "Mg27",
+  "Z": 12,
+  "A": 27,
+  "atomic_mass": 26.984340585,
+  "half_life": {
+    "value": 9.458,
+    "unit": "minutes",
+    "seconds": 567.48
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Al27",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 170.69,
+          "absolute_intensity": 0.008,
+          "intensity_percent": 0.8,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 843.76,
+          "absolute_intensity": 0.718,
+          "intensity_percent": 71.8,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1014.44,
+          "absolute_intensity": 0.28,
+          "intensity_percent": 28.000000000000004,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

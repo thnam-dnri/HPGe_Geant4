@@ -1,0 +1,27 @@
+{
+  "symbol": "Sn100",
+  "Z": 50,
+  "A": 100,
+  "atomic_mass": 99.939044343,
+  "half_life": {
+    "value": 0.86,
+    "unit": "seconds",
+    "seconds": 0.86
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "In100",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

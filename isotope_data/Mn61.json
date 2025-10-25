@@ -1,0 +1,70 @@
+{
+  "symbol": "Mn61",
+  "Z": 25,
+  "A": 61,
+  "atomic_mass": 60.944652638,
+  "half_life": {
+    "value": 0.67,
+    "unit": "seconds",
+    "seconds": 0.67
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fe61",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 206.8,
+          "absolute_intensity": 0.08183,
+          "intensity_percent": 8.183,
+          "id": "0"
+        },
+        {
+          "energy_keV": 237.7,
+          "absolute_intensity": 0.00501,
+          "intensity_percent": 0.501,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.167
+            }
+          ]
+        },
+        {
+          "energy_keV": 391.0,
+          "absolute_intensity": 0.011022,
+          "intensity_percent": 1.1022,
+          "id": "2"
+        },
+        {
+          "energy_keV": 422.0,
+          "absolute_intensity": 0.006847,
+          "intensity_percent": 0.6847,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.167
+            }
+          ]
+        },
+        {
+          "energy_keV": 628.6,
+          "absolute_intensity": 0.167,
+          "intensity_percent": 16.7,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

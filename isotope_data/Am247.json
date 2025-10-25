@@ -1,0 +1,78 @@
+{
+  "symbol": "Am247",
+  "Z": 95,
+  "A": 247,
+  "atomic_mass": 247.072093,
+  "half_life": {
+    "value": 23.0,
+    "unit": "minutes",
+    "seconds": 1380.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cm247",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 58.03,
+          "absolute_intensity": 0.00525,
+          "intensity_percent": 0.525,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.02056
+            },
+            {
+              "id": "1",
+              "correlation": 7.017e-05
+            },
+            {
+              "id": "2",
+              "correlation": 0.0003665
+            }
+          ]
+        },
+        {
+          "energy_keV": 61.67,
+          "absolute_intensity": 0.000775,
+          "intensity_percent": 0.0775,
+          "id": "1"
+        },
+        {
+          "energy_keV": 165.7,
+          "absolute_intensity": 0.001025,
+          "intensity_percent": 0.10250000000000001,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.006098
+            }
+          ]
+        },
+        {
+          "energy_keV": 226.0,
+          "absolute_intensity": 0.0575,
+          "intensity_percent": 5.75,
+          "id": "3"
+        },
+        {
+          "energy_keV": 285.0,
+          "absolute_intensity": 0.25,
+          "intensity_percent": 25.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

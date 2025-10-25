@@ -1,0 +1,58 @@
+{
+  "symbol": "U228",
+  "Z": 92,
+  "A": 228,
+  "atomic_mass": 228.031374006,
+  "half_life": {
+    "value": 9.1,
+    "unit": "minutes",
+    "seconds": 546.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Th224",
+      "branching_ratio": 0.975,
+      "gammas": [
+        {
+          "energy_keV": 93.0,
+          "absolute_intensity": 0.021,
+          "intensity_percent": 2.1,
+          "id": "0"
+        },
+        {
+          "energy_keV": 152.0,
+          "absolute_intensity": 0.002,
+          "intensity_percent": 0.2,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.07353
+            }
+          ]
+        },
+        {
+          "energy_keV": 246.0,
+          "absolute_intensity": 0.004,
+          "intensity_percent": 0.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 187.0,
+          "absolute_intensity": 0.003,
+          "intensity_percent": 0.3,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "symbol": "Pr144m",
+  "Z": 59,
+  "A": 144,
+  "atomic_mass": 143.913368616,
+  "half_life": {
+    "value": 7.2,
+    "unit": "minutes",
+    "seconds": 432.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Nd144",
+      "branching_ratio": 0.0007,
+      "gammas": [
+        {
+          "energy_keV": 617.8,
+          "absolute_intensity": 0.24891,
+          "intensity_percent": 24.891,
+          "id": "0"
+        },
+        {
+          "energy_keV": 696.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 814.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1631.36,
+          "absolute_intensity": 0.46671,
+          "intensity_percent": 46.671,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 155.6
+            }
+          ]
+        },
+        {
+          "energy_keV": 1885.3,
+          "absolute_intensity": 0.15557,
+          "intensity_percent": 15.557000000000002,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Pr144",
+      "branching_ratio": 0.9993,
+      "gammas": [
+        {
+          "energy_keV": 59.03,
+          "absolute_intensity": 0.00081235,
+          "intensity_percent": 0.081235,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

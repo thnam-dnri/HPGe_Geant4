@@ -1,0 +1,52 @@
+{
+  "symbol": "Pt197",
+  "Z": 78,
+  "A": 197,
+  "atomic_mass": 196.967340182,
+  "half_life": {
+    "value": 19.891499999999997,
+    "unit": "hours",
+    "seconds": 71609.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Au197",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 77.34,
+          "absolute_intensity": 0.171,
+          "intensity_percent": 17.1,
+          "id": "0"
+        },
+        {
+          "energy_keV": 191.36,
+          "absolute_intensity": 0.0366,
+          "intensity_percent": 3.66,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.006985
+            }
+          ]
+        },
+        {
+          "energy_keV": 268.71,
+          "absolute_intensity": 0.0023058,
+          "intensity_percent": 0.23058,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

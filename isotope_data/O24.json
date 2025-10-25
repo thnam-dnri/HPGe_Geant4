@@ -1,0 +1,58 @@
+{
+  "symbol": "O24",
+  "Z": 8,
+  "A": 24,
+  "atomic_mass": 24.020472917,
+  "half_life": {
+    "value": 0.065,
+    "unit": "seconds",
+    "seconds": 0.065
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "F24",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 521.5,
+          "absolute_intensity": 0.143,
+          "intensity_percent": 14.299999999999999,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1309.5,
+          "absolute_intensity": 0.12,
+          "intensity_percent": 12.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1831.6,
+          "absolute_intensity": 0.283,
+          "intensity_percent": 28.299999999999997,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-n",
+      "daughter": "F23",
+      "branching_ratio": 0.58,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

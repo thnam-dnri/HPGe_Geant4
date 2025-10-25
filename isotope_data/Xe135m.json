@@ -1,0 +1,65 @@
+{
+  "symbol": "Xe135m",
+  "Z": 54,
+  "A": 135,
+  "atomic_mass": 134.907792771,
+  "half_life": {
+    "value": 15.29,
+    "unit": "minutes",
+    "seconds": 917.4
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cs135",
+      "branching_ratio": 0.003,
+      "gammas": [
+        {
+          "energy_keV": 786.9,
+          "absolute_intensity": 0.014665,
+          "intensity_percent": 1.4665,
+          "id": ""
+        },
+        {
+          "energy_keV": 1133.0,
+          "absolute_intensity": 0.0009999,
+          "intensity_percent": 0.09999,
+          "id": ""
+        },
+        {
+          "energy_keV": 1192.2,
+          "absolute_intensity": 0.00013332,
+          "intensity_percent": 0.013332,
+          "id": ""
+        },
+        {
+          "energy_keV": 1358.0,
+          "absolute_intensity": 0.0006666,
+          "intensity_percent": 0.06666000000000001,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Xe135",
+      "branching_ratio": 0.997,
+      "gammas": [
+        {
+          "energy_keV": 526.56,
+          "absolute_intensity": 0.808,
+          "intensity_percent": 80.80000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

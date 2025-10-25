@@ -1,0 +1,77 @@
+{
+  "symbol": "Br76m",
+  "Z": 35,
+  "A": 76,
+  "atomic_mass": 75.924651593,
+  "half_life": {
+    "value": 1.31,
+    "unit": "seconds",
+    "seconds": 1.31
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Br76",
+      "branching_ratio": 0.997,
+      "gammas": [
+        {
+          "energy_keV": 45.48,
+          "absolute_intensity": 0.485,
+          "intensity_percent": 48.5,
+          "id": "0"
+        },
+        {
+          "energy_keV": 57.11,
+          "absolute_intensity": 0.091,
+          "intensity_percent": 9.1,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.4836
+            }
+          ]
+        },
+        {
+          "energy_keV": 102.6,
+          "absolute_intensity": 0.001,
+          "intensity_percent": 0.1,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Se76",
+      "branching_ratio": 0.0055,
+      "gammas": [
+        {
+          "energy_keV": 559.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 772.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

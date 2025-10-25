@@ -1,0 +1,172 @@
+{
+  "symbol": "Ga61",
+  "Z": 31,
+  "A": 61,
+  "atomic_mass": 60.949446287,
+  "half_life": {
+    "value": 0.167,
+    "unit": "seconds",
+    "seconds": 0.167
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Zn61",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 87.6,
+          "absolute_intensity": 0.055,
+          "intensity_percent": 5.5,
+          "id": "0"
+        },
+        {
+          "energy_keV": 122.9,
+          "absolute_intensity": 0.0264,
+          "intensity_percent": 2.64,
+          "id": "1"
+        },
+        {
+          "energy_keV": 294.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.02122
+            }
+          ]
+        },
+        {
+          "energy_keV": 330.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01375
+            }
+          ]
+        },
+        {
+          "energy_keV": 338.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "5",
+              "correlation": 0.022
+            }
+          ]
+        },
+        {
+          "energy_keV": 418.4,
+          "absolute_intensity": 0.022,
+          "intensity_percent": 2.1999999999999997,
+          "id": "5"
+        },
+        {
+          "energy_keV": 520.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "5",
+              "correlation": 0.022
+            }
+          ]
+        },
+        {
+          "energy_keV": 606.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "9",
+              "correlation": 0.022
+            }
+          ]
+        },
+        {
+          "energy_keV": 632.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.02122
+            }
+          ]
+        },
+        {
+          "energy_keV": 754.5,
+          "absolute_intensity": 0.01738,
+          "intensity_percent": 1.738,
+          "id": "9"
+        },
+        {
+          "energy_keV": 850.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01375
+            }
+          ]
+        },
+        {
+          "energy_keV": 938.0,
+          "absolute_intensity": 0.00242,
+          "intensity_percent": 0.242,
+          "id": ""
+        },
+        {
+          "energy_keV": 944.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "5",
+              "correlation": 0.022
+            }
+          ]
+        },
+        {
+          "energy_keV": 1238.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.02122
+            }
+          ]
+        },
+        {
+          "energy_keV": 1362.0,
+          "absolute_intensity": 0.00286,
+          "intensity_percent": 0.28600000000000003,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 15
+  }
+}

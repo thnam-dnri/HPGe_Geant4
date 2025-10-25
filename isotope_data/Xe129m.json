@@ -1,0 +1,46 @@
+{
+  "symbol": "Xe129m",
+  "Z": 54,
+  "A": 129,
+  "atomic_mass": 128.905032942,
+  "half_life": {
+    "value": 8.88,
+    "unit": "days",
+    "seconds": 767232.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Xe129",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 39.58,
+          "absolute_intensity": 0.075,
+          "intensity_percent": 7.5,
+          "id": "0"
+        },
+        {
+          "energy_keV": 196.56,
+          "absolute_intensity": 0.0459,
+          "intensity_percent": 4.590000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.07513
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

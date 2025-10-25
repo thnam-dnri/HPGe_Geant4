@@ -1,0 +1,34 @@
+{
+  "symbol": "At216m",
+  "Z": 85,
+  "A": 216,
+  "atomic_mass": 216.002866631,
+  "half_life": {
+    "value": 0.0001,
+    "unit": "seconds",
+    "seconds": 0.0001
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bi212m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 103.4,
+          "absolute_intensity": 0.0023,
+          "intensity_percent": 0.22999999999999998,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

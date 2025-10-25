@@ -1,0 +1,52 @@
+{
+  "symbol": "Bk249",
+  "Z": 97,
+  "A": 249,
+  "atomic_mass": 249.074986657,
+  "half_life": {
+    "value": 330.0,
+    "unit": "days",
+    "seconds": 28512000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cf249",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Am245",
+      "branching_ratio": 1.45e-05,
+      "gammas": [
+        {
+          "energy_keV": 327.2,
+          "absolute_intensity": 0.012,
+          "intensity_percent": 1.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 307.5,
+          "absolute_intensity": 0.0022,
+          "intensity_percent": 0.22,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 4.76e-10,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 2
+  }
+}

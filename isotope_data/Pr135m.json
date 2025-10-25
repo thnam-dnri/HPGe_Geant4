@@ -1,0 +1,58 @@
+{
+  "symbol": "Pr135m",
+  "Z": 59,
+  "A": 135,
+  "atomic_mass": 134.913496138,
+  "half_life": {
+    "value": 0.000105,
+    "unit": "seconds",
+    "seconds": 0.000105
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pr135",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 41.5,
+          "absolute_intensity": 0.28372,
+          "intensity_percent": 28.372000000000003,
+          "id": ""
+        },
+        {
+          "energy_keV": 112.4,
+          "absolute_intensity": 0.10496,
+          "intensity_percent": 10.496,
+          "id": ""
+        },
+        {
+          "energy_keV": 203.8,
+          "absolute_intensity": 0.9676,
+          "intensity_percent": 96.76,
+          "id": ""
+        },
+        {
+          "energy_keV": 245.6,
+          "absolute_intensity": 0.082,
+          "intensity_percent": 8.200000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 316.6,
+          "absolute_intensity": 0.0246,
+          "intensity_percent": 2.46,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

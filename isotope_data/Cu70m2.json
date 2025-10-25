@@ -1,0 +1,121 @@
+{
+  "symbol": "Cu70m2",
+  "Z": 29,
+  "A": 70,
+  "atomic_mass": 69.932652785,
+  "half_life": {
+    "value": 6.6,
+    "unit": "seconds",
+    "seconds": 6.6
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Zn70",
+      "branching_ratio": 0.932,
+      "gammas": [
+        {
+          "energy_keV": 185.85,
+          "absolute_intensity": 0.030954,
+          "intensity_percent": 3.0953999999999997,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.938
+            }
+          ]
+        },
+        {
+          "energy_keV": 874.33,
+          "absolute_intensity": 0.088172,
+          "intensity_percent": 8.8172,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.938
+            }
+          ]
+        },
+        {
+          "energy_keV": 884.88,
+          "absolute_intensity": 0.938,
+          "intensity_percent": 93.8,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1072.2,
+          "absolute_intensity": 0.1801,
+          "intensity_percent": 18.01,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.938
+            }
+          ]
+        },
+        {
+          "energy_keV": 1255.4,
+          "absolute_intensity": 0.08442,
+          "intensity_percent": 8.442,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.938
+            }
+          ]
+        },
+        {
+          "energy_keV": 1759.6,
+          "absolute_intensity": 0.06097,
+          "intensity_percent": 6.097,
+          "id": "5"
+        },
+        {
+          "energy_keV": 1875.8,
+          "absolute_intensity": 0.040334,
+          "intensity_percent": 4.0334,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.5545
+            },
+            {
+              "id": "5",
+              "correlation": 0.3834
+            },
+            {
+              "id": "2",
+              "correlation": 0.5202
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Cu70m",
+      "branching_ratio": 0.068,
+      "gammas": [
+        {
+          "energy_keV": 141.3,
+          "absolute_intensity": 0.852,
+          "intensity_percent": 85.2,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 8
+  }
+}

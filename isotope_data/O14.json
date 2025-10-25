@@ -1,0 +1,52 @@
+{
+  "symbol": "O14",
+  "Z": 8,
+  "A": 14,
+  "atomic_mass": 14.00859625,
+  "half_life": {
+    "value": 1.1767666666666665,
+    "unit": "minutes",
+    "seconds": 70.606
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "N14",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1635.2,
+          "absolute_intensity": 0.00052,
+          "intensity_percent": 0.052,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 2312.59,
+          "absolute_intensity": 0.99388,
+          "intensity_percent": 99.388,
+          "id": "1"
+        },
+        {
+          "energy_keV": 3947.5,
+          "absolute_intensity": 2.11e-05,
+          "intensity_percent": 0.0021100000000000003,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

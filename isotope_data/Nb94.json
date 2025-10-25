@@ -1,0 +1,46 @@
+{
+  "symbol": "Nb94",
+  "Z": 41,
+  "A": 94,
+  "atomic_mass": 93.907283888,
+  "half_life": {
+    "value": 20313.895230847287,
+    "unit": "years",
+    "seconds": 640619000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Mo94",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 702.65,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 871.09,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "symbol": "Mo86",
+  "Z": 42,
+  "A": 86,
+  "atomic_mass": 85.930695904,
+  "half_life": {
+    "value": 19.6,
+    "unit": "seconds",
+    "seconds": 19.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Nb86m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 47.3,
+          "absolute_intensity": 0.43,
+          "intensity_percent": 43.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3584
+            }
+          ]
+        },
+        {
+          "energy_keV": 49.8,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 187.0,
+          "absolute_intensity": 0.15,
+          "intensity_percent": 15.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3584
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

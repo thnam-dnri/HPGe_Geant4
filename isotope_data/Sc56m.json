@@ -1,0 +1,58 @@
+{
+  "symbol": "Sc56m",
+  "Z": 21,
+  "A": 56,
+  "atomic_mass": 55.97287,
+  "half_life": {
+    "value": 2e-05,
+    "unit": "seconds",
+    "seconds": 2e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Sc56",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 47.7,
+          "absolute_intensity": 0.53,
+          "intensity_percent": 53.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 140.5,
+          "absolute_intensity": 0.46,
+          "intensity_percent": 46.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 187.8,
+          "absolute_intensity": 0.46,
+          "intensity_percent": 46.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 587.2,
+          "absolute_intensity": 0.76,
+          "intensity_percent": 76.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 727.1,
+          "absolute_intensity": 0.24,
+          "intensity_percent": 24.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Sn121",
+  "Z": 50,
+  "A": 121,
+  "atomic_mass": 120.90423548,
+  "half_life": {
+    "value": 1.12625,
+    "unit": "days",
+    "seconds": 97308.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sb121",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

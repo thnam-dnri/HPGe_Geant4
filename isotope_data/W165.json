@@ -1,0 +1,33 @@
+{
+  "symbol": "W165",
+  "Z": 74,
+  "A": 165,
+  "atomic_mass": 164.958279949,
+  "half_life": {
+    "value": 5.1,
+    "unit": "seconds",
+    "seconds": 5.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta165",
+      "branching_ratio": 0.985,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Hf161",
+      "branching_ratio": 0.002,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

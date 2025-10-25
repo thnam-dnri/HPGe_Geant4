@@ -1,0 +1,64 @@
+{
+  "symbol": "P37",
+  "Z": 15,
+  "A": 37,
+  "atomic_mass": 36.979608946,
+  "half_life": {
+    "value": 2.31,
+    "unit": "seconds",
+    "seconds": 2.31
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "S37",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 646.17,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 751.32,
+          "absolute_intensity": 0.072,
+          "intensity_percent": 7.199999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1582.9,
+          "absolute_intensity": 0.744,
+          "intensity_percent": 74.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 2100.8,
+          "absolute_intensity": 0.061,
+          "intensity_percent": 6.1,
+          "id": ""
+        },
+        {
+          "energy_keV": 2254.1,
+          "absolute_intensity": 0.082,
+          "intensity_percent": 8.200000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

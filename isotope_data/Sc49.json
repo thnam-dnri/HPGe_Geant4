@@ -1,0 +1,40 @@
+{
+  "symbol": "Sc49",
+  "Z": 21,
+  "A": 49,
+  "atomic_mass": 48.950023975,
+  "half_life": {
+    "value": 57.18,
+    "unit": "minutes",
+    "seconds": 3430.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ti49",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1622.6,
+          "absolute_intensity": 0.0001,
+          "intensity_percent": 0.01,
+          "id": ""
+        },
+        {
+          "energy_keV": 1761.9,
+          "absolute_intensity": 0.0005,
+          "intensity_percent": 0.05,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

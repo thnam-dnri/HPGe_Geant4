@@ -1,0 +1,46 @@
+{
+  "symbol": "Zr95",
+  "Z": 40,
+  "A": 95,
+  "atomic_mass": 94.9080426,
+  "half_life": {
+    "value": 64.03194444444445,
+    "unit": "days",
+    "seconds": 5532360.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Nb95m",
+      "branching_ratio": 0.0108018363121731,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Nb95",
+      "branching_ratio": 0.989198163687827,
+      "gammas": [
+        {
+          "energy_keV": 724.19,
+          "absolute_intensity": 0.44753,
+          "intensity_percent": 44.753,
+          "id": ""
+        },
+        {
+          "energy_keV": 756.73,
+          "absolute_intensity": 0.54974,
+          "intensity_percent": 54.974000000000004,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

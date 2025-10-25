@@ -1,0 +1,86 @@
+{
+  "symbol": "Zn60",
+  "Z": 30,
+  "A": 60,
+  "atomic_mass": 59.941827035,
+  "half_life": {
+    "value": 2.3800000000000003,
+    "unit": "minutes",
+    "seconds": 142.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cu60",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 61.4,
+          "absolute_intensity": 0.256,
+          "intensity_percent": 25.6,
+          "id": "0"
+        },
+        {
+          "energy_keV": 273.4,
+          "absolute_intensity": 0.1088,
+          "intensity_percent": 10.879999999999999,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.519
+            }
+          ]
+        },
+        {
+          "energy_keV": 334.4,
+          "absolute_intensity": 0.0896,
+          "intensity_percent": 8.959999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.64
+            },
+            {
+              "id": "0",
+              "correlation": 0.3322
+            }
+          ]
+        },
+        {
+          "energy_keV": 364.6,
+          "absolute_intensity": 0.032,
+          "intensity_percent": 3.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 572.4,
+          "absolute_intensity": 0.02624,
+          "intensity_percent": 2.624,
+          "id": ""
+        },
+        {
+          "energy_keV": 670.3,
+          "absolute_intensity": 0.64,
+          "intensity_percent": 64.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 947.0,
+          "absolute_intensity": 0.01024,
+          "intensity_percent": 1.024,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

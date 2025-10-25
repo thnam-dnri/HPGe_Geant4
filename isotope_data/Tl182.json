@@ -1,0 +1,88 @@
+{
+  "symbol": "Tl182",
+  "Z": 81,
+  "A": 182,
+  "atomic_mass": 181.985667104,
+  "half_life": {
+    "value": 3.1,
+    "unit": "seconds",
+    "seconds": 3.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Hg182",
+      "branching_ratio": 0.975,
+      "gammas": [
+        {
+          "energy_keV": 261.4,
+          "absolute_intensity": 0.6,
+          "intensity_percent": 60.0,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 333.3,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            },
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 351.4,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 413.8,
+          "absolute_intensity": 0.2,
+          "intensity_percent": 20.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            },
+            {
+              "id": "2",
+              "correlation": 1.0
+            },
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Au178",
+      "branching_ratio": 0.04,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

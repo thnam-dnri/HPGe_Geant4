@@ -1,0 +1,72 @@
+{
+  "symbol": "Ho164m",
+  "Z": 67,
+  "A": 164,
+  "atomic_mass": 163.930383556,
+  "half_life": {
+    "value": 37.5,
+    "unit": "minutes",
+    "seconds": 2250.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ho164",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 37.34,
+          "absolute_intensity": 0.1155,
+          "intensity_percent": 11.55,
+          "id": "0"
+        },
+        {
+          "energy_keV": 45.79,
+          "absolute_intensity": 0.00022125,
+          "intensity_percent": 0.022125000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.02484
+            },
+            {
+              "id": "0",
+              "correlation": 0.01552
+            },
+            {
+              "id": "3",
+              "correlation": 0.0005222
+            }
+          ]
+        },
+        {
+          "energy_keV": 56.64,
+          "absolute_intensity": 0.066,
+          "intensity_percent": 6.6000000000000005,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.04167
+            }
+          ]
+        },
+        {
+          "energy_keV": 94.0,
+          "absolute_intensity": 0.0013875,
+          "intensity_percent": 0.13875,
+          "id": "3"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

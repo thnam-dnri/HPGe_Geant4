@@ -1,0 +1,27 @@
+{
+  "symbol": "Au177",
+  "Z": 79,
+  "A": 177,
+  "atomic_mass": 176.976864908,
+  "half_life": {
+    "value": 1.462,
+    "unit": "seconds",
+    "seconds": 1.462
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ir173",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

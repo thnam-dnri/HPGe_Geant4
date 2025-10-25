@@ -1,0 +1,52 @@
+{
+  "symbol": "Tm173",
+  "Z": 69,
+  "A": 173,
+  "atomic_mass": 172.939603607,
+  "half_life": {
+    "value": 8.24,
+    "unit": "hours",
+    "seconds": 29664.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Yb173",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 62.6,
+          "absolute_intensity": 0.00879,
+          "intensity_percent": 0.8789999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.8512
+            }
+          ]
+        },
+        {
+          "energy_keV": 398.9,
+          "absolute_intensity": 0.879,
+          "intensity_percent": 87.9,
+          "id": "1"
+        },
+        {
+          "energy_keV": 461.4,
+          "absolute_intensity": 0.068562,
+          "intensity_percent": 6.856199999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

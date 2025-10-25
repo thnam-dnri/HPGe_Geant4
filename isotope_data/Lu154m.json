@@ -1,0 +1,58 @@
+{
+  "symbol": "Lu154m",
+  "Z": 71,
+  "A": 154,
+  "atomic_mass": 153.957522,
+  "half_life": {
+    "value": 1.12,
+    "unit": "seconds",
+    "seconds": 1.12
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Yb154",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 96.6,
+          "absolute_intensity": 0.11922,
+          "intensity_percent": 11.922,
+          "id": ""
+        },
+        {
+          "energy_keV": 433.6,
+          "absolute_intensity": 0.82461,
+          "intensity_percent": 82.461,
+          "id": ""
+        },
+        {
+          "energy_keV": 694.7,
+          "absolute_intensity": 0.96369,
+          "intensity_percent": 96.369,
+          "id": ""
+        },
+        {
+          "energy_keV": 821.3,
+          "absolute_intensity": 0.9935,
+          "intensity_percent": 99.35000000000001,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Tm153",
+      "branching_ratio": 0.0006,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

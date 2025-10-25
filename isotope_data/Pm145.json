@@ -1,0 +1,46 @@
+{
+  "symbol": "Pm145",
+  "Z": 61,
+  "A": 145,
+  "atomic_mass": 144.912749023,
+  "half_life": {
+    "value": 17.712138508371385,
+    "unit": "years",
+    "seconds": 558570000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Nd145",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 67.22,
+          "absolute_intensity": 0.0077,
+          "intensity_percent": 0.77,
+          "id": ""
+        },
+        {
+          "energy_keV": 72.48,
+          "absolute_intensity": 0.0258,
+          "intensity_percent": 2.58,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Pr141",
+      "branching_ratio": 2.8e-07,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

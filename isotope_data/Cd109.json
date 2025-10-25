@@ -1,0 +1,27 @@
+{
+  "symbol": "Cd109",
+  "Z": 48,
+  "A": 109,
+  "atomic_mass": 108.904982293,
+  "half_life": {
+    "value": 1.2641108574327753,
+    "unit": "years",
+    "seconds": 39865000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ag109m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

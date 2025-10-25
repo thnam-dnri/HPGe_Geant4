@@ -1,0 +1,90 @@
+{
+  "symbol": "P29",
+  "Z": 15,
+  "A": 29,
+  "atomic_mass": 28.981800606,
+  "half_life": {
+    "value": 4.142,
+    "unit": "seconds",
+    "seconds": 4.142
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Si29",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 397.86,
+          "absolute_intensity": 0.00026,
+          "intensity_percent": 0.026,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.9415
+            },
+            {
+              "id": "1",
+              "correlation": 0.05852
+            },
+            {
+              "id": "3",
+              "correlation": 0.05852
+            }
+          ]
+        },
+        {
+          "energy_keV": 754.74,
+          "absolute_intensity": 0.0023,
+          "intensity_percent": 0.22999999999999998,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1152.59,
+          "absolute_intensity": 0.0088,
+          "intensity_percent": 0.88,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1273.37,
+          "absolute_intensity": 0.906,
+          "intensity_percent": 90.60000000000001,
+          "id": "3"
+        },
+        {
+          "energy_keV": 2028.07,
+          "absolute_intensity": 0.037,
+          "intensity_percent": 3.6999999999999997,
+          "id": "4"
+        },
+        {
+          "energy_keV": 2425.91,
+          "absolute_intensity": 0.057,
+          "intensity_percent": 5.7,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

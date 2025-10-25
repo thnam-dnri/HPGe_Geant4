@@ -1,0 +1,70 @@
+{
+  "symbol": "Ne19",
+  "Z": 10,
+  "A": 19,
+  "atomic_mass": 19.001880248,
+  "half_life": {
+    "value": 17.22,
+    "unit": "seconds",
+    "seconds": 17.22
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "F19",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 109.89,
+          "absolute_intensity": 0.00012,
+          "intensity_percent": 0.012,
+          "id": "0"
+        },
+        {
+          "energy_keV": 197.14,
+          "absolute_intensity": 2.06e-05,
+          "intensity_percent": 0.0020599999999999998,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1356.84,
+          "absolute_intensity": 2.06e-05,
+          "intensity_percent": 0.0020599999999999998,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1444.09,
+          "absolute_intensity": 1.08e-06,
+          "intensity_percent": 0.00010800000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1553.97,
+          "absolute_intensity": 5.7e-07,
+          "intensity_percent": 5.7e-05,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

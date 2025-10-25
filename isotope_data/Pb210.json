@@ -1,0 +1,40 @@
+{
+  "symbol": "Pb210",
+  "Z": 82,
+  "A": 210,
+  "atomic_mass": 209.984188527,
+  "half_life": {
+    "value": 22.215214358193812,
+    "unit": "years",
+    "seconds": 700579000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Bi210",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 46.54,
+          "absolute_intensity": 0.0425,
+          "intensity_percent": 4.25,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Hg206",
+      "branching_ratio": 1.9e-08,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

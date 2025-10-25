@@ -1,0 +1,65 @@
+{
+  "symbol": "Ba133m",
+  "Z": 56,
+  "A": 133,
+  "atomic_mass": 132.906316936,
+  "half_life": {
+    "value": 1.6208333333333333,
+    "unit": "days",
+    "seconds": 140040.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ba133",
+      "branching_ratio": 0.9999,
+      "gammas": [
+        {
+          "energy_keV": 12.33,
+          "absolute_intensity": 0.015308,
+          "intensity_percent": 1.5308,
+          "id": "0"
+        },
+        {
+          "energy_keV": 275.93,
+          "absolute_intensity": 0.178,
+          "intensity_percent": 17.8,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.002496
+            }
+          ]
+        },
+        {
+          "energy_keV": 288.0,
+          "absolute_intensity": 6.408e-07,
+          "intensity_percent": 6.408e-05,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Cs133",
+      "branching_ratio": 9.6e-05,
+      "gammas": [
+        {
+          "energy_keV": 632.5,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

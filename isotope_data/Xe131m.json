@@ -1,0 +1,34 @@
+{
+  "symbol": "Xe131m",
+  "Z": 54,
+  "A": 131,
+  "atomic_mass": 130.905258348,
+  "half_life": {
+    "value": 11.840046296296297,
+    "unit": "days",
+    "seconds": 1022980.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Xe131",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 163.93,
+          "absolute_intensity": 0.0191,
+          "intensity_percent": 1.91,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "symbol": "Lu178m",
+  "Z": 71,
+  "A": 178,
+  "atomic_mass": 177.946087464,
+  "half_life": {
+    "value": 23.1,
+    "unit": "minutes",
+    "seconds": 1386.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Hf178m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 216.64,
+          "absolute_intensity": 0.024842,
+          "intensity_percent": 2.4842,
+          "id": ""
+        },
+        {
+          "energy_keV": 331.62,
+          "absolute_intensity": 0.11386,
+          "intensity_percent": 11.386000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 454.2,
+          "absolute_intensity": 0.00022584,
+          "intensity_percent": 0.022584,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

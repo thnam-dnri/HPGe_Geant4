@@ -1,0 +1,27 @@
+{
+  "symbol": "Sr75",
+  "Z": 38,
+  "A": 75,
+  "atomic_mass": 74.949949568,
+  "half_life": {
+    "value": 0.071,
+    "unit": "seconds",
+    "seconds": 0.071
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Kr74",
+      "branching_ratio": 0.052,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "symbol": "Au193m",
+  "Z": 79,
+  "A": 193,
+  "atomic_mass": 192.964461247,
+  "half_life": {
+    "value": 3.9,
+    "unit": "seconds",
+    "seconds": 3.9
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Au193",
+      "branching_ratio": 0.9997,
+      "gammas": [
+        {
+          "energy_keV": 32.21,
+          "absolute_intensity": 1.0699e-05,
+          "intensity_percent": 0.0010699,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.6689
+            },
+            {
+              "id": "2",
+              "correlation": 0.03827
+            }
+          ]
+        },
+        {
+          "energy_keV": 38.22,
+          "absolute_intensity": 0.00052283,
+          "intensity_percent": 0.052282999999999996,
+          "id": ""
+        },
+        {
+          "energy_keV": 219.75,
+          "absolute_intensity": 0.0377,
+          "intensity_percent": 3.7699999999999996,
+          "id": "2"
+        },
+        {
+          "energy_keV": 257.97,
+          "absolute_intensity": 0.659,
+          "intensity_percent": 65.9,
+          "id": "3"
+        },
+        {
+          "energy_keV": 289.8,
+          "absolute_intensity": 0.00026042,
+          "intensity_percent": 0.026042,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Pt193m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

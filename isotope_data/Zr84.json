@@ -1,0 +1,27 @@
+{
+  "symbol": "Zr84",
+  "Z": 40,
+  "A": 84,
+  "atomic_mass": 83.92325,
+  "half_life": {
+    "value": 25.8,
+    "unit": "minutes",
+    "seconds": 1548.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Y84",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "symbol": "Sb133m",
+  "Z": 51,
+  "A": 133,
+  "atomic_mass": 132.919937114,
+  "half_life": {
+    "value": 3e-06,
+    "unit": "seconds",
+    "seconds": 3e-06
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Sb133",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 61.7,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1510.1,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2792.1,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

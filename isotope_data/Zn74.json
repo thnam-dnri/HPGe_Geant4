@@ -1,0 +1,27 @@
+{
+  "symbol": "Zn74",
+  "Z": 30,
+  "A": 74,
+  "atomic_mass": 73.929458609,
+  "half_life": {
+    "value": 1.5933333333333333,
+    "unit": "minutes",
+    "seconds": 95.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ga74",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

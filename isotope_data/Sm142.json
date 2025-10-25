@@ -1,0 +1,64 @@
+{
+  "symbol": "Sm142",
+  "Z": 62,
+  "A": 142,
+  "atomic_mass": 141.915197641,
+  "half_life": {
+    "value": 1.2081666666666666,
+    "unit": "hours",
+    "seconds": 4349.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pm142",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 679.0,
+          "absolute_intensity": 0.00099,
+          "intensity_percent": 0.099,
+          "id": ""
+        },
+        {
+          "energy_keV": 849.0,
+          "absolute_intensity": 0.000792,
+          "intensity_percent": 0.07919999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 954.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1243.0,
+          "absolute_intensity": 0.00264,
+          "intensity_percent": 0.264,
+          "id": ""
+        },
+        {
+          "energy_keV": 1345.0,
+          "absolute_intensity": 0.00132,
+          "intensity_percent": 0.132,
+          "id": ""
+        },
+        {
+          "energy_keV": 1830.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

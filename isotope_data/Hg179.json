@@ -1,0 +1,33 @@
+{
+  "symbol": "Hg179",
+  "Z": 80,
+  "A": 179,
+  "atomic_mass": 178.981833861,
+  "half_life": {
+    "value": 1.05,
+    "unit": "seconds",
+    "seconds": 1.05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Pt178",
+      "branching_ratio": 0.0015,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Pt175",
+      "branching_ratio": 0.53,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

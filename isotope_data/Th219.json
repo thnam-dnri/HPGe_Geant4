@@ -1,0 +1,27 @@
+{
+  "symbol": "Th219",
+  "Z": 90,
+  "A": 219,
+  "atomic_mass": 219.015536895,
+  "half_life": {
+    "value": 1.05e-06,
+    "unit": "seconds",
+    "seconds": 1.05e-06
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ra215",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "symbol": "Lu182",
+  "Z": 71,
+  "A": 182,
+  "atomic_mass": 181.95504,
+  "half_life": {
+    "value": 2.0,
+    "unit": "minutes",
+    "seconds": 120.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Hf182",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 97.8,
+          "absolute_intensity": 0.15,
+          "intensity_percent": 15.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 224.0,
+          "absolute_intensity": 0.045,
+          "intensity_percent": 4.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 720.8,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 808.1,
+          "absolute_intensity": 0.15,
+          "intensity_percent": 15.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 818.2,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

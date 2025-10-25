@@ -1,0 +1,95 @@
+{
+  "symbol": "Cs114",
+  "Z": 55,
+  "A": 114,
+  "atomic_mass": 113.94145,
+  "half_life": {
+    "value": 0.57,
+    "unit": "seconds",
+    "seconds": 0.57
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Xe114",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 449.7,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 618.3,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 698.2,
+          "absolute_intensity": 0.118,
+          "intensity_percent": 11.799999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 758.2,
+          "absolute_intensity": 0.03,
+          "intensity_percent": 3.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1147.4,
+          "absolute_intensity": 0.027,
+          "intensity_percent": 2.7,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ecp",
+      "daughter": "I113",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 30.7,
+          "absolute_intensity": 0.39,
+          "intensity_percent": 39.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 121.6,
+          "absolute_intensity": 0.32,
+          "intensity_percent": 32.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "I110",
+      "branching_ratio": 0.00018,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 7
+  }
+}

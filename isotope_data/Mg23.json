@@ -1,0 +1,52 @@
+{
+  "symbol": "Mg23",
+  "Z": 12,
+  "A": 23,
+  "atomic_mass": 22.994123669,
+  "half_life": {
+    "value": 11.317,
+    "unit": "seconds",
+    "seconds": 11.317
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Na23",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 439.99,
+          "absolute_intensity": 0.087,
+          "intensity_percent": 8.7,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1950.65,
+          "absolute_intensity": 2.5e-05,
+          "intensity_percent": 0.0025,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.061
+            }
+          ]
+        },
+        {
+          "energy_keV": 2390.6,
+          "absolute_intensity": 4.4e-05,
+          "intensity_percent": 0.0044,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

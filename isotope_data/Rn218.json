@@ -1,0 +1,34 @@
+{
+  "symbol": "Rn218",
+  "Z": 86,
+  "A": 218,
+  "atomic_mass": 218.005601256,
+  "half_life": {
+    "value": 0.035,
+    "unit": "seconds",
+    "seconds": 0.035
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Po214",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 609.31,
+          "absolute_intensity": 0.00124,
+          "intensity_percent": 0.124,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

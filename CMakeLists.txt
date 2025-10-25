@@ -41,6 +41,9 @@ target_include_directories(HPGeSingle
 # Link Geant4 libraries
 target_link_libraries(HPGeSingle ${Geant4_LIBRARIES})
 
+# Provide absolute isotope data directory to the code for robust loading
+target_compile_definitions(HPGeSingle PRIVATE ISOTOPE_DATA_DIR="${PROJECT_SOURCE_DIR}/isotope_data")
+
 # Set compiler warnings for better code quality
 if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
     target_compile_options(HPGeSingle PRIVATE -Wall -Wextra -pedantic)

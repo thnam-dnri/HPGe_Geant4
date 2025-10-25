@@ -1,0 +1,47 @@
+{
+  "symbol": "Bk248m",
+  "Z": 97,
+  "A": 248,
+  "atomic_mass": 248.073086,
+  "half_life": {
+    "value": 23.7,
+    "unit": "hours",
+    "seconds": 85320.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cm248",
+      "branching_ratio": 0.3,
+      "gammas": [
+        {
+          "energy_keV": 43.4,
+          "absolute_intensity": 0.00021675,
+          "intensity_percent": 0.021675,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Cf248",
+      "branching_ratio": 0.7,
+      "gammas": [
+        {
+          "energy_keV": 550.7,
+          "absolute_intensity": 0.071,
+          "intensity_percent": 7.1,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

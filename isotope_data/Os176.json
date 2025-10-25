@@ -1,0 +1,70 @@
+{
+  "symbol": "Os176",
+  "Z": 76,
+  "A": 176,
+  "atomic_mass": 175.954806,
+  "half_life": {
+    "value": 3.6,
+    "unit": "minutes",
+    "seconds": 216.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Re176",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 81.5,
+          "absolute_intensity": 0.36,
+          "intensity_percent": 36.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 775.8,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 857.2,
+          "absolute_intensity": 0.69,
+          "intensity_percent": 69.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1209.2,
+          "absolute_intensity": 0.71,
+          "intensity_percent": 71.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1290.9,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

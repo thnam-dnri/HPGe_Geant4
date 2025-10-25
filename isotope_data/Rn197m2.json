@@ -1,0 +1,27 @@
+{
+  "symbol": "Rn197m2",
+  "Z": 86,
+  "A": 197,
+  "atomic_mass": 197.00158435100002,
+  "half_life": {
+    "value": 0.021,
+    "unit": "seconds",
+    "seconds": 0.021
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Po193m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

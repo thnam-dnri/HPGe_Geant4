@@ -1,0 +1,27 @@
+{
+  "symbol": "Ac217m",
+  "Z": 89,
+  "A": 217,
+  "atomic_mass": 217.010580631,
+  "half_life": {
+    "value": null,
+    "unit": "stable",
+    "seconds": null
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Fr213",
+      "branching_ratio": 0.017,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

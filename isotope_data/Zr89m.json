@@ -1,0 +1,47 @@
+{
+  "symbol": "Zr89m",
+  "Z": 40,
+  "A": 89,
+  "atomic_mass": 88.909520551,
+  "half_life": {
+    "value": 4.161,
+    "unit": "minutes",
+    "seconds": 249.66
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Zr89",
+      "branching_ratio": 0.938,
+      "gammas": [
+        {
+          "energy_keV": 587.8,
+          "absolute_intensity": 0.9557,
+          "intensity_percent": 95.57,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Y89",
+      "branching_ratio": 0.0623,
+      "gammas": [
+        {
+          "energy_keV": 1507.4,
+          "absolute_intensity": 0.972,
+          "intensity_percent": 97.2,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

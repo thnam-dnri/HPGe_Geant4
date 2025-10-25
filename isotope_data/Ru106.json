@@ -1,0 +1,27 @@
+{
+  "symbol": "Ru106",
+  "Z": 44,
+  "A": 106,
+  "atomic_mass": 105.907329433,
+  "half_life": {
+    "value": 1.0186295027904617,
+    "unit": "years",
+    "seconds": 32123500.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Rh106",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

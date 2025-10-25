@@ -1,0 +1,114 @@
+{
+  "symbol": "Sr92",
+  "Z": 38,
+  "A": 92,
+  "atomic_mass": 91.911037858,
+  "half_life": {
+    "value": 2.66,
+    "unit": "hours",
+    "seconds": 9576.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Y92",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 241.5,
+          "absolute_intensity": 0.0297,
+          "intensity_percent": 2.97,
+          "id": "0"
+        },
+        {
+          "energy_keV": 352.5,
+          "absolute_intensity": 0.00054,
+          "intensity_percent": 0.054,
+          "id": ""
+        },
+        {
+          "energy_keV": 430.6,
+          "absolute_intensity": 0.0333,
+          "intensity_percent": 3.3300000000000005,
+          "id": "2"
+        },
+        {
+          "energy_keV": 491.27,
+          "absolute_intensity": 0.002745,
+          "intensity_percent": 0.2745,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.7395
+            },
+            {
+              "id": "5",
+              "correlation": 0.1605
+            },
+            {
+              "id": "0",
+              "correlation": 0.6655
+            }
+          ]
+        },
+        {
+          "energy_keV": 650.7,
+          "absolute_intensity": 0.00369,
+          "intensity_percent": 0.369,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9
+            }
+          ]
+        },
+        {
+          "energy_keV": 892.68,
+          "absolute_intensity": 0.000801,
+          "intensity_percent": 0.08009999999999999,
+          "id": "5"
+        },
+        {
+          "energy_keV": 953.31,
+          "absolute_intensity": 0.036,
+          "intensity_percent": 3.5999999999999996,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.9
+            }
+          ]
+        },
+        {
+          "energy_keV": 1142.3,
+          "absolute_intensity": 0.0288,
+          "intensity_percent": 2.88,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9
+            }
+          ]
+        },
+        {
+          "energy_keV": 1383.93,
+          "absolute_intensity": 0.9,
+          "intensity_percent": 90.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 9
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Ru90",
+  "Z": 44,
+  "A": 90,
+  "atomic_mass": 89.92989,
+  "half_life": {
+    "value": 11.0,
+    "unit": "seconds",
+    "seconds": 11.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tc90",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

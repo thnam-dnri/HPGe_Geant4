@@ -1,0 +1,52 @@
+{
+  "symbol": "Ra213",
+  "Z": 88,
+  "A": 213,
+  "atomic_mass": 213.000383959,
+  "half_life": {
+    "value": 2.73,
+    "unit": "minutes",
+    "seconds": 163.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Rn209",
+      "branching_ratio": 0.8,
+      "gammas": [
+        {
+          "energy_keV": 104.6,
+          "absolute_intensity": 0.0042,
+          "intensity_percent": 0.42,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.1508
+            }
+          ]
+        },
+        {
+          "energy_keV": 110.1,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 214.7,
+          "absolute_intensity": 0.012,
+          "intensity_percent": 1.2,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

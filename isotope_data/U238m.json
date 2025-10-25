@@ -1,0 +1,64 @@
+{
+  "symbol": "U238m",
+  "Z": 92,
+  "A": 238,
+  "atomic_mass": 238.053534266,
+  "half_life": {
+    "value": 2.8e-07,
+    "unit": "seconds",
+    "seconds": 2.8e-07
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "U238",
+      "branching_ratio": 0.974,
+      "gammas": [
+        {
+          "energy_keV": 44.915,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 635.18,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 680.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1879.0,
+          "absolute_intensity": 0.3283,
+          "intensity_percent": 32.83,
+          "id": ""
+        },
+        {
+          "energy_keV": 2512.7,
+          "absolute_intensity": 0.67,
+          "intensity_percent": 67.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2558.0,
+          "absolute_intensity": 0.002278,
+          "intensity_percent": 0.2278,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

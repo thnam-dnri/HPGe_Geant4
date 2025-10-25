@@ -1,0 +1,27 @@
+{
+  "symbol": "Er165",
+  "Z": 68,
+  "A": 165,
+  "atomic_mass": 164.930726003,
+  "half_life": {
+    "value": 10.36,
+    "unit": "hours",
+    "seconds": 37296.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ho165",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "symbol": "Rh105",
+  "Z": 45,
+  "A": 105,
+  "atomic_mass": 104.905693821,
+  "half_life": {
+    "value": 1.4733333333333334,
+    "unit": "days",
+    "seconds": 127296.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pd105",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 38.72,
+          "absolute_intensity": 0.0002483,
+          "intensity_percent": 0.02483,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.1866
+            }
+          ]
+        },
+        {
+          "energy_keV": 280.52,
+          "absolute_intensity": 0.00167,
+          "intensity_percent": 0.167,
+          "id": "1"
+        },
+        {
+          "energy_keV": 306.28,
+          "absolute_intensity": 0.0513,
+          "intensity_percent": 5.13,
+          "id": ""
+        },
+        {
+          "energy_keV": 319.22,
+          "absolute_intensity": 0.191,
+          "intensity_percent": 19.1,
+          "id": ""
+        },
+        {
+          "energy_keV": 442.33,
+          "absolute_intensity": 0.0004202,
+          "intensity_percent": 0.04202,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

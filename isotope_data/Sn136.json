@@ -1,0 +1,27 @@
+{
+  "symbol": "Sn136",
+  "Z": 50,
+  "A": 136,
+  "atomic_mass": 135.93934,
+  "half_life": {
+    "value": 0.25,
+    "unit": "seconds",
+    "seconds": 0.25
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-n",
+      "daughter": "Sb135",
+      "branching_ratio": 0.3,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

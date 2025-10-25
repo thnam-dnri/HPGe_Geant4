@@ -1,0 +1,33 @@
+{
+  "symbol": "Tl204",
+  "Z": 81,
+  "A": 204,
+  "atomic_mass": 203.973863522,
+  "half_life": {
+    "value": 3.785578386605784,
+    "unit": "years",
+    "seconds": 119382000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pb204",
+      "branching_ratio": 0.9708,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Hg204",
+      "branching_ratio": 0.0292,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

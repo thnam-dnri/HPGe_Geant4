@@ -1,0 +1,52 @@
+{
+  "symbol": "Cs134m",
+  "Z": 55,
+  "A": 134,
+  "atomic_mass": 133.906867423,
+  "half_life": {
+    "value": 2.9120000000000004,
+    "unit": "hours",
+    "seconds": 10483.2
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Cs134",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 11.24,
+          "absolute_intensity": 0.010836,
+          "intensity_percent": 1.0836000000000001,
+          "id": "0"
+        },
+        {
+          "energy_keV": 127.5,
+          "absolute_intensity": 0.126,
+          "intensity_percent": 12.6,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0001371
+            }
+          ]
+        },
+        {
+          "energy_keV": 138.73,
+          "absolute_intensity": 3.906e-05,
+          "intensity_percent": 0.003906,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

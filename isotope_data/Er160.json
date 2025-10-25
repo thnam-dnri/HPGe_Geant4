@@ -1,0 +1,34 @@
+{
+  "symbol": "Er160",
+  "Z": 68,
+  "A": 160,
+  "atomic_mass": 159.929083292,
+  "half_life": {
+    "value": 1.1908333333333334,
+    "unit": "days",
+    "seconds": 102888.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ho160m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 7.13,
+          "absolute_intensity": 0.0495,
+          "intensity_percent": 4.95,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

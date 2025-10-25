@@ -1,0 +1,33 @@
+{
+  "symbol": "Fr213",
+  "Z": 87,
+  "A": 213,
+  "atomic_mass": 212.996189081,
+  "half_life": {
+    "value": 34.82,
+    "unit": "seconds",
+    "seconds": 34.82
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Rn213",
+      "branching_ratio": 0.0055,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "At209",
+      "branching_ratio": 0.9945,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

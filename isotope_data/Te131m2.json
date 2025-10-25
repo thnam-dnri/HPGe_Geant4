@@ -1,0 +1,46 @@
+{
+  "symbol": "Te131m2",
+  "Z": 52,
+  "A": 131,
+  "atomic_mass": 130.91060654,
+  "half_life": {
+    "value": 0.093,
+    "unit": "seconds",
+    "seconds": 0.093
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Te131m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 360.3,
+          "absolute_intensity": 0.9,
+          "intensity_percent": 90.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 564.7,
+          "absolute_intensity": 0.99,
+          "intensity_percent": 99.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 832.7,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

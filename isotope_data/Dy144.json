@@ -1,0 +1,52 @@
+{
+  "symbol": "Dy144",
+  "Z": 66,
+  "A": 144,
+  "atomic_mass": 143.939254,
+  "half_life": {
+    "value": 9.1,
+    "unit": "seconds",
+    "seconds": 9.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tb144",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 196.5,
+          "absolute_intensity": 0.11,
+          "intensity_percent": 11.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 298.6,
+          "absolute_intensity": 0.1001,
+          "intensity_percent": 10.01,
+          "id": ""
+        },
+        {
+          "energy_keV": 321.5,
+          "absolute_intensity": 0.022,
+          "intensity_percent": 2.1999999999999997,
+          "id": ""
+        },
+        {
+          "energy_keV": 475.5,
+          "absolute_intensity": 0.0495,
+          "intensity_percent": 4.95,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Cf248",
+  "Z": 98,
+  "A": 248,
+  "atomic_mass": 248.072184861,
+  "half_life": {
+    "value": 333.5,
+    "unit": "days",
+    "seconds": 28814400.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cm244",
+      "branching_ratio": 0.999971,
+      "gammas": [
+        {
+          "energy_keV": 42.97,
+          "absolute_intensity": 0.000188,
+          "intensity_percent": 0.018799999999999997,
+          "id": "0"
+        },
+        {
+          "energy_keV": 99.38,
+          "absolute_intensity": 0.00019,
+          "intensity_percent": 0.019,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0009381
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 2.9e-05,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

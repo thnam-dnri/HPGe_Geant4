@@ -1,0 +1,47 @@
+{
+  "symbol": "V50",
+  "Z": 23,
+  "A": 50,
+  "atomic_mass": 49.947158485,
+  "half_life": {
+    "value": 1.4009576357179098e+17,
+    "unit": "years",
+    "seconds": 4.41806e+24
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cr50",
+      "branching_ratio": 0.17,
+      "gammas": [
+        {
+          "energy_keV": 783.29,
+          "absolute_intensity": 0.9997,
+          "intensity_percent": 99.97,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Ti50",
+      "branching_ratio": 0.83,
+      "gammas": [
+        {
+          "energy_keV": 1553.77,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

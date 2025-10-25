@@ -1,0 +1,40 @@
+{
+  "symbol": "Np243",
+  "Z": 93,
+  "A": 243,
+  "atomic_mass": 243.064279,
+  "half_life": {
+    "value": 1.85,
+    "unit": "minutes",
+    "seconds": 111.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pu243m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Pu243",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 287.7,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

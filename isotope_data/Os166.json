@@ -1,0 +1,27 @@
+{
+  "symbol": "Os166",
+  "Z": 76,
+  "A": 166,
+  "atomic_mass": 165.972690753,
+  "half_life": {
+    "value": 0.199,
+    "unit": "seconds",
+    "seconds": 0.199
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "W162",
+      "branching_ratio": 0.3,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

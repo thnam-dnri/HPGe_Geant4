@@ -1,0 +1,46 @@
+{
+  "symbol": "Tb153m",
+  "Z": 65,
+  "A": 153,
+  "atomic_mass": 152.923609764,
+  "half_life": {
+    "value": 0.000186,
+    "unit": "seconds",
+    "seconds": 0.000186
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tb153",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 80.72,
+          "absolute_intensity": 0.193,
+          "intensity_percent": 19.3,
+          "id": "0"
+        },
+        {
+          "energy_keV": 82.46,
+          "absolute_intensity": 0.0218,
+          "intensity_percent": 2.18,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.193
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

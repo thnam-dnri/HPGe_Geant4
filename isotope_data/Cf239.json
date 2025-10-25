@@ -1,0 +1,27 @@
+{
+  "symbol": "Cf239",
+  "Z": 98,
+  "A": 239,
+  "atomic_mass": 239.062422,
+  "half_life": {
+    "value": 39.0,
+    "unit": "seconds",
+    "seconds": 39.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cm235",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "symbol": "Bh262",
+  "Z": 107,
+  "A": 262,
+  "atomic_mass": 262.122892,
+  "half_life": {
+    "value": 0.102,
+    "unit": "seconds",
+    "seconds": 0.102
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Db258m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Db258",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.2,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

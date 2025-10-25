@@ -1,0 +1,46 @@
+{
+  "symbol": "Sc42",
+  "Z": 21,
+  "A": 42,
+  "atomic_mass": 41.965516429,
+  "half_life": {
+    "value": 0.6813,
+    "unit": "seconds",
+    "seconds": 0.6813
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ca42",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 312.6,
+          "absolute_intensity": 7.5e-05,
+          "intensity_percent": 0.0075,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1524.65,
+          "absolute_intensity": 7.5e-05,
+          "intensity_percent": 0.0075,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

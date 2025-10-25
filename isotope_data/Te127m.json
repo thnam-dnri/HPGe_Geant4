@@ -1,0 +1,83 @@
+{
+  "symbol": "Te127m",
+  "Z": 52,
+  "A": 127,
+  "atomic_mass": 126.905321087,
+  "half_life": {
+    "value": 109.0,
+    "unit": "days",
+    "seconds": 9417600.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "I127",
+      "branching_ratio": 0.024,
+      "gammas": [
+        {
+          "energy_keV": 57.63,
+          "absolute_intensity": 0.20935,
+          "intensity_percent": 20.935000000000002,
+          "id": "0"
+        },
+        {
+          "energy_keV": 593.3,
+          "absolute_intensity": 0.000948,
+          "intensity_percent": 0.0948,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.08281
+            }
+          ]
+        },
+        {
+          "energy_keV": 628.6,
+          "absolute_intensity": 3.555e-05,
+          "intensity_percent": 0.0035549999999999996,
+          "id": ""
+        },
+        {
+          "energy_keV": 651.0,
+          "absolute_intensity": 0.0001185,
+          "intensity_percent": 0.01185,
+          "id": ""
+        },
+        {
+          "energy_keV": 658.9,
+          "absolute_intensity": 0.005135,
+          "intensity_percent": 0.5135,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.08281
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Te127",
+      "branching_ratio": 0.976,
+      "gammas": [
+        {
+          "energy_keV": 88.26,
+          "absolute_intensity": 0.000856,
+          "intensity_percent": 0.0856,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

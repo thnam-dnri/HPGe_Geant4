@@ -1,0 +1,46 @@
+{
+  "symbol": "Bk241",
+  "Z": 97,
+  "A": 241,
+  "atomic_mass": 241.06023,
+  "half_life": {
+    "value": 4.6,
+    "unit": "minutes",
+    "seconds": 276.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cm241",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 152.4,
+          "absolute_intensity": 0.06,
+          "intensity_percent": 6.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 210.7,
+          "absolute_intensity": 0.06,
+          "intensity_percent": 6.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 262.3,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

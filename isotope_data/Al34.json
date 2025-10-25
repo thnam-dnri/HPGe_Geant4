@@ -1,0 +1,91 @@
+{
+  "symbol": "Al34",
+  "Z": 13,
+  "A": 34,
+  "atomic_mass": 33.996851837,
+  "half_life": {
+    "value": 0.042,
+    "unit": "seconds",
+    "seconds": 0.042
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Si34",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 125.4,
+          "absolute_intensity": 0.258,
+          "intensity_percent": 25.8,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.2968
+            },
+            {
+              "id": "1",
+              "correlation": 0.4947
+            },
+            {
+              "id": "3",
+              "correlation": 0.1053
+            }
+          ]
+        },
+        {
+          "energy_keV": 929.6,
+          "absolute_intensity": 0.564,
+          "intensity_percent": 56.39999999999999,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.6
+            }
+          ]
+        },
+        {
+          "energy_keV": 3327.5,
+          "absolute_intensity": 0.6,
+          "intensity_percent": 60.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 4257.0,
+          "absolute_intensity": 0.12,
+          "intensity_percent": 12.0,
+          "id": "3"
+        }
+      ]
+    },
+    {
+      "mode": "b-n",
+      "daughter": "Si33",
+      "branching_ratio": 0.26,
+      "gammas": [
+        {
+          "energy_keV": 1009.7,
+          "absolute_intensity": 0.015,
+          "intensity_percent": 1.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 1434.9,
+          "absolute_intensity": 0.076,
+          "intensity_percent": 7.6,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

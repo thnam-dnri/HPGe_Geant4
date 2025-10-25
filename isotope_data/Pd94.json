@@ -1,0 +1,52 @@
+{
+  "symbol": "Pd94",
+  "Z": 46,
+  "A": 94,
+  "atomic_mass": 93.92877,
+  "half_life": {
+    "value": 9.0,
+    "unit": "seconds",
+    "seconds": 9.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Rh94",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 54.6,
+          "absolute_intensity": 0.11,
+          "intensity_percent": 11.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 558.2,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 723.9,
+          "absolute_intensity": 0.121,
+          "intensity_percent": 12.1,
+          "id": ""
+        },
+        {
+          "energy_keV": 797.8,
+          "absolute_intensity": 0.071,
+          "intensity_percent": 7.1,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Eu140m2",
+  "Z": 63,
+  "A": 140,
+  "atomic_mass": 139.92828653473484,
+  "half_life": {
+    "value": null,
+    "unit": "stable",
+    "seconds": null
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Eu140m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 10.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.7205
+            }
+          ]
+        },
+        {
+          "energy_keV": 174.8,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 185.3,
+          "absolute_intensity": 0.92,
+          "intensity_percent": 92.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

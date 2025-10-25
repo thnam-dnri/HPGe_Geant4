@@ -1,0 +1,52 @@
+{
+  "symbol": "Cd124",
+  "Z": 48,
+  "A": 124,
+  "atomic_mass": 123.917647616,
+  "half_life": {
+    "value": 1.25,
+    "unit": "seconds",
+    "seconds": 1.25
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "In124",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 36.5,
+          "absolute_intensity": 0.0644,
+          "intensity_percent": 6.4399999999999995,
+          "id": ""
+        },
+        {
+          "energy_keV": 62.8,
+          "absolute_intensity": 0.322,
+          "intensity_percent": 32.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 143.33,
+          "absolute_intensity": 0.1806,
+          "intensity_percent": 18.060000000000002,
+          "id": ""
+        },
+        {
+          "energy_keV": 179.91,
+          "absolute_intensity": 0.7,
+          "intensity_percent": 70.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

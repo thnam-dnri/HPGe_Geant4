@@ -1,0 +1,58 @@
+{
+  "symbol": "Nb89m",
+  "Z": 41,
+  "A": 89,
+  "atomic_mass": 88.913455819,
+  "half_life": {
+    "value": 1.1,
+    "unit": "hours",
+    "seconds": 3960.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Zr89m",
+      "branching_ratio": 0.995,
+      "gammas": [
+        {
+          "energy_keV": 507.4,
+          "absolute_intensity": 0.81234,
+          "intensity_percent": 81.234,
+          "id": "0"
+        },
+        {
+          "energy_keV": 650.3,
+          "absolute_intensity": 0.0076456,
+          "intensity_percent": 0.76456,
+          "id": ""
+        },
+        {
+          "energy_keV": 769.6,
+          "absolute_intensity": 0.06212,
+          "intensity_percent": 6.212,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9557
+            }
+          ]
+        },
+        {
+          "energy_keV": 1277.5,
+          "absolute_intensity": 0.015291,
+          "intensity_percent": 1.5291000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

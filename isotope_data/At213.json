@@ -1,0 +1,27 @@
+{
+  "symbol": "At213",
+  "Z": 85,
+  "A": 213,
+  "atomic_mass": 212.992936646,
+  "half_life": {
+    "value": 1.25e-07,
+    "unit": "seconds",
+    "seconds": 1.25e-07
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bi209",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -5,6 +5,7 @@
 
 #include "PrimaryGeneratorAction.hh"
 #include "DetectorConstruction.hh"
+#include "IsotopeDecay.hh"
 
 #include "G4ParticleGun.hh"
 #include "G4ParticleTable.hh"
@@ -36,12 +37,14 @@ PrimaryGeneratorAction::PrimaryGeneratorAction(const std::string& rainierFile)
     fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0., 0., 1.));
     fParticleGun->SetParticleEnergy(1.*MeV);
 
-    // Load gamma data
-    if (!fRAINIERFile.empty()) {
-        LoadRAINIERData();
-    } else {
-        LoadTestData();
-        G4cout << "Using Co-60 test data (1173 keV and 1332 keV gammas)" << G4endl;
+    // Load gamma data if not using isotope mode
+    if (fIsotopeSymbol.empty()) {
+        if (!fRAINIERFile.empty()) {
+            LoadRAINIERData();
+        } else {
+            LoadTestData();
+            G4cout << "Using Co-60 test data (1173 keV and 1332 keV gammas)" << G4endl;
+        }
     }
 }
 
@@ -56,29 +59,30 @@ PrimaryGeneratorAction::~PrimaryGeneratorAction()
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-    // Sample a gamma ray from the data
-    GammaData gamma = SampleGamma();
-    
-    // Set gamma energy
-    fParticleGun->SetParticleEnergy(gamma.energy * MeV);
-    
-    // Set source position (point source for now)
-    G4ThreeVector sourcePos = SampleSourcePosition();
-    fParticleGun->SetParticlePosition(sourcePos);
-    
-    // Set isotropic direction
-    G4ThreeVector direction = SampleDirection();
-    fParticleGun->SetParticleMomentumDirection(direction);
-    
-    // DEBUG: Print every 1000th event
-    if (anEvent->GetEventID() % 1000 == 0) {
-        G4cout << "Event " << anEvent->GetEventID() 
-               << ": Generated " << gamma.energy << " MeV gamma at " 
-               << sourcePos << " with direction " << direction << G4endl;
+    // Isotope-driven generation: singles mode (one gamma per Geant4 event)
+    if (!fIsotopeSymbol.empty()) {
+        GenerateFromIsotope_Singles(anEvent);
+        return;
     }
-    
-    // Generate the primary particle
-    fParticleGun->GeneratePrimaryVertex(anEvent);
+
+    // RAINIER/test: one gamma per event
+    {
+        GammaData gamma = SampleGamma();
+        // Set gamma energy
+        fParticleGun->SetParticleEnergy(gamma.energy * MeV);
+        // Set source position
+        G4ThreeVector sourcePos = SampleSourcePosition();
+        fParticleGun->SetParticlePosition(sourcePos);
+        // Set isotropic direction
+        G4ThreeVector direction = SampleDirection();
+        fParticleGun->SetParticleMomentumDirection(direction);
+        if (anEvent->GetEventID() % 100000 == 0) {
+            G4cout << "Event " << anEvent->GetEventID()
+                   << ": Generated " << gamma.energy << " MeV gamma at "
+                   << sourcePos << " with direction " << direction << G4endl;
+        }
+        fParticleGun->GeneratePrimaryVertex(anEvent);
+    }
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
@@ -234,4 +238,135 @@ G4ThreeVector PrimaryGeneratorAction::SampleDirection()
     return G4ThreeVector(sinTheta * std::cos(phi),
                          sinTheta * std::sin(phi),
                          cosTheta);
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void PrimaryGeneratorAction::GenerateFromIsotope_Singles(G4Event* anEvent)
+{
+    // Ensure there is at least one gamma queued; if not, sample decays until there is
+    int tries = 0;
+    while (fGammaQueue_keV.empty() && tries++ < 256) {
+        PrepareNextDecayGammas();
+    }
+
+    // If still empty, nothing to shoot
+    if (fGammaQueue_keV.empty()) {
+        if (anEvent->GetEventID() % 1000 == 0) {
+            G4cout << "[Isotope] No gamma available to emit in event " << anEvent->GetEventID() << G4endl;
+        }
+        // Emit a dummy very low energy gamma to keep event loop consistent
+        fLastTrueEnergy_keV = 0.0;
+        fParticleGun->SetParticleEnergy(1e-6 * keV);
+        fParticleGun->SetParticlePosition(SampleSourcePosition());
+        fParticleGun->SetParticleMomentumDirection(SampleDirection());
+        fParticleGun->GeneratePrimaryVertex(anEvent);
+        return;
+    }
+
+    // Pop one gamma and emit
+    fLastTrueEnergy_keV = fGammaQueue_keV.front();
+    fGammaQueue_keV.pop_front();
+    ++fNgammaPrimaries;
+
+    fParticleGun->SetParticleEnergy(fLastTrueEnergy_keV * keV);
+    fParticleGun->SetParticlePosition(SampleSourcePosition());
+    fParticleGun->SetParticleMomentumDirection(SampleDirection());
+    fParticleGun->GeneratePrimaryVertex(anEvent);
+}
+
+bool PrimaryGeneratorAction::PrepareNextDecayGammas()
+{
+    static IsotopeDataLoader loader;
+    std::string current = fIsotopeSymbol;
+    if (current.empty()) return false;
+    ++fNdecays;
+
+    bool anyGamma = false;
+    int steps = 0;
+    const int maxSteps = 64;
+    while (!current.empty() && steps++ < maxSteps) {
+        IsotopeInfo iso;
+        if (!loader.Load(current, iso)) {
+            G4cout << "[Isotope] Warning: could not load data for '" << current
+                   << "' from isotope_data. Stopping chain for this decay." << G4endl;
+            break;
+        }
+        if (iso.is_stable || iso.modes.empty()) {
+            break;
+        }
+        // Sample a decay mode by branching ratio
+        double totalBR = 0.0;
+        for (const auto& m : iso.modes) totalBR += m.branching_ratio;
+        if (totalBR <= 0.0) break;
+        std::uniform_real_distribution<double> dist(0.0, totalBR);
+        const double r = dist(fRandomGenerator);
+        const DecayMode* chosen = nullptr;
+        double acc = 0.0;
+        for (const auto& m : iso.modes) {
+            acc += m.branching_ratio;
+            if (r <= acc) { chosen = &m; break; }
+        }
+        if (!chosen) chosen = &iso.modes.back();
+
+        // Sample gamma emissions for this branch
+        for (const auto& gl : chosen->gammas) {
+            double mean = gl.absolute_intensity;
+            if (mean <= 0.0) continue;
+            int copies = 0;
+            if (mean < 1.0) {
+                std::bernoulli_distribution b(mean);
+                copies = b(fRandomGenerator) ? 1 : 0;
+            } else {
+                copies = static_cast<int>(mean);
+                double frac = mean - copies;
+                if (frac > 1e-12) {
+                    std::bernoulli_distribution b(frac);
+                    if (b(fRandomGenerator)) ++copies;
+                }
+            }
+            for (int i = 0; i < copies; ++i) {
+                fGammaQueue_keV.push_back(gl.energy_keV);
+                anyGamma = true;
+            }
+        }
+        current = chosen->daughter;
+    }
+    return anyGamma;
+}
+
+const std::vector<std::pair<double,double>>& PrimaryGeneratorAction::GetTruthGammaLines()
+{
+    if (fTruthReady) return fTruthLines;
+    fTruthLines.clear();
+    if (!fIsotopeSymbol.empty()) {
+        AccumulateTruthLines(fIsotopeSymbol, 1.0);
+    } else if (!fRAINIERFile.empty()) {
+        // For RAINIER, map current fGammaData to truth once
+        for (const auto& g : fGammaData) {
+            fTruthLines.emplace_back(g.energy*1000.0, g.intensity); // MeV→keV
+        }
+    }
+    fTruthReady = true;
+    return fTruthLines;
+}
+
+void PrimaryGeneratorAction::AccumulateTruthLines(const std::string& isoSymbol, double weight)
+{
+    static IsotopeDataLoader loader;
+    IsotopeInfo iso;
+    if (!loader.Load(isoSymbol, iso)) return;
+    if (iso.is_stable || iso.modes.empty()) return;
+    for (const auto& m : iso.modes) {
+        const double w = weight * m.branching_ratio;
+        if (w <= 0.0) continue;
+        for (const auto& gl : m.gammas) {
+            if (gl.absolute_intensity > 0.0) {
+                fTruthLines.emplace_back(gl.energy_keV, w * gl.absolute_intensity);
+            }
+        }
+        if (!m.daughter.empty()) {
+            AccumulateTruthLines(m.daughter, w);
+        }
+    }
 }

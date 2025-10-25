@@ -1,0 +1,33 @@
+{
+  "symbol": "Mo93",
+  "Z": 42,
+  "A": 93,
+  "atomic_mass": 92.90681261,
+  "half_life": {
+    "value": 4002.7270421106036,
+    "unit": "years",
+    "seconds": 126230000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Nb93m",
+      "branching_ratio": 0.88,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Nb93",
+      "branching_ratio": 0.12,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

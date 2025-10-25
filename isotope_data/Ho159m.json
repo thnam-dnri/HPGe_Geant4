@@ -1,0 +1,52 @@
+{
+  "symbol": "Ho159m",
+  "Z": 67,
+  "A": 159,
+  "atomic_mass": 158.927933012,
+  "half_life": {
+    "value": 8.3,
+    "unit": "seconds",
+    "seconds": 8.3
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ho159",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 39.5,
+          "absolute_intensity": 2.376e-06,
+          "intensity_percent": 0.00023760000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3658
+            }
+          ]
+        },
+        {
+          "energy_keV": 166.0,
+          "absolute_intensity": 0.051876,
+          "intensity_percent": 5.1876,
+          "id": "1"
+        },
+        {
+          "energy_keV": 205.9,
+          "absolute_intensity": 0.396,
+          "intensity_percent": 39.6,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

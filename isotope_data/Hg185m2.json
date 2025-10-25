@@ -1,0 +1,27 @@
+{
+  "symbol": "Hg185m2",
+  "Z": 80,
+  "A": 185,
+  "atomic_mass": 184.97200568893618,
+  "half_life": {
+    "value": 21.6,
+    "unit": "seconds",
+    "seconds": 21.6
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pt181",
+      "branching_ratio": 0.0003,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

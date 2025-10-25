@@ -1,0 +1,27 @@
+{
+  "symbol": "Mn63",
+  "Z": 25,
+  "A": 63,
+  "atomic_mass": 62.95023999,
+  "half_life": {
+    "value": 0.275,
+    "unit": "seconds",
+    "seconds": 0.275
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fe63",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

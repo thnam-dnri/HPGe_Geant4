@@ -1,0 +1,27 @@
+{
+  "symbol": "Fm249",
+  "Z": 100,
+  "A": 249,
+  "atomic_mass": 249.079034,
+  "half_life": {
+    "value": 2.6,
+    "unit": "minutes",
+    "seconds": 156.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cf245",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

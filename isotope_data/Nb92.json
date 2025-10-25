@@ -1,0 +1,46 @@
+{
+  "symbol": "Nb92",
+  "Z": 41,
+  "A": 92,
+  "atomic_mass": 91.907193888,
+  "half_life": {
+    "value": 34723807.71182141,
+    "unit": "years",
+    "seconds": 1095050000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Zr92",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 561.1,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 934.5,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

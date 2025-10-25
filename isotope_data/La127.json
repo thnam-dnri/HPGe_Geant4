@@ -1,0 +1,27 @@
+{
+  "symbol": "La127",
+  "Z": 57,
+  "A": 127,
+  "atomic_mass": 126.916375448,
+  "half_life": {
+    "value": 5.1,
+    "unit": "minutes",
+    "seconds": 306.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Ba127",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

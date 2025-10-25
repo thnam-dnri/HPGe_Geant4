@@ -1,0 +1,27 @@
+{
+  "symbol": "Cd120",
+  "Z": 48,
+  "A": 120,
+  "atomic_mass": 119.909850129,
+  "half_life": {
+    "value": 50.8,
+    "unit": "seconds",
+    "seconds": 50.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "In120",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

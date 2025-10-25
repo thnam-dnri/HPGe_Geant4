@@ -1,0 +1,27 @@
+{
+  "symbol": "S35",
+  "Z": 16,
+  "A": 35,
+  "atomic_mass": 34.969032161,
+  "half_life": {
+    "value": 87.5099537037037,
+    "unit": "days",
+    "seconds": 7560860.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cl35",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

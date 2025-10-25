@@ -1,0 +1,27 @@
+{
+  "symbol": "Si32",
+  "Z": 14,
+  "A": 32,
+  "atomic_mass": 31.974148082,
+  "half_life": {
+    "value": 153.1047057331304,
+    "unit": "years",
+    "seconds": 4828310000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "P32",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

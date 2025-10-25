@@ -1,0 +1,40 @@
+{
+  "symbol": "Po212m2",
+  "Z": 84,
+  "A": 212,
+  "atomic_mass": 211.992004865,
+  "half_life": {
+    "value": 45.1,
+    "unit": "seconds",
+    "seconds": 45.1
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pb208",
+      "branching_ratio": 0.9993,
+      "gammas": [
+        {
+          "energy_keV": 2610.0,
+          "absolute_intensity": 0.026,
+          "intensity_percent": 2.6,
+          "id": ""
+        },
+        {
+          "energy_keV": 570.0,
+          "absolute_intensity": 0.02,
+          "intensity_percent": 2.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

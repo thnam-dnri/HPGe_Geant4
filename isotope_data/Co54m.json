@@ -1,0 +1,62 @@
+{
+  "symbol": "Co54m",
+  "Z": 27,
+  "A": 54,
+  "atomic_mass": 53.948671123,
+  "half_life": {
+    "value": 1.48,
+    "unit": "minutes",
+    "seconds": 88.8
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Fe54",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 411.0,
+          "absolute_intensity": 0.97,
+          "intensity_percent": 97.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            },
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1130.0,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1407.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "2"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "symbol": "Sm143m",
+  "Z": 62,
+  "A": 143,
+  "atomic_mass": 142.91543778,
+  "half_life": {
+    "value": 1.1,
+    "unit": "minutes",
+    "seconds": 66.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Sm143",
+      "branching_ratio": 0.9976,
+      "gammas": [
+        {
+          "energy_keV": 754.4,
+          "absolute_intensity": 0.901,
+          "intensity_percent": 90.10000000000001,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Pm143",
+      "branching_ratio": 0.0024,
+      "gammas": [
+        {
+          "energy_keV": 271.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 689.0,
+          "absolute_intensity": 0.812,
+          "intensity_percent": 81.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 963.0,
+          "absolute_intensity": 0.1624,
+          "intensity_percent": 16.24,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

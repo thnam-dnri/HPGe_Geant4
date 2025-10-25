@@ -1,0 +1,40 @@
+{
+  "symbol": "Fr207",
+  "Z": 87,
+  "A": 207,
+  "atomic_mass": 206.996949414,
+  "half_life": {
+    "value": 14.8,
+    "unit": "seconds",
+    "seconds": 14.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Rn207",
+      "branching_ratio": 0.05,
+      "gammas": [
+        {
+          "energy_keV": 665.1,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "At203",
+      "branching_ratio": 0.95,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

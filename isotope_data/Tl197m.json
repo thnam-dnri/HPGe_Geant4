@@ -1,0 +1,46 @@
+{
+  "symbol": "Tl197m",
+  "Z": 81,
+  "A": 197,
+  "atomic_mass": 196.970227462,
+  "half_life": {
+    "value": 0.54,
+    "unit": "seconds",
+    "seconds": 0.54
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl197",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 222.45,
+          "absolute_intensity": 0.305,
+          "intensity_percent": 30.5,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9141
+            }
+          ]
+        },
+        {
+          "energy_keV": 385.8,
+          "absolute_intensity": 0.914,
+          "intensity_percent": 91.4,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

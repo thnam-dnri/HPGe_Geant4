@@ -1,0 +1,33 @@
+{
+  "symbol": "Zr93",
+  "Z": 40,
+  "A": 93,
+  "atomic_mass": 92.906476006,
+  "half_life": {
+    "value": 1531047.0573313038,
+    "unit": "years",
+    "seconds": 48283100000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Nb93m",
+      "branching_ratio": 0.975,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Nb93",
+      "branching_ratio": 0.025,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

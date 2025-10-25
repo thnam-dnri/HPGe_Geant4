@@ -1,0 +1,40 @@
+{
+  "symbol": "V61",
+  "Z": 23,
+  "A": 61,
+  "atomic_mass": 60.96848,
+  "half_life": {
+    "value": 0.047,
+    "unit": "seconds",
+    "seconds": 0.047
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-n",
+      "daughter": "Cr60",
+      "branching_ratio": 0.06,
+      "gammas": [
+        {
+          "energy_keV": 646.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Cr61",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

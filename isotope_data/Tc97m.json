@@ -1,0 +1,40 @@
+{
+  "symbol": "Tc97m",
+  "Z": 43,
+  "A": 97,
+  "atomic_mass": 96.90646903,
+  "half_life": {
+    "value": 91.0,
+    "unit": "days",
+    "seconds": 7862400.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tc97",
+      "branching_ratio": 0.9606,
+      "gammas": [
+        {
+          "energy_keV": 96.5,
+          "absolute_intensity": 0.003332,
+          "intensity_percent": 0.3332,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Mo97",
+      "branching_ratio": 0.0394,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

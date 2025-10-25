@@ -1,0 +1,52 @@
+{
+  "symbol": "Er169",
+  "Z": 68,
+  "A": 169,
+  "atomic_mass": 168.934590364,
+  "half_life": {
+    "value": 9.392002314814814,
+    "unit": "days",
+    "seconds": 811469.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Tm169",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 8.41,
+          "absolute_intensity": 0.0017,
+          "intensity_percent": 0.16999999999999998,
+          "id": "0"
+        },
+        {
+          "energy_keV": 109.78,
+          "absolute_intensity": 1.3e-05,
+          "intensity_percent": 0.0013,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.003762
+            }
+          ]
+        },
+        {
+          "energy_keV": 118.19,
+          "absolute_intensity": 1.4e-06,
+          "intensity_percent": 0.00014,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

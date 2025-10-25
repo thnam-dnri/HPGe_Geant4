@@ -1,0 +1,33 @@
+{
+  "symbol": "Po218",
+  "Z": 84,
+  "A": 218,
+  "atomic_mass": 218.008973037,
+  "half_life": {
+    "value": 3.098,
+    "unit": "minutes",
+    "seconds": 185.88
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "At218",
+      "branching_ratio": 0.0002,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Pb214",
+      "branching_ratio": 0.9998,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

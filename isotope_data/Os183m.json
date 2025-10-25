@@ -1,0 +1,737 @@
+{
+  "symbol": "Os183m",
+  "Z": 76,
+  "A": 183,
+  "atomic_mass": 182.953309367,
+  "half_life": {
+    "value": 9.9,
+    "unit": "hours",
+    "seconds": 35640.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Os183",
+      "branching_ratio": 0.15,
+      "gammas": [
+        {
+          "energy_keV": 170.71,
+          "absolute_intensity": 0.00465,
+          "intensity_percent": 0.46499999999999997,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Re183",
+      "branching_ratio": 0.85,
+      "gammas": [
+        {
+          "energy_keV": 67.24,
+          "absolute_intensity": 0.01008,
+          "intensity_percent": 1.008,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "30",
+              "correlation": 0.2107
+            }
+          ]
+        },
+        {
+          "energy_keV": 80.01,
+          "absolute_intensity": 0.00097889,
+          "intensity_percent": 0.097889,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "22",
+              "correlation": 0.182
+            },
+            {
+              "id": "27",
+              "correlation": 0.3919
+            },
+            {
+              "id": "3",
+              "correlation": 0.02294
+            }
+          ]
+        },
+        {
+          "energy_keV": 101.78,
+          "absolute_intensity": 0.0024192,
+          "intensity_percent": 0.24191999999999997,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0726
+            },
+            {
+              "id": "12",
+              "correlation": 0.5715
+            }
+          ]
+        },
+        {
+          "energy_keV": 114.35,
+          "absolute_intensity": 0.0082944,
+          "intensity_percent": 0.8294400000000001,
+          "id": "3"
+        },
+        {
+          "energy_keV": 128.38,
+          "absolute_intensity": 0.0016128,
+          "intensity_percent": 0.16128,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.04182
+            },
+            {
+              "id": "12",
+              "correlation": 0.3292
+            },
+            {
+              "id": "2",
+              "correlation": 0.1178
+            }
+          ]
+        },
+        {
+          "energy_keV": 147.07,
+          "absolute_intensity": 0.0052416,
+          "intensity_percent": 0.52416,
+          "id": "5",
+          "coincident_gammas": [
+            {
+              "id": "22",
+              "correlation": 0.182
+            },
+            {
+              "id": "27",
+              "correlation": 0.3919
+            },
+            {
+              "id": "3",
+              "correlation": 0.02294
+            }
+          ]
+        },
+        {
+          "energy_keV": 230.16,
+          "absolute_intensity": 0.0040896,
+          "intensity_percent": 0.40896,
+          "id": "6",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0726
+            },
+            {
+              "id": "12",
+              "correlation": 0.5715
+            }
+          ]
+        },
+        {
+          "energy_keV": 237.11,
+          "absolute_intensity": 0.00288,
+          "intensity_percent": 0.28800000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.0293
+            },
+            {
+              "id": "21",
+              "correlation": 0.06398
+            },
+            {
+              "id": "3",
+              "correlation": 0.02952
+            },
+            {
+              "id": "12",
+              "correlation": 0.2323
+            },
+            {
+              "id": "4",
+              "correlation": 0.0689
+            },
+            {
+              "id": "6",
+              "correlation": 0.1747
+            }
+          ]
+        },
+        {
+          "energy_keV": 245.89,
+          "absolute_intensity": 0.0036288,
+          "intensity_percent": 0.36288000000000004,
+          "id": "8",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0005476
+            },
+            {
+              "id": "34",
+              "correlation": 0.5669
+            },
+            {
+              "id": "29",
+              "correlation": 0.004344
+            }
+          ]
+        },
+        {
+          "energy_keV": 251.87,
+          "absolute_intensity": 0.004608,
+          "intensity_percent": 0.4608,
+          "id": "9",
+          "coincident_gammas": [
+            {
+              "id": "12",
+              "correlation": 0.001454
+            },
+            {
+              "id": "22",
+              "correlation": 0.002385
+            },
+            {
+              "id": "0",
+              "correlation": 0.009096
+            },
+            {
+              "id": "2",
+              "correlation": 0.0005204
+            },
+            {
+              "id": "30",
+              "correlation": 0.007723
+            },
+            {
+              "id": "3",
+              "correlation": 0.0004854
+            },
+            {
+              "id": "5",
+              "correlation": 0.00473
+            },
+            {
+              "id": "27",
+              "correlation": 0.005134
+            },
+            {
+              "id": "11",
+              "correlation": 0.004418
+            },
+            {
+              "id": "32",
+              "correlation": 0.5198
+            }
+          ]
+        },
+        {
+          "energy_keV": 365.48,
+          "absolute_intensity": 0.0019584,
+          "intensity_percent": 0.19584,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.04182
+            },
+            {
+              "id": "12",
+              "correlation": 0.3292
+            },
+            {
+              "id": "2",
+              "correlation": 0.1178
+            }
+          ]
+        },
+        {
+          "energy_keV": 401.3,
+          "absolute_intensity": 0.004896,
+          "intensity_percent": 0.48960000000000004,
+          "id": "11",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.04182
+            },
+            {
+              "id": "12",
+              "correlation": 0.3292
+            },
+            {
+              "id": "2",
+              "correlation": 0.1178
+            }
+          ]
+        },
+        {
+          "energy_keV": 484.49,
+          "absolute_intensity": 0.026035,
+          "intensity_percent": 2.6035,
+          "id": "12",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.126
+            }
+          ]
+        },
+        {
+          "energy_keV": 535.7,
+          "absolute_intensity": 5.184e-05,
+          "intensity_percent": 0.005184,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "24",
+              "correlation": 0.5724
+            }
+          ]
+        },
+        {
+          "energy_keV": 550.04,
+          "absolute_intensity": 0.0021888,
+          "intensity_percent": 0.21888,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "12",
+              "correlation": 0.0003957
+            },
+            {
+              "id": "40",
+              "correlation": 0.08527
+            },
+            {
+              "id": "8",
+              "correlation": 0.1535
+            },
+            {
+              "id": "29",
+              "correlation": 0.0009489
+            },
+            {
+              "id": "22",
+              "correlation": 0.000649
+            },
+            {
+              "id": "0",
+              "correlation": 0.002475
+            },
+            {
+              "id": "2",
+              "correlation": 0.0001416
+            },
+            {
+              "id": "30",
+              "correlation": 0.002101
+            },
+            {
+              "id": "3",
+              "correlation": 0.0002517
+            },
+            {
+              "id": "5",
+              "correlation": 0.001287
+            },
+            {
+              "id": "27",
+              "correlation": 0.001397
+            },
+            {
+              "id": "34",
+              "correlation": 0.1238
+            },
+            {
+              "id": "9",
+              "correlation": 0.1949
+            },
+            {
+              "id": "11",
+              "correlation": 0.001202
+            },
+            {
+              "id": "32",
+              "correlation": 0.1414
+            }
+          ]
+        },
+        {
+          "energy_keV": 585.62,
+          "absolute_intensity": 0.0024192,
+          "intensity_percent": 0.24191999999999997,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.0293
+            },
+            {
+              "id": "21",
+              "correlation": 0.06398
+            },
+            {
+              "id": "3",
+              "correlation": 0.02952
+            },
+            {
+              "id": "12",
+              "correlation": 0.2323
+            },
+            {
+              "id": "4",
+              "correlation": 0.0689
+            },
+            {
+              "id": "6",
+              "correlation": 0.1747
+            }
+          ]
+        },
+        {
+          "energy_keV": 714.0,
+          "absolute_intensity": 0.001152,
+          "intensity_percent": 0.1152,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.04182
+            },
+            {
+              "id": "12",
+              "correlation": 0.3292
+            },
+            {
+              "id": "2",
+              "correlation": 0.1178
+            }
+          ]
+        },
+        {
+          "energy_keV": 724.6,
+          "absolute_intensity": 0.0010368,
+          "intensity_percent": 0.10368000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 734.14,
+          "absolute_intensity": 0.0018432,
+          "intensity_percent": 0.18431999999999998,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.0293
+            },
+            {
+              "id": "21",
+              "correlation": 0.06398
+            },
+            {
+              "id": "3",
+              "correlation": 0.02952
+            },
+            {
+              "id": "12",
+              "correlation": 0.2323
+            },
+            {
+              "id": "4",
+              "correlation": 0.0689
+            },
+            {
+              "id": "6",
+              "correlation": 0.1747
+            }
+          ]
+        },
+        {
+          "energy_keV": 795.93,
+          "absolute_intensity": 0.0039168,
+          "intensity_percent": 0.39168,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0005476
+            },
+            {
+              "id": "34",
+              "correlation": 0.5669
+            },
+            {
+              "id": "29",
+              "correlation": 0.004344
+            }
+          ]
+        },
+        {
+          "energy_keV": 815.78,
+          "absolute_intensity": 0.0010368,
+          "intensity_percent": 0.10368000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0726
+            },
+            {
+              "id": "12",
+              "correlation": 0.5715
+            }
+          ]
+        },
+        {
+          "energy_keV": 829.0,
+          "absolute_intensity": 0.0014976,
+          "intensity_percent": 0.14976,
+          "id": "21"
+        },
+        {
+          "energy_keV": 840.51,
+          "absolute_intensity": 0.0075456,
+          "intensity_percent": 0.75456,
+          "id": "22",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.126
+            }
+          ]
+        },
+        {
+          "energy_keV": 853.4,
+          "absolute_intensity": 0.0038592,
+          "intensity_percent": 0.38592000000000004,
+          "id": ""
+        },
+        {
+          "energy_keV": 878.91,
+          "absolute_intensity": 0.023155,
+          "intensity_percent": 2.3154999999999997,
+          "id": "24"
+        },
+        {
+          "energy_keV": 926.35,
+          "absolute_intensity": 0.0014976,
+          "intensity_percent": 0.14976,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.126
+            }
+          ]
+        },
+        {
+          "energy_keV": 948.98,
+          "absolute_intensity": 0.0027072,
+          "intensity_percent": 0.27071999999999996,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "22",
+              "correlation": 0.182
+            },
+            {
+              "id": "27",
+              "correlation": 0.3919
+            },
+            {
+              "id": "3",
+              "correlation": 0.02294
+            }
+          ]
+        },
+        {
+          "energy_keV": 954.85,
+          "absolute_intensity": 0.016243,
+          "intensity_percent": 1.6243,
+          "id": "27"
+        },
+        {
+          "energy_keV": 964.31,
+          "absolute_intensity": 0.0007488,
+          "intensity_percent": 0.07488,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0726
+            },
+            {
+              "id": "12",
+              "correlation": 0.5715
+            }
+          ]
+        },
+        {
+          "energy_keV": 993.56,
+          "absolute_intensity": 0.002016,
+          "intensity_percent": 0.2016,
+          "id": "29",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.126
+            }
+          ]
+        },
+        {
+          "energy_keV": 1034.86,
+          "absolute_intensity": 0.070848,
+          "intensity_percent": 7.0847999999999995,
+          "id": "30"
+        },
+        {
+          "energy_keV": 1040.69,
+          "absolute_intensity": 0.0033984,
+          "intensity_percent": 0.33984000000000003,
+          "id": ""
+        },
+        {
+          "energy_keV": 1101.92,
+          "absolute_intensity": 0.576,
+          "intensity_percent": 57.599999999999994,
+          "id": "32"
+        },
+        {
+          "energy_keV": 1104.7,
+          "absolute_intensity": 0.0065664,
+          "intensity_percent": 0.65664,
+          "id": ""
+        },
+        {
+          "energy_keV": 1107.9,
+          "absolute_intensity": 0.26306,
+          "intensity_percent": 26.306,
+          "id": "34"
+        },
+        {
+          "energy_keV": 1110.4,
+          "absolute_intensity": 0.0035136,
+          "intensity_percent": 0.35136,
+          "id": ""
+        },
+        {
+          "energy_keV": 1161.1,
+          "absolute_intensity": 0.0061056,
+          "intensity_percent": 0.61056,
+          "id": ""
+        },
+        {
+          "energy_keV": 1173.99,
+          "absolute_intensity": 0.0021888,
+          "intensity_percent": 0.21888,
+          "id": ""
+        },
+        {
+          "energy_keV": 1283.4,
+          "absolute_intensity": 0.0012672,
+          "intensity_percent": 0.12672,
+          "id": ""
+        },
+        {
+          "energy_keV": 1331.08,
+          "absolute_intensity": 0.000864,
+          "intensity_percent": 0.08639999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 1353.79,
+          "absolute_intensity": 0.002016,
+          "intensity_percent": 0.2016,
+          "id": "40"
+        },
+        {
+          "energy_keV": 1468.9,
+          "absolute_intensity": 0.0001728,
+          "intensity_percent": 0.01728,
+          "id": ""
+        },
+        {
+          "energy_keV": 1473.1,
+          "absolute_intensity": 0.0001728,
+          "intensity_percent": 0.01728,
+          "id": ""
+        },
+        {
+          "energy_keV": 1562.6,
+          "absolute_intensity": 0.0003456,
+          "intensity_percent": 0.03456,
+          "id": ""
+        },
+        {
+          "energy_keV": 1626.39,
+          "absolute_intensity": 0.0007488,
+          "intensity_percent": 0.07488,
+          "id": ""
+        },
+        {
+          "energy_keV": 1650.02,
+          "absolute_intensity": 0.0003456,
+          "intensity_percent": 0.03456,
+          "id": ""
+        },
+        {
+          "energy_keV": 1678.48,
+          "absolute_intensity": 0.0004032,
+          "intensity_percent": 0.04032,
+          "id": ""
+        },
+        {
+          "energy_keV": 1806.71,
+          "absolute_intensity": 0.0010944,
+          "intensity_percent": 0.10944,
+          "id": ""
+        },
+        {
+          "energy_keV": 1826.1,
+          "absolute_intensity": 0.0009216,
+          "intensity_percent": 0.09215999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 1903.82,
+          "absolute_intensity": 0.0013248,
+          "intensity_percent": 0.13248,
+          "id": ""
+        },
+        {
+          "energy_keV": 1919.0,
+          "absolute_intensity": 0.0002304,
+          "intensity_percent": 0.023039999999999998,
+          "id": ""
+        },
+        {
+          "energy_keV": 1948.13,
+          "absolute_intensity": 0.0004032,
+          "intensity_percent": 0.04032,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 53
+  }
+}

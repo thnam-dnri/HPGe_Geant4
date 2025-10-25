@@ -1,0 +1,40 @@
+{
+  "symbol": "Dy152",
+  "Z": 66,
+  "A": 152,
+  "atomic_mass": 151.9247183,
+  "half_life": {
+    "value": 2.38,
+    "unit": "hours",
+    "seconds": 8568.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tb152",
+      "branching_ratio": 0.999,
+      "gammas": [
+        {
+          "energy_keV": 256.93,
+          "absolute_intensity": 0.976,
+          "intensity_percent": 97.6,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Gd148",
+      "branching_ratio": 0.001,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

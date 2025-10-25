@@ -1,0 +1,90 @@
+{
+  "symbol": "Np242m",
+  "Z": 93,
+  "A": 242,
+  "atomic_mass": 242.06164118,
+  "half_life": {
+    "value": 5.5,
+    "unit": "minutes",
+    "seconds": 330.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pu242",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 44.54,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 102.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 159.1,
+          "absolute_intensity": 0.1888,
+          "intensity_percent": 18.88,
+          "id": "2"
+        },
+        {
+          "energy_keV": 265.1,
+          "absolute_intensity": 0.1416,
+          "intensity_percent": 14.16,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "5",
+              "correlation": 0.2192
+            },
+            {
+              "id": "4",
+              "correlation": 0.3479
+            },
+            {
+              "id": "2",
+              "correlation": 0.06888
+            }
+          ]
+        },
+        {
+          "energy_keV": 785.7,
+          "absolute_intensity": 0.59,
+          "intensity_percent": 59.0,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.1873
+            }
+          ]
+        },
+        {
+          "energy_keV": 944.8,
+          "absolute_intensity": 0.3717,
+          "intensity_percent": 37.169999999999995,
+          "id": "5"
+        },
+        {
+          "energy_keV": 1104.0,
+          "absolute_intensity": 0.00354,
+          "intensity_percent": 0.35400000000000004,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

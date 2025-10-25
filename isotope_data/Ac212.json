@@ -1,0 +1,27 @@
+{
+  "symbol": "Ac212",
+  "Z": 89,
+  "A": 212,
+  "atomic_mass": 212.007813822,
+  "half_life": {
+    "value": 0.93,
+    "unit": "seconds",
+    "seconds": 0.93
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Fr208",
+      "branching_ratio": 0.97,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "symbol": "Os167",
+  "Z": 76,
+  "A": 167,
+  "atomic_mass": 166.971547969,
+  "half_life": {
+    "value": 0.81,
+    "unit": "seconds",
+    "seconds": 0.81
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "W163",
+      "branching_ratio": 0.5,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Re167",
+      "branching_ratio": 0.43,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

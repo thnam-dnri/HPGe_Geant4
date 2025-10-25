@@ -1,0 +1,27 @@
+{
+  "symbol": "Tm147m",
+  "Z": 69,
+  "A": 147,
+  "atomic_mass": 146.961034001,
+  "half_life": {
+    "value": 0.00036,
+    "unit": "seconds",
+    "seconds": 0.00036
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "p",
+      "daughter": "Er146",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

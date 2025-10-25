@@ -1,0 +1,70 @@
+{
+  "symbol": "Bi200m",
+  "Z": 83,
+  "A": 200,
+  "atomic_mass": 199.978131829,
+  "half_life": {
+    "value": 31.0,
+    "unit": "minutes",
+    "seconds": 1860.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pb200",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 245.3,
+          "absolute_intensity": 0.04896,
+          "intensity_percent": 4.896,
+          "id": ""
+        },
+        {
+          "energy_keV": 273.0,
+          "absolute_intensity": 0.0048,
+          "intensity_percent": 0.48,
+          "id": ""
+        },
+        {
+          "energy_keV": 419.8,
+          "absolute_intensity": 0.22752,
+          "intensity_percent": 22.752,
+          "id": ""
+        },
+        {
+          "energy_keV": 462.4,
+          "absolute_intensity": 0.39936,
+          "intensity_percent": 39.936,
+          "id": ""
+        },
+        {
+          "energy_keV": 712.7,
+          "absolute_intensity": 0.01728,
+          "intensity_percent": 1.728,
+          "id": ""
+        },
+        {
+          "energy_keV": 1026.8,
+          "absolute_intensity": 0.96,
+          "intensity_percent": 96.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1739.5,
+          "absolute_intensity": 0.04128,
+          "intensity_percent": 4.128,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

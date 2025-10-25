@@ -1,0 +1,82 @@
+{
+  "symbol": "Cr55",
+  "Z": 24,
+  "A": 55,
+  "atomic_mass": 54.940839672,
+  "half_life": {
+    "value": 3.497,
+    "unit": "minutes",
+    "seconds": 209.82
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Mn55",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 126.0,
+          "absolute_intensity": 1.739e-05,
+          "intensity_percent": 0.001739,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1402.0,
+          "absolute_intensity": 1.332e-05,
+          "intensity_percent": 0.0013319999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.00037
+            }
+          ]
+        },
+        {
+          "energy_keV": 1528.0,
+          "absolute_intensity": 0.00037,
+          "intensity_percent": 0.037,
+          "id": ""
+        },
+        {
+          "energy_keV": 2240.9,
+          "absolute_intensity": 4.07e-06,
+          "intensity_percent": 0.000407,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.00037
+            }
+          ]
+        },
+        {
+          "energy_keV": 2252.5,
+          "absolute_intensity": 3.145e-05,
+          "intensity_percent": 0.003145,
+          "id": ""
+        },
+        {
+          "energy_keV": 2268.1,
+          "absolute_intensity": 1.11e-06,
+          "intensity_percent": 0.000111,
+          "id": ""
+        },
+        {
+          "energy_keV": 2368.5,
+          "absolute_intensity": 1.813e-06,
+          "intensity_percent": 0.00018130000000000002,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

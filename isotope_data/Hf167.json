@@ -1,0 +1,52 @@
+{
+  "symbol": "Hf167",
+  "Z": 72,
+  "A": 167,
+  "atomic_mass": 166.9426,
+  "half_life": {
+    "value": 2.05,
+    "unit": "minutes",
+    "seconds": 123.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Lu167",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 139.9,
+          "absolute_intensity": 0.038,
+          "intensity_percent": 3.8,
+          "id": "0"
+        },
+        {
+          "energy_keV": 175.4,
+          "absolute_intensity": 0.06,
+          "intensity_percent": 6.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.4525
+            }
+          ]
+        },
+        {
+          "energy_keV": 315.24,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

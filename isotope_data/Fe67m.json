@@ -1,0 +1,52 @@
+{
+  "symbol": "Fe67m",
+  "Z": 26,
+  "A": 67,
+  "atomic_mass": 66.951362706,
+  "half_life": {
+    "value": 7.5e-05,
+    "unit": "seconds",
+    "seconds": 7.5e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Fe67",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 20.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 367.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 387.0,
+          "absolute_intensity": 0.12,
+          "intensity_percent": 12.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

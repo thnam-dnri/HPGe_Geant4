@@ -1,0 +1,27 @@
+{
+  "symbol": "Ir181",
+  "Z": 77,
+  "A": 181,
+  "atomic_mass": 180.957625297,
+  "half_life": {
+    "value": 4.9,
+    "unit": "minutes",
+    "seconds": 294.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Os181",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

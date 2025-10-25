@@ -1,0 +1,27 @@
+{
+  "symbol": "Ca41",
+  "Z": 20,
+  "A": 41,
+  "atomic_mass": 40.962278062,
+  "half_life": {
+    "value": 102070.01522070015,
+    "unit": "years",
+    "seconds": 3218880000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "K41",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

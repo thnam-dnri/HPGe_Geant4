@@ -1,0 +1,90 @@
+{
+  "symbol": "Yb175",
+  "Z": 70,
+  "A": 175,
+  "atomic_mass": 174.94127645,
+  "half_life": {
+    "value": 4.185,
+    "unit": "days",
+    "seconds": 361584.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Lu175",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 113.81,
+          "absolute_intensity": 0.038661,
+          "intensity_percent": 3.8661000000000003,
+          "id": "0"
+        },
+        {
+          "energy_keV": 137.66,
+          "absolute_intensity": 0.0023539,
+          "intensity_percent": 0.23539,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.03746
+            }
+          ]
+        },
+        {
+          "energy_keV": 144.86,
+          "absolute_intensity": 0.0067197,
+          "intensity_percent": 0.6719700000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.02962
+            },
+            {
+              "id": "0",
+              "correlation": 0.003669
+            },
+            {
+              "id": "1",
+              "correlation": 0.04047
+            }
+          ]
+        },
+        {
+          "energy_keV": 251.47,
+          "absolute_intensity": 0.0017227,
+          "intensity_percent": 0.17227,
+          "id": "3"
+        },
+        {
+          "energy_keV": 282.52,
+          "absolute_intensity": 0.061279,
+          "intensity_percent": 6.1279,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.03746
+            }
+          ]
+        },
+        {
+          "energy_keV": 396.33,
+          "absolute_intensity": 0.1315,
+          "intensity_percent": 13.15,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

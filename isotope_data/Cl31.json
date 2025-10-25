@@ -1,0 +1,40 @@
+{
+  "symbol": "Cl31",
+  "Z": 17,
+  "A": 31,
+  "atomic_mass": 30.992413086,
+  "half_life": {
+    "value": 0.15,
+    "unit": "seconds",
+    "seconds": 0.15
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "S31",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 2235.6,
+          "absolute_intensity": 0.79,
+          "intensity_percent": 79.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b+p",
+      "daughter": "P30",
+      "branching_ratio": 0.007,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

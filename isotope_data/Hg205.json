@@ -1,0 +1,164 @@
+{
+  "symbol": "Hg205",
+  "Z": 80,
+  "A": 205,
+  "atomic_mass": 204.976073386,
+  "half_life": {
+    "value": 5.14,
+    "unit": "minutes",
+    "seconds": 308.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Tl205",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 203.7,
+          "absolute_intensity": 0.022,
+          "intensity_percent": 2.1999999999999997,
+          "id": "0"
+        },
+        {
+          "energy_keV": 415.6,
+          "absolute_intensity": 0.0001298,
+          "intensity_percent": 0.012980000000000002,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01507
+            }
+          ]
+        },
+        {
+          "energy_keV": 521.3,
+          "absolute_intensity": 7.26e-06,
+          "intensity_percent": 0.000726,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0002926
+            },
+            {
+              "id": "1",
+              "correlation": 0.01663
+            },
+            {
+              "id": "3",
+              "correlation": 0.002536
+            }
+          ]
+        },
+        {
+          "energy_keV": 618.6,
+          "absolute_intensity": 1.98e-05,
+          "intensity_percent": 0.00198,
+          "id": "3"
+        },
+        {
+          "energy_keV": 720.8,
+          "absolute_intensity": 1.122e-05,
+          "intensity_percent": 0.001122,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0002926
+            },
+            {
+              "id": "1",
+              "correlation": 0.01663
+            },
+            {
+              "id": "3",
+              "correlation": 0.002536
+            }
+          ]
+        },
+        {
+          "energy_keV": 937.2,
+          "absolute_intensity": 2.046e-05,
+          "intensity_percent": 0.002046,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01507
+            }
+          ]
+        },
+        {
+          "energy_keV": 1014.7,
+          "absolute_intensity": 6.82e-06,
+          "intensity_percent": 0.000682,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01507
+            }
+          ]
+        },
+        {
+          "energy_keV": 1136.8,
+          "absolute_intensity": 4.62e-05,
+          "intensity_percent": 0.00462,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01507
+            }
+          ]
+        },
+        {
+          "energy_keV": 1141.1,
+          "absolute_intensity": 9.9e-06,
+          "intensity_percent": 0.00099,
+          "id": ""
+        },
+        {
+          "energy_keV": 1218.7,
+          "absolute_intensity": 6.16e-05,
+          "intensity_percent": 0.0061600000000000005,
+          "id": ""
+        },
+        {
+          "energy_keV": 1230.8,
+          "absolute_intensity": 5.06e-06,
+          "intensity_percent": 0.0005059999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01507
+            }
+          ]
+        },
+        {
+          "energy_keV": 1340.3,
+          "absolute_intensity": 3.3e-06,
+          "intensity_percent": 0.00033,
+          "id": ""
+        },
+        {
+          "energy_keV": 1433.9,
+          "absolute_intensity": 4.4e-05,
+          "intensity_percent": 0.0044,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 13
+  }
+}

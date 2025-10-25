@@ -1,0 +1,52 @@
+{
+  "symbol": "Si34",
+  "Z": 14,
+  "A": 34,
+  "atomic_mass": 33.978575524,
+  "half_life": {
+    "value": 2.77,
+    "unit": "seconds",
+    "seconds": 2.77
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "P34",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 429.07,
+          "absolute_intensity": 0.6,
+          "intensity_percent": 60.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1178.5,
+          "absolute_intensity": 0.64,
+          "intensity_percent": 64.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1607.6,
+          "absolute_intensity": 0.36,
+          "intensity_percent": 36.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

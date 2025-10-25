@@ -1,0 +1,65 @@
+{
+  "symbol": "In119",
+  "Z": 49,
+  "A": 119,
+  "atomic_mass": 118.90584535,
+  "half_life": {
+    "value": 2.4,
+    "unit": "minutes",
+    "seconds": 144.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sn119m",
+      "branching_ratio": 0.0737938146317631,
+      "gammas": [
+        {
+          "energy_keV": 697.47,
+          "absolute_intensity": 0.061089,
+          "intensity_percent": 6.108899999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 1214.86,
+          "absolute_intensity": 0.057349,
+          "intensity_percent": 5.7349,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Sn119",
+      "branching_ratio": 0.926206185368237,
+      "gammas": [
+        {
+          "energy_keV": 23.87,
+          "absolute_intensity": 0.16389,
+          "intensity_percent": 16.389,
+          "id": "0"
+        },
+        {
+          "energy_keV": 763.14,
+          "absolute_intensity": 0.9933,
+          "intensity_percent": 99.33,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1435
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

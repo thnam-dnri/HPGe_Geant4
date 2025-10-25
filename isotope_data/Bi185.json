@@ -1,0 +1,45 @@
+{
+  "symbol": "Bi185",
+  "Z": 83,
+  "A": 185,
+  "atomic_mass": 184.997625,
+  "half_life": {
+    "value": 5.8e-05,
+    "unit": "seconds",
+    "seconds": 5.8e-05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Tl181m2",
+      "branching_ratio": 0.1,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Tl181m",
+      "branching_ratio": 0.1,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Tl181",
+      "branching_ratio": 0.1,
+      "gammas": []
+    },
+    {
+      "mode": "p",
+      "daughter": "Pb184",
+      "branching_ratio": 0.895,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 4,
+    "num_gamma_lines": 0
+  }
+}

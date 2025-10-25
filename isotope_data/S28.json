@@ -1,0 +1,52 @@
+{
+  "symbol": "S28",
+  "Z": 16,
+  "A": 28,
+  "atomic_mass": 28.004372763,
+  "half_life": {
+    "value": 0.125,
+    "unit": "seconds",
+    "seconds": 0.125
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "P28",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b+p",
+      "daughter": "Si27",
+      "branching_ratio": 0.21,
+      "gammas": [
+        {
+          "energy_keV": 176.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 780.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 957.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

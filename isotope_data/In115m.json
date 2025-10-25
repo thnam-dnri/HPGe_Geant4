@@ -1,0 +1,47 @@
+{
+  "symbol": "In115m",
+  "Z": 49,
+  "A": 115,
+  "atomic_mass": 114.904239457,
+  "half_life": {
+    "value": 4.486,
+    "unit": "hours",
+    "seconds": 16149.6
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sn115",
+      "branching_ratio": 0.05,
+      "gammas": [
+        {
+          "energy_keV": 497.37,
+          "absolute_intensity": 0.0094,
+          "intensity_percent": 0.9400000000000001,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "In115",
+      "branching_ratio": 0.95,
+      "gammas": [
+        {
+          "energy_keV": 336.24,
+          "absolute_intensity": 0.48195,
+          "intensity_percent": 48.195,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

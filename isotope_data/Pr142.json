@@ -1,0 +1,59 @@
+{
+  "symbol": "Pr142",
+  "Z": 59,
+  "A": 142,
+  "atomic_mass": 141.910044806,
+  "half_life": {
+    "value": 19.12,
+    "unit": "hours",
+    "seconds": 68832.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Nd142",
+      "branching_ratio": 0.9998,
+      "gammas": [
+        {
+          "energy_keV": 508.8,
+          "absolute_intensity": 0.00022816,
+          "intensity_percent": 0.022816,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.0368
+            }
+          ]
+        },
+        {
+          "energy_keV": 1575.6,
+          "absolute_intensity": 0.0368,
+          "intensity_percent": 3.6799999999999997,
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Ce142",
+      "branching_ratio": 0.000164,
+      "gammas": [
+        {
+          "energy_keV": 642.0,
+          "absolute_intensity": 0.1346,
+          "intensity_percent": 13.459999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

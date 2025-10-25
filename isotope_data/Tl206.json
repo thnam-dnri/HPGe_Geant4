@@ -1,0 +1,64 @@
+{
+  "symbol": "Tl206",
+  "Z": 81,
+  "A": 206,
+  "atomic_mass": 205.97611032,
+  "half_life": {
+    "value": 4.202,
+    "unit": "minutes",
+    "seconds": 252.12
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pb206",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 362.0,
+          "absolute_intensity": 2.6e-06,
+          "intensity_percent": 0.00026000000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9897
+            }
+          ]
+        },
+        {
+          "energy_keV": 803.06,
+          "absolute_intensity": 5e-05,
+          "intensity_percent": 0.005,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1165.0,
+          "absolute_intensity": 0.001,
+          "intensity_percent": 0.1,
+          "id": ""
+        },
+        {
+          "energy_keV": 363.3,
+          "absolute_intensity": 1.3e-06,
+          "intensity_percent": 0.00013000000000000002,
+          "id": ""
+        },
+        {
+          "energy_keV": 1166.4,
+          "absolute_intensity": 0.0011,
+          "intensity_percent": 0.11,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

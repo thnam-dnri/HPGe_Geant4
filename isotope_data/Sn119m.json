@@ -1,0 +1,52 @@
+{
+  "symbol": "Sn119m",
+  "Z": 50,
+  "A": 119,
+  "atomic_mass": 118.903403745,
+  "half_life": {
+    "value": 293.099537037037,
+    "unit": "days",
+    "seconds": 25323800.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Sn119",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 23.88,
+          "absolute_intensity": 0.165,
+          "intensity_percent": 16.5,
+          "id": "0"
+        },
+        {
+          "energy_keV": 25.271,
+          "absolute_intensity": 0.143,
+          "intensity_percent": 14.299999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 65.66,
+          "absolute_intensity": 0.0002,
+          "intensity_percent": 0.02,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1648
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

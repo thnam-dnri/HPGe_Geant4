@@ -23,9 +23,15 @@ public:
     virtual void   EndOfRunAction(const G4Run*);
 
     void AddEnergyDeposit(G4double edep);
+    void SetDetID(const G4String& det) { fDetID = det; }
 
 private:
     G4Accumulable<G4double> fEnergyDeposit;
     G4AnalysisManager* fAnalysisManager;
+
+    // Output controls
+    G4String fDetID {"HPGe1"};
+    std::vector<G4double> fEnergyAxisCenters_keV; // for Axes ntuple
+    G4bool fIncludeTrueEnergy {true};
 };
 #endif

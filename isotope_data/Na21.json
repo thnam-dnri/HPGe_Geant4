@@ -1,0 +1,40 @@
+{
+  "symbol": "Na21",
+  "Z": 11,
+  "A": 21,
+  "atomic_mass": 20.997655206,
+  "half_life": {
+    "value": 22.49,
+    "unit": "seconds",
+    "seconds": 22.49
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Ne21",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 350.73,
+          "absolute_intensity": 0.0507,
+          "intensity_percent": 5.07,
+          "id": ""
+        },
+        {
+          "energy_keV": 2793.94,
+          "absolute_intensity": 4e-06,
+          "intensity_percent": 0.00039999999999999996,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

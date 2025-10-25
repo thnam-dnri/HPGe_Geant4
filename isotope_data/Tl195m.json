@@ -1,0 +1,46 @@
+{
+  "symbol": "Tl195m",
+  "Z": 81,
+  "A": 195,
+  "atomic_mass": 194.97029246,
+  "half_life": {
+    "value": 3.6,
+    "unit": "seconds",
+    "seconds": 3.6
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl195",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 99.0,
+          "absolute_intensity": 0.0063273,
+          "intensity_percent": 0.63273,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.8397
+            }
+          ]
+        },
+        {
+          "energy_keV": 383.64,
+          "absolute_intensity": 0.917,
+          "intensity_percent": 91.7,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

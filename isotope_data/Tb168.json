@@ -1,0 +1,52 @@
+{
+  "symbol": "Tb168",
+  "Z": 65,
+  "A": 168,
+  "atomic_mass": 167.94364,
+  "half_life": {
+    "value": 8.2,
+    "unit": "seconds",
+    "seconds": 8.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Dy168",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 74.96,
+          "absolute_intensity": 0.5,
+          "intensity_percent": 50.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 173.37,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.2315
+            }
+          ]
+        },
+        {
+          "energy_keV": 227.03,
+          "absolute_intensity": 0.56,
+          "intensity_percent": 56.00000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

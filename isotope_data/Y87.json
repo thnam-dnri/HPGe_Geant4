@@ -1,0 +1,34 @@
+{
+  "symbol": "Y87",
+  "Z": 39,
+  "A": 87,
+  "atomic_mass": 86.91087573,
+  "half_life": {
+    "value": 3.325,
+    "unit": "days",
+    "seconds": 287280.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sr87m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 484.81,
+          "absolute_intensity": 0.89845,
+          "intensity_percent": 89.845,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

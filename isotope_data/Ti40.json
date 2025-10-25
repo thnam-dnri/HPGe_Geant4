@@ -1,0 +1,33 @@
+{
+  "symbol": "Ti40",
+  "Z": 22,
+  "A": 40,
+  "atomic_mass": 39.990498838,
+  "half_life": {
+    "value": 0.0533,
+    "unit": "seconds",
+    "seconds": 0.0533
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sc40",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Ca39",
+      "branching_ratio": 0.98,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

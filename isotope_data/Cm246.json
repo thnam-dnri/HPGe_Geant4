@@ -1,0 +1,40 @@
+{
+  "symbol": "Cm246",
+  "Z": 96,
+  "A": 246,
+  "atomic_mass": 246.067223662,
+  "half_life": {
+    "value": 4763.2546930492135,
+    "unit": "years",
+    "seconds": 150214000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pu242",
+      "branching_ratio": 0.999737,
+      "gammas": [
+        {
+          "energy_keV": 44.545,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.000263,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

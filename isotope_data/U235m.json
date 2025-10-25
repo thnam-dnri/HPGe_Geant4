@@ -1,0 +1,27 @@
+{
+  "symbol": "U235m",
+  "Z": 92,
+  "A": 235,
+  "atomic_mass": 235.04393000012612,
+  "half_life": {
+    "value": 26.0,
+    "unit": "minutes",
+    "seconds": 1560.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "U235",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "symbol": "In117",
+  "Z": 49,
+  "A": 117,
+  "atomic_mass": 116.904513564,
+  "half_life": {
+    "value": 43.2,
+    "unit": "minutes",
+    "seconds": 2592.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sn117m",
+      "branching_ratio": 0.00343402479685347,
+      "gammas": [
+        {
+          "energy_keV": 396.6,
+          "absolute_intensity": 0.50669,
+          "intensity_percent": 50.669,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Sn117",
+      "branching_ratio": 0.996565975203146,
+      "gammas": [
+        {
+          "energy_keV": 158.6,
+          "absolute_intensity": 0.873,
+          "intensity_percent": 87.3,
+          "id": "0"
+        },
+        {
+          "energy_keV": 552.9,
+          "absolute_intensity": 1.0034,
+          "intensity_percent": 100.34,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.8643
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

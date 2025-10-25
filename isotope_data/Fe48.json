@@ -1,0 +1,33 @@
+{
+  "symbol": "Fe48",
+  "Z": 26,
+  "A": 48,
+  "atomic_mass": 47.980504,
+  "half_life": {
+    "value": 0.044,
+    "unit": "seconds",
+    "seconds": 0.044
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Mn48",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b+p",
+      "daughter": "Cr47",
+      "branching_ratio": 0.025,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

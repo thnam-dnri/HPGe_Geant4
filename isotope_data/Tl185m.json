@@ -1,0 +1,46 @@
+{
+  "symbol": "Tl185m",
+  "Z": 81,
+  "A": 185,
+  "atomic_mass": 184.979279553,
+  "half_life": {
+    "value": 1.93,
+    "unit": "seconds",
+    "seconds": 1.93
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl185",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 168.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 284.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Au181",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

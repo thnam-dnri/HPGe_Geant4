@@ -1,0 +1,52 @@
+{
+  "symbol": "Ca37",
+  "Z": 20,
+  "A": 37,
+  "atomic_mass": 36.985870269,
+  "half_life": {
+    "value": 0.1811,
+    "unit": "seconds",
+    "seconds": 0.1811
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "K37",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1370.82,
+          "absolute_intensity": 0.021,
+          "intensity_percent": 2.1,
+          "id": ""
+        },
+        {
+          "energy_keV": 2750.4,
+          "absolute_intensity": 0.028,
+          "intensity_percent": 2.8000000000000003,
+          "id": ""
+        },
+        {
+          "energy_keV": 3239.3,
+          "absolute_intensity": 0.048,
+          "intensity_percent": 4.8,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Ar36",
+      "branching_ratio": 0.76,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

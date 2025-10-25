@@ -1,0 +1,52 @@
+{
+  "symbol": "Ni76m",
+  "Z": 28,
+  "A": 76,
+  "atomic_mass": 75.957927977,
+  "half_life": {
+    "value": 5.9e-07,
+    "unit": "seconds",
+    "seconds": 5.9e-07
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ni76",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 144.0,
+          "absolute_intensity": 0.92,
+          "intensity_percent": 92.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 354.0,
+          "absolute_intensity": 0.54,
+          "intensity_percent": 54.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 930.0,
+          "absolute_intensity": 0.97,
+          "intensity_percent": 97.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 992.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

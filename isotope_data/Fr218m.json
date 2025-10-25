@@ -1,0 +1,64 @@
+{
+  "symbol": "Fr218m",
+  "Z": 87,
+  "A": 218,
+  "atomic_mass": 218.007670647,
+  "half_life": {
+    "value": 0.022,
+    "unit": "seconds",
+    "seconds": 0.022
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "At214m2",
+      "branching_ratio": 0.72057000614752,
+      "gammas": [
+        {
+          "energy_keV": 46.0,
+          "absolute_intensity": 0.041634,
+          "intensity_percent": 4.163399999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 111.0,
+          "absolute_intensity": 0.19429,
+          "intensity_percent": 19.429,
+          "id": ""
+        },
+        {
+          "energy_keV": 347.0,
+          "absolute_intensity": 0.027756,
+          "intensity_percent": 2.7756,
+          "id": ""
+        },
+        {
+          "energy_keV": 451.0,
+          "absolute_intensity": 0.027756,
+          "intensity_percent": 2.7756,
+          "id": ""
+        },
+        {
+          "energy_keV": 496.0,
+          "absolute_intensity": 0.013878,
+          "intensity_percent": 1.3878,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "At214",
+      "branching_ratio": 0.222116964132746,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

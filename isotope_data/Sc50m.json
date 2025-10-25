@@ -1,0 +1,47 @@
+{
+  "symbol": "Sc50m",
+  "Z": 21,
+  "A": 50,
+  "atomic_mass": 49.952463473,
+  "half_life": {
+    "value": 0.35,
+    "unit": "seconds",
+    "seconds": 0.35
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ti50",
+      "branching_ratio": 0.025,
+      "gammas": [
+        {
+          "energy_keV": 1553.77,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Sc50",
+      "branching_ratio": 0.975,
+      "gammas": [
+        {
+          "energy_keV": 256.89,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

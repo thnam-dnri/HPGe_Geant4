@@ -1,0 +1,40 @@
+{
+  "symbol": "B12",
+  "Z": 5,
+  "A": 12,
+  "atomic_mass": 12.014352104,
+  "half_life": {
+    "value": 0.0202,
+    "unit": "seconds",
+    "seconds": 0.0202
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "C12",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 3214.83,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 4438.03,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

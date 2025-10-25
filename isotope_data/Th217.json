@@ -1,0 +1,27 @@
+{
+  "symbol": "Th217",
+  "Z": 90,
+  "A": 217,
+  "atomic_mass": 217.013114328,
+  "half_life": {
+    "value": 0.000241,
+    "unit": "seconds",
+    "seconds": 0.000241
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ra213",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

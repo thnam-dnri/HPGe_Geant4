@@ -1,0 +1,62 @@
+{
+  "symbol": "Po207m",
+  "Z": 84,
+  "A": 207,
+  "atomic_mass": 206.983078046,
+  "half_life": {
+    "value": 2.79,
+    "unit": "seconds",
+    "seconds": 2.79
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Po207",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 268.08,
+          "absolute_intensity": 0.44501,
+          "intensity_percent": 44.501000000000005,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3398
+            },
+            {
+              "id": "2",
+              "correlation": 0.9671
+            }
+          ]
+        },
+        {
+          "energy_keV": 300.47,
+          "absolute_intensity": 0.33425,
+          "intensity_percent": 33.425,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.9779
+            }
+          ]
+        },
+        {
+          "energy_keV": 814.4,
+          "absolute_intensity": 0.9889,
+          "intensity_percent": 98.89,
+          "id": "2"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

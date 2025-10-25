@@ -1,0 +1,27 @@
+{
+  "symbol": "Re160",
+  "Z": 75,
+  "A": 160,
+  "atomic_mass": 159.982115,
+  "half_life": {
+    "value": 0.00082,
+    "unit": "seconds",
+    "seconds": 0.00082
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ta156",
+      "branching_ratio": 0.09,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

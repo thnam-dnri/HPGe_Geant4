@@ -1,0 +1,62 @@
+{
+  "symbol": "Sn115m",
+  "Z": 50,
+  "A": 115,
+  "atomic_mass": 114.904108521,
+  "half_life": {
+    "value": 0.000159,
+    "unit": "seconds",
+    "seconds": 0.000159
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Sn115",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 100.7,
+          "absolute_intensity": 0.1484,
+          "intensity_percent": 14.84,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 27.86
+            },
+            {
+              "id": "1",
+              "correlation": 2.718
+            }
+          ]
+        },
+        {
+          "energy_keV": 115.9,
+          "absolute_intensity": 0.53,
+          "intensity_percent": 53.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 5.258
+            }
+          ]
+        },
+        {
+          "energy_keV": 497.6,
+          "absolute_intensity": 0.848,
+          "intensity_percent": 84.8,
+          "id": "2"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

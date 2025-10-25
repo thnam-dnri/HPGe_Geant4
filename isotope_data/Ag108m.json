@@ -1,0 +1,87 @@
+{
+  "symbol": "Ag108m",
+  "Z": 47,
+  "A": 108,
+  "atomic_mass": 107.906073073,
+  "half_life": {
+    "value": 438.2990867579909,
+    "unit": "years",
+    "seconds": 13822200000.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ag108",
+      "branching_ratio": 0.087,
+      "gammas": [
+        {
+          "energy_keV": 30.38,
+          "absolute_intensity": 2.3474e-06,
+          "intensity_percent": 0.00023474000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.7616
+            }
+          ]
+        },
+        {
+          "energy_keV": 79.13,
+          "absolute_intensity": 0.762,
+          "intensity_percent": 76.2,
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Pd108",
+      "branching_ratio": 0.913,
+      "gammas": [
+        {
+          "energy_keV": 433.94,
+          "absolute_intensity": 0.991,
+          "intensity_percent": 99.1,
+          "id": "0"
+        },
+        {
+          "energy_keV": 614.28,
+          "absolute_intensity": 0.98406,
+          "intensity_percent": 98.406,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.991
+            }
+          ]
+        },
+        {
+          "energy_keV": 722.91,
+          "absolute_intensity": 0.99496,
+          "intensity_percent": 99.496,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9876
+            },
+            {
+              "id": "0",
+              "correlation": 0.9821
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "symbol": "Ti52",
+  "Z": 22,
+  "A": 52,
+  "atomic_mass": 51.946897311,
+  "half_life": {
+    "value": 1.7,
+    "unit": "minutes",
+    "seconds": 102.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "V52",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 17.15,
+          "absolute_intensity": 0.18,
+          "intensity_percent": 18.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 124.45,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1786
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

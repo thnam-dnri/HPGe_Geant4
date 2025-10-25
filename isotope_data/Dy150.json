@@ -1,0 +1,40 @@
+{
+  "symbol": "Dy150",
+  "Z": 66,
+  "A": 150,
+  "atomic_mass": 149.925585184,
+  "half_life": {
+    "value": 7.17,
+    "unit": "minutes",
+    "seconds": 430.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tb150",
+      "branching_ratio": 0.64,
+      "gammas": [
+        {
+          "energy_keV": 397.2,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Gd146",
+      "branching_ratio": 0.33,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

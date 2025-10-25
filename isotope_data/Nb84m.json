@@ -1,0 +1,27 @@
+{
+  "symbol": "Nb84m",
+  "Z": 41,
+  "A": 84,
+  "atomic_mass": 83.933932536,
+  "half_life": {
+    "value": 1.03e-07,
+    "unit": "seconds",
+    "seconds": 1.03e-07
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Nb84",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

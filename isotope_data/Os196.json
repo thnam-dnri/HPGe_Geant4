@@ -1,0 +1,88 @@
+{
+  "symbol": "Os196",
+  "Z": 76,
+  "A": 196,
+  "atomic_mass": 195.969639333,
+  "half_life": {
+    "value": 34.9,
+    "unit": "minutes",
+    "seconds": 2094.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ir196",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 126.2,
+          "absolute_intensity": 0.053,
+          "intensity_percent": 5.3,
+          "id": ""
+        },
+        {
+          "energy_keV": 200.8,
+          "absolute_intensity": 0.0056,
+          "intensity_percent": 0.5599999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 207.1,
+          "absolute_intensity": 0.024,
+          "intensity_percent": 2.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 257.8,
+          "absolute_intensity": 0.023,
+          "intensity_percent": 2.3,
+          "id": ""
+        },
+        {
+          "energy_keV": 308.0,
+          "absolute_intensity": 0.0043,
+          "intensity_percent": 0.43,
+          "id": ""
+        },
+        {
+          "energy_keV": 315.4,
+          "absolute_intensity": 0.025,
+          "intensity_percent": 2.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 407.9,
+          "absolute_intensity": 0.059,
+          "intensity_percent": 5.8999999999999995,
+          "id": ""
+        },
+        {
+          "energy_keV": 522.2,
+          "absolute_intensity": 0.0078,
+          "intensity_percent": 0.7799999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 586.2,
+          "absolute_intensity": 0.0059,
+          "intensity_percent": 0.59,
+          "id": ""
+        },
+        {
+          "energy_keV": 629.1,
+          "absolute_intensity": 0.016,
+          "intensity_percent": 1.6,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 10
+  }
+}

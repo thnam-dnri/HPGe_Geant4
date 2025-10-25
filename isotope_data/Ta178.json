@@ -1,0 +1,40 @@
+{
+  "symbol": "Ta178",
+  "Z": 73,
+  "A": 178,
+  "atomic_mass": 177.945778221,
+  "half_life": {
+    "value": 2.36,
+    "unit": "hours",
+    "seconds": 8496.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Hf178m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 216.64,
+          "absolute_intensity": 0.0024466,
+          "intensity_percent": 0.24466000000000002,
+          "id": ""
+        },
+        {
+          "energy_keV": 331.61,
+          "absolute_intensity": 0.31194,
+          "intensity_percent": 31.194,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

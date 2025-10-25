@@ -1,0 +1,88 @@
+{
+  "symbol": "Cf252",
+  "Z": 98,
+  "A": 252,
+  "atomic_mass": 252.081625846,
+  "half_life": {
+    "value": 2.6468131659056318,
+    "unit": "years",
+    "seconds": 83469900.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cm248",
+      "branching_ratio": 0.96908,
+      "gammas": [
+        {
+          "energy_keV": 43.3,
+          "absolute_intensity": 0.000153,
+          "intensity_percent": 0.015300000000000001,
+          "id": "0"
+        },
+        {
+          "energy_keV": 100.2,
+          "absolute_intensity": 0.00013,
+          "intensity_percent": 0.013,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0009852
+            }
+          ]
+        },
+        {
+          "energy_keV": 154.5,
+          "absolute_intensity": 5.2e-06,
+          "intensity_percent": 0.0005200000000000001,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.05
+            },
+            {
+              "id": "0",
+              "correlation": 0.0009852
+            }
+          ]
+        },
+        {
+          "energy_keV": 206.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.05
+            },
+            {
+              "id": "0",
+              "correlation": 0.0009852
+            },
+            {
+              "id": "2",
+              "correlation": 0.2613
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.03092,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

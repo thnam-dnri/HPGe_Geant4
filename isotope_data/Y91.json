@@ -1,0 +1,34 @@
+{
+  "symbol": "Y91",
+  "Z": 39,
+  "A": 91,
+  "atomic_mass": 90.907304791,
+  "half_life": {
+    "value": 58.5099537037037,
+    "unit": "days",
+    "seconds": 5055260.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Zr91",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1204.77,
+          "absolute_intensity": 0.0026,
+          "intensity_percent": 0.26,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "K38m",
+  "Z": 19,
+  "A": 38,
+  "atomic_mass": 37.969221174,
+  "half_life": {
+    "value": 0.924,
+    "unit": "seconds",
+    "seconds": 0.924
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ar38",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

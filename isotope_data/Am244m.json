@@ -1,0 +1,76 @@
+{
+  "symbol": "Am244m",
+  "Z": 95,
+  "A": 244,
+  "atomic_mass": 244.064377279,
+  "half_life": {
+    "value": 26.0,
+    "unit": "minutes",
+    "seconds": 1560.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cm244",
+      "branching_ratio": 0.999639,
+      "gammas": [
+        {
+          "energy_keV": 42.97,
+          "absolute_intensity": 0.000252,
+          "intensity_percent": 0.0252,
+          "id": ""
+        },
+        {
+          "energy_keV": 941.95,
+          "absolute_intensity": 0.003465,
+          "intensity_percent": 0.34650000000000003,
+          "id": ""
+        },
+        {
+          "energy_keV": 977.8,
+          "absolute_intensity": 0.00168,
+          "intensity_percent": 0.168,
+          "id": ""
+        },
+        {
+          "energy_keV": 984.92,
+          "absolute_intensity": 0.011235,
+          "intensity_percent": 1.1235,
+          "id": ""
+        },
+        {
+          "energy_keV": 1041.28,
+          "absolute_intensity": 0.00189,
+          "intensity_percent": 0.189,
+          "id": ""
+        },
+        {
+          "energy_keV": 1062.95,
+          "absolute_intensity": 0.00273,
+          "intensity_percent": 0.27299999999999996,
+          "id": ""
+        },
+        {
+          "energy_keV": 1084.18,
+          "absolute_intensity": 0.00357,
+          "intensity_percent": 0.357,
+          "id": ""
+        },
+        {
+          "energy_keV": 1105.43,
+          "absolute_intensity": 0.00042,
+          "intensity_percent": 0.042,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 8
+  }
+}

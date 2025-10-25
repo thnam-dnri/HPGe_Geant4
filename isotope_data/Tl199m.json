@@ -1,0 +1,84 @@
+{
+  "symbol": "Tl199m",
+  "Z": 81,
+  "A": 199,
+  "atomic_mass": 198.970680945,
+  "half_life": {
+    "value": 0.0284,
+    "unit": "seconds",
+    "seconds": 0.0284
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl199",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 29.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.4566
+            },
+            {
+              "id": "4",
+              "correlation": 0.1946
+            },
+            {
+              "id": "2",
+              "correlation": 0.3729
+            }
+          ]
+        },
+        {
+          "energy_keV": 353.0,
+          "absolute_intensity": 0.04575,
+          "intensity_percent": 4.575,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.6745
+            }
+          ]
+        },
+        {
+          "energy_keV": 367.0,
+          "absolute_intensity": 0.87,
+          "intensity_percent": 87.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 382.8,
+          "absolute_intensity": 0.7725,
+          "intensity_percent": 77.25,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.6745
+            }
+          ]
+        },
+        {
+          "energy_keV": 720.0,
+          "absolute_intensity": 0.0195,
+          "intensity_percent": 1.95,
+          "id": "4"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

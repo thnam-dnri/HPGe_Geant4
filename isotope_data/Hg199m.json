@@ -1,0 +1,76 @@
+{
+  "symbol": "Hg199m",
+  "Z": 80,
+  "A": 199,
+  "atomic_mass": 198.968851573,
+  "half_life": {
+    "value": 42.669999999999995,
+    "unit": "minutes",
+    "seconds": 2560.2
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Hg199",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 118.6,
+          "absolute_intensity": 1.2221e-07,
+          "intensity_percent": 1.2221e-05,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.5011
+            }
+          ]
+        },
+        {
+          "energy_keV": 158.3,
+          "absolute_intensity": 0.523,
+          "intensity_percent": 52.300000000000004,
+          "id": "1"
+        },
+        {
+          "energy_keV": 255.0,
+          "absolute_intensity": 2.615e-05,
+          "intensity_percent": 0.0026149999999999997,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.2732
+            }
+          ]
+        },
+        {
+          "energy_keV": 374.1,
+          "absolute_intensity": 0.13755,
+          "intensity_percent": 13.755,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.2732
+            }
+          ]
+        },
+        {
+          "energy_keV": 413.4,
+          "absolute_intensity": 0.00027196,
+          "intensity_percent": 0.027196,
+          "id": "4"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

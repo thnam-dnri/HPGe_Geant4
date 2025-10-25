@@ -1,0 +1,52 @@
+{
+  "symbol": "V46",
+  "Z": 23,
+  "A": 46,
+  "atomic_mass": 45.960200481,
+  "half_life": {
+    "value": 0.4225,
+    "unit": "seconds",
+    "seconds": 0.4225
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Ti46",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 889.0,
+          "absolute_intensity": 3.9e-05,
+          "intensity_percent": 0.0039,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1722.0,
+          "absolute_intensity": 3.9e-05,
+          "intensity_percent": 0.0039,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 4317.0,
+          "absolute_intensity": 0.000113,
+          "intensity_percent": 0.0113,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "symbol": "Ce141",
+  "Z": 58,
+  "A": 141,
+  "atomic_mass": 140.90827627,
+  "half_life": {
+    "value": 32.50798611111111,
+    "unit": "days",
+    "seconds": 2808690.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pr141",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 145.44,
+          "absolute_intensity": 0.4829,
+          "intensity_percent": 48.29,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Hg174",
+  "Z": 80,
+  "A": 174,
+  "atomic_mass": 173.992863695,
+  "half_life": {
+    "value": 0.0021,
+    "unit": "seconds",
+    "seconds": 0.0021
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pt170",
+      "branching_ratio": 0.997,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

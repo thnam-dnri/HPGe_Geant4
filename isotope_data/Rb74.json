@@ -1,0 +1,88 @@
+{
+  "symbol": "Rb74",
+  "Z": 37,
+  "A": 74,
+  "atomic_mass": 73.944264751,
+  "half_life": {
+    "value": 0.064776,
+    "unit": "seconds",
+    "seconds": 0.064776
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Kr74",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 53.0,
+          "absolute_intensity": 3.8e-05,
+          "intensity_percent": 0.0038000000000000004,
+          "id": ""
+        },
+        {
+          "energy_keV": 456.0,
+          "absolute_intensity": 0.0025,
+          "intensity_percent": 0.25,
+          "id": ""
+        },
+        {
+          "energy_keV": 509.0,
+          "absolute_intensity": 0.00048,
+          "intensity_percent": 0.048,
+          "id": ""
+        },
+        {
+          "energy_keV": 695.0,
+          "absolute_intensity": 8e-05,
+          "intensity_percent": 0.008,
+          "id": ""
+        },
+        {
+          "energy_keV": 748.0,
+          "absolute_intensity": 0.00019,
+          "intensity_percent": 0.019,
+          "id": ""
+        },
+        {
+          "energy_keV": 1198.0,
+          "absolute_intensity": 0.00052,
+          "intensity_percent": 0.052,
+          "id": ""
+        },
+        {
+          "energy_keV": 1204.0,
+          "absolute_intensity": 0.00026,
+          "intensity_percent": 0.026,
+          "id": ""
+        },
+        {
+          "energy_keV": 1233.0,
+          "absolute_intensity": 0.00029,
+          "intensity_percent": 0.029,
+          "id": ""
+        },
+        {
+          "energy_keV": 1286.0,
+          "absolute_intensity": 9e-05,
+          "intensity_percent": 0.009000000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 4244.0,
+          "absolute_intensity": 0.00012,
+          "intensity_percent": 0.012,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 10
+  }
+}

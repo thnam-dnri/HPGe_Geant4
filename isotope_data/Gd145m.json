@@ -1,0 +1,77 @@
+{
+  "symbol": "Gd145m",
+  "Z": 64,
+  "A": 145,
+  "atomic_mass": 144.922513444,
+  "half_life": {
+    "value": 1.4166666666666667,
+    "unit": "minutes",
+    "seconds": 85.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Gd145",
+      "branching_ratio": 0.943,
+      "gammas": [
+        {
+          "energy_keV": 27.3,
+          "absolute_intensity": 0.04785,
+          "intensity_percent": 4.784999999999999,
+          "id": "0"
+        },
+        {
+          "energy_keV": 721.4,
+          "absolute_intensity": 0.87,
+          "intensity_percent": 87.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.04166
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Eu145",
+      "branching_ratio": 0.057,
+      "gammas": [
+        {
+          "energy_keV": 329.5,
+          "absolute_intensity": 0.7488,
+          "intensity_percent": 74.88,
+          "id": "0"
+        },
+        {
+          "energy_keV": 386.6,
+          "absolute_intensity": 0.6912,
+          "intensity_percent": 69.12,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.642
+            }
+          ]
+        },
+        {
+          "energy_keV": 716.0,
+          "absolute_intensity": 0.19296,
+          "intensity_percent": 19.296,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "Ag116m2",
+  "Z": 47,
+  "A": 116,
+  "atomic_mass": 115.911499279,
+  "half_life": {
+    "value": 9.3,
+    "unit": "seconds",
+    "seconds": 9.3
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cd116",
+      "branching_ratio": 0.92,
+      "gammas": []
+    },
+    {
+      "mode": "it",
+      "daughter": "Ag116m",
+      "branching_ratio": 0.08,
+      "gammas": [
+        {
+          "energy_keV": 80.9,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

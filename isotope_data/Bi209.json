@@ -1,0 +1,27 @@
+{
+  "symbol": "Bi209",
+  "Z": 83,
+  "A": 209,
+  "atomic_mass": 208.980398734,
+  "half_life": {
+    "value": 1.9e+19,
+    "unit": "years",
+    "seconds": 5.99184e+26
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Tl205",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

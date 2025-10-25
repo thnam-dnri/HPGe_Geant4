@@ -1,0 +1,40 @@
+{
+  "symbol": "Pm159",
+  "Z": 61,
+  "A": 159,
+  "atomic_mass": 158.93897,
+  "half_life": {
+    "value": 1.47,
+    "unit": "seconds",
+    "seconds": 1.47
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sm159",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 71.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 261.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "symbol": "Cr59m",
+  "Z": 24,
+  "A": 59,
+  "atomic_mass": 58.94912635971791,
+  "half_life": {
+    "value": 9.6e-05,
+    "unit": "seconds",
+    "seconds": 9.6e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Cr59",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 102.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 193.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 208.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

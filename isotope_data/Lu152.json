@@ -1,0 +1,68 @@
+{
+  "symbol": "Lu152",
+  "Z": 71,
+  "A": 152,
+  "atomic_mass": 151.96412,
+  "half_life": {
+    "value": 0.7,
+    "unit": "seconds",
+    "seconds": 0.7
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Yb152",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 312.6,
+          "absolute_intensity": 0.7395,
+          "intensity_percent": 73.95,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.8392
+            },
+            {
+              "id": "2",
+              "correlation": 0.7225
+            }
+          ]
+        },
+        {
+          "energy_keV": 358.7,
+          "absolute_intensity": 0.7565,
+          "intensity_percent": 75.64999999999999,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.85
+            }
+          ]
+        },
+        {
+          "energy_keV": 1531.4,
+          "absolute_intensity": 0.85,
+          "intensity_percent": 85.0,
+          "id": "2"
+        }
+      ]
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Tm151",
+      "branching_ratio": 0.15,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

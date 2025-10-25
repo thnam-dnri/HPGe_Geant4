@@ -1,0 +1,27 @@
+{
+  "symbol": "Te118",
+  "Z": 52,
+  "A": 118,
+  "atomic_mass": 117.905827581,
+  "half_life": {
+    "value": 6.0,
+    "unit": "days",
+    "seconds": 518400.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sb118",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

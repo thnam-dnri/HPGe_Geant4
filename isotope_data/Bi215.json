@@ -1,0 +1,76 @@
+{
+  "symbol": "Bi215",
+  "Z": 83,
+  "A": 215,
+  "atomic_mass": 215.001769776,
+  "half_life": {
+    "value": 7.6,
+    "unit": "minutes",
+    "seconds": 456.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Po215",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 271.7,
+          "absolute_intensity": 0.55,
+          "intensity_percent": 55.00000000000001,
+          "id": "0"
+        },
+        {
+          "energy_keV": 293.74,
+          "absolute_intensity": 0.48928,
+          "intensity_percent": 48.928,
+          "id": ""
+        },
+        {
+          "energy_keV": 402.4,
+          "absolute_intensity": 0.1,
+          "intensity_percent": 10.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 517.6,
+          "absolute_intensity": 0.19,
+          "intensity_percent": 19.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 564.1,
+          "absolute_intensity": 0.13,
+          "intensity_percent": 13.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 676.5,
+          "absolute_intensity": 0.06,
+          "intensity_percent": 6.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 835.2,
+          "absolute_intensity": 0.14,
+          "intensity_percent": 14.000000000000002,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

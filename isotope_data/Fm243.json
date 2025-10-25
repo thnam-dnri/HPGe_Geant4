@@ -1,0 +1,33 @@
+{
+  "symbol": "Fm243",
+  "Z": 100,
+  "A": 243,
+  "atomic_mass": 243.074353,
+  "half_life": {
+    "value": 0.18,
+    "unit": "seconds",
+    "seconds": 0.18
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Cf239",
+      "branching_ratio": 0.4,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.005,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

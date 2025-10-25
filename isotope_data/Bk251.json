@@ -1,0 +1,58 @@
+{
+  "symbol": "Bk251",
+  "Z": 97,
+  "A": 251,
+  "atomic_mass": 251.080760172,
+  "half_life": {
+    "value": 55.6,
+    "unit": "minutes",
+    "seconds": 3336.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cf251",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 178.0,
+          "absolute_intensity": 0.052,
+          "intensity_percent": 5.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 130.0,
+          "absolute_intensity": 0.03016,
+          "intensity_percent": 3.016,
+          "id": ""
+        },
+        {
+          "energy_keV": 153.0,
+          "absolute_intensity": 0.02002,
+          "intensity_percent": 2.002,
+          "id": ""
+        },
+        {
+          "energy_keV": 164.0,
+          "absolute_intensity": 0.00312,
+          "intensity_percent": 0.312,
+          "id": ""
+        },
+        {
+          "energy_keV": 186.8,
+          "absolute_intensity": 0.00156,
+          "intensity_percent": 0.156,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "symbol": "Po209",
+  "Z": 84,
+  "A": 209,
+  "atomic_mass": 208.982430435,
+  "half_life": {
+    "value": 102.07001522070016,
+    "unit": "years",
+    "seconds": 3218880000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Bi209",
+      "branching_ratio": 0.0048,
+      "gammas": [
+        {
+          "energy_keV": 896.6,
+          "absolute_intensity": 0.9795,
+          "intensity_percent": 97.95,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Pb205",
+      "branching_ratio": 0.9955,
+      "gammas": [
+        {
+          "energy_keV": 262.8,
+          "absolute_intensity": 0.00085384,
+          "intensity_percent": 0.085384,
+          "id": ""
+        },
+        {
+          "energy_keV": 260.5,
+          "absolute_intensity": 0.0025515,
+          "intensity_percent": 0.25515,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

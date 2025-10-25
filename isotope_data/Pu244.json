@@ -1,0 +1,40 @@
+{
+  "symbol": "Pu244",
+  "Z": 94,
+  "A": 244,
+  "atomic_mass": 244.064203907,
+  "half_life": {
+    "value": 80054857.94013192,
+    "unit": "years",
+    "seconds": 2524610000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "U240",
+      "branching_ratio": 0.99879,
+      "gammas": [
+        {
+          "energy_keV": 44.0,
+          "absolute_intensity": 0.00028912,
+          "intensity_percent": 0.028912000000000004,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.00121,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

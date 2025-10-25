@@ -1,0 +1,78 @@
+{
+  "symbol": "Te121",
+  "Z": 52,
+  "A": 121,
+  "atomic_mass": 120.904936424,
+  "half_life": {
+    "value": 19.170023148148147,
+    "unit": "days",
+    "seconds": 1656290.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sb121",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 37.14,
+          "absolute_intensity": 0.001198,
+          "intensity_percent": 0.1198,
+          "id": "0"
+        },
+        {
+          "energy_keV": 65.55,
+          "absolute_intensity": 0.0025969,
+          "intensity_percent": 0.25969000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.005874
+            },
+            {
+              "id": "3",
+              "correlation": 0.07385
+            },
+            {
+              "id": "0",
+              "correlation": 4.012e-05
+            }
+          ]
+        },
+        {
+          "energy_keV": 470.47,
+          "absolute_intensity": 0.01407,
+          "intensity_percent": 1.407,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.006776
+            }
+          ]
+        },
+        {
+          "energy_keV": 507.59,
+          "absolute_intensity": 0.17688,
+          "intensity_percent": 17.688000000000002,
+          "id": "3"
+        },
+        {
+          "energy_keV": 573.14,
+          "absolute_intensity": 0.804,
+          "intensity_percent": 80.4,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

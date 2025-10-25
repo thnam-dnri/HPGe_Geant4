@@ -1,0 +1,88 @@
+{
+  "symbol": "Tm152",
+  "Z": 69,
+  "A": 152,
+  "atomic_mass": 151.944422,
+  "half_life": {
+    "value": 8.0,
+    "unit": "seconds",
+    "seconds": 8.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Er152",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 672.7,
+          "absolute_intensity": 0.095,
+          "intensity_percent": 9.5,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 715.9,
+          "absolute_intensity": 0.13,
+          "intensity_percent": 13.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 808.3,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 906.8,
+          "absolute_intensity": 0.06,
+          "intensity_percent": 6.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1063.0,
+          "absolute_intensity": 0.025,
+          "intensity_percent": 2.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 1106.4,
+          "absolute_intensity": 0.025,
+          "intensity_percent": 2.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 1716.0,
+          "absolute_intensity": 0.02,
+          "intensity_percent": 2.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

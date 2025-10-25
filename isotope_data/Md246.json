@@ -1,0 +1,27 @@
+{
+  "symbol": "Md246",
+  "Z": 101,
+  "A": 246,
+  "atomic_mass": 246.081886,
+  "half_life": {
+    "value": 1.0,
+    "unit": "seconds",
+    "seconds": 1.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Es242",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "F20",
+  "Z": 9,
+  "A": 20,
+  "atomic_mass": 19.999981315,
+  "half_life": {
+    "value": 11.07,
+    "unit": "seconds",
+    "seconds": 11.07
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ne20",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1633.6,
+          "absolute_intensity": 0.99999,
+          "intensity_percent": 99.99900000000001,
+          "id": "0"
+        },
+        {
+          "energy_keV": 3332.54,
+          "absolute_intensity": 8.2e-05,
+          "intensity_percent": 0.0082,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 4965.85,
+          "absolute_intensity": 5e-07,
+          "intensity_percent": 4.9999999999999996e-05,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

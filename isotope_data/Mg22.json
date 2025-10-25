@@ -1,0 +1,80 @@
+{
+  "symbol": "Mg22",
+  "Z": 12,
+  "A": 22,
+  "atomic_mass": 21.999573843,
+  "half_life": {
+    "value": 3.8755,
+    "unit": "seconds",
+    "seconds": 3.8755
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Na22",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 73.92,
+          "absolute_intensity": 0.58341,
+          "intensity_percent": 58.341,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9997
+            }
+          ]
+        },
+        {
+          "energy_keV": 582.04,
+          "absolute_intensity": 0.99968,
+          "intensity_percent": 99.968,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1278.82,
+          "absolute_intensity": 0.053983,
+          "intensity_percent": 5.398300000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9949
+            },
+            {
+              "id": "1",
+              "correlation": 0.9994
+            }
+          ]
+        },
+        {
+          "energy_keV": 1353.0,
+          "absolute_intensity": 0.00014995,
+          "intensity_percent": 0.014995000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9997
+            }
+          ]
+        },
+        {
+          "energy_keV": 1936.0,
+          "absolute_intensity": 0.0003199,
+          "intensity_percent": 0.031990000000000005,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

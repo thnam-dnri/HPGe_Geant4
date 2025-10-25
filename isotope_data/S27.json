@@ -1,0 +1,27 @@
+{
+  "symbol": "S27",
+  "Z": 16,
+  "A": 27,
+  "atomic_mass": 27.018833,
+  "half_life": {
+    "value": 0.021,
+    "unit": "seconds",
+    "seconds": 0.021
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+2p",
+      "daughter": "Al25",
+      "branching_ratio": 0.02,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

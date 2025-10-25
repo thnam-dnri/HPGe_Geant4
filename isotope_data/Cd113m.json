@@ -1,0 +1,40 @@
+{
+  "symbol": "Cd113m",
+  "Z": 48,
+  "A": 113,
+  "atomic_mass": 112.904684584,
+  "half_life": {
+    "value": 14.109652460679857,
+    "unit": "years",
+    "seconds": 444962000.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "In113",
+      "branching_ratio": 0.9986,
+      "gammas": []
+    },
+    {
+      "mode": "it",
+      "daughter": "Cd113",
+      "branching_ratio": 0.0014,
+      "gammas": [
+        {
+          "energy_keV": 263.7,
+          "absolute_intensity": 0.1908,
+          "intensity_percent": 19.08,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

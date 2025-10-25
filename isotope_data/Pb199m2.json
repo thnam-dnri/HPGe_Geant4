@@ -1,0 +1,40 @@
+{
+  "symbol": "Pb199m2",
+  "Z": 82,
+  "A": 199,
+  "atomic_mass": 198.97337269156375,
+  "half_life": {
+    "value": 12.2,
+    "unit": "minutes",
+    "seconds": 732.0
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pb199",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 0.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 424.1,
+          "absolute_intensity": 0.196,
+          "intensity_percent": 19.6,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

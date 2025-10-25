@@ -1,0 +1,27 @@
+{
+  "symbol": "n1",
+  "Z": 0,
+  "A": 1,
+  "atomic_mass": 1.008664915,
+  "half_life": {
+    "value": 10.231666666666666,
+    "unit": "minutes",
+    "seconds": 613.9
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "H1",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

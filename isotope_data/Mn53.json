@@ -1,0 +1,27 @@
+{
+  "symbol": "Mn53",
+  "Z": 25,
+  "A": 53,
+  "atomic_mass": 52.941290117,
+  "half_life": {
+    "value": 3742548.198883815,
+    "unit": "years",
+    "seconds": 118025000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cr53",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

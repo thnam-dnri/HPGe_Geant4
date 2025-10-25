@@ -1,0 +1,83 @@
+{
+  "symbol": "Gd153m2",
+  "Z": 64,
+  "A": 153,
+  "atomic_mass": 152.921933321,
+  "half_life": {
+    "value": 7.6e-05,
+    "unit": "seconds",
+    "seconds": 7.6e-05
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Gd153m",
+      "branching_ratio": 0.306264626950637,
+      "gammas": [
+        {
+          "energy_keV": 76.01,
+          "absolute_intensity": 0.61711,
+          "intensity_percent": 61.711000000000006,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Gd153",
+      "branching_ratio": 0.693735373049363,
+      "gammas": [
+        {
+          "energy_keV": 2.8,
+          "absolute_intensity": 0.75245,
+          "intensity_percent": 75.24499999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 41.56,
+          "absolute_intensity": 0.076403,
+          "intensity_percent": 7.6403,
+          "id": ""
+        },
+        {
+          "energy_keV": 51.78,
+          "absolute_intensity": 0.037697,
+          "intensity_percent": 3.7697000000000003,
+          "id": ""
+        },
+        {
+          "energy_keV": 75.07,
+          "absolute_intensity": 0.051893,
+          "intensity_percent": 5.1893,
+          "id": ""
+        },
+        {
+          "energy_keV": 77.9,
+          "absolute_intensity": 0.032433,
+          "intensity_percent": 3.2432999999999996,
+          "id": ""
+        },
+        {
+          "energy_keV": 93.34,
+          "absolute_intensity": 0.0082934,
+          "intensity_percent": 0.82934,
+          "id": ""
+        },
+        {
+          "energy_keV": 126.85,
+          "absolute_intensity": 0.0090813,
+          "intensity_percent": 0.9081300000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 8
+  }
+}

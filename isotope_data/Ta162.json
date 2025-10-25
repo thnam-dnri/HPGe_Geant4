@@ -1,0 +1,52 @@
+{
+  "symbol": "Ta162",
+  "Z": 73,
+  "A": 162,
+  "atomic_mass": 161.957291859,
+  "half_life": {
+    "value": 3.57,
+    "unit": "seconds",
+    "seconds": 3.57
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Hf162",
+      "branching_ratio": 0.99926,
+      "gammas": [
+        {
+          "energy_keV": 284.5,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 443.8,
+          "absolute_intensity": 0.4,
+          "intensity_percent": 40.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9142
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Lu158",
+      "branching_ratio": 0.00074,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

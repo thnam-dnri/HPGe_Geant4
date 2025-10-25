@@ -1,0 +1,34 @@
+{
+  "symbol": "Pr143",
+  "Z": 59,
+  "A": 143,
+  "atomic_mass": 142.910816926,
+  "half_life": {
+    "value": 13.570023148148149,
+    "unit": "days",
+    "seconds": 1172450.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Nd143",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 742.1,
+          "absolute_intensity": 1.2e-08,
+          "intensity_percent": 1.2e-06,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

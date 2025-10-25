@@ -1,0 +1,64 @@
+{
+  "symbol": "V58",
+  "Z": 23,
+  "A": 58,
+  "atomic_mass": 57.956834136,
+  "half_life": {
+    "value": 0.191,
+    "unit": "seconds",
+    "seconds": 0.191
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cr58",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 879.7,
+          "absolute_intensity": 0.62,
+          "intensity_percent": 62.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1041.2,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1056.4,
+          "absolute_intensity": 0.28,
+          "intensity_percent": 28.000000000000004,
+          "id": ""
+        },
+        {
+          "energy_keV": 1501.4,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1570.6,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2216.8,
+          "absolute_intensity": 0.13,
+          "intensity_percent": 13.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "symbol": "Co60m",
+  "Z": 27,
+  "A": 60,
+  "atomic_mass": 59.933879958,
+  "half_life": {
+    "value": 10.467,
+    "unit": "minutes",
+    "seconds": 628.02
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ni60",
+      "branching_ratio": 0.0024,
+      "gammas": [
+        {
+          "energy_keV": 826.28,
+          "absolute_intensity": 0.032,
+          "intensity_percent": 3.2,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1332.5,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 2158.77,
+          "absolute_intensity": 0.003,
+          "intensity_percent": 0.3,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Co60",
+      "branching_ratio": 0.9976,
+      "gammas": [
+        {
+          "energy_keV": 58.6,
+          "absolute_intensity": 0.020408,
+          "intensity_percent": 2.0408,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

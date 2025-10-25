@@ -1,0 +1,27 @@
+{
+  "symbol": "Sr82",
+  "Z": 38,
+  "A": 82,
+  "atomic_mass": 81.918401639,
+  "half_life": {
+    "value": 25.35,
+    "unit": "days",
+    "seconds": 2190240.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Rb82",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

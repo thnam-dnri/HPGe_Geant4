@@ -1,0 +1,27 @@
+{
+  "symbol": "At214",
+  "Z": 85,
+  "A": 214,
+  "atomic_mass": 213.996371733,
+  "half_life": {
+    "value": 5.58e-07,
+    "unit": "seconds",
+    "seconds": 5.58e-07
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bi210",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "In104m",
+  "Z": 49,
+  "A": 104,
+  "atomic_mass": 103.918396526,
+  "half_life": {
+    "value": 15.7,
+    "unit": "seconds",
+    "seconds": 15.7
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "In104",
+      "branching_ratio": 0.8,
+      "gammas": [
+        {
+          "energy_keV": 93.5,
+          "absolute_intensity": 0.0157,
+          "intensity_percent": 1.5699999999999998,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b+",
+      "daughter": "Cd104",
+      "branching_ratio": 0.2,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

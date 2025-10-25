@@ -1,0 +1,33 @@
+{
+  "symbol": "Am235",
+  "Z": 95,
+  "A": 235,
+  "atomic_mass": 235.047946,
+  "half_life": {
+    "value": 9.9,
+    "unit": "minutes",
+    "seconds": 594.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pu235",
+      "branching_ratio": 0.996,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Np231",
+      "branching_ratio": 0.004,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Tm150m",
+  "Z": 69,
+  "A": 150,
+  "atomic_mass": 149.94996,
+  "half_life": {
+    "value": 2.2,
+    "unit": "seconds",
+    "seconds": 2.2
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Ho149m",
+      "branching_ratio": 0.012,
+      "gammas": [
+        {
+          "energy_keV": 171.2,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 343.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 436.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Ho149",
+      "branching_ratio": 0.012,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

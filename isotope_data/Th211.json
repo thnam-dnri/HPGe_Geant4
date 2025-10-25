@@ -1,0 +1,33 @@
+{
+  "symbol": "Th211",
+  "Z": 90,
+  "A": 211,
+  "atomic_mass": 211.014928413,
+  "half_life": {
+    "value": 0.04,
+    "unit": "seconds",
+    "seconds": 0.04
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ra207m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Ra207",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

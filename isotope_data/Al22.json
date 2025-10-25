@@ -1,0 +1,33 @@
+{
+  "symbol": "Al22",
+  "Z": 13,
+  "A": 22,
+  "atomic_mass": 22.01952,
+  "half_life": {
+    "value": 0.059,
+    "unit": "seconds",
+    "seconds": 0.059
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Mg22",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Na21",
+      "branching_ratio": 0.44,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "symbol": "Tb166",
+  "Z": 65,
+  "A": 166,
+  "atomic_mass": 165.937991959,
+  "half_life": {
+    "value": 25.1,
+    "unit": "seconds",
+    "seconds": 25.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Dy166",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 76.58,
+          "absolute_intensity": 0.0858,
+          "intensity_percent": 8.58,
+          "id": ""
+        },
+        {
+          "energy_keV": 101.29,
+          "absolute_intensity": 0.0338,
+          "intensity_percent": 3.38,
+          "id": ""
+        },
+        {
+          "energy_keV": 166.04,
+          "absolute_intensity": 0.0442,
+          "intensity_percent": 4.42,
+          "id": ""
+        },
+        {
+          "energy_keV": 172.75,
+          "absolute_intensity": 0.26,
+          "intensity_percent": 26.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 177.13,
+          "absolute_intensity": 0.065,
+          "intensity_percent": 6.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 238.2,
+          "absolute_intensity": 0.0702,
+          "intensity_percent": 7.02,
+          "id": ""
+        },
+        {
+          "energy_keV": 780.5,
+          "absolute_intensity": 0.169,
+          "intensity_percent": 16.900000000000002,
+          "id": ""
+        },
+        {
+          "energy_keV": 851.8,
+          "absolute_intensity": 0.0598,
+          "intensity_percent": 5.9799999999999995,
+          "id": ""
+        },
+        {
+          "energy_keV": 857.0,
+          "absolute_intensity": 0.1924,
+          "intensity_percent": 19.24,
+          "id": ""
+        },
+        {
+          "energy_keV": 1039.8,
+          "absolute_intensity": 0.2522,
+          "intensity_percent": 25.22,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 10
+  }
+}

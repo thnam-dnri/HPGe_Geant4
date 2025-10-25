@@ -90,11 +90,63 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - `/geometry/test/run` command not available in current app state; visualization route recommended for overlap checks
 
 ### TODO
-- Add `shielded_run.mac` with source/physics verbosity and optional EM deexcitation verification
-- Optionally adjust PrimaryGeneratorAction to position source inside shield (or control via macro)
-- Visualize geometry (`init_vis.mac`, `gui.mac`) to confirm shield alignment and absence of overlaps
-- Optional: region-specific production cuts for shield volumes if performance becomes an issue
-- Record and compare spectra with and without copper liner (Phase 3 validation)
+ - Add `shielded_run.mac` with source/physics verbosity and optional EM deexcitation verification
+ - Optionally adjust PrimaryGeneratorAction to position source inside shield (or control via macro)
+ - Visualize geometry (`init_vis.mac`, `gui.mac`) to confirm shield alignment and absence of overlaps
+ - Optional: region-specific production cuts for shield volumes if performance becomes an issue
+ - Record and compare spectra with and without copper liner (Phase 3 validation)
+
+## Progress Update - 2025-10-25
+
+- Added isotope-driven primary generation using JSON files under `./isotope_data/`
+  - New CLI: `-isotope <Symbol>` (e.g., `-isotope Cs137`) selects the source isotope
+  - Follows decay chain until a stable daughter is reached
+  - Emits only gamma lines from each chosen decay branch; non-gamma modes (beta/alpha) are not generated
+  - Singles mode: emits one gamma per Geant4 event (prevents sum peaks) using an internal queue
+  - Tracks counters: `Ndecays` (parent decays sampled) and `NgammaPrimaries` (gammas emitted)
+  - Provides last-true-energy for QA and truth gamma lines aggregated along the chain
+  - Falls back to prior behavior (RAINIER or Co-60 test) when `-isotope` is not given
+
+- ROOT output per ML spec (via Geant4 analysis manager):
+  - File name: `<Nuclide>_<DetID>_<GapMM>_<runid>.root` (if `-isotope` used), else `gamma_spectrum.root`
+  - Ntuple `Events`: columns `Edep_keV`, `Etrue_keV`
+  - Ntuple `RunInfo`: strings (Nuclide, Generator, G4Version, PhysicsLists, DetID, Geometry, Binning, SourceJSON, SourceHash) and ints (Ndecays, NgammaPrimaries)
+  - Ntuple `Axes_energy_centers`: column `energy_keV` with one row per bin center (0–3000 keV, 8192 bins)
+  - Ntuple `Truth_gamma_lines`: columns `E_gamma_keV`, `I_per_decay` (aggregated along decay chain)
+  - Note: uses ntuples instead of ROOT directories/TObjString for compatibility without linking ROOT directly
+
+### Current State
+- Build passes; `./build/HPGeSingle -isotope Cs137 run.mac` runs and uses `isotope_data/Cs137.json`
+- Gamma sampling per branch uses `absolute_intensity` as an emission probability (or mean multiplicity if >1)
+- Chain traversal honors `branching_ratio` to select daughter; stops at stable isotope
+
+### Files Modified
+- HPGeSingle.cc — Parse `-isotope` CLI and pass to generator
+- HPGeSingle.cc — Added `--det-id` CLI, passed to RunAction for file naming
+- include/PrimaryGeneratorAction.hh — Added isotope symbol setter and generation hook
+- src/PrimaryGeneratorAction.cc — Implemented singles gamma emission (queue), counters, truth lines
+- include/IsotopeDecay.hh — New minimal JSON loader (no external deps)
+- src/IsotopeDecay.cc — Parser implementation for `decay_modes[].gammas[]`
+- include/RunAction.hh, src/RunAction.cc — New multi-ntuple ROOT layout (Events, RunInfo, Axes, Truth), dynamic filename
+- src/EventAction.cc — Fill Events ntuple (Edep_keV, Etrue_keV)
+
+### Dependencies
+- No new external libraries; minimal JSON parsing implemented in-house
+
+### Issues
+- Coincidence/cascade correlations (`coincident_gammas`) are not modeled; each listed gamma is sampled independently by intensity
+- Minimal JSON parser assumes the current file structure; significant schema changes may require parser updates
+ - `Axes_energy_centers` stored as one value per row (vector column not used); Python should read and stack the rows
+ - `G4Version` stored as "unknown" placeholder (can be improved if needed)
+
+### TODO
+- Optionally model gamma-gamma coincidences using `coincident_gammas` correlations for cascades (e.g., Co-60 1173–1332 keV pair)
+- Add CLI to control activity or per-event multiplicity behavior
+- Add a quick validation macro demonstrating several isotopes (Cs-137, Co-60) and expected peak lists
+ - Optionally switch to direct ROOT (TFile/TTree) if available to mirror directory layout exactly
+
+### Last Updated
+2025-10-25 — Added `-isotope` gamma-chain singles generator and ML-oriented ROOT output; build verified
 
 ## Research Notes
 - 2025-10-24 Lead Shield Architecture: 10 cm Pb + 1 mm Cu liner recommended for soil analysis (15x background reduction, 50% Pb X-ray suppression)

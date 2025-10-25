@@ -1,0 +1,59 @@
+{
+  "symbol": "Es255",
+  "Z": 99,
+  "A": 255,
+  "atomic_mass": 255.090273122,
+  "half_life": {
+    "value": 39.8,
+    "unit": "days",
+    "seconds": 3438720.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fm255",
+      "branching_ratio": 0.92,
+      "gammas": [
+        {
+          "energy_keV": 60.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 120.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Bk251",
+      "branching_ratio": 0.08,
+      "gammas": [
+        {
+          "energy_keV": 269.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 4.5e-05,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 3
+  }
+}

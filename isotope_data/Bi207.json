@@ -1,0 +1,90 @@
+{
+  "symbol": "Bi207",
+  "Z": 83,
+  "A": 207,
+  "atomic_mass": 206.978470679,
+  "half_life": {
+    "value": 32.922691527143584,
+    "unit": "years",
+    "seconds": 1038250000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pb207m",
+      "branching_ratio": 0.839647348113792,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Pb207",
+      "branching_ratio": 0.160352651886208,
+      "gammas": [
+        {
+          "energy_keV": 328.09,
+          "absolute_intensity": 4.7396e-05,
+          "intensity_percent": 0.0047396,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.5284
+            }
+          ]
+        },
+        {
+          "energy_keV": 569.7,
+          "absolute_intensity": 0.97091,
+          "intensity_percent": 97.09100000000001,
+          "id": "1"
+        },
+        {
+          "energy_keV": 897.8,
+          "absolute_intensity": 0.0081695,
+          "intensity_percent": 0.81695,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1442.2,
+          "absolute_intensity": 0.0081695,
+          "intensity_percent": 0.81695,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.004001
+            },
+            {
+              "id": "2",
+              "correlation": 3.282
+            },
+            {
+              "id": "0",
+              "correlation": 0.01904
+            }
+          ]
+        },
+        {
+          "energy_keV": 1770.23,
+          "absolute_intensity": 0.42843,
+          "intensity_percent": 42.842999999999996,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.5284
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

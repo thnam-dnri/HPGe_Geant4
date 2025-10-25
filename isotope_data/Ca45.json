@@ -1,0 +1,33 @@
+{
+  "symbol": "Ca45",
+  "Z": 20,
+  "A": 45,
+  "atomic_mass": 44.956186566,
+  "half_life": {
+    "value": 162.6099537037037,
+    "unit": "days",
+    "seconds": 14049500.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sc45m",
+      "branching_ratio": 1.9e-05,
+      "gammas": []
+    },
+    {
+      "mode": "b-",
+      "daughter": "Sc45",
+      "branching_ratio": 0.999981,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

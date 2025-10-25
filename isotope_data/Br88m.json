@@ -1,0 +1,46 @@
+{
+  "symbol": "Br88m",
+  "Z": 35,
+  "A": 88,
+  "atomic_mass": 87.92435589,
+  "half_life": {
+    "value": 5.3e-06,
+    "unit": "seconds",
+    "seconds": 5.3e-06
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Br88",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 110.9,
+          "absolute_intensity": 0.623,
+          "intensity_percent": 62.3,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 159.1,
+          "absolute_intensity": 0.959,
+          "intensity_percent": 95.89999999999999,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

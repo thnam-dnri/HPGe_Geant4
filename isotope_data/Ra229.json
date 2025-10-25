@@ -1,0 +1,27 @@
+{
+  "symbol": "Ra229",
+  "Z": 88,
+  "A": 229,
+  "atomic_mass": 229.034957577,
+  "half_life": {
+    "value": 4.0,
+    "unit": "minutes",
+    "seconds": 240.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ac229",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

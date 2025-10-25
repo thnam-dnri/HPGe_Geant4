@@ -1,0 +1,27 @@
+{
+  "symbol": "Pb183m",
+  "Z": 82,
+  "A": 183,
+  "atomic_mass": 182.991978763,
+  "half_life": {
+    "value": 0.415,
+    "unit": "seconds",
+    "seconds": 0.415
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Hg179",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

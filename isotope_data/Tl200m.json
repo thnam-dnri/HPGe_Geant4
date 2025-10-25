@@ -1,0 +1,58 @@
+{
+  "symbol": "Tl200m",
+  "Z": 81,
+  "A": 200,
+  "atomic_mass": 199.971771695,
+  "half_life": {
+    "value": 0.034,
+    "unit": "seconds",
+    "seconds": 0.034
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl200",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 212.7,
+          "absolute_intensity": 0.26443,
+          "intensity_percent": 26.443,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9522
+            }
+          ]
+        },
+        {
+          "energy_keV": 540.9,
+          "absolute_intensity": 0.853,
+          "intensity_percent": 85.3,
+          "id": "1"
+        },
+        {
+          "energy_keV": 217.2,
+          "absolute_intensity": 0.064828,
+          "intensity_percent": 6.482799999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 323.7,
+          "absolute_intensity": 0.096389,
+          "intensity_percent": 9.6389,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

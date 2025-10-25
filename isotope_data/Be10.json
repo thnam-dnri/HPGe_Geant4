@@ -1,0 +1,27 @@
+{
+  "symbol": "Be10",
+  "Z": 4,
+  "A": 10,
+  "atomic_mass": 10.013533818,
+  "half_life": {
+    "value": 1511035.0076103501,
+    "unit": "years",
+    "seconds": 47652000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "B10",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

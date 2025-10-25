@@ -1,0 +1,34 @@
+{
+  "symbol": "Ho168m",
+  "Z": 67,
+  "A": 168,
+  "atomic_mass": 167.935579047,
+  "half_life": {
+    "value": 2.2,
+    "unit": "minutes",
+    "seconds": 132.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ho168",
+      "branching_ratio": 0.995,
+      "gammas": [
+        {
+          "energy_keV": 59.0,
+          "absolute_intensity": 0.000414,
+          "intensity_percent": 0.0414,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

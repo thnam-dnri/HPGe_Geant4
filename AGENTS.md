@@ -29,3 +29,33 @@
 - Write concise, imperative commit titles (e.g., `Add Li-doped contact material`) and include context in the body when behavior changes.
 - Reference related issues or task IDs in the body (`Refs: #42`) and summarize test evidence (`Test: ./build/HPGeSingle run.mac`).
 - Pull requests should outline the motivation, list major code paths touched, attach relevant macro outputs or spectra, and call out any new dependencies or runtime switches.
+
+## Context Management
+**CRITICAL: Context is PROJECT-SPECIFIC based on current working directory**
+
+### Context Location
+- Always use `./.claude/docs/` relative to current working directory
+- Each project maintains its own `.claude/` directory structure
+
+## Workflow
+### 1. Project Initialization (start of conversation)
+- ALWAYS run `pwd` to confirm current working directory
+- Verify `.claude/docs/` exists: `ls -la .claude/docs/`
+- If missing, create: `mkdir -p .claude/docs/`
+- Read `./.claude/docs/context.md` to understand project state
+- If context.md missing, ask user for project overview and create it
+
+### 2. Before Implementation
+- Check if relevant `./.claude/docs/*-plan.md` exists
+- Read ALL existing plans in `./.claude/docs/` for full picture
+- Understand the full research before implementing
+
+### 4. After Implementation
+Update `./.claude/docs/context.md` with:
+- **Completed**: Specific features/functions implemented
+- **Current State**: Working/broken/partial/tested
+- **Files Modified**: List of changed files
+- **Dependencies**: New libraries/packages added
+- **Issues**: Any problems encountered
+- **TODO**: Remaining tasks from the plan
+- **Last Updated**: Date and brief description

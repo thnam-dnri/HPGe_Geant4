@@ -1,0 +1,47 @@
+{
+  "symbol": "Tm170",
+  "Z": 69,
+  "A": 170,
+  "atomic_mass": 169.935801397,
+  "half_life": {
+    "value": 128.59953703703704,
+    "unit": "days",
+    "seconds": 11111000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Yb170",
+      "branching_ratio": 0.99869,
+      "gammas": [
+        {
+          "energy_keV": 84.25,
+          "absolute_intensity": 0.0248,
+          "intensity_percent": 2.48,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Er170",
+      "branching_ratio": 0.00131,
+      "gammas": [
+        {
+          "energy_keV": 78.7,
+          "absolute_intensity": 0.026488,
+          "intensity_percent": 2.6488,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

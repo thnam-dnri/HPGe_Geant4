@@ -1,0 +1,33 @@
+{
+  "symbol": "W158",
+  "Z": 74,
+  "A": 158,
+  "atomic_mass": 157.974562,
+  "half_life": {
+    "value": 0.00125,
+    "unit": "seconds",
+    "seconds": 0.00125
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Hf154m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Hf154",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

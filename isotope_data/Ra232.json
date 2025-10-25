@@ -1,0 +1,74 @@
+{
+  "symbol": "Ra232",
+  "Z": 88,
+  "A": 232,
+  "atomic_mass": 232.043638,
+  "half_life": {
+    "value": 4.2,
+    "unit": "minutes",
+    "seconds": 252.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ac232",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 7.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 97.7,
+          "absolute_intensity": 0.8,
+          "intensity_percent": 80.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 105.2,
+          "absolute_intensity": 0.66,
+          "intensity_percent": 66.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 373.3,
+          "absolute_intensity": 0.62,
+          "intensity_percent": 62.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.452
+            },
+            {
+              "id": "1",
+              "correlation": 0.5479
+            }
+          ]
+        },
+        {
+          "energy_keV": 470.9,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 478.5,
+          "absolute_intensity": 0.69,
+          "intensity_percent": 69.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

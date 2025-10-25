@@ -1,0 +1,33 @@
+{
+  "symbol": "Cl36",
+  "Z": 17,
+  "A": 36,
+  "atomic_mass": 35.968306981,
+  "half_life": {
+    "value": 301206.24048706243,
+    "unit": "years",
+    "seconds": 9498840000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ar36",
+      "branching_ratio": 0.981,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "S36",
+      "branching_ratio": 0.019,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

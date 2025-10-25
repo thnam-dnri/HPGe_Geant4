@@ -1,0 +1,70 @@
+{
+  "symbol": "Sn127m",
+  "Z": 50,
+  "A": 127,
+  "atomic_mass": 126.91036507,
+  "half_life": {
+    "value": 4.13,
+    "unit": "minutes",
+    "seconds": 247.8
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sb127",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 491.3,
+          "absolute_intensity": 0.9,
+          "intensity_percent": 90.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 860.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 979.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1095.6,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1348.0,
+          "absolute_intensity": 0.0477,
+          "intensity_percent": 4.77,
+          "id": ""
+        },
+        {
+          "energy_keV": 1564.0,
+          "absolute_intensity": 0.0396,
+          "intensity_percent": 3.9600000000000004,
+          "id": ""
+        },
+        {
+          "energy_keV": 1584.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

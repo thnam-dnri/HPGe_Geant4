@@ -1,0 +1,34 @@
+{
+  "symbol": "Fe55",
+  "Z": 26,
+  "A": 55,
+  "atomic_mass": 54.938293357,
+  "half_life": {
+    "value": 2.745880898021309,
+    "unit": "years",
+    "seconds": 86594100.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Mn55",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 126.0,
+          "absolute_intensity": 1.28e-09,
+          "intensity_percent": 1.2799999999999998e-07,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

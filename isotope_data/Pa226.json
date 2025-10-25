@@ -1,0 +1,33 @@
+{
+  "symbol": "Pa226",
+  "Z": 91,
+  "A": 226,
+  "atomic_mass": 226.027947753,
+  "half_life": {
+    "value": 1.8,
+    "unit": "minutes",
+    "seconds": 108.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Th226",
+      "branching_ratio": 0.26,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Ac222",
+      "branching_ratio": 0.74,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

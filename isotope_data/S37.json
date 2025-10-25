@@ -1,0 +1,82 @@
+{
+  "symbol": "S37",
+  "Z": 16,
+  "A": 37,
+  "atomic_mass": 36.971125567,
+  "half_life": {
+    "value": 5.05,
+    "unit": "minutes",
+    "seconds": 303.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cl37",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 906.36,
+          "absolute_intensity": 0.0005358,
+          "intensity_percent": 0.05358,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.094
+            }
+          ]
+        },
+        {
+          "energy_keV": 1169.07,
+          "absolute_intensity": 0.0003384,
+          "intensity_percent": 0.033839999999999995,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.094
+            }
+          ]
+        },
+        {
+          "energy_keV": 3086.0,
+          "absolute_intensity": 0.0006204,
+          "intensity_percent": 0.06204,
+          "id": ""
+        },
+        {
+          "energy_keV": 3103.36,
+          "absolute_intensity": 0.94,
+          "intensity_percent": 94.0,
+          "id": "3"
+        },
+        {
+          "energy_keV": 3741.02,
+          "absolute_intensity": 0.002632,
+          "intensity_percent": 0.2632,
+          "id": ""
+        },
+        {
+          "energy_keV": 4009.64,
+          "absolute_intensity": 0.0002726,
+          "intensity_percent": 0.02726,
+          "id": ""
+        },
+        {
+          "energy_keV": 4396.0,
+          "absolute_intensity": 3.76e-05,
+          "intensity_percent": 0.00376,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

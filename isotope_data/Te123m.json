@@ -1,0 +1,52 @@
+{
+  "symbol": "Te123m",
+  "Z": 52,
+  "A": 123,
+  "atomic_mass": 122.904535699,
+  "half_life": {
+    "value": 119.20023148148148,
+    "unit": "days",
+    "seconds": 10298900.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Te123",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 88.46,
+          "absolute_intensity": 0.00092444,
+          "intensity_percent": 0.092444,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.7068
+            }
+          ]
+        },
+        {
+          "energy_keV": 158.97,
+          "absolute_intensity": 0.836,
+          "intensity_percent": 83.6,
+          "id": "1"
+        },
+        {
+          "energy_keV": 247.5,
+          "absolute_intensity": 3.44564e-06,
+          "intensity_percent": 0.000344564,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

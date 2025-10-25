@@ -1,0 +1,27 @@
+{
+  "symbol": "Sn107",
+  "Z": 50,
+  "A": 107,
+  "atomic_mass": 106.915644329,
+  "half_life": {
+    "value": 2.9,
+    "unit": "minutes",
+    "seconds": 174.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "In107",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

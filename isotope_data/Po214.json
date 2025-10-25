@@ -1,0 +1,46 @@
+{
+  "symbol": "Po214",
+  "Z": 84,
+  "A": 214,
+  "atomic_mass": 213.99520135,
+  "half_life": {
+    "value": 0.0001643,
+    "unit": "seconds",
+    "seconds": 0.0001643
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pb210",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 298.0,
+          "absolute_intensity": 5.22e-07,
+          "intensity_percent": 5.22e-05,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.0008609
+            }
+          ]
+        },
+        {
+          "energy_keV": 799.7,
+          "absolute_intensity": 0.00010353,
+          "intensity_percent": 0.010353000000000001,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

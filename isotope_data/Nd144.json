@@ -1,0 +1,27 @@
+{
+  "symbol": "Nd144",
+  "Z": 60,
+  "A": 144,
+  "atomic_mass": 143.910087274,
+  "half_life": {
+    "value": 2291568366311517.0,
+    "unit": "years",
+    "seconds": 7.22669e+22
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ce140",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

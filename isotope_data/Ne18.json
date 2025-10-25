@@ -1,0 +1,58 @@
+{
+  "symbol": "Ne18",
+  "Z": 10,
+  "A": 18,
+  "atomic_mass": 18.005708213,
+  "half_life": {
+    "value": 1.672,
+    "unit": "seconds",
+    "seconds": 1.672
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "F18",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 659.25,
+          "absolute_intensity": 0.00135,
+          "intensity_percent": 0.135,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1041.52,
+          "absolute_intensity": 0.0783,
+          "intensity_percent": 7.829999999999999,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1080.51,
+          "absolute_intensity": 2.26e-05,
+          "intensity_percent": 0.00226,
+          "id": ""
+        },
+        {
+          "energy_keV": 1700.72,
+          "absolute_intensity": 0.000538,
+          "intensity_percent": 0.053799999999999994,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

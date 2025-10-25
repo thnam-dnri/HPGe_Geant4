@@ -1,0 +1,39 @@
+{
+  "symbol": "Si24",
+  "Z": 14,
+  "A": 24,
+  "atomic_mass": 24.011545616,
+  "half_life": {
+    "value": 0.14,
+    "unit": "seconds",
+    "seconds": 0.14
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Al24m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b+",
+      "daughter": "Al24",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "ecp",
+      "daughter": "Mg23",
+      "branching_ratio": 0.38,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Lr253m",
+  "Z": 103,
+  "A": 253,
+  "atomic_mass": 253.09521,
+  "half_life": {
+    "value": 1.49,
+    "unit": "seconds",
+    "seconds": 1.49
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Md249",
+      "branching_ratio": 0.9,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

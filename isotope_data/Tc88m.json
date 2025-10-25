@@ -1,0 +1,46 @@
+{
+  "symbol": "Tc88m",
+  "Z": 43,
+  "A": 88,
+  "atomic_mass": 87.932678,
+  "half_life": {
+    "value": 5.8,
+    "unit": "seconds",
+    "seconds": 5.8
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Mo88",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 445.9,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 740.53,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 914.23,
+          "absolute_intensity": 0.31,
+          "intensity_percent": 31.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

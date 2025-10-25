@@ -1,0 +1,34 @@
+{
+  "symbol": "I129",
+  "Z": 53,
+  "A": 129,
+  "atomic_mass": 128.904987722,
+  "half_life": {
+    "value": 15710743.277524099,
+    "unit": "years",
+    "seconds": 495454000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Xe129",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 39.58,
+          "absolute_intensity": 0.0751,
+          "intensity_percent": 7.51,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

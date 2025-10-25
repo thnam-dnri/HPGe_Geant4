@@ -1,0 +1,88 @@
+{
+  "symbol": "Po200m",
+  "Z": 84,
+  "A": 200,
+  "atomic_mass": 199.9837027385603,
+  "half_life": {
+    "value": 6.1e-08,
+    "unit": "seconds",
+    "seconds": 6.1e-08
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Po200",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 12.2,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            },
+            {
+              "id": "4",
+              "correlation": 1.0
+            },
+            {
+              "id": "3",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 318.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 484.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 1.0
+            },
+            {
+              "id": "3",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 611.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "3",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 668.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "4"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

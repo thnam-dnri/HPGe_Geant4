@@ -1,0 +1,34 @@
+{
+  "symbol": "Gd135",
+  "Z": 64,
+  "A": 135,
+  "atomic_mass": 134.95257,
+  "half_life": {
+    "value": 1.1,
+    "unit": "seconds",
+    "seconds": 1.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Sm134",
+      "branching_ratio": 0.02,
+      "gammas": [
+        {
+          "energy_keV": 163.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

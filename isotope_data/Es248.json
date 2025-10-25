@@ -1,0 +1,39 @@
+{
+  "symbol": "Es248",
+  "Z": 99,
+  "A": 248,
+  "atomic_mass": 248.075471,
+  "half_life": {
+    "value": 27.0,
+    "unit": "minutes",
+    "seconds": 1620.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cf248",
+      "branching_ratio": 0.997,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Bk244m",
+      "branching_ratio": 0.0025,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Bk244",
+      "branching_ratio": 0.0025,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

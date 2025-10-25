@@ -1,0 +1,27 @@
+{
+  "symbol": "Ni63",
+  "Z": 28,
+  "A": 63,
+  "atomic_mass": 62.929669374,
+  "half_life": {
+    "value": 101.2693429731101,
+    "unit": "years",
+    "seconds": 3193630000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cu63",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Au199",
+  "Z": 79,
+  "A": 199,
+  "atomic_mass": 198.968765193,
+  "half_life": {
+    "value": 3.1390046296296297,
+    "unit": "days",
+    "seconds": 271210.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Hg199",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 49.8268,
+          "absolute_intensity": 0.003604,
+          "intensity_percent": 0.3604,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.209
+            }
+          ]
+        },
+        {
+          "energy_keV": 158.37947,
+          "absolute_intensity": 0.369,
+          "intensity_percent": 36.9,
+          "id": "1"
+        },
+        {
+          "energy_keV": 208.20597,
+          "absolute_intensity": 0.0837,
+          "intensity_percent": 8.37,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

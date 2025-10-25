@@ -1,0 +1,53 @@
+{
+  "symbol": "At211",
+  "Z": 85,
+  "A": 211,
+  "atomic_mass": 210.987496271,
+  "half_life": {
+    "value": 7.214,
+    "unit": "hours",
+    "seconds": 25970.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Po211",
+      "branching_ratio": 0.582,
+      "gammas": [
+        {
+          "energy_keV": 687.0,
+          "absolute_intensity": 0.0044772,
+          "intensity_percent": 0.44771999999999995,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Bi207",
+      "branching_ratio": 0.418,
+      "gammas": [
+        {
+          "energy_keV": 669.6,
+          "absolute_intensity": 8.36e-05,
+          "intensity_percent": 0.00836,
+          "id": ""
+        },
+        {
+          "energy_keV": 742.7,
+          "absolute_intensity": 2.28e-05,
+          "intensity_percent": 0.00228,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "symbol": "Tc99",
+  "Z": 43,
+  "A": 99,
+  "atomic_mass": 98.906254747,
+  "half_life": {
+    "value": 211244.60933536277,
+    "unit": "years",
+    "seconds": 6661810000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ru99",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 89.5,
+          "absolute_intensity": 6.5e-06,
+          "intensity_percent": 0.00065,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

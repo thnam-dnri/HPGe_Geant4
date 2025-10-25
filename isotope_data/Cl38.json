@@ -1,0 +1,46 @@
+{
+  "symbol": "Cl38",
+  "Z": 17,
+  "A": 38,
+  "atomic_mass": 37.968010425,
+  "half_life": {
+    "value": 37.24,
+    "unit": "minutes",
+    "seconds": 2234.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ar38",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1642.714,
+          "absolute_intensity": 0.319,
+          "intensity_percent": 31.900000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 2167.405,
+          "absolute_intensity": 0.422,
+          "intensity_percent": 42.199999999999996,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

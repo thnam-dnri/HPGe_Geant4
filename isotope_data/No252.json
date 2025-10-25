@@ -1,0 +1,33 @@
+{
+  "symbol": "No252",
+  "Z": 102,
+  "A": 252,
+  "atomic_mass": 252.088976521,
+  "half_life": {
+    "value": 2.44,
+    "unit": "seconds",
+    "seconds": 2.44
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Fm248",
+      "branching_ratio": 0.58,
+      "gammas": []
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 0.269,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

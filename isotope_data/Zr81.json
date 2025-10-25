@@ -1,0 +1,27 @@
+{
+  "symbol": "Zr81",
+  "Z": 40,
+  "A": 81,
+  "atomic_mass": 80.937210026,
+  "half_life": {
+    "value": 5.5,
+    "unit": "seconds",
+    "seconds": 5.5
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Sr80",
+      "branching_ratio": 0.0012,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

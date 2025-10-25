@@ -1,0 +1,58 @@
+{
+  "symbol": "Co70m",
+  "Z": 27,
+  "A": 70,
+  "atomic_mass": 69.951,
+  "half_life": {
+    "value": 0.5,
+    "unit": "seconds",
+    "seconds": 0.5
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ni70",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 607.6,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1256.8,
+          "absolute_intensity": 0.4,
+          "intensity_percent": 40.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1259.6,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1867.7,
+          "absolute_intensity": 0.75,
+          "intensity_percent": 75.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

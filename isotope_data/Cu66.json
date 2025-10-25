@@ -1,0 +1,64 @@
+{
+  "symbol": "Cu66",
+  "Z": 29,
+  "A": 66,
+  "atomic_mass": 65.928868813,
+  "half_life": {
+    "value": 5.12,
+    "unit": "minutes",
+    "seconds": 307.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Zn66",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 833.58,
+          "absolute_intensity": 0.0017,
+          "intensity_percent": 0.16999999999999998,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.0923
+            }
+          ]
+        },
+        {
+          "energy_keV": 1039.35,
+          "absolute_intensity": 0.074,
+          "intensity_percent": 7.3999999999999995,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1333.21,
+          "absolute_intensity": 2.7e-05,
+          "intensity_percent": 0.0026999999999999997,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.0923
+            }
+          ]
+        },
+        {
+          "energy_keV": 1872.2,
+          "absolute_intensity": 4.615e-06,
+          "intensity_percent": 0.0004615,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

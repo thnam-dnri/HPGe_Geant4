@@ -1,0 +1,40 @@
+{
+  "symbol": "Ir192m2",
+  "Z": 77,
+  "A": 192,
+  "atomic_mass": 191.962785518,
+  "half_life": {
+    "value": 241.1650177574835,
+    "unit": "years",
+    "seconds": 7605380000.0
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ir192",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 12.98,
+          "absolute_intensity": 1.7544e-05,
+          "intensity_percent": 0.0017544,
+          "id": ""
+        },
+        {
+          "energy_keV": 155.16,
+          "absolute_intensity": 0.00097371,
+          "intensity_percent": 0.097371,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

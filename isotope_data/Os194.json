@@ -1,0 +1,40 @@
+{
+  "symbol": "Os194",
+  "Z": 76,
+  "A": 194,
+  "atomic_mass": 193.965182083,
+  "half_life": {
+    "value": 6.00412227295789,
+    "unit": "years",
+    "seconds": 189346000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ir194",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 43.1,
+          "absolute_intensity": 0.054,
+          "intensity_percent": 5.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 82.3,
+          "absolute_intensity": 0.000108,
+          "intensity_percent": 0.010799999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

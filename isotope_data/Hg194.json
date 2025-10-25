@@ -1,0 +1,27 @@
+{
+  "symbol": "Hg194",
+  "Z": 80,
+  "A": 194,
+  "atomic_mass": 193.965439409,
+  "half_life": {
+    "value": 444.3049213597159,
+    "unit": "years",
+    "seconds": 14011600000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Au194",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

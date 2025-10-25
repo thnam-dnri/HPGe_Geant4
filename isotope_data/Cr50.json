@@ -1,0 +1,27 @@
+{
+  "symbol": "Cr50",
+  "Z": 24,
+  "A": 50,
+  "atomic_mass": 49.946044205,
+  "half_life": {
+    "value": 1.8012335109081686e+17,
+    "unit": "years",
+    "seconds": 5.68037e+24
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "2ec",
+      "daughter": "Ti50",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

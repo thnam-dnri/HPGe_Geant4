@@ -1,0 +1,70 @@
+{
+  "symbol": "Y103",
+  "Z": 39,
+  "A": 103,
+  "atomic_mass": 102.93673,
+  "half_life": {
+    "value": 0.23,
+    "unit": "seconds",
+    "seconds": 0.23
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Zr103",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 98.2,
+          "absolute_intensity": 0.12,
+          "intensity_percent": 12.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 109.1,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 248.0,
+          "absolute_intensity": 0.08,
+          "intensity_percent": 8.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3846
+            }
+          ]
+        },
+        {
+          "energy_keV": 258.9,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 357.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-n",
+      "daughter": "Zr102",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

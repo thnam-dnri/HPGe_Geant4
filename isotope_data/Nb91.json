@@ -1,0 +1,27 @@
+{
+  "symbol": "Nb91",
+  "Z": 41,
+  "A": 91,
+  "atomic_mass": 90.906996243,
+  "half_life": {
+    "value": 680.466768138001,
+    "unit": "years",
+    "seconds": 21459200000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Zr91",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

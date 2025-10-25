@@ -1,0 +1,27 @@
+{
+  "symbol": "Nd140",
+  "Z": 60,
+  "A": 140,
+  "atomic_mass": 139.909552,
+  "half_life": {
+    "value": 3.37,
+    "unit": "days",
+    "seconds": 291168.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pr140",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

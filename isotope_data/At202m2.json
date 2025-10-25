@@ -1,0 +1,33 @@
+{
+  "symbol": "At202m2",
+  "Z": 85,
+  "A": 202,
+  "atomic_mass": 201.989050743,
+  "half_life": {
+    "value": 0.46,
+    "unit": "seconds",
+    "seconds": 0.46
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Bi198m",
+      "branching_ratio": 0.087,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Bi198m2",
+      "branching_ratio": 0.00096,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "Se79m",
+  "Z": 34,
+  "A": 79,
+  "atomic_mass": 78.918601911,
+  "half_life": {
+    "value": 3.92,
+    "unit": "minutes",
+    "seconds": 235.2
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Se79",
+      "branching_ratio": 0.99944,
+      "gammas": [
+        {
+          "energy_keV": 95.73,
+          "absolute_intensity": 0.096255,
+          "intensity_percent": 9.625499999999999,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Br79",
+      "branching_ratio": 0.00056,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

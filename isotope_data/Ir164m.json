@@ -1,0 +1,27 @@
+{
+  "symbol": "Ir164m",
+  "Z": 77,
+  "A": 164,
+  "atomic_mass": 163.992201,
+  "half_life": {
+    "value": 9.4e-05,
+    "unit": "seconds",
+    "seconds": 9.4e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "p",
+      "daughter": "Os163",
+      "branching_ratio": 0.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

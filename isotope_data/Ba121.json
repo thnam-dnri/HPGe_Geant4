@@ -1,0 +1,58 @@
+{
+  "symbol": "Ba121",
+  "Z": 56,
+  "A": 121,
+  "atomic_mass": 120.924054499,
+  "half_life": {
+    "value": 29.7,
+    "unit": "seconds",
+    "seconds": 29.7
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cs121",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 98.2,
+          "absolute_intensity": 0.26,
+          "intensity_percent": 26.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 99.2,
+          "absolute_intensity": 0.86,
+          "intensity_percent": 86.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 110.6,
+          "absolute_intensity": 0.39,
+          "intensity_percent": 39.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 111.6,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 210.8,
+          "absolute_intensity": 0.61,
+          "intensity_percent": 61.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

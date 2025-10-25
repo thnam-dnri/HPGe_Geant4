@@ -1,0 +1,78 @@
+{
+  "symbol": "As75m",
+  "Z": 33,
+  "A": 75,
+  "atomic_mass": 74.921922754,
+  "half_life": {
+    "value": 0.01762,
+    "unit": "seconds",
+    "seconds": 0.01762
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "As75",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 24.38,
+          "absolute_intensity": 0.00386,
+          "intensity_percent": 0.386,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.0003012
+            },
+            {
+              "id": "3",
+              "correlation": 0.9913
+            },
+            {
+              "id": "1",
+              "correlation": 0.0001122
+            }
+          ]
+        },
+        {
+          "energy_keV": 80.94,
+          "absolute_intensity": 9e-05,
+          "intensity_percent": 0.009000000000000001,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.9794
+            }
+          ]
+        },
+        {
+          "energy_keV": 198.61,
+          "absolute_intensity": 0.00025,
+          "intensity_percent": 0.025,
+          "id": "2"
+        },
+        {
+          "energy_keV": 279.54,
+          "absolute_intensity": 0.795,
+          "intensity_percent": 79.5,
+          "id": "3"
+        },
+        {
+          "energy_keV": 303.92,
+          "absolute_intensity": 0.188,
+          "intensity_percent": 18.8,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

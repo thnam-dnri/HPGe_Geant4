@@ -1,0 +1,52 @@
+{
+  "symbol": "Cr48",
+  "Z": 24,
+  "A": 48,
+  "atomic_mass": 47.954031716,
+  "half_life": {
+    "value": 21.56,
+    "unit": "hours",
+    "seconds": 77616.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "V48",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 112.31,
+          "absolute_intensity": 0.96,
+          "intensity_percent": 96.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9947
+            }
+          ]
+        },
+        {
+          "energy_keV": 308.24,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 420.5,
+          "absolute_intensity": 0.0003,
+          "intensity_percent": 0.03,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

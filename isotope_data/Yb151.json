@@ -1,0 +1,40 @@
+{
+  "symbol": "Yb151",
+  "Z": 70,
+  "A": 151,
+  "atomic_mass": 150.955400769,
+  "half_life": {
+    "value": 1.6,
+    "unit": "seconds",
+    "seconds": 1.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Er150",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 208.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1579.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

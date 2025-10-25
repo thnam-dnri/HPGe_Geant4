@@ -1,0 +1,52 @@
+{
+  "symbol": "Nb95",
+  "Z": 41,
+  "A": 95,
+  "atomic_mass": 94.906835792,
+  "half_life": {
+    "value": 34.990972222222226,
+    "unit": "days",
+    "seconds": 3023220.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Mo95",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 204.12,
+          "absolute_intensity": 0.00028,
+          "intensity_percent": 0.027999999999999997,
+          "id": "0"
+        },
+        {
+          "energy_keV": 561.88,
+          "absolute_intensity": 0.00015,
+          "intensity_percent": 0.015,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.951
+            }
+          ]
+        },
+        {
+          "energy_keV": 765.8,
+          "absolute_intensity": 0.99808,
+          "intensity_percent": 99.80799999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

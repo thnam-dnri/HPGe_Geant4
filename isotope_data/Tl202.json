@@ -1,0 +1,52 @@
+{
+  "symbol": "Tl202",
+  "Z": 81,
+  "A": 202,
+  "atomic_mass": 201.972105808,
+  "half_life": {
+    "value": 12.309953703703703,
+    "unit": "days",
+    "seconds": 1063580.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Hg202",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 439.51,
+          "absolute_intensity": 0.915,
+          "intensity_percent": 91.5,
+          "id": "0"
+        },
+        {
+          "energy_keV": 520.3,
+          "absolute_intensity": 0.005856,
+          "intensity_percent": 0.5856,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.882
+            }
+          ]
+        },
+        {
+          "energy_keV": 960.1,
+          "absolute_intensity": 0.00068625,
+          "intensity_percent": 0.068625,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "K37",
+  "Z": 19,
+  "A": 37,
+  "atomic_mass": 36.973375889,
+  "half_life": {
+    "value": 1.226,
+    "unit": "seconds",
+    "seconds": 1.226
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ar37",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 2796.0,
+          "absolute_intensity": 0.018,
+          "intensity_percent": 1.7999999999999998,
+          "id": ""
+        },
+        {
+          "energy_keV": 3601.8,
+          "absolute_intensity": 0.00019,
+          "intensity_percent": 0.019,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

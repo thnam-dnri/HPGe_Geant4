@@ -1,0 +1,254 @@
+{
+  "symbol": "Sn128",
+  "Z": 50,
+  "A": 128,
+  "atomic_mass": 127.910536624,
+  "half_life": {
+    "value": 59.07,
+    "unit": "minutes",
+    "seconds": 3544.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sb128m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 32.1,
+          "absolute_intensity": 0.04012,
+          "intensity_percent": 4.0120000000000005,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.08393
+            }
+          ]
+        },
+        {
+          "energy_keV": 45.7,
+          "absolute_intensity": 0.1298,
+          "intensity_percent": 12.98,
+          "id": "1"
+        },
+        {
+          "energy_keV": 75.1,
+          "absolute_intensity": 0.2773,
+          "intensity_percent": 27.73,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.04952
+            },
+            {
+              "id": "0",
+              "correlation": 0.03278
+            }
+          ]
+        },
+        {
+          "energy_keV": 80.9,
+          "absolute_intensity": 0.00177,
+          "intensity_percent": 0.17700000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.05973
+            },
+            {
+              "id": "8",
+              "correlation": 0.245
+            },
+            {
+              "id": "1",
+              "correlation": 0.01185
+            },
+            {
+              "id": "0",
+              "correlation": 0.007379
+            },
+            {
+              "id": "7",
+              "correlation": 0.00838
+            },
+            {
+              "id": "4",
+              "correlation": 0.59
+            },
+            {
+              "id": "9",
+              "correlation": 0.0686
+            },
+            {
+              "id": "6",
+              "correlation": 0.01197
+            },
+            {
+              "id": "5",
+              "correlation": 0.02695
+            }
+          ]
+        },
+        {
+          "energy_keV": 115.9,
+          "absolute_intensity": 0.00177,
+          "intensity_percent": 0.17700000000000002,
+          "id": "4",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.1012
+            },
+            {
+              "id": "8",
+              "correlation": 0.4152
+            },
+            {
+              "id": "1",
+              "correlation": 0.02008
+            },
+            {
+              "id": "0",
+              "correlation": 0.01251
+            },
+            {
+              "id": "7",
+              "correlation": 0.0142
+            },
+            {
+              "id": "9",
+              "correlation": 0.1163
+            },
+            {
+              "id": "6",
+              "correlation": 0.02029
+            },
+            {
+              "id": "5",
+              "correlation": 0.04568
+            }
+          ]
+        },
+        {
+          "energy_keV": 152.7,
+          "absolute_intensity": 0.0649,
+          "intensity_percent": 6.49,
+          "id": "5",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.03757
+            },
+            {
+              "id": "0",
+              "correlation": 0.01138
+            },
+            {
+              "id": "6",
+              "correlation": 0.347
+            },
+            {
+              "id": "7",
+              "correlation": 0.2429
+            }
+          ]
+        },
+        {
+          "energy_keV": 404.4,
+          "absolute_intensity": 0.059,
+          "intensity_percent": 5.8999999999999995,
+          "id": "6",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.04952
+            },
+            {
+              "id": "0",
+              "correlation": 0.03278
+            }
+          ]
+        },
+        {
+          "energy_keV": 436.7,
+          "absolute_intensity": 0.0413,
+          "intensity_percent": 4.130000000000001,
+          "id": "7",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.08393
+            }
+          ]
+        },
+        {
+          "energy_keV": 482.3,
+          "absolute_intensity": 0.59,
+          "intensity_percent": 59.0,
+          "id": "8",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.02921
+            },
+            {
+              "id": "0",
+              "correlation": 0.01934
+            },
+            {
+              "id": "2",
+              "correlation": 0.2438
+            }
+          ]
+        },
+        {
+          "energy_keV": 557.3,
+          "absolute_intensity": 0.1652,
+          "intensity_percent": 16.520000000000003,
+          "id": "9",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.04952
+            },
+            {
+              "id": "0",
+              "correlation": 0.03278
+            }
+          ]
+        },
+        {
+          "energy_keV": 680.5,
+          "absolute_intensity": 0.1593,
+          "intensity_percent": 15.93,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.02921
+            },
+            {
+              "id": "0",
+              "correlation": 0.01934
+            },
+            {
+              "id": "2",
+              "correlation": 0.2438
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 11
+  }
+}

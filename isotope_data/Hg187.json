@@ -1,0 +1,33 @@
+{
+  "symbol": "Hg187",
+  "Z": 80,
+  "A": 187,
+  "atomic_mass": 186.969814236,
+  "half_life": {
+    "value": 2.4,
+    "unit": "minutes",
+    "seconds": 144.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pt183m",
+      "branching_ratio": 0.00012,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Au187",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

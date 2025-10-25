@@ -1,0 +1,94 @@
+{
+  "symbol": "W164",
+  "Z": 74,
+  "A": 164,
+  "atomic_mass": 163.958954382,
+  "half_life": {
+    "value": 6.3,
+    "unit": "seconds",
+    "seconds": 6.3
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta164",
+      "branching_ratio": 0.962,
+      "gammas": [
+        {
+          "energy_keV": 111.3,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 187.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 268.7,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 332.1,
+          "absolute_intensity": 0.038,
+          "intensity_percent": 3.8,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.823
+            }
+          ]
+        },
+        {
+          "energy_keV": 372.3,
+          "absolute_intensity": 0.071,
+          "intensity_percent": 7.1,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.823
+            }
+          ]
+        },
+        {
+          "energy_keV": 401.8,
+          "absolute_intensity": 0.131,
+          "intensity_percent": 13.100000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.823
+            }
+          ]
+        },
+        {
+          "energy_keV": 99.9,
+          "absolute_intensity": 0.215,
+          "intensity_percent": 21.5,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Hf160",
+      "branching_ratio": 0.038,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 7
+  }
+}

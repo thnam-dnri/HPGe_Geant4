@@ -1,0 +1,52 @@
+{
+  "symbol": "W181",
+  "Z": 74,
+  "A": 181,
+  "atomic_mass": 180.948197248,
+  "half_life": {
+    "value": 121.20023148148148,
+    "unit": "days",
+    "seconds": 10471700.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta181",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 6.24,
+          "absolute_intensity": 0.0103,
+          "intensity_percent": 1.03,
+          "id": "0"
+        },
+        {
+          "energy_keV": 136.28,
+          "absolute_intensity": 0.000311,
+          "intensity_percent": 0.031100000000000003,
+          "id": ""
+        },
+        {
+          "energy_keV": 152.32,
+          "absolute_intensity": 0.00083,
+          "intensity_percent": 0.083,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01399
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

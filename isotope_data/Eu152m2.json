@@ -1,0 +1,78 @@
+{
+  "symbol": "Eu152m2",
+  "Z": 63,
+  "A": 152,
+  "atomic_mass": 151.921903268,
+  "half_life": {
+    "value": 1.6,
+    "unit": "hours",
+    "seconds": 5760.0
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Eu152",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 12.6,
+          "absolute_intensity": 0.0028659,
+          "intensity_percent": 0.28658999999999996,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.1401
+            }
+          ]
+        },
+        {
+          "energy_keV": 18.21,
+          "absolute_intensity": 0.012582,
+          "intensity_percent": 1.2582,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.4829
+            },
+            {
+              "id": "0",
+              "correlation": 0.00198
+            },
+            {
+              "id": "3",
+              "correlation": 0.004493
+            }
+          ]
+        },
+        {
+          "energy_keV": 39.75,
+          "absolute_intensity": 0.0001329,
+          "intensity_percent": 0.01329,
+          "id": ""
+        },
+        {
+          "energy_keV": 77.23,
+          "absolute_intensity": 0.0068502,
+          "intensity_percent": 0.68502,
+          "id": "3"
+        },
+        {
+          "energy_keV": 89.85,
+          "absolute_intensity": 0.699,
+          "intensity_percent": 69.89999999999999,
+          "id": "4"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

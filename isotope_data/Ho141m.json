@@ -1,0 +1,27 @@
+{
+  "symbol": "Ho141m",
+  "Z": 67,
+  "A": 141,
+  "atomic_mass": 140.963168854,
+  "half_life": {
+    "value": 6.6e-06,
+    "unit": "seconds",
+    "seconds": 6.6e-06
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "p",
+      "daughter": "Dy140",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

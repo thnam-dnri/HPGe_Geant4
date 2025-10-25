@@ -1,0 +1,71 @@
+{
+  "symbol": "In114",
+  "Z": 49,
+  "A": 114,
+  "atomic_mass": 113.904913876,
+  "half_life": {
+    "value": 1.1983333333333335,
+    "unit": "minutes",
+    "seconds": 71.9
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sn114",
+      "branching_ratio": 0.995,
+      "gammas": [
+        {
+          "energy_keV": 1299.83,
+          "absolute_intensity": 0.0014,
+          "intensity_percent": 0.13999999999999999,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Cd114",
+      "branching_ratio": 0.005,
+      "gammas": [
+        {
+          "energy_keV": 558.43,
+          "absolute_intensity": 0.1344,
+          "intensity_percent": 13.44,
+          "id": "0"
+        },
+        {
+          "energy_keV": 575.8,
+          "absolute_intensity": 0.00784,
+          "intensity_percent": 0.784,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.28
+            }
+          ]
+        },
+        {
+          "energy_keV": 747.8,
+          "absolute_intensity": 0.000364,
+          "intensity_percent": 0.0364,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.28
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

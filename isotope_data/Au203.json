@@ -1,0 +1,74 @@
+{
+  "symbol": "Au203",
+  "Z": 79,
+  "A": 203,
+  "atomic_mass": 202.975154542,
+  "half_life": {
+    "value": 1.0,
+    "unit": "minutes",
+    "seconds": 60.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Hg203",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 7.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 43.5,
+          "absolute_intensity": 0.00893,
+          "intensity_percent": 0.893,
+          "id": "1"
+        },
+        {
+          "energy_keV": 50.8,
+          "absolute_intensity": 0.008272,
+          "intensity_percent": 0.8271999999999999,
+          "id": "2"
+        },
+        {
+          "energy_keV": 217.6,
+          "absolute_intensity": 0.0094,
+          "intensity_percent": 0.9400000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 318.1,
+          "absolute_intensity": 0.00752,
+          "intensity_percent": 0.752,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.0003358
+            },
+            {
+              "id": "2",
+              "correlation": 0.0003111
+            }
+          ]
+        },
+        {
+          "energy_keV": 368.9,
+          "absolute_intensity": 0.007238,
+          "intensity_percent": 0.7238,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

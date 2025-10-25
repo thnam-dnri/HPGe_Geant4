@@ -1,0 +1,52 @@
+{
+  "symbol": "Ru115",
+  "Z": 44,
+  "A": 115,
+  "atomic_mass": 114.928686173,
+  "half_life": {
+    "value": 0.74,
+    "unit": "seconds",
+    "seconds": 0.74
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Rh115",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 292.6,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 80.1,
+          "absolute_intensity": 0.124,
+          "intensity_percent": 12.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 196.6,
+          "absolute_intensity": 0.074,
+          "intensity_percent": 7.3999999999999995,
+          "id": ""
+        },
+        {
+          "energy_keV": 207.1,
+          "absolute_intensity": 0.25,
+          "intensity_percent": 25.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

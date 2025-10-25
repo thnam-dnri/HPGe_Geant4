@@ -1,0 +1,27 @@
+{
+  "symbol": "Rn198",
+  "Z": 86,
+  "A": 198,
+  "atomic_mass": 197.998678663,
+  "half_life": {
+    "value": 0.065,
+    "unit": "seconds",
+    "seconds": 0.065
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Po194",
+      "branching_ratio": 0.994,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

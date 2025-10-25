@@ -1,0 +1,52 @@
+{
+  "symbol": "Hg197m",
+  "Z": 80,
+  "A": 197,
+  "atomic_mass": 196.967533823,
+  "half_life": {
+    "value": 23.8,
+    "unit": "hours",
+    "seconds": 85680.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Hg197",
+      "branching_ratio": 0.914,
+      "gammas": [
+        {
+          "energy_keV": 133.98,
+          "absolute_intensity": 0.3663,
+          "intensity_percent": 36.63,
+          "id": "0"
+        },
+        {
+          "energy_keV": 164.97,
+          "absolute_intensity": 0.0028645,
+          "intensity_percent": 0.28645,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1342
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Au197m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

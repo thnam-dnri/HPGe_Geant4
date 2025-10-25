@@ -1,0 +1,33 @@
+{
+  "symbol": "Pa220",
+  "Z": 91,
+  "A": 220,
+  "atomic_mass": 220.021875303,
+  "half_life": {
+    "value": 7.8e-07,
+    "unit": "seconds",
+    "seconds": 7.8e-07
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ac216m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Ac216",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

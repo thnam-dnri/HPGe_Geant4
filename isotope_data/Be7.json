@@ -1,0 +1,34 @@
+{
+  "symbol": "Be7",
+  "Z": 4,
+  "A": 7,
+  "atomic_mass": 7.016929828,
+  "half_life": {
+    "value": 53.22002314814815,
+    "unit": "days",
+    "seconds": 4598210.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Li7",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 477.595,
+          "absolute_intensity": 0.1052,
+          "intensity_percent": 10.52,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

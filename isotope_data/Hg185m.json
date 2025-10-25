@@ -1,0 +1,58 @@
+{
+  "symbol": "Hg185m",
+  "Z": 80,
+  "A": 185,
+  "atomic_mass": 184.972005689,
+  "half_life": {
+    "value": 21.6,
+    "unit": "seconds",
+    "seconds": 21.6
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Hg185",
+      "branching_ratio": 0.54,
+      "gammas": [
+        {
+          "energy_keV": 8.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.0004543
+            }
+          ]
+        },
+        {
+          "energy_keV": 26.1,
+          "absolute_intensity": 0.00046,
+          "intensity_percent": 0.046,
+          "id": "1"
+        },
+        {
+          "energy_keV": 65.3,
+          "absolute_intensity": 0.00062,
+          "intensity_percent": 0.062,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Pt181",
+      "branching_ratio": 0.0003,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

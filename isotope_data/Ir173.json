@@ -1,0 +1,70 @@
+{
+  "symbol": "Ir173",
+  "Z": 77,
+  "A": 173,
+  "atomic_mass": 172.967501739,
+  "half_life": {
+    "value": 9.0,
+    "unit": "seconds",
+    "seconds": 9.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Os173",
+      "branching_ratio": 0.93,
+      "gammas": [
+        {
+          "energy_keV": 49.6,
+          "absolute_intensity": 0.67,
+          "intensity_percent": 67.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3422
+            }
+          ]
+        },
+        {
+          "energy_keV": 91.8,
+          "absolute_intensity": 0.2,
+          "intensity_percent": 20.0,
+          "id": "1"
+        },
+        {
+          "energy_keV": 147.7,
+          "absolute_intensity": 0.16,
+          "intensity_percent": 16.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 285.0,
+          "absolute_intensity": 0.25,
+          "intensity_percent": 25.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 296.0,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Re169",
+      "branching_ratio": 0.0202,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

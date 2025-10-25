@@ -1,0 +1,52 @@
+{
+  "symbol": "Ir175",
+  "Z": 77,
+  "A": 175,
+  "atomic_mass": 174.964112895,
+  "half_life": {
+    "value": 9.0,
+    "unit": "seconds",
+    "seconds": 9.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Os175",
+      "branching_ratio": 0.9915,
+      "gammas": [
+        {
+          "energy_keV": 105.4,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 399.0,
+          "absolute_intensity": 0.3,
+          "intensity_percent": 30.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.7446
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Re171",
+      "branching_ratio": 0.0085,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

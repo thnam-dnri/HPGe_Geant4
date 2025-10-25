@@ -1,0 +1,46 @@
+{
+  "symbol": "Pb203m",
+  "Z": 82,
+  "A": 203,
+  "atomic_mass": 202.97427641,
+  "half_life": {
+    "value": 6.21,
+    "unit": "seconds",
+    "seconds": 6.21
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pb203",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 5.3,
+          "absolute_intensity": 0.068736,
+          "intensity_percent": 6.873600000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 820.0,
+          "absolute_intensity": 0.067304,
+          "intensity_percent": 6.7304,
+          "id": ""
+        },
+        {
+          "energy_keV": 825.3,
+          "absolute_intensity": 0.716,
+          "intensity_percent": 71.6,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

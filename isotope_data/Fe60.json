@@ -1,0 +1,27 @@
+{
+  "symbol": "Fe60",
+  "Z": 26,
+  "A": 60,
+  "atomic_mass": 59.934071683,
+  "half_life": {
+    "value": 1501027.397260274,
+    "unit": "years",
+    "seconds": 47336400000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Co60m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

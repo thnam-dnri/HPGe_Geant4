@@ -1,0 +1,52 @@
+{
+  "symbol": "Zn58",
+  "Z": 30,
+  "A": 58,
+  "atomic_mass": 57.954591555,
+  "half_life": {
+    "value": 0.086,
+    "unit": "seconds",
+    "seconds": 0.086
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cu58",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 203.0,
+          "absolute_intensity": 0.8,
+          "intensity_percent": 80.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 848.0,
+          "absolute_intensity": 0.096,
+          "intensity_percent": 9.6,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "b+p",
+      "daughter": "Ni57",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

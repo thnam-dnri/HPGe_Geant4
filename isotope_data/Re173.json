@@ -1,0 +1,46 @@
+{
+  "symbol": "Re173",
+  "Z": 75,
+  "A": 173,
+  "atomic_mass": 172.953243,
+  "half_life": {
+    "value": 1.98,
+    "unit": "minutes",
+    "seconds": 118.8
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "W173",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 181.5,
+          "absolute_intensity": 0.064,
+          "intensity_percent": 6.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 190.7,
+          "absolute_intensity": 0.0171,
+          "intensity_percent": 1.71,
+          "id": ""
+        },
+        {
+          "energy_keV": 373.6,
+          "absolute_intensity": 0.0164,
+          "intensity_percent": 1.6400000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

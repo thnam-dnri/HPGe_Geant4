@@ -1,0 +1,64 @@
+{
+  "symbol": "S30",
+  "Z": 16,
+  "A": 30,
+  "atomic_mass": 29.984903249,
+  "half_life": {
+    "value": 1.178,
+    "unit": "seconds",
+    "seconds": 1.178
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "P30",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 31.73,
+          "absolute_intensity": 4e-06,
+          "intensity_percent": 0.00039999999999999996,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 677.01,
+          "absolute_intensity": 0.784,
+          "intensity_percent": 78.4,
+          "id": "1"
+        },
+        {
+          "energy_keV": 708.7,
+          "absolute_intensity": 0.0029,
+          "intensity_percent": 0.29,
+          "id": ""
+        },
+        {
+          "energy_keV": 2342.2,
+          "absolute_intensity": 0.0228,
+          "intensity_percent": 2.2800000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

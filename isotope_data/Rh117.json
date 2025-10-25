@@ -1,0 +1,46 @@
+{
+  "symbol": "Rh117",
+  "Z": 45,
+  "A": 117,
+  "atomic_mass": 116.92598,
+  "half_life": {
+    "value": 0.44,
+    "unit": "seconds",
+    "seconds": 0.44
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Pd117",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 34.6,
+          "absolute_intensity": 0.108,
+          "intensity_percent": 10.8,
+          "id": ""
+        },
+        {
+          "energy_keV": 97.1,
+          "absolute_intensity": 0.11,
+          "intensity_percent": 11.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 131.8,
+          "absolute_intensity": 0.33,
+          "intensity_percent": 33.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

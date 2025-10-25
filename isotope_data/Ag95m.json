@@ -1,0 +1,40 @@
+{
+  "symbol": "Ag95m",
+  "Z": 47,
+  "A": 95,
+  "atomic_mass": 94.935849514,
+  "half_life": {
+    "value": 0.5,
+    "unit": "seconds",
+    "seconds": 0.5
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ag95",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 77.4,
+          "absolute_intensity": 0.53533,
+          "intensity_percent": 53.532999999999994,
+          "id": ""
+        },
+        {
+          "energy_keV": 266.8,
+          "absolute_intensity": 0.83893,
+          "intensity_percent": 83.893,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

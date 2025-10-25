@@ -1,0 +1,58 @@
+{
+  "symbol": "U236",
+  "Z": 92,
+  "A": 236,
+  "atomic_mass": 236.045568006,
+  "half_life": {
+    "value": 23436041.349568747,
+    "unit": "years",
+    "seconds": 739079000000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Th232",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 49.46,
+          "absolute_intensity": 0.00078,
+          "intensity_percent": 0.078,
+          "id": "0"
+        },
+        {
+          "energy_keV": 112.79,
+          "absolute_intensity": 0.00018798,
+          "intensity_percent": 0.018798,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.002985
+            }
+          ]
+        },
+        {
+          "energy_keV": 171.15,
+          "absolute_intensity": 6.24e-07,
+          "intensity_percent": 6.24e-05,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 9.4e-10,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

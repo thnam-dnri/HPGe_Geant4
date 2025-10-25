@@ -1,0 +1,86 @@
+{
+  "symbol": "Ag122",
+  "Z": 47,
+  "A": 122,
+  "atomic_mass": 121.92353,
+  "half_life": {
+    "value": 0.529,
+    "unit": "seconds",
+    "seconds": 0.529
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cd122",
+      "branching_ratio": 0.998,
+      "gammas": [
+        {
+          "energy_keV": 569.45,
+          "absolute_intensity": 0.96,
+          "intensity_percent": 96.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 650.2,
+          "absolute_intensity": 0.2016,
+          "intensity_percent": 20.16,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.9206
+            },
+            {
+              "id": "2",
+              "correlation": 0.96
+            }
+          ]
+        },
+        {
+          "energy_keV": 759.7,
+          "absolute_intensity": 0.3264,
+          "intensity_percent": 32.64,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.96
+            }
+          ]
+        },
+        {
+          "energy_keV": 798.4,
+          "absolute_intensity": 0.1248,
+          "intensity_percent": 12.479999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.96
+            }
+          ]
+        },
+        {
+          "energy_keV": 1367.8,
+          "absolute_intensity": 0.04128,
+          "intensity_percent": 4.128,
+          "id": ""
+        },
+        {
+          "energy_keV": 1423.1,
+          "absolute_intensity": 0.03072,
+          "intensity_percent": 3.072,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

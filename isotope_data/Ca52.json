@@ -1,0 +1,76 @@
+{
+  "symbol": "Ca52",
+  "Z": 20,
+  "A": 52,
+  "atomic_mass": 51.9651,
+  "half_life": {
+    "value": 4.6,
+    "unit": "seconds",
+    "seconds": 4.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sc52",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 675.2,
+          "absolute_intensity": 0.624,
+          "intensity_percent": 62.4,
+          "id": "0"
+        },
+        {
+          "energy_keV": 961.2,
+          "absolute_intensity": 0.4992,
+          "intensity_percent": 49.919999999999995,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.624
+            }
+          ]
+        },
+        {
+          "energy_keV": 1636.4,
+          "absolute_intensity": 0.35568,
+          "intensity_percent": 35.568,
+          "id": ""
+        },
+        {
+          "energy_keV": 2070.4,
+          "absolute_intensity": 0.11232,
+          "intensity_percent": 11.232000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.624
+            }
+          ]
+        },
+        {
+          "energy_keV": 3458.0,
+          "absolute_intensity": 0.00624,
+          "intensity_percent": 0.624,
+          "id": ""
+        },
+        {
+          "energy_keV": 4265.5,
+          "absolute_intensity": 0.013728,
+          "intensity_percent": 1.3728,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "symbol": "In134",
+  "Z": 49,
+  "A": 134,
+  "atomic_mass": 133.94415,
+  "half_life": {
+    "value": 0.14,
+    "unit": "seconds",
+    "seconds": 0.14
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-n",
+      "daughter": "Sn133",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 354.0,
+          "absolute_intensity": 0.0015,
+          "intensity_percent": 0.15,
+          "id": ""
+        },
+        {
+          "energy_keV": 802.0,
+          "absolute_intensity": 0.00675,
+          "intensity_percent": 0.675,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.075
+            }
+          ]
+        },
+        {
+          "energy_keV": 853.7,
+          "absolute_intensity": 0.01725,
+          "intensity_percent": 1.725,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1560.9,
+          "absolute_intensity": 0.075,
+          "intensity_percent": 7.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 2004.6,
+          "absolute_intensity": 0.0195,
+          "intensity_percent": 1.95,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

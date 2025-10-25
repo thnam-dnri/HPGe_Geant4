@@ -1,0 +1,90 @@
+{
+  "symbol": "Sc43",
+  "Z": 21,
+  "A": 43,
+  "atomic_mass": 42.961150658,
+  "half_life": {
+    "value": 3.891,
+    "unit": "hours",
+    "seconds": 14007.6
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ca43",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 220.4,
+          "absolute_intensity": 8.1e-06,
+          "intensity_percent": 0.0008100000000000001,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.225
+            }
+          ]
+        },
+        {
+          "energy_keV": 372.9,
+          "absolute_intensity": 0.225,
+          "intensity_percent": 22.5,
+          "id": "1"
+        },
+        {
+          "energy_keV": 593.3,
+          "absolute_intensity": 2.1375e-05,
+          "intensity_percent": 0.0021375,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1337.9,
+          "absolute_intensity": 1.8e-05,
+          "intensity_percent": 0.0018,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.01391
+            },
+            {
+              "id": "2",
+              "correlation": 0.1632
+            },
+            {
+              "id": "0",
+              "correlation": 0.06183
+            }
+          ]
+        },
+        {
+          "energy_keV": 1558.3,
+          "absolute_intensity": 8.4375e-05,
+          "intensity_percent": 0.0084375,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.225
+            }
+          ]
+        },
+        {
+          "energy_keV": 1930.7,
+          "absolute_intensity": 0.0001512,
+          "intensity_percent": 0.015119999999999998,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

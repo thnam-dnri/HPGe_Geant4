@@ -1,0 +1,53 @@
+{
+  "symbol": "Tb156m",
+  "Z": 65,
+  "A": 156,
+  "atomic_mass": 155.924800461,
+  "half_life": {
+    "value": 1.0166666666666666,
+    "unit": "days",
+    "seconds": 87840.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tb156m2",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 0.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Tb156",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 0.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 49.63,
+          "absolute_intensity": 0.737,
+          "intensity_percent": 73.7,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

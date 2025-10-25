@@ -1,0 +1,39 @@
+{
+  "symbol": "Es247",
+  "Z": 99,
+  "A": 247,
+  "atomic_mass": 247.073656,
+  "half_life": {
+    "value": 4.55,
+    "unit": "minutes",
+    "seconds": 273.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Cf247",
+      "branching_ratio": 0.93,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Bk243m",
+      "branching_ratio": 0.07,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Bk243",
+      "branching_ratio": 0.07,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 3,
+    "num_gamma_lines": 0
+  }
+}

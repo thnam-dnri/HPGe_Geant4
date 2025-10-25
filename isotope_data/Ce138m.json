@@ -1,0 +1,62 @@
+{
+  "symbol": "Ce138m",
+  "Z": 58,
+  "A": 138,
+  "atomic_mass": 137.908277079,
+  "half_life": {
+    "value": 0.00865,
+    "unit": "seconds",
+    "seconds": 0.00865
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ce138",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 302.9,
+          "absolute_intensity": 0.845,
+          "intensity_percent": 84.5,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9966
+            },
+            {
+              "id": "2",
+              "correlation": 0.9981
+            }
+          ]
+        },
+        {
+          "energy_keV": 789.2,
+          "absolute_intensity": 0.9966,
+          "intensity_percent": 99.66000000000001,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1037.6,
+          "absolute_intensity": 0.9981,
+          "intensity_percent": 99.81,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9966
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Gd138",
+  "Z": 64,
+  "A": 138,
+  "atomic_mass": 137.94012,
+  "half_life": {
+    "value": 4.7,
+    "unit": "seconds",
+    "seconds": 4.7
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Eu138",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

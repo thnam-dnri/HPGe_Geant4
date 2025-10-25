@@ -1,0 +1,82 @@
+{
+  "symbol": "Lu176",
+  "Z": 71,
+  "A": 176,
+  "atomic_mass": 175.94268631,
+  "half_life": {
+    "value": 37625887874.175545,
+    "unit": "years",
+    "seconds": 1.18657e+18
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Hf176",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 88.35,
+          "absolute_intensity": 0.141,
+          "intensity_percent": 14.099999999999998,
+          "id": "0"
+        },
+        {
+          "energy_keV": 201.82,
+          "absolute_intensity": 0.91,
+          "intensity_percent": 91.0,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1364
+            }
+          ]
+        },
+        {
+          "energy_keV": 306.88,
+          "absolute_intensity": 0.936,
+          "intensity_percent": 93.60000000000001,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1277
+            },
+            {
+              "id": "1",
+              "correlation": 0.7301
+            }
+          ]
+        },
+        {
+          "energy_keV": 401.1,
+          "absolute_intensity": 0.0035,
+          "intensity_percent": 0.35000000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1195
+            },
+            {
+              "id": "1",
+              "correlation": 0.6834
+            },
+            {
+              "id": "2",
+              "correlation": 0.871
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

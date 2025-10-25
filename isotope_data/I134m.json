@@ -1,0 +1,58 @@
+{
+  "symbol": "I134m",
+  "Z": 53,
+  "A": 134,
+  "atomic_mass": 133.910084231,
+  "half_life": {
+    "value": 3.52,
+    "unit": "minutes",
+    "seconds": 211.2
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Xe134m",
+      "branching_ratio": 0.023,
+      "gammas": []
+    },
+    {
+      "mode": "it",
+      "daughter": "I134",
+      "branching_ratio": 0.977,
+      "gammas": [
+        {
+          "energy_keV": 44.4,
+          "absolute_intensity": 0.11097,
+          "intensity_percent": 11.097,
+          "id": "0"
+        },
+        {
+          "energy_keV": 272.1,
+          "absolute_intensity": 0.81,
+          "intensity_percent": 81.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.0903
+            }
+          ]
+        },
+        {
+          "energy_keV": 316.3,
+          "absolute_intensity": 0.00486,
+          "intensity_percent": 0.486,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

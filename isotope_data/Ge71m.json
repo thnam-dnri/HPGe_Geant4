@@ -1,0 +1,46 @@
+{
+  "symbol": "Ge71m",
+  "Z": 32,
+  "A": 71,
+  "atomic_mass": 70.92516391,
+  "half_life": {
+    "value": 0.0204,
+    "unit": "seconds",
+    "seconds": 0.0204
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ge71",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 23.44,
+          "absolute_intensity": 0.0048,
+          "intensity_percent": 0.48,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.4392
+            }
+          ]
+        },
+        {
+          "energy_keV": 174.95,
+          "absolute_intensity": 0.912,
+          "intensity_percent": 91.2,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

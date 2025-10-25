@@ -1,0 +1,27 @@
+{
+  "symbol": "B8",
+  "Z": 5,
+  "A": 8,
+  "atomic_mass": 8.024607233,
+  "half_life": {
+    "value": 0.77,
+    "unit": "seconds",
+    "seconds": 0.77
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Be8",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

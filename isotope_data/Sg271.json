@@ -1,0 +1,27 @@
+{
+  "symbol": "Sg271",
+  "Z": 106,
+  "A": 271,
+  "atomic_mass": 271.133472,
+  "half_life": {
+    "value": 2.4,
+    "unit": "minutes",
+    "seconds": 144.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Rf267",
+      "branching_ratio": 0.5,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

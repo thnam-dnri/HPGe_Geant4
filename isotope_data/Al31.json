@@ -1,0 +1,70 @@
+{
+  "symbol": "Al31",
+  "Z": 13,
+  "A": 31,
+  "atomic_mass": 30.983946619,
+  "half_life": {
+    "value": 0.644,
+    "unit": "seconds",
+    "seconds": 0.644
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Si31",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 621.8,
+          "absolute_intensity": 0.024,
+          "intensity_percent": 2.4,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 752.43,
+          "absolute_intensity": 0.052,
+          "intensity_percent": 5.2,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1564.4,
+          "absolute_intensity": 0.042,
+          "intensity_percent": 4.2,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1694.98,
+          "absolute_intensity": 0.104,
+          "intensity_percent": 10.4,
+          "id": "3"
+        },
+        {
+          "energy_keV": 2316.8,
+          "absolute_intensity": 0.18,
+          "intensity_percent": 18.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

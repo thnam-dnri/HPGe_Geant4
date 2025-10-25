@@ -1,0 +1,33 @@
+{
+  "symbol": "Md250",
+  "Z": 101,
+  "A": 250,
+  "atomic_mass": 250.08442,
+  "half_life": {
+    "value": 52.0,
+    "unit": "seconds",
+    "seconds": 52.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Es246",
+      "branching_ratio": 0.07,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Fm250",
+      "branching_ratio": 0.93,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

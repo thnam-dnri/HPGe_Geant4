@@ -1,0 +1,72 @@
+{
+  "symbol": "Ru103m",
+  "Z": 44,
+  "A": 103,
+  "atomic_mass": 102.906579565,
+  "half_life": {
+    "value": 0.00169,
+    "unit": "seconds",
+    "seconds": 0.00169
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ru103",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 2.7,
+          "absolute_intensity": 0.0030849,
+          "intensity_percent": 0.30849,
+          "id": "0"
+        },
+        {
+          "energy_keV": 24.0,
+          "absolute_intensity": 0.0011284,
+          "intensity_percent": 0.11284000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.04625
+            },
+            {
+              "id": "0",
+              "correlation": 0.002551
+            },
+            {
+              "id": "2",
+              "correlation": 0.8259
+            }
+          ]
+        },
+        {
+          "energy_keV": 210.7,
+          "absolute_intensity": 0.91,
+          "intensity_percent": 91.0,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.002968
+            }
+          ]
+        },
+        {
+          "energy_keV": 213.4,
+          "absolute_intensity": 0.05096,
+          "intensity_percent": 5.096,
+          "id": "3"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

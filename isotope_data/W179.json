@@ -1,0 +1,40 @@
+{
+  "symbol": "W179",
+  "Z": 74,
+  "A": 179,
+  "atomic_mass": 178.947070447,
+  "half_life": {
+    "value": 37.05,
+    "unit": "minutes",
+    "seconds": 2223.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta179",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 30.7,
+          "absolute_intensity": 0.18,
+          "intensity_percent": 18.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 133.9,
+          "absolute_intensity": 0.001062,
+          "intensity_percent": 0.1062,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

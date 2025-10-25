@@ -1,0 +1,40 @@
+{
+  "symbol": "Pt171m",
+  "Z": 78,
+  "A": 171,
+  "atomic_mass": 170.981687486,
+  "half_life": {
+    "value": 9.01e-07,
+    "unit": "seconds",
+    "seconds": 9.01e-07
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pt171",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 89.5,
+          "absolute_intensity": 0.09861,
+          "intensity_percent": 9.861,
+          "id": ""
+        },
+        {
+          "energy_keV": 323.1,
+          "absolute_intensity": 0.519,
+          "intensity_percent": 51.9,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

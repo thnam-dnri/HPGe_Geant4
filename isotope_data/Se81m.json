@@ -1,0 +1,89 @@
+{
+  "symbol": "Se81m",
+  "Z": 34,
+  "A": 81,
+  "atomic_mass": 80.918103049,
+  "half_life": {
+    "value": 57.28,
+    "unit": "minutes",
+    "seconds": 3436.8
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Br81",
+      "branching_ratio": 0.00051,
+      "gammas": [
+        {
+          "energy_keV": 201.0,
+          "absolute_intensity": 0.0618,
+          "intensity_percent": 6.18,
+          "id": ""
+        },
+        {
+          "energy_keV": 260.1,
+          "absolute_intensity": 0.9476,
+          "intensity_percent": 94.76,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 253.5
+            }
+          ]
+        },
+        {
+          "energy_keV": 275.93,
+          "absolute_intensity": 0.9888,
+          "intensity_percent": 98.88,
+          "id": "2"
+        },
+        {
+          "energy_keV": 491.3,
+          "absolute_intensity": 0.001442,
+          "intensity_percent": 0.1442,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 253.5
+            }
+          ]
+        },
+        {
+          "energy_keV": 566.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 767.1,
+          "absolute_intensity": 0.009888,
+          "intensity_percent": 0.9887999999999999,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Se81",
+      "branching_ratio": 0.99949,
+      "gammas": [
+        {
+          "energy_keV": 103.01,
+          "absolute_intensity": 0.128,
+          "intensity_percent": 12.8,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 7
+  }
+}

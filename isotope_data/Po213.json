@@ -1,0 +1,34 @@
+{
+  "symbol": "Po213",
+  "Z": 84,
+  "A": 213,
+  "atomic_mass": 212.99285728,
+  "half_life": {
+    "value": 3.72e-06,
+    "unit": "seconds",
+    "seconds": 3.72e-06
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pb209",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 778.8,
+          "absolute_intensity": 4.8e-05,
+          "intensity_percent": 0.0048000000000000004,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Yb178",
+  "Z": 70,
+  "A": 178,
+  "atomic_mass": 177.94664668,
+  "half_life": {
+    "value": 1.2333333333333334,
+    "unit": "hours",
+    "seconds": 4440.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Lu178",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 42.4,
+          "absolute_intensity": 0.067,
+          "intensity_percent": 6.7,
+          "id": "0"
+        },
+        {
+          "energy_keV": 348.4,
+          "absolute_intensity": 0.64,
+          "intensity_percent": 64.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 390.8,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

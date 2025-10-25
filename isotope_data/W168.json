@@ -1,0 +1,88 @@
+{
+  "symbol": "W168",
+  "Z": 74,
+  "A": 168,
+  "atomic_mass": 167.951808394,
+  "half_life": {
+    "value": 50.9,
+    "unit": "seconds",
+    "seconds": 50.9
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta168",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 37.1,
+          "absolute_intensity": 0.01014,
+          "intensity_percent": 1.014,
+          "id": ""
+        },
+        {
+          "energy_keV": 145.5,
+          "absolute_intensity": 0.0156,
+          "intensity_percent": 1.5599999999999998,
+          "id": ""
+        },
+        {
+          "energy_keV": 156.6,
+          "absolute_intensity": 0.01326,
+          "intensity_percent": 1.3259999999999998,
+          "id": ""
+        },
+        {
+          "energy_keV": 173.9,
+          "absolute_intensity": 0.01092,
+          "intensity_percent": 1.0919999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "4",
+              "correlation": 0.78
+            }
+          ]
+        },
+        {
+          "energy_keV": 178.5,
+          "absolute_intensity": 0.78,
+          "intensity_percent": 78.0,
+          "id": "4"
+        },
+        {
+          "energy_keV": 181.8,
+          "absolute_intensity": 0.01326,
+          "intensity_percent": 1.3259999999999998,
+          "id": ""
+        },
+        {
+          "energy_keV": 352.2,
+          "absolute_intensity": 0.01404,
+          "intensity_percent": 1.4040000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 573.1,
+          "absolute_intensity": 0.01092,
+          "intensity_percent": 1.0919999999999999,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Hf164",
+      "branching_ratio": 2.7e-05,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 8
+  }
+}

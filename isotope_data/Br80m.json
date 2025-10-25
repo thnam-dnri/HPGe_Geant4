@@ -1,0 +1,46 @@
+{
+  "symbol": "Br80m",
+  "Z": 35,
+  "A": 80,
+  "atomic_mass": 79.918621452,
+  "half_life": {
+    "value": 4.4205,
+    "unit": "hours",
+    "seconds": 15913.8
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Br80",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 37.05,
+          "absolute_intensity": 0.391,
+          "intensity_percent": 39.1,
+          "id": "0"
+        },
+        {
+          "energy_keV": 48.85,
+          "absolute_intensity": 0.00317,
+          "intensity_percent": 0.317,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.3906
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

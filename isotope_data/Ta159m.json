@@ -1,0 +1,27 @@
+{
+  "symbol": "Ta159m",
+  "Z": 73,
+  "A": 159,
+  "atomic_mass": 158.96308688,
+  "half_life": {
+    "value": 0.515,
+    "unit": "seconds",
+    "seconds": 0.515
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Lu155",
+      "branching_ratio": 0.55,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

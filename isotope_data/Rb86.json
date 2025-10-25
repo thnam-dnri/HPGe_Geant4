@@ -1,0 +1,40 @@
+{
+  "symbol": "Rb86",
+  "Z": 37,
+  "A": 86,
+  "atomic_mass": 85.911167419,
+  "half_life": {
+    "value": 18.64201388888889,
+    "unit": "days",
+    "seconds": 1610670.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sr86",
+      "branching_ratio": 0.999948,
+      "gammas": [
+        {
+          "energy_keV": 1077.0,
+          "absolute_intensity": 0.0864,
+          "intensity_percent": 8.64,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Kr86",
+      "branching_ratio": 5.2e-05,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Pt172",
+  "Z": 78,
+  "A": 172,
+  "atomic_mass": 171.977347128,
+  "half_life": {
+    "value": 0.0976,
+    "unit": "seconds",
+    "seconds": 0.0976
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Os168",
+      "branching_ratio": 0.94,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "Y83m",
+  "Z": 39,
+  "A": 83,
+  "atomic_mass": 82.922420781,
+  "half_life": {
+    "value": 2.85,
+    "unit": "minutes",
+    "seconds": 171.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Sr83m",
+      "branching_ratio": 0.6,
+      "gammas": [
+        {
+          "energy_keV": 421.8,
+          "absolute_intensity": 0.32436,
+          "intensity_percent": 32.436,
+          "id": ""
+        },
+        {
+          "energy_keV": 494.5,
+          "absolute_intensity": 0.13515,
+          "intensity_percent": 13.514999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

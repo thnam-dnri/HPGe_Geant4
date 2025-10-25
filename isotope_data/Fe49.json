@@ -1,0 +1,65 @@
+{
+  "symbol": "Fe49",
+  "Z": 26,
+  "A": 49,
+  "atomic_mass": 48.97361,
+  "half_life": {
+    "value": 0.0647,
+    "unit": "seconds",
+    "seconds": 0.0647
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Mn49",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 261.5,
+          "absolute_intensity": 0.51,
+          "intensity_percent": 51.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 481.9,
+          "absolute_intensity": 0.103,
+          "intensity_percent": 10.299999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 797.1,
+          "absolute_intensity": 0.237,
+          "intensity_percent": 23.7,
+          "id": ""
+        },
+        {
+          "energy_keV": 1278.7,
+          "absolute_intensity": 0.078,
+          "intensity_percent": 7.8,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b+p",
+      "daughter": "Cr48",
+      "branching_ratio": 0.42,
+      "gammas": [
+        {
+          "energy_keV": 752.15,
+          "absolute_intensity": 0.9984,
+          "intensity_percent": 99.83999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 5
+  }
+}

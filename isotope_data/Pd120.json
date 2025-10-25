@@ -1,0 +1,64 @@
+{
+  "symbol": "Pd120",
+  "Z": 46,
+  "A": 120,
+  "atomic_mass": 119.924691878,
+  "half_life": {
+    "value": 0.5,
+    "unit": "seconds",
+    "seconds": 0.5
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ag120",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 52.5,
+          "absolute_intensity": 0.39,
+          "intensity_percent": 39.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 68.9,
+          "absolute_intensity": 0.36,
+          "intensity_percent": 36.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 89.8,
+          "absolute_intensity": 0.73,
+          "intensity_percent": 73.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 101.7,
+          "absolute_intensity": 0.54,
+          "intensity_percent": 54.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 158.1,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 595.2,
+          "absolute_intensity": 0.37,
+          "intensity_percent": 37.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

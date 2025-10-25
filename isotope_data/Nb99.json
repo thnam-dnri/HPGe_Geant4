@@ -1,0 +1,46 @@
+{
+  "symbol": "Nb99",
+  "Z": 41,
+  "A": 99,
+  "atomic_mass": 98.911618375,
+  "half_life": {
+    "value": 15.0,
+    "unit": "seconds",
+    "seconds": 15.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Mo99",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 97.78,
+          "absolute_intensity": 0.431,
+          "intensity_percent": 43.1,
+          "id": "0"
+        },
+        {
+          "energy_keV": 137.72,
+          "absolute_intensity": 0.906,
+          "intensity_percent": 90.60000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.4316
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

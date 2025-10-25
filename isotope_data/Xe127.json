@@ -1,0 +1,84 @@
+{
+  "symbol": "Xe127",
+  "Z": 54,
+  "A": 127,
+  "atomic_mass": 126.905183723,
+  "half_life": {
+    "value": 36.4,
+    "unit": "days",
+    "seconds": 3144960.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "I127",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 57.61,
+          "absolute_intensity": 0.0113,
+          "intensity_percent": 1.13,
+          "id": "0"
+        },
+        {
+          "energy_keV": 145.25,
+          "absolute_intensity": 0.0394,
+          "intensity_percent": 3.94,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1432
+            }
+          ]
+        },
+        {
+          "energy_keV": 172.132,
+          "absolute_intensity": 0.235,
+          "intensity_percent": 23.5,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.5656
+            },
+            {
+              "id": "0",
+              "correlation": 0.007497
+            },
+            {
+              "id": "1",
+              "correlation": 0.03552
+            }
+          ]
+        },
+        {
+          "energy_keV": 202.86,
+          "absolute_intensity": 0.683,
+          "intensity_percent": 68.30000000000001,
+          "id": "3"
+        },
+        {
+          "energy_keV": 374.99,
+          "absolute_intensity": 0.159,
+          "intensity_percent": 15.9,
+          "id": ""
+        },
+        {
+          "energy_keV": 618.4,
+          "absolute_intensity": 0.000142064,
+          "intensity_percent": 0.0142064,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

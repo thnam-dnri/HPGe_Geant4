@@ -1,0 +1,70 @@
+{
+  "symbol": "Ne23",
+  "Z": 10,
+  "A": 23,
+  "atomic_mass": 22.994466904,
+  "half_life": {
+    "value": 37.24,
+    "unit": "seconds",
+    "seconds": 37.24
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Na23",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 439.99,
+          "absolute_intensity": 0.33,
+          "intensity_percent": 33.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 1635.96,
+          "absolute_intensity": 0.01,
+          "intensity_percent": 1.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.33
+            }
+          ]
+        },
+        {
+          "energy_keV": 2075.91,
+          "absolute_intensity": 0.00101,
+          "intensity_percent": 0.101,
+          "id": ""
+        },
+        {
+          "energy_keV": 2541.92,
+          "absolute_intensity": 0.00027,
+          "intensity_percent": 0.027,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.33
+            }
+          ]
+        },
+        {
+          "energy_keV": 2981.85,
+          "absolute_intensity": 0.00038,
+          "intensity_percent": 0.038,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

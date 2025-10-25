@@ -1,0 +1,46 @@
+{
+  "symbol": "Ne26",
+  "Z": 10,
+  "A": 26,
+  "atomic_mass": 26.000461206,
+  "half_life": {
+    "value": 0.197,
+    "unit": "seconds",
+    "seconds": 0.197
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Na26",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 82.5,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 151.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 233.6,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

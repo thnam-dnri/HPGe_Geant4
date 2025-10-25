@@ -1,0 +1,64 @@
+{
+  "symbol": "Os171",
+  "Z": 76,
+  "A": 171,
+  "atomic_mass": 170.963184819,
+  "half_life": {
+    "value": 8.3,
+    "unit": "seconds",
+    "seconds": 8.3
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Re171",
+      "branching_ratio": 0.982,
+      "gammas": [
+        {
+          "energy_keV": 189.8,
+          "absolute_intensity": 0.72,
+          "intensity_percent": 72.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 326.0,
+          "absolute_intensity": 0.0792,
+          "intensity_percent": 7.920000000000001,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.5191
+            }
+          ]
+        },
+        {
+          "energy_keV": 705.0,
+          "absolute_intensity": 0.1224,
+          "intensity_percent": 12.24,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.5191
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "W167",
+      "branching_ratio": 0.018,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

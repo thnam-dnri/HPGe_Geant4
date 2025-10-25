@@ -1,0 +1,71 @@
+{
+  "symbol": "In118m2",
+  "Z": 49,
+  "A": 118,
+  "atomic_mass": 117.906569076,
+  "half_life": {
+    "value": 8.5,
+    "unit": "seconds",
+    "seconds": 8.5
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "In118m",
+      "branching_ratio": 0.986,
+      "gammas": [
+        {
+          "energy_keV": 138.2,
+          "absolute_intensity": 0.219,
+          "intensity_percent": 21.9,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Sn118",
+      "branching_ratio": 0.014,
+      "gammas": [
+        {
+          "energy_keV": 41.0,
+          "absolute_intensity": 0.18,
+          "intensity_percent": 18.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 253.68,
+          "absolute_intensity": 0.93,
+          "intensity_percent": 93.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1050.69,
+          "absolute_intensity": 0.98,
+          "intensity_percent": 98.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1091.51,
+          "absolute_intensity": 0.024,
+          "intensity_percent": 2.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 1229.64,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 6
+  }
+}

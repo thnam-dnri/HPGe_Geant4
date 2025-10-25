@@ -1,0 +1,33 @@
+{
+  "symbol": "Cl46",
+  "Z": 17,
+  "A": 46,
+  "atomic_mass": 45.98421004,
+  "half_life": {
+    "value": 0.223,
+    "unit": "seconds",
+    "seconds": 0.223
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ar46",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "b-n",
+      "daughter": "Ar45",
+      "branching_ratio": 0.6,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

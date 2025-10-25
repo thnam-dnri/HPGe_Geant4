@@ -1,0 +1,46 @@
+{
+  "symbol": "Ru101m",
+  "Z": 44,
+  "A": 101,
+  "atomic_mass": 100.90614844596274,
+  "half_life": {
+    "value": 1.75e-05,
+    "unit": "seconds",
+    "seconds": 1.75e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ru101",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 220.7,
+          "absolute_intensity": 0.827064,
+          "intensity_percent": 82.7064,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9695
+            }
+          ]
+        },
+        {
+          "energy_keV": 306.6,
+          "absolute_intensity": 0.9846,
+          "intensity_percent": 98.46000000000001,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

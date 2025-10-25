@@ -1,0 +1,27 @@
+{
+  "symbol": "Ga62",
+  "Z": 31,
+  "A": 62,
+  "atomic_mass": 61.944175238,
+  "half_life": {
+    "value": 0.11612,
+    "unit": "seconds",
+    "seconds": 0.11612
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Zn62",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

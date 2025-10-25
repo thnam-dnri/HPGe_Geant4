@@ -1,0 +1,27 @@
+{
+  "symbol": "Nb82",
+  "Z": 41,
+  "A": 82,
+  "atomic_mass": 81.94313,
+  "half_life": {
+    "value": 0.05,
+    "unit": "seconds",
+    "seconds": 0.05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Zr82",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

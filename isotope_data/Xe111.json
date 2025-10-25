@@ -1,0 +1,27 @@
+{
+  "symbol": "Xe111",
+  "Z": 54,
+  "A": 111,
+  "atomic_mass": 110.941602,
+  "half_life": {
+    "value": 0.74,
+    "unit": "seconds",
+    "seconds": 0.74
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Te107",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

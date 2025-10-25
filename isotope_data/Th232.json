@@ -1,0 +1,52 @@
+{
+  "symbol": "Th232",
+  "Z": 90,
+  "A": 232,
+  "atomic_mass": 232.038055325,
+  "half_life": {
+    "value": 14009576357.179096,
+    "unit": "years",
+    "seconds": 4.41806e+17
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ra228",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 63.81,
+          "absolute_intensity": 0.00263,
+          "intensity_percent": 0.263,
+          "id": "0"
+        },
+        {
+          "energy_keV": 140.88,
+          "absolute_intensity": 0.00021,
+          "intensity_percent": 0.021,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.01205
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "sf",
+      "daughter": null,
+      "branching_ratio": 1.8e-11,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

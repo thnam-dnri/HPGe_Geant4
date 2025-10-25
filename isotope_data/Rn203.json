@@ -1,0 +1,27 @@
+{
+  "symbol": "Rn203",
+  "Z": 86,
+  "A": 203,
+  "atomic_mass": 202.993386687,
+  "half_life": {
+    "value": 44.0,
+    "unit": "seconds",
+    "seconds": 44.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Po199",
+      "branching_ratio": 0.66,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

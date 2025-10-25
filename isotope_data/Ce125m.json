@@ -1,0 +1,46 @@
+{
+  "symbol": "Ce125m",
+  "Z": 58,
+  "A": 125,
+  "atomic_mass": 124.92844,
+  "half_life": {
+    "value": null,
+    "unit": "stable",
+    "seconds": null
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ecp",
+      "daughter": "Ba124",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 230.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 421.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 575.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

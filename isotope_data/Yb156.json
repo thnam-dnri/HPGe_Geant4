@@ -1,0 +1,46 @@
+{
+  "symbol": "Yb156",
+  "Z": 70,
+  "A": 156,
+  "atomic_mass": 155.942818215,
+  "half_life": {
+    "value": 26.1,
+    "unit": "seconds",
+    "seconds": 26.1
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Er152",
+      "branching_ratio": 0.1,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Tm156",
+      "branching_ratio": 0.9,
+      "gammas": [
+        {
+          "energy_keV": 115.2,
+          "absolute_intensity": 0.812,
+          "intensity_percent": 81.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 202.3,
+          "absolute_intensity": 0.037,
+          "intensity_percent": 3.6999999999999997,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

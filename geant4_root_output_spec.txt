@@ -1,0 +1,117 @@
+GEANT4 ROOT OUTPUT SPEC (for HPGe spectra ML) — v1.0
+====================================================
+
+Scope
+-----
+This spec defines what to write into each single‑nuclide ROOT file produced by Geant4.
+Smearing, Poisson counting noise, mixtures, and downstream ML are handled later in Python.
+Therefore, all spectra here are UNSMEARED (raw deposited energies).
+
+Design goals
+------------
+1) Self‑contained per‑nuclide files that can be normalized to any activity and live time.
+2) Consistent energy axis across files to allow mixing on a shared grid.
+3) Provenance and geometry metadata to enable reproducible training/evaluation.
+4) Lean: include only what is essential at the Geant4 level.
+
+One file per nuclide
+--------------------
+File name format (recommended):
+  <Nuclide>_<DetID>_<GapMM>_<runid>.root
+Examples:
+  Co60_HPGe1_250mm_a13f3.root
+  Cs137_HPGe1_25mm_7b92d.root
+
+ROOT Object Layout
+------------------
+<file>.root
+├── RunInfo/                            # Per‑run metadata (scalars / strings)
+│   ├── Nuclide            (TObjString)           e.g., "Co-60"
+│   ├── Ndecays            (TParameter<ULong64_t>) total primary decays simulated
+│   ├── ENSDFVersion       (TObjString)           e.g., "2025-03-01"
+│   ├── G4Version          (TObjString)           e.g., "11.2.p01"
+│   ├── PhysicsLists       (TObjString)           e.g., "FTFP_BERT_LIV + G4RadioactiveDecay"
+│   ├── DetID              (TObjString)           detector identifier (keep even if all HPGe)
+│   ├── Geometry           (TObjString, JSON)     at least {"Gap_mm": <float>}
+│   ├── Binning            (TObjString, JSON)     {"e_min_keV": <f>, "e_max_keV": <f>, "n_bins": <int>, "grid": "centers"}
+│   └── Provenance         (TObjString, JSON)     optional; {"author": "...", "created_utc":"...", "run_id":"..."}
+│
+├── Axes/
+│   └── energy_centers     (TTree)                branch: double energy_keV[n_bins]
+#   NOTE: Choose centers OR edges and stick to it for all files. Centers are recommended.
+│
+├── Events/                                   # UNSMEARED list‑mode accepted events
+│   ├── Edep_keV          (TTree branch, float)   deposited/accepted energy (keV)
+│   └── Etrue_keV         (TTree branch, float)   true gamma energy (optional; for audits)
+#   NOTE: EventID and timestamps are NOT needed for low‑rate use; omit to save space.
+│
+└── Truth/
+    └── gamma_lines       (TTree)                 per‑line info used by the decay generator
+        ├── E_gamma_keV   (double)
+        └── Br            (double)                branching ratio (0..1)
+
+
+Implementation notes (Geant4 → ROOT)
+------------------------------------
+1) Write accepted pulse heights directly to Events/Edep_keV (no added resolution).
+2) Keep Ndecays = number of primary decays simulated (not number of accepted events).
+3) Ensure energy_centers covers the full analysis range (e.g., 0..3000 keV) and is identical across all runs.
+4) Store Geometry/Gap_mm even if fixed; it helps future generalization testing.
+5) Keep ENSDF/G4/Physics list strings for reproducibility.
+6) Do NOT store pre‑smeared histograms; smearing is handled in Python.
+
+Downstream (Python) expectations
+--------------------------------
+From each single‑nuclide file, Python will:
+1) Histogram Events/Edep_keV onto Axes/energy_centers to get raw counts.
+2) Divide by RunInfo/Ndecays ⇒ lambda_per_decay (expected counts per decay per bin).
+3) For mixtures: sum (A_j * t * lambda_per_decay_j) over selected nuclides and add background (if provided).
+4) Apply energy‑resolution smearing (Gaussian or with tails) → expected spectrum μ.
+5) Draw one Poisson sample y ~ Poisson(μ).
+
+Minimal writing API sketch (C++/ROOT pseudocode)
+------------------------------------------------
+TFile f("Co60_HPGe1_250mm_run.root","RECREATE");
+TDirectory* run = f.mkdir("RunInfo");
+run->WriteObject(new TObjString("Co-60"), "Nuclide");
+run->WriteObject(new TParameter<ULong64_t>("Ndecays", Ndecays), "Ndecays");
+run->WriteObject(new TObjString("2025-03-01"), "ENSDFVersion");
+run->WriteObject(new TObjString("11.2.p01"), "G4Version");
+run->WriteObject(new TObjString("FTFP_BERT_LIV + G4RadioactiveDecay"), "PhysicsLists");
+run->WriteObject(new TObjString("HPGe1"), "DetID");
+run->WriteObject(new TObjString("{\"Gap_mm\":250.0}"), "Geometry");
+run->WriteObject(new TObjString("{\"e_min_keV\":0,\"e_max_keV\":3000,\"n_bins\":8192,\"grid\":\"centers\"}"), "Binning");
+
+TDirectory* axes = f.mkdir("Axes");
+TTree tAxis("energy_centers","energy_centers");
+std::vector<double> energy_keV(n_bins); // fill centers
+tAxis.Branch("energy_keV",&energy_keV);
+tAxis.Fill();
+axes->WriteObject(&tAxis, "energy_centers");
+
+TDirectory* ev = f.mkdir("Events");
+TTree tEv("events","events");
+float Edep_keV, Etrue_keV;
+tEv.Branch("Edep_keV",&Edep_keV);
+tEv.Branch("Etrue_keV",&Etrue_keV); // optional
+// loop over accepted events: fill Edep_keV (and Etrue_keV if kept)
+ev->WriteObject(&tEv, ""); // or tEv.Write()
+
+TDirectory* truth = f.mkdir("Truth");
+TTree tLines("gamma_lines","gamma_lines");
+double Eg, Br;
+tLines.Branch("E_gamma_keV",&Eg);
+tLines.Branch("Br",&Br);
+// fill from the line list actually used
+truth->WriteObject(&tLines, "gamma_lines");
+
+f.Close();
+
+Validation checklist
+--------------------
+[ ] Axes/energy_centers identical across all files (same length and values).
+[ ] RunInfo/Ndecays > 0 and consistent with your primary generator.
+[ ] Events/Edep_keV contains only UNSMEARED energies in the analysis range.
+[ ] Truth/gamma_lines non‑empty for radioactive nuclides.
+[ ] Background file uses the SAME energy axis as nuclide files.
+[ ] All strings (Nuclide, versions, PhysicsLists) are present for traceability.

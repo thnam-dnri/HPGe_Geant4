@@ -1,0 +1,58 @@
+{
+  "symbol": "Sb120m",
+  "Z": 51,
+  "A": 120,
+  "atomic_mass": 119.905072427,
+  "half_life": {
+    "value": 5.76,
+    "unit": "days",
+    "seconds": 497664.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sn120",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 89.8,
+          "absolute_intensity": 0.795,
+          "intensity_percent": 79.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 197.3,
+          "absolute_intensity": 0.87,
+          "intensity_percent": 87.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1023.3,
+          "absolute_intensity": 0.994,
+          "intensity_percent": 99.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 1113.4,
+          "absolute_intensity": 0.00821,
+          "intensity_percent": 0.8210000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 1171.7,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

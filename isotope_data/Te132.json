@@ -1,0 +1,74 @@
+{
+  "symbol": "Te132",
+  "Z": 52,
+  "A": 132,
+  "atomic_mass": 131.90855316,
+  "half_life": {
+    "value": 3.2040046296296296,
+    "unit": "days",
+    "seconds": 276826.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "I132",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 49.72,
+          "absolute_intensity": 0.1496,
+          "intensity_percent": 14.96,
+          "id": "0"
+        },
+        {
+          "energy_keV": 111.76,
+          "absolute_intensity": 0.017424,
+          "intensity_percent": 1.7424,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1311
+            }
+          ]
+        },
+        {
+          "energy_keV": 116.3,
+          "absolute_intensity": 0.01954,
+          "intensity_percent": 1.9539999999999997,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.5146
+            },
+            {
+              "id": "0",
+              "correlation": 0.1154
+            }
+          ]
+        },
+        {
+          "energy_keV": 228.16,
+          "absolute_intensity": 0.88,
+          "intensity_percent": 88.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.1311
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

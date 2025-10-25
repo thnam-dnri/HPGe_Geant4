@@ -1,0 +1,64 @@
+{
+  "symbol": "Au189m",
+  "Z": 79,
+  "A": 189,
+  "atomic_mass": 188.964213698,
+  "half_life": {
+    "value": 4.59,
+    "unit": "minutes",
+    "seconds": 275.4
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Pt189",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 6.3,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 19.1,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.3483
+            }
+          ]
+        },
+        {
+          "energy_keV": 166.4,
+          "absolute_intensity": 0.59,
+          "intensity_percent": 59.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 321.1,
+          "absolute_intensity": 0.118,
+          "intensity_percent": 11.799999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.3483
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "symbol": "Ru94",
+  "Z": 44,
+  "A": 94,
+  "atomic_mass": 93.911359711,
+  "half_life": {
+    "value": 51.8,
+    "unit": "minutes",
+    "seconds": 3108.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tc94m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 367.2,
+          "absolute_intensity": 0.752,
+          "intensity_percent": 75.2,
+          "id": "0"
+        },
+        {
+          "energy_keV": 525.0,
+          "absolute_intensity": 0.018048,
+          "intensity_percent": 1.8048000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.752
+            }
+          ]
+        },
+        {
+          "energy_keV": 891.2,
+          "absolute_intensity": 0.24816,
+          "intensity_percent": 24.816,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

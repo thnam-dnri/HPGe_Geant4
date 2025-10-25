@@ -1,0 +1,34 @@
+{
+  "symbol": "In114m2",
+  "Z": 49,
+  "A": 114,
+  "atomic_mass": 113.905452739,
+  "half_life": {
+    "value": 0.0431,
+    "unit": "seconds",
+    "seconds": 0.0431
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "In114m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 311.65,
+          "absolute_intensity": 0.8985,
+          "intensity_percent": 89.85,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

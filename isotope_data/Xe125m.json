@@ -1,0 +1,46 @@
+{
+  "symbol": "Xe125m",
+  "Z": 54,
+  "A": 125,
+  "atomic_mass": 124.906666641,
+  "half_life": {
+    "value": 56.9,
+    "unit": "seconds",
+    "seconds": 56.9
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Xe125",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 111.3,
+          "absolute_intensity": 0.602,
+          "intensity_percent": 60.199999999999996,
+          "id": "0"
+        },
+        {
+          "energy_keV": 141.4,
+          "absolute_intensity": 0.19144,
+          "intensity_percent": 19.144,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.3626
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

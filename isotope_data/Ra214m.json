@@ -1,0 +1,27 @@
+{
+  "symbol": "Ra214m",
+  "Z": 88,
+  "A": 214,
+  "atomic_mass": 214.002110269,
+  "half_life": {
+    "value": 6.73e-05,
+    "unit": "seconds",
+    "seconds": 6.73e-05
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ra214",
+      "branching_ratio": 0.9991,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

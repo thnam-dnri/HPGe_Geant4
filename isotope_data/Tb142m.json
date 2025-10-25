@@ -1,0 +1,84 @@
+{
+  "symbol": "Tb142m",
+  "Z": 65,
+  "A": 142,
+  "atomic_mass": 141.939044807,
+  "half_life": {
+    "value": 0.303,
+    "unit": "seconds",
+    "seconds": 0.303
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tb142",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 29.7,
+          "absolute_intensity": 0.0018496,
+          "intensity_percent": 0.18496,
+          "id": "0",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.409
+            }
+          ]
+        },
+        {
+          "energy_keV": 68.5,
+          "absolute_intensity": 0.010404,
+          "intensity_percent": 1.0404,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.0255
+            },
+            {
+              "id": "0",
+              "correlation": 0.001385
+            },
+            {
+              "id": "4",
+              "correlation": 0.433
+            }
+          ]
+        },
+        {
+          "energy_keV": 98.3,
+          "absolute_intensity": 0.0006936,
+          "intensity_percent": 0.06936,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.409
+            }
+          ]
+        },
+        {
+          "energy_keV": 181.9,
+          "absolute_intensity": 0.071094,
+          "intensity_percent": 7.109400000000001,
+          "id": "3"
+        },
+        {
+          "energy_keV": 211.6,
+          "absolute_intensity": 0.578,
+          "intensity_percent": 57.8,
+          "id": "4"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

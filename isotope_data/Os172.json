@@ -1,0 +1,33 @@
+{
+  "symbol": "Os172",
+  "Z": 76,
+  "A": 172,
+  "atomic_mass": 171.960023303,
+  "half_life": {
+    "value": 19.2,
+    "unit": "seconds",
+    "seconds": 19.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "W168",
+      "branching_ratio": 0.014,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Re172m",
+      "branching_ratio": 0.98,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

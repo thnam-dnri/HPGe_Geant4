@@ -1,0 +1,78 @@
+{
+  "symbol": "Au195m",
+  "Z": 79,
+  "A": 195,
+  "atomic_mass": 194.96537665,
+  "half_life": {
+    "value": 30.5,
+    "unit": "seconds",
+    "seconds": 30.5
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Au195",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 56.8,
+          "absolute_intensity": 0.00030228,
+          "intensity_percent": 0.030227999999999998,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.01132
+            },
+            {
+              "id": "3",
+              "correlation": 0.4697
+            },
+            {
+              "id": "1",
+              "correlation": 0.0008012
+            }
+          ]
+        },
+        {
+          "energy_keV": 61.46,
+          "absolute_intensity": 0.0017244,
+          "intensity_percent": 0.17244,
+          "id": "1"
+        },
+        {
+          "energy_keV": 200.38,
+          "absolute_intensity": 0.016557,
+          "intensity_percent": 1.6557,
+          "id": "2",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.05192
+            }
+          ]
+        },
+        {
+          "energy_keV": 261.75,
+          "absolute_intensity": 0.687,
+          "intensity_percent": 68.7,
+          "id": "3"
+        },
+        {
+          "energy_keV": 318.6,
+          "absolute_intensity": 0.00043968,
+          "intensity_percent": 0.043968,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

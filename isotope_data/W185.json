@@ -1,0 +1,34 @@
+{
+  "symbol": "W185",
+  "Z": 74,
+  "A": 185,
+  "atomic_mass": 184.953419264,
+  "half_life": {
+    "value": 75.1,
+    "unit": "days",
+    "seconds": 6488640.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Re185",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 125.36,
+          "absolute_intensity": 0.000192,
+          "intensity_percent": 0.019200000000000002,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

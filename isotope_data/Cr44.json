@@ -1,0 +1,27 @@
+{
+  "symbol": "Cr44",
+  "Z": 24,
+  "A": 44,
+  "atomic_mass": 43.985549,
+  "half_life": {
+    "value": 0.053,
+    "unit": "seconds",
+    "seconds": 0.053
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "V44",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

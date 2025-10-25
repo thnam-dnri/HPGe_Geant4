@@ -1,0 +1,27 @@
+{
+  "symbol": "Nb87",
+  "Z": 41,
+  "A": 87,
+  "atomic_mass": 86.920361108,
+  "half_life": {
+    "value": 3.75,
+    "unit": "minutes",
+    "seconds": 225.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Zr87m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "symbol": "Kr83m",
+  "Z": 36,
+  "A": 83,
+  "atomic_mass": 82.914180712,
+  "half_life": {
+    "value": 1.83,
+    "unit": "hours",
+    "seconds": 6588.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Kr83",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 9.41,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": "0"
+        },
+        {
+          "energy_keV": 32.15,
+          "absolute_intensity": 0.00056,
+          "intensity_percent": 0.055999999999999994,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.002764
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

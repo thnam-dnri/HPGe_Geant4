@@ -1,0 +1,52 @@
+{
+  "symbol": "Tl193m",
+  "Z": 81,
+  "A": 193,
+  "atomic_mass": 192.971064058,
+  "half_life": {
+    "value": 2.11,
+    "unit": "minutes",
+    "seconds": 126.6
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl193",
+      "branching_ratio": 0.75,
+      "gammas": [
+        {
+          "energy_keV": 13.0,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9017
+            }
+          ]
+        },
+        {
+          "energy_keV": 365.0,
+          "absolute_intensity": 0.902,
+          "intensity_percent": 90.2,
+          "id": "1"
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Hg193",
+      "branching_ratio": 0.25,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

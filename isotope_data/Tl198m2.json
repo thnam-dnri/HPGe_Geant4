@@ -1,0 +1,34 @@
+{
+  "symbol": "Tl198m2",
+  "Z": 81,
+  "A": 198,
+  "atomic_mass": 197.971280494,
+  "half_life": {
+    "value": 0.0321,
+    "unit": "seconds",
+    "seconds": 0.0321
+  },
+  "isomer_state": 2,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Tl198m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 198.8,
+          "absolute_intensity": 0.206,
+          "intensity_percent": 20.599999999999998,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "symbol": "Mg30",
+  "Z": 12,
+  "A": 30,
+  "atomic_mass": 29.990434,
+  "half_life": {
+    "value": 0.335,
+    "unit": "seconds",
+    "seconds": 0.335
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Al30",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 244.1,
+          "absolute_intensity": 0.74,
+          "intensity_percent": 74.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 444.0,
+          "absolute_intensity": 0.7104,
+          "intensity_percent": 71.04,
+          "id": ""
+        },
+        {
+          "energy_keV": 687.8,
+          "absolute_intensity": 0.01702,
+          "intensity_percent": 1.702,
+          "id": ""
+        },
+        {
+          "energy_keV": 2168.9,
+          "absolute_intensity": 0.0222,
+          "intensity_percent": 2.22,
+          "id": ""
+        },
+        {
+          "energy_keV": 1724.9,
+          "absolute_intensity": 0.04736,
+          "intensity_percent": 4.736,
+          "id": ""
+        },
+        {
+          "energy_keV": 2169.3,
+          "absolute_intensity": 0.0259,
+          "intensity_percent": 2.59,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 6
+  }
+}

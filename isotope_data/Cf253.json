@@ -1,0 +1,40 @@
+{
+  "symbol": "Cf253",
+  "Z": 98,
+  "A": 253,
+  "atomic_mass": 253.085133145,
+  "half_life": {
+    "value": 17.809953703703705,
+    "unit": "days",
+    "seconds": 1538780.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Es253",
+      "branching_ratio": 0.9969,
+      "gammas": [
+        {
+          "energy_keV": 46.4,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "a",
+      "daughter": "Cm249",
+      "branching_ratio": 0.0031,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

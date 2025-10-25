@@ -1,0 +1,46 @@
+{
+  "symbol": "Ag99m",
+  "Z": 47,
+  "A": 99,
+  "atomic_mass": 98.918140499,
+  "half_life": {
+    "value": 10.5,
+    "unit": "seconds",
+    "seconds": 10.5
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ag99",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 163.6,
+          "absolute_intensity": 0.37,
+          "intensity_percent": 37.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 342.6,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

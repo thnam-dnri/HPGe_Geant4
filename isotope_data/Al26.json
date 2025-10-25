@@ -1,0 +1,52 @@
+{
+  "symbol": "Al26",
+  "Z": 13,
+  "A": 26,
+  "atomic_mass": 25.986891692,
+  "half_life": {
+    "value": 717491.1212582445,
+    "unit": "years",
+    "seconds": 22626800000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Mg26",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 1129.67,
+          "absolute_intensity": 0.025,
+          "intensity_percent": 2.5,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1808.65,
+          "absolute_intensity": 0.9976,
+          "intensity_percent": 99.76,
+          "id": "1"
+        },
+        {
+          "energy_keV": 2938.0,
+          "absolute_intensity": 0.0024,
+          "intensity_percent": 0.24,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

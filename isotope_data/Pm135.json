@@ -1,0 +1,27 @@
+{
+  "symbol": "Pm135",
+  "Z": 61,
+  "A": 135,
+  "atomic_mass": 134.924876,
+  "half_life": {
+    "value": 49.0,
+    "unit": "seconds",
+    "seconds": 49.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Nd135m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

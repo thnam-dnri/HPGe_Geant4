@@ -1,0 +1,34 @@
+{
+  "symbol": "Rh105m",
+  "Z": 45,
+  "A": 105,
+  "atomic_mass": 104.905833148,
+  "half_life": {
+    "value": 42.9,
+    "unit": "seconds",
+    "seconds": 42.9
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Rh105",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 129.61,
+          "absolute_intensity": 0.0576,
+          "intensity_percent": 5.76,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 1
+  }
+}

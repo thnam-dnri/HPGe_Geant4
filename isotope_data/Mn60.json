@@ -1,0 +1,46 @@
+{
+  "symbol": "Mn60",
+  "Z": 25,
+  "A": 60,
+  "atomic_mass": 59.942911246,
+  "half_life": {
+    "value": 0.28,
+    "unit": "seconds",
+    "seconds": 0.28
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fe60",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 823.4,
+          "absolute_intensity": 0.122,
+          "intensity_percent": 12.2,
+          "id": ""
+        },
+        {
+          "energy_keV": 1150.2,
+          "absolute_intensity": 0.05,
+          "intensity_percent": 5.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1532.4,
+          "absolute_intensity": 0.03,
+          "intensity_percent": 3.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

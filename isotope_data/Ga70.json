@@ -1,0 +1,58 @@
+{
+  "symbol": "Ga70",
+  "Z": 31,
+  "A": 70,
+  "atomic_mass": 69.926021972,
+  "half_life": {
+    "value": 21.14,
+    "unit": "minutes",
+    "seconds": 1268.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Ge70",
+      "branching_ratio": 0.9959,
+      "gammas": [
+        {
+          "energy_keV": 176.17,
+          "absolute_intensity": 0.0029119,
+          "intensity_percent": 0.29119,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 1.004
+            }
+          ]
+        },
+        {
+          "energy_keV": 1039.2,
+          "absolute_intensity": 0.0065267,
+          "intensity_percent": 0.65267,
+          "id": "1"
+        },
+        {
+          "energy_keV": 1215.0,
+          "absolute_intensity": 4.0164e-05,
+          "intensity_percent": 0.0040164,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "ec",
+      "daughter": "Zn70",
+      "branching_ratio": 0.0041,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 3
+  }
+}

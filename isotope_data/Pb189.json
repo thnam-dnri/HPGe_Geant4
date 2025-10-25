@@ -1,0 +1,27 @@
+{
+  "symbol": "Pb189",
+  "Z": 82,
+  "A": 189,
+  "atomic_mass": 188.980807,
+  "half_life": {
+    "value": 51.0,
+    "unit": "seconds",
+    "seconds": 51.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Hg185",
+      "branching_ratio": 0.004,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

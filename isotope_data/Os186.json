@@ -1,0 +1,27 @@
+{
+  "symbol": "Os186",
+  "Z": 76,
+  "A": 186,
+  "atomic_mass": 185.953838158,
+  "half_life": {
+    "value": 2001369863013698.8,
+    "unit": "years",
+    "seconds": 6.31152e+22
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "W182",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

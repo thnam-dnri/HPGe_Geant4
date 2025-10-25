@@ -1,0 +1,82 @@
+{
+  "symbol": "Y85",
+  "Z": 39,
+  "A": 85,
+  "atomic_mass": 84.916433039,
+  "half_life": {
+    "value": 2.68,
+    "unit": "hours",
+    "seconds": 9648.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Sr85m",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 215.9,
+          "absolute_intensity": 0.00192,
+          "intensity_percent": 0.192,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "3",
+              "correlation": 0.6
+            }
+          ]
+        },
+        {
+          "energy_keV": 409.5,
+          "absolute_intensity": 0.0084,
+          "intensity_percent": 0.84,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.6
+            }
+          ]
+        },
+        {
+          "energy_keV": 504.44,
+          "absolute_intensity": 0.6,
+          "intensity_percent": 60.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 698.0,
+          "absolute_intensity": 0.0018,
+          "intensity_percent": 0.18,
+          "id": "3"
+        },
+        {
+          "energy_keV": 913.89,
+          "absolute_intensity": 0.09,
+          "intensity_percent": 9.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 1278.1,
+          "absolute_intensity": 0.0024,
+          "intensity_percent": 0.24,
+          "id": ""
+        },
+        {
+          "energy_keV": 1320.6,
+          "absolute_intensity": 0.00366,
+          "intensity_percent": 0.366,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "symbol": "Gd162",
+  "Z": 64,
+  "A": 162,
+  "atomic_mass": 161.930984751,
+  "half_life": {
+    "value": 8.4,
+    "unit": "minutes",
+    "seconds": 504.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Tb162",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 39.0,
+          "absolute_intensity": 0.051,
+          "intensity_percent": 5.1,
+          "id": "0"
+        },
+        {
+          "energy_keV": 302.3,
+          "absolute_intensity": 0.01581,
+          "intensity_percent": 1.5810000000000002,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.05667
+            }
+          ]
+        },
+        {
+          "energy_keV": 341.42,
+          "absolute_intensity": 0.02703,
+          "intensity_percent": 2.703,
+          "id": ""
+        },
+        {
+          "energy_keV": 403.0,
+          "absolute_intensity": 0.4335,
+          "intensity_percent": 43.35,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.05667
+            }
+          ]
+        },
+        {
+          "energy_keV": 442.12,
+          "absolute_intensity": 0.51,
+          "intensity_percent": 51.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 5
+  }
+}

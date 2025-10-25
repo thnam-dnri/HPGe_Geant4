@@ -1,0 +1,40 @@
+{
+  "symbol": "Pd115m",
+  "Z": 46,
+  "A": 115,
+  "atomic_mass": 114.913779563,
+  "half_life": {
+    "value": 50.0,
+    "unit": "seconds",
+    "seconds": 50.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Pd115",
+      "branching_ratio": 0.08,
+      "gammas": [
+        {
+          "energy_keV": 89.3,
+          "absolute_intensity": 0.04062,
+          "intensity_percent": 4.062,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b-",
+      "daughter": "Ag115",
+      "branching_ratio": 0.92,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

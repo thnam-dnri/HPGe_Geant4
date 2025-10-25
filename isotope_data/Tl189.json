@@ -1,0 +1,52 @@
+{
+  "symbol": "Tl189",
+  "Z": 81,
+  "A": 189,
+  "atomic_mass": 188.973588428,
+  "half_life": {
+    "value": 2.3,
+    "unit": "minutes",
+    "seconds": 138.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Hg189",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 333.7,
+          "absolute_intensity": 1.0,
+          "intensity_percent": 100.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 451.0,
+          "absolute_intensity": 0.49,
+          "intensity_percent": 49.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 522.3,
+          "absolute_intensity": 0.27,
+          "intensity_percent": 27.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 942.2,
+          "absolute_intensity": 0.69,
+          "intensity_percent": 69.0,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

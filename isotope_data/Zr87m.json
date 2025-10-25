@@ -1,0 +1,46 @@
+{
+  "symbol": "Zr87m",
+  "Z": 40,
+  "A": 87,
+  "atomic_mass": 86.915176791,
+  "half_life": {
+    "value": 14.0,
+    "unit": "seconds",
+    "seconds": 14.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Zr87",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 135.06,
+          "absolute_intensity": 0.272,
+          "intensity_percent": 27.200000000000003,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.9643
+            }
+          ]
+        },
+        {
+          "energy_keV": 201.15,
+          "absolute_intensity": 0.964,
+          "intensity_percent": 96.39999999999999,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

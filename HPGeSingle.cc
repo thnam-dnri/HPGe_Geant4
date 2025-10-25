@@ -41,8 +41,10 @@ int main(int argc, char** argv)
     PhysicsList* physicsList = new PhysicsList();
     runManager->SetUserInitialization(physicsList);
 
-    // Parse arguments: --rainier <file>, --src-gap <value[mm|cm|m]>, <macro.mac>
+    // Parse arguments: --rainier <file>, --src-gap <value[mm|cm|m]>, -isotope <Symbol>, --det-id <ID>, <macro.mac>
     std::string rainierFile;
+    std::string isotopeSymbol;
+    std::string detID = "HPGe1";
     G4String macroFile;
     G4double srcGap = 0.0; // default 0 distance (touching surfaces)
 
@@ -68,31 +70,46 @@ int main(int argc, char** argv)
             if (i+1 < argc) rainierFile = argv[++i];
         } else if (arg.rfind("--rainier=",0)==0) {
             rainierFile = arg.substr(10);
+        } else if (arg == "--isotope" || arg == "-isotope") {
+            if (i+1 < argc) isotopeSymbol = argv[++i];
+        } else if (arg.rfind("--isotope=",0)==0 || arg.rfind("-isotope=",0)==0) {
+            size_t eq = arg.find('=');
+            isotopeSymbol = arg.substr(eq+1);
         } else if (arg == "--src-gap" || arg == "-g") {
             if (i+1 < argc) srcGap = parseLength(argv[++i]);
         } else if (arg.rfind("--src-gap=",0)==0) {
             srcGap = parseLength(arg.substr(10));
+        } else if (arg == "--det-id") {
+            if (i+1 < argc) detID = argv[++i];
+        } else if (arg.rfind("--det-id=",0)==0) {
+            detID = arg.substr(10);
         } else if (arg.size() > 4 && arg.substr(arg.size()-4) == ".mac") {
             macroFile = arg.c_str();
-        } else if (rainierFile.empty()) {
+        } else if (rainierFile.empty() && isotopeSymbol.empty()) {
             // Backward-compat: first bare arg as RAINIER file if not a macro
             rainierFile = arg;
         }
     }
 
-    if (!rainierFile.empty()) {
+    if (!isotopeSymbol.empty()) {
+        G4cout << "Using isotope data: " << isotopeSymbol << " (from ./isotope_data)" << G4endl;
+    } else if (!rainierFile.empty()) {
         G4cout << "Using RAINIER input file: " << rainierFile << G4endl;
     } else {
         G4cout << "No RAINIER file specified. Using test Co-60 cascade." << G4endl;
     }
-    
+
     PrimaryGeneratorAction* primaryGenerator = new PrimaryGeneratorAction(rainierFile);
+    if (!isotopeSymbol.empty()) {
+        primaryGenerator->SetIsotopeSymbol(isotopeSymbol);
+    }
     primaryGenerator->SetDetectorConstruction(detConstruction);
     primaryGenerator->SetSourceSurfaceGap(srcGap);
     runManager->SetUserAction(primaryGenerator);
 
     // Set user action classes
     RunAction* runAction = new RunAction();
+    runAction->SetDetID(detID.c_str());
     runManager->SetUserAction(runAction);
 
     EventAction* eventAction = new EventAction(runAction);

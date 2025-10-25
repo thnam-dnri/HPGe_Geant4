@@ -1,0 +1,27 @@
+{
+  "symbol": "Np228",
+  "Z": 93,
+  "A": 228,
+  "atomic_mass": 228.03618,
+  "half_life": {
+    "value": 1.0233333333333332,
+    "unit": "minutes",
+    "seconds": 61.4
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pa224",
+      "branching_ratio": 0.4,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

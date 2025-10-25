@@ -1,0 +1,76 @@
+{
+  "symbol": "S38",
+  "Z": 16,
+  "A": 38,
+  "atomic_mass": 37.971163317,
+  "half_life": {
+    "value": 2.8383333333333334,
+    "unit": "hours",
+    "seconds": 10218.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cl38",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 196.19,
+          "absolute_intensity": 0.00083,
+          "intensity_percent": 0.083,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.0083
+            }
+          ]
+        },
+        {
+          "energy_keV": 1692.64,
+          "absolute_intensity": 0.00166,
+          "intensity_percent": 0.166,
+          "id": ""
+        },
+        {
+          "energy_keV": 1745.77,
+          "absolute_intensity": 0.024402,
+          "intensity_percent": 2.4402,
+          "id": "2"
+        },
+        {
+          "energy_keV": 1941.94,
+          "absolute_intensity": 0.83,
+          "intensity_percent": 83.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 2750.98,
+          "absolute_intensity": 0.013778,
+          "intensity_percent": 1.3778000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 755.42,
+          "absolute_intensity": 0.0001328,
+          "intensity_percent": 0.01328,
+          "id": ""
+        },
+        {
+          "energy_keV": 936.8,
+          "absolute_intensity": 0.0001328,
+          "intensity_percent": 0.01328,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 7
+  }
+}

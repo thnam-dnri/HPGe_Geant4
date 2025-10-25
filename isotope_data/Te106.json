@@ -1,0 +1,27 @@
+{
+  "symbol": "Te106",
+  "Z": 52,
+  "A": 106,
+  "atomic_mass": 105.937504237,
+  "half_life": {
+    "value": 7e-05,
+    "unit": "seconds",
+    "seconds": 7e-05
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Sn102",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

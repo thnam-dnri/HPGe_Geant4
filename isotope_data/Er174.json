@@ -1,0 +1,88 @@
+{
+  "symbol": "Er174",
+  "Z": 68,
+  "A": 174,
+  "atomic_mass": 173.94423,
+  "half_life": {
+    "value": 3.2,
+    "unit": "minutes",
+    "seconds": 192.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Tm174",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 71.7,
+          "absolute_intensity": 0.0132,
+          "intensity_percent": 1.32,
+          "id": ""
+        },
+        {
+          "energy_keV": 100.4,
+          "absolute_intensity": 0.11,
+          "intensity_percent": 11.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 130.4,
+          "absolute_intensity": 0.0473,
+          "intensity_percent": 4.73,
+          "id": ""
+        },
+        {
+          "energy_keV": 151.9,
+          "absolute_intensity": 0.088,
+          "intensity_percent": 8.799999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 636.7,
+          "absolute_intensity": 0.0484,
+          "intensity_percent": 4.84,
+          "id": ""
+        },
+        {
+          "energy_keV": 642.7,
+          "absolute_intensity": 0.0275,
+          "intensity_percent": 2.75,
+          "id": ""
+        },
+        {
+          "energy_keV": 708.4,
+          "absolute_intensity": 0.0825,
+          "intensity_percent": 8.25,
+          "id": ""
+        },
+        {
+          "energy_keV": 714.4,
+          "absolute_intensity": 0.0539,
+          "intensity_percent": 5.390000000000001,
+          "id": ""
+        },
+        {
+          "energy_keV": 766.9,
+          "absolute_intensity": 0.1045,
+          "intensity_percent": 10.45,
+          "id": ""
+        },
+        {
+          "energy_keV": 772.9,
+          "absolute_intensity": 0.0957,
+          "intensity_percent": 9.569999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 10
+  }
+}

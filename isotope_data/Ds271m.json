@@ -1,0 +1,33 @@
+{
+  "symbol": "Ds271m",
+  "Z": 110,
+  "A": 271,
+  "atomic_mass": 271.146062,
+  "half_life": {
+    "value": 0.069,
+    "unit": "seconds",
+    "seconds": 0.069
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Hs267m",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Hs267",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "symbol": "Mn54",
+  "Z": 25,
+  "A": 54,
+  "atomic_mass": 53.940358854,
+  "half_life": {
+    "value": 312.04976851851853,
+    "unit": "days",
+    "seconds": 26961100.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Fe54",
+      "branching_ratio": 9.3e-07,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Cr54",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 834.85,
+          "absolute_intensity": 0.99976,
+          "intensity_percent": 99.976,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Am233",
+  "Z": 95,
+  "A": 233,
+  "atomic_mass": 233.046348,
+  "half_life": {
+    "value": 3.2,
+    "unit": "minutes",
+    "seconds": 192.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Np229",
+      "branching_ratio": 0.03,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "symbol": "Ni66",
+  "Z": 28,
+  "A": 66,
+  "atomic_mass": 65.929139334,
+  "half_life": {
+    "value": 2.275,
+    "unit": "days",
+    "seconds": 196560.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Cu66",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

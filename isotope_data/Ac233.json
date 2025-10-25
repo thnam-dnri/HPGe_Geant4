@@ -1,0 +1,46 @@
+{
+  "symbol": "Ac233",
+  "Z": 89,
+  "A": 233,
+  "atomic_mass": 233.04455,
+  "half_life": {
+    "value": 2.4166666666666665,
+    "unit": "minutes",
+    "seconds": 145.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Th233",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 16.8,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": ""
+        },
+        {
+          "energy_keV": 522.8,
+          "absolute_intensity": 0.564,
+          "intensity_percent": 56.39999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 539.6,
+          "absolute_intensity": 0.376,
+          "intensity_percent": 37.6,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

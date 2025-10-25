@@ -4,6 +4,7 @@
 
 #include "EventAction.hh"
 #include "RunAction.hh"
+#include "PrimaryGeneratorAction.hh"
 
 #include "G4AnalysisManager.hh"
 #include "G4Event.hh"
@@ -45,8 +46,13 @@ void EventAction::EndOfEventAction(const G4Event* event)
         }
 
         auto analysisManager = G4AnalysisManager::Instance();
-        analysisManager->FillNtupleIColumn(0, event ? event->GetEventID() : -1);
-        analysisManager->FillNtupleDColumn(1, fEnergyDeposit / keV);
-        analysisManager->AddNtupleRow();
+        // Ntuple 0: Events
+        analysisManager->FillNtupleDColumn(0, 0, fEnergyDeposit / keV);
+        // Optional true energy from generator (keV)
+        const auto* gen = static_cast<const PrimaryGeneratorAction*>(G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
+        if (gen) {
+            analysisManager->FillNtupleDColumn(0, 1, gen->GetLastTrueEnergyKeV());
+        }
+        analysisManager->AddNtupleRow(0);
     }
 }

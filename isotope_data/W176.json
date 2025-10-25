@@ -1,0 +1,27 @@
+{
+  "symbol": "W176",
+  "Z": 74,
+  "A": 176,
+  "atomic_mass": 175.945634,
+  "half_life": {
+    "value": 2.5,
+    "unit": "hours",
+    "seconds": 9000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Ta176",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

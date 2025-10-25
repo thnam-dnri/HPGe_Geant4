@@ -1,0 +1,27 @@
+{
+  "symbol": "Th210",
+  "Z": 90,
+  "A": 210,
+  "atomic_mass": 210.015075342,
+  "half_life": {
+    "value": 0.009,
+    "unit": "seconds",
+    "seconds": 0.009
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Ra206",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

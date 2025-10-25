@@ -1,0 +1,27 @@
+{
+  "symbol": "Po198",
+  "Z": 84,
+  "A": 198,
+  "atomic_mass": 197.983388616,
+  "half_life": {
+    "value": 1.77,
+    "unit": "minutes",
+    "seconds": 106.2
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Pb194",
+      "branching_ratio": 0.57,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

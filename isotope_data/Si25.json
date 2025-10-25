@@ -1,0 +1,58 @@
+{
+  "symbol": "Si25",
+  "Z": 14,
+  "A": 25,
+  "atomic_mass": 25.004105574,
+  "half_life": {
+    "value": 0.22,
+    "unit": "seconds",
+    "seconds": 0.22
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b+",
+      "daughter": "Al25",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 452.0,
+          "absolute_intensity": 0.184,
+          "intensity_percent": 18.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 493.0,
+          "absolute_intensity": 0.153,
+          "intensity_percent": 15.299999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 945.0,
+          "absolute_intensity": 0.104,
+          "intensity_percent": 10.4,
+          "id": ""
+        },
+        {
+          "energy_keV": 1612.0,
+          "absolute_intensity": 0.147,
+          "intensity_percent": 14.7,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "b+p",
+      "daughter": "Mg24",
+      "branching_ratio": 0.35,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 4
+  }
+}

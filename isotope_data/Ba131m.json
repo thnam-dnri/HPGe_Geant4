@@ -1,0 +1,46 @@
+{
+  "symbol": "Ba131m",
+  "Z": 56,
+  "A": 131,
+  "atomic_mass": 130.907142939,
+  "half_life": {
+    "value": 14.6,
+    "unit": "minutes",
+    "seconds": 876.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ba131",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 79.05,
+          "absolute_intensity": 0.013306,
+          "intensity_percent": 1.3306,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "1",
+              "correlation": 0.3073
+            }
+          ]
+        },
+        {
+          "energy_keV": 108.45,
+          "absolute_intensity": 0.5544,
+          "intensity_percent": 55.44,
+          "id": "1"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 2
+  }
+}

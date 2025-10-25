@@ -1,0 +1,33 @@
+{
+  "symbol": "Bi197m",
+  "Z": 83,
+  "A": 197,
+  "atomic_mass": 196.979401226,
+  "half_life": {
+    "value": 5.04,
+    "unit": "minutes",
+    "seconds": 302.4
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Tl193",
+      "branching_ratio": 0.55,
+      "gammas": []
+    },
+    {
+      "mode": "ec",
+      "daughter": "Pb197",
+      "branching_ratio": 0.45,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

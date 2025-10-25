@@ -1,0 +1,27 @@
+{
+  "symbol": "Ra207",
+  "Z": 88,
+  "A": 207,
+  "atomic_mass": 207.003798105,
+  "half_life": {
+    "value": 1.3,
+    "unit": "seconds",
+    "seconds": 1.3
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "a",
+      "daughter": "Rn203",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

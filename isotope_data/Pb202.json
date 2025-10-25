@@ -1,0 +1,33 @@
+{
+  "symbol": "Pb202",
+  "Z": 82,
+  "A": 202,
+  "atomic_mass": 201.972159133,
+  "half_life": {
+    "value": 52535.83206494166,
+    "unit": "years",
+    "seconds": 1656770000000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Tl202",
+      "branching_ratio": 1.0,
+      "gammas": []
+    },
+    {
+      "mode": "a",
+      "daughter": "Hg198",
+      "branching_ratio": 0.01,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 0
+  }
+}

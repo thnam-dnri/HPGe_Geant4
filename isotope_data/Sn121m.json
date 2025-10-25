@@ -1,0 +1,47 @@
+{
+  "symbol": "Sn121m",
+  "Z": 50,
+  "A": 121,
+  "atomic_mass": 120.904242254,
+  "half_life": {
+    "value": 43.930111618467784,
+    "unit": "years",
+    "seconds": 1385380000.0
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "Sb121",
+      "branching_ratio": 0.224,
+      "gammas": [
+        {
+          "energy_keV": 37.15,
+          "absolute_intensity": 0.0826,
+          "intensity_percent": 8.260000000000002,
+          "id": ""
+        }
+      ]
+    },
+    {
+      "mode": "it",
+      "daughter": "Sn121",
+      "branching_ratio": 0.776,
+      "gammas": [
+        {
+          "energy_keV": 6.29,
+          "absolute_intensity": 1.1494e-11,
+          "intensity_percent": 1.1494e-09,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 2,
+    "num_gamma_lines": 2
+  }
+}

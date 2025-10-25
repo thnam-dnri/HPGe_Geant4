@@ -1,0 +1,27 @@
+{
+  "symbol": "Ar42",
+  "Z": 18,
+  "A": 42,
+  "atomic_mass": 41.963045736,
+  "half_life": {
+    "value": 32.922691527143584,
+    "unit": "years",
+    "seconds": 1038250000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-",
+      "daughter": "K42",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

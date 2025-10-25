@@ -1,0 +1,52 @@
+{
+  "symbol": "Ti44",
+  "Z": 22,
+  "A": 44,
+  "atomic_mass": 43.959690069,
+  "half_life": {
+    "value": 60.04122272957889,
+    "unit": "years",
+    "seconds": 1893460000.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Sc44",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 67.87,
+          "absolute_intensity": 0.93026,
+          "intensity_percent": 93.026,
+          "id": "0"
+        },
+        {
+          "energy_keV": 78.36,
+          "absolute_intensity": 0.964,
+          "intensity_percent": 96.39999999999999,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "0",
+              "correlation": 0.8889
+            }
+          ]
+        },
+        {
+          "energy_keV": 146.22,
+          "absolute_intensity": 0.0009158,
+          "intensity_percent": 0.09158000000000001,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 3
+  }
+}

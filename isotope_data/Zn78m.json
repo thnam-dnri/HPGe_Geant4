@@ -1,0 +1,27 @@
+{
+  "symbol": "Zn78m",
+  "Z": 30,
+  "A": 78,
+  "atomic_mass": 77.941310551,
+  "half_life": {
+    "value": 3.19e-07,
+    "unit": "seconds",
+    "seconds": 3.19e-07
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Zn78",
+      "branching_ratio": 1.0,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

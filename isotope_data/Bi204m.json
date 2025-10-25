@@ -1,0 +1,82 @@
+{
+  "symbol": "Bi204m",
+  "Z": 83,
+  "A": 204,
+  "atomic_mass": 203.980854516,
+  "half_life": {
+    "value": 0.013,
+    "unit": "seconds",
+    "seconds": 0.013
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Bi204",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 41.0,
+          "absolute_intensity": 0.037,
+          "intensity_percent": 3.6999999999999997,
+          "id": ""
+        },
+        {
+          "energy_keV": 53.4,
+          "absolute_intensity": 0.0774,
+          "intensity_percent": 7.739999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 93.7,
+          "absolute_intensity": 0.086,
+          "intensity_percent": 8.6,
+          "id": ""
+        },
+        {
+          "energy_keV": 181.8,
+          "absolute_intensity": 0.081,
+          "intensity_percent": 8.1,
+          "id": ""
+        },
+        {
+          "energy_keV": 367.0,
+          "absolute_intensity": 0.789,
+          "intensity_percent": 78.9,
+          "id": ""
+        },
+        {
+          "energy_keV": 608.1,
+          "absolute_intensity": 0.935,
+          "intensity_percent": 93.5,
+          "id": ""
+        },
+        {
+          "energy_keV": 736.4,
+          "absolute_intensity": 0.829,
+          "intensity_percent": 82.89999999999999,
+          "id": ""
+        },
+        {
+          "energy_keV": 752.1,
+          "absolute_intensity": 0.968,
+          "intensity_percent": 96.8,
+          "id": ""
+        },
+        {
+          "energy_keV": 918.1,
+          "absolute_intensity": 0.145,
+          "intensity_percent": 14.499999999999998,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 9
+  }
+}

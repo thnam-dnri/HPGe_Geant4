@@ -1,0 +1,72 @@
+{
+  "symbol": "Ir191m",
+  "Z": 77,
+  "A": 191,
+  "atomic_mass": 190.960777933,
+  "half_life": {
+    "value": 4.899,
+    "unit": "seconds",
+    "seconds": 4.899
+  },
+  "isomer_state": 1,
+  "decay_modes": [
+    {
+      "mode": "it",
+      "daughter": "Ir191",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 41.85,
+          "absolute_intensity": 5.885e-05,
+          "intensity_percent": 0.0058850000000000005,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 3.046e-05
+            },
+            {
+              "id": "1",
+              "correlation": 6.487e-06
+            },
+            {
+              "id": "3",
+              "correlation": 0.06876
+            }
+          ]
+        },
+        {
+          "energy_keV": 47.05,
+          "absolute_intensity": 2.5e-05,
+          "intensity_percent": 0.0025,
+          "id": "1",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 0.0296
+            }
+          ]
+        },
+        {
+          "energy_keV": 82.43,
+          "absolute_intensity": 0.00031,
+          "intensity_percent": 0.031,
+          "id": "2"
+        },
+        {
+          "energy_keV": 129.43,
+          "absolute_intensity": 0.265,
+          "intensity_percent": 26.5,
+          "id": "3"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}

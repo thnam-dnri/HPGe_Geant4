@@ -1,0 +1,27 @@
+{
+  "symbol": "Mn65",
+  "Z": 25,
+  "A": 65,
+  "atomic_mass": 64.956336065,
+  "half_life": {
+    "value": 0.092,
+    "unit": "seconds",
+    "seconds": 0.092
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "b-n",
+      "daughter": "Fe64",
+      "branching_ratio": 0.21,
+      "gammas": []
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": false,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 0
+  }
+}

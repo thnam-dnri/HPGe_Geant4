@@ -1,0 +1,64 @@
+{
+  "symbol": "Tb146",
+  "Z": 65,
+  "A": 146,
+  "atomic_mass": 145.927246584,
+  "half_life": {
+    "value": 8.0,
+    "unit": "seconds",
+    "seconds": 8.0
+  },
+  "isomer_state": 0,
+  "decay_modes": [
+    {
+      "mode": "ec",
+      "daughter": "Gd146",
+      "branching_ratio": 1.0,
+      "gammas": [
+        {
+          "energy_keV": 195.0,
+          "absolute_intensity": 0.002,
+          "intensity_percent": 0.2,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1059.0,
+          "absolute_intensity": 0.0,
+          "intensity_percent": 0.0,
+          "id": "",
+          "coincident_gammas": [
+            {
+              "id": "2",
+              "correlation": 1.0
+            }
+          ]
+        },
+        {
+          "energy_keV": 1971.0,
+          "absolute_intensity": 0.19,
+          "intensity_percent": 19.0,
+          "id": "2"
+        },
+        {
+          "energy_keV": 2165.0,
+          "absolute_intensity": 0.009,
+          "intensity_percent": 0.8999999999999999,
+          "id": ""
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "source": "sandia.decay.xml",
+    "description": "Nuclear decay data from Sandia National Laboratories",
+    "has_gamma_emissions": true,
+    "num_decay_modes": 1,
+    "num_gamma_lines": 4
+  }
+}
