@@ -152,6 +152,9 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - 2025-10-24 Lead Shield Architecture: 10 cm Pb + 1 mm Cu liner recommended for soil analysis (15x background reduction, 50% Pb X-ray suppression)
   Key insight: Graded shield design suppresses 85 keV lead fluorescence using copper liner; nested cylindrical geometry optimal for implementation
   See: lead-shield-plan.md for full architectural plan with material definitions, geometry design, physics configuration, and 3-phase implementation roadmap
+- 2025-10-25 ML Data Pipeline Architecture: Python pipeline using uproot (5-10x faster I/O), HDF5 storage (3-4x compression), Gaussian energy smearing (FWHM = √(10.26 + 0.00168·E) keV)
+  Key insight: Add time-stamped events, spatial coordinates, and activity parameters to Geant4 output for temporal analysis, position-sensitive efficiency, and activity quantification ML tasks
+  See: ml-data-pipeline-plan.md for complete architecture with ROOT processing, energy smearing, feature engineering (peak finding, spectral features), 4 ML tasks (isotope ID, activity quant, calibration QC, anomaly detection), dataset schemas (HDF5/Parquet), 6-week implementation roadmap, and recommended Geant4 output additions
 
 ### Dependencies
 - Geant4 11.0 or higher (with ui_all and vis_all components)
@@ -162,3 +165,85 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 
 ### Last Updated
 2025-10-24 - Implemented lead + copper shield geometry; build verified; documented runtime path requirement
+
+## Progress Update - 2025-10-25 (ML Pipeline Phase 1)
+
+- Created Python virtual environment at `.venv` and installed ML/data packages
+  - numpy, h5py, uproot, awkward, pandas, scikit-learn
+- Implemented Phase 1 of ML data pipeline:
+  - `ml_pipeline/io.py` — uproot-based readers for `Events`, `RunInfo`, and `Axes_energy_centers`; isotope label inference; axis utilities
+  - `ml_pipeline/smearing.py` — HPGe resolution model and Gaussian smearing using FWHM(E) = sqrt(10.26 + 0.00168·E)
+  - `ml_pipeline/build_dataset.py` — CLI to aggregate ROOT files into HDF5 grouped by isotope with optional smearing
+  - `requirements.txt` — pinned core Python deps for reproducibility
+
+### Current State
+- Virtual environment active at `.venv` with required packages installed
+- Dataset builder runs as: `./.venv/bin/python -m ml_pipeline.build_dataset --root-dir build --output data/processed/hpge_dataset.h5`
+- Uses per-file energy axis when available, else defaults to 0–3000 keV with 8192 bins
+- Groups spectra by isotope label from `RunInfo.Nuclide` or filename prefix
+
+### Files Modified / Added
+- Added: `ml_pipeline/__init__.py`
+- Added: `ml_pipeline/io.py`
+- Added: `ml_pipeline/smearing.py`
+- Added: `ml_pipeline/build_dataset.py`
+- Added: `requirements.txt`
+- Updated: `.claude/docs/context.md`
+
+### Dependencies
+- New Python runtime deps (installed into `.venv`): numpy, h5py, uproot, awkward, pandas, scikit-learn
+- No changes to C++/Geant4 dependencies
+
+### Issues
+- None observed during installation; relies on internet access for pip during initial setup
+- If ROOT files lack `Axes_energy_centers`, a default uniform axis is used
+
+### TODO
+- Phase 2: Feature engineering and optional training scripts (e.g., RandomForest classifier) per plan
+- Add CLI switches for custom energy ranges/binning and per-isotope filtering presets
+- Optionally persist per-file `RunInfo` metadata into the HDF5 for traceability
+
+### Last Updated
+2025-10-25 — Implemented ML pipeline Phase 1 (I/O, smearing, dataset builder); venv configured
+
+## Progress Update - 2025-10-25 (ML Pipeline Phase 2)
+
+- Extended dataset builder to embed truth gamma lines:
+  - `truth_lines/<isotope>/E_gamma_keV`, `truth_lines/<isotope>/I_per_decay` aggregated across files with 0.01 keV de-duplication
+- Implemented feature extraction modules:
+  - `ml_pipeline/features/peak_finder.py` — Savitzky–Golay smoothing + prominence-based peak detection; centroid, area, FWHM estimates
+  - `ml_pipeline/features/spectral_features.py` — global stats, energy band fractions, top-K peak features, area ratios; optional truth-match ratio
+- Added CLI to compute and persist features:
+  - `ml_pipeline/build_features.py` writes features under `features/phase2/<isotope>` with metadata in `features_meta/phase2/feature_names`
+- Updated `requirements.txt` to include `scipy`
+
+### Current State
+- Phase 2 features can be generated from the HDF5 dataset built in Phase 1
+- Truth lines are available in HDF5 when present in ROOT inputs and are used to compute a simple truth-match ratio feature
+
+### Usage
+- Build spectra HDF5 (Phase 1):
+  - `./.venv/bin/python -m ml_pipeline.build_dataset --root-dir build --output data/processed/hpge_dataset.h5`
+- Compute Phase 2 features and write to HDF5:
+  - `./.venv/bin/python -m ml_pipeline.build_features --dataset data/processed/hpge_dataset.h5 --feature-set phase2 --k-peaks 6`
+
+### Files Modified / Added
+- Updated: `ml_pipeline/build_dataset.py` — writes aggregated truth lines
+- Added: `ml_pipeline/features/__init__.py`
+- Added: `ml_pipeline/features/peak_finder.py`
+- Added: `ml_pipeline/features/spectral_features.py`
+- Added: `ml_pipeline/build_features.py`
+- Updated: `requirements.txt`
+- Updated: `.claude/docs/context.md`
+
+### Issues
+- Peak baseline subtraction is simple (median-based); can be refined with local sideband fits
+- Truth-match ratio uses nearest-peak within 2×FWHM heuristic; intensity weighting not yet applied
+
+### TODO
+- Phase 3: Baseline models and validation notebooks per plan
+- Optional: store per-file RunInfo into HDF5 for better traceability
+- Optional: flatten per-isotope features into a single X/y table for scikit-learn convenience
+
+### Last Updated
+2025-10-25 — Implemented ML pipeline Phase 2 (truth lines, peak features, feature CLI)
