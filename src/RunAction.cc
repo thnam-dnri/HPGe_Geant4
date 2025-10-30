@@ -209,7 +209,7 @@ void RunAction::EndOfRunAction(const G4Run* run)
     // Fill RunInfo (ntuple id 1), one row
     const auto* gen2 = static_cast<const PrimaryGeneratorAction*>(G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
     G4String nuclide = (gen2 && !gen2->GetIsotopeSymbol().empty()) ? G4String(gen2->GetIsotopeSymbol().c_str()) : G4String("N/A");
-    G4String generator = gen2 && !gen2->GetIsotopeSymbol().empty() ? G4String("IsotopeJSON gamma-only; chain-to-stable") : G4String("RAINIER/Test");
+    G4String generator = gen2 ? G4String("IsotopeJSON gamma singles; chain-to-stable") : G4String("Unconfigured");
     G4String g4ver = G4String("unknown");
     G4String phys = G4String("G4EmStandardPhysics_option4 + G4DecayPhysics + G4RadioactiveDecayPhysics");
     G4double gapmm = gen2 ? gen2->GetSourceSurfaceGap() / CLHEP::mm : 0.0;

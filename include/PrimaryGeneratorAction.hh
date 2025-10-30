@@ -1,5 +1,5 @@
 // ==============================================================================
-// PrimaryGeneratorAction.hh/cc - Phase 1 RAINIER Data Reader & Generator
+// PrimaryGeneratorAction.hh/cc - Isotope-driven gamma generator
 // ==============================================================================
 
 #ifndef PrimaryGeneratorAction_h
@@ -19,16 +19,10 @@ class DetectorConstruction; // forward declaration
 class G4ParticleGun;
 class G4Event;
 
-// Simple structure for gamma data from RAINIER
-struct GammaData {
-    double energy;    // MeV
-    double intensity; // relative intensity
-};
-
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
 public:
-    PrimaryGeneratorAction(const std::string& rainierFile = "");
+    PrimaryGeneratorAction();
     virtual ~PrimaryGeneratorAction();
 
     virtual void GeneratePrimaries(G4Event*);
@@ -38,7 +32,7 @@ public:
     // Configuration hooks
     void SetDetectorConstruction(const DetectorConstruction* det) { fDetConstruction = det; }
     void SetSourceSurfaceGap(G4double gap) { fSourceSurfaceGap = gap; }
-    void SetIsotopeSymbol(const std::string& s) { fIsotopeSymbol = s; }
+    void SetIsotopeSymbol(const std::string& s);
     const std::string& GetIsotopeSymbol() const { return fIsotopeSymbol; }
     G4double GetSourceSurfaceGap() const { return fSourceSurfaceGap; }
 
@@ -54,16 +48,9 @@ public:
 
 private:
     G4ParticleGun* fParticleGun;
-    std::string fRAINIERFile;
-    std::string fIsotopeSymbol; // when non-empty, use isotope_data JSON instead of RAINIER
-    std::vector<GammaData> fGammaData;
+    std::string fIsotopeSymbol;
     std::mt19937 fRandomGenerator;
 
-    // Methods for RAINIER data handling
-    void LoadRAINIERData();
-    void LoadTestData();  // Co-60 test data if no RAINIER file
-    GammaData SampleGamma();
-    
     // Position and direction sampling
     G4ThreeVector SampleSourcePosition();
     G4ThreeVector SampleDirection();

@@ -23,7 +23,7 @@
 - No unit-test framework is integrated; validation is performed by running defined macros.
 - For geometry or physics changes, run `./build/HPGeSingle run.mac`, review console summaries, and inspect the `EventData` ntuple inside `gamma_spectrum.root`.
 - For visualization changes, start the interactive session and execute `/control/execute init_vis.mac` to confirm geometry renders correctly.
-- Record any bespoke RAINIER input files used for testing (e.g., `./build/HPGeSingle data/rainier_output.dat`) so reviewers can reproduce results.
+- Record the isotope configuration used for each test macro (e.g., `./build/HPGeSingle --isotope Cs137 run.mac`) so reviewers can reproduce results.
 
 ## Commit & Pull Request Guidelines
 - Write concise, imperative commit titles (e.g., `Add Li-doped contact material`) and include context in the body when behavior changes.

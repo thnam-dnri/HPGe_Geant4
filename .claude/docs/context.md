@@ -178,6 +178,36 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 ### Last Updated
 2025-10-29 — Adjusted detector visualization to keep the germanium crystal visible during rendering
 
+## Progress Update - 2025-10-30
+
+- Removed legacy RAINIER integration and standardized on isotope JSON primaries
+  - `PrimaryGeneratorAction` now defaults to Co-60 singles sourced from `isotope_data` and no longer parses external spectrum files
+  - CLI defaults to the same Co-60 dataset while `--isotope` or a bare nuclide argument can override it
+  - Entry point banner and logs now reflect the isotope-driven workflow
+- Updated run metadata strings and repository guidelines to drop obsolete RAINIER references
+
+### Current State
+- Executable builds cleanly (`cmake --build build`) with the simplified generator
+- Simulations require a valid `isotope_data/<Nuclide>.json`; default Co-60 path confirmed during initialization
+
+### Files Modified
+- HPGeSingle.cc — removed `--rainier` handling, defaulted to Co-60 isotope, refreshed CLI messaging
+- include/PrimaryGeneratorAction.hh, src/PrimaryGeneratorAction.cc — excised RAINIER data structures, reset logic, and added isotope setter reset hooks
+- src/RunAction.cc — metadata generator label now reflects isotope JSON singles
+- AGENTS.md — testing guideline now records isotope selections instead of RAINIER inputs
+
+### Dependencies
+- No changes
+
+### Issues
+- None observed; ensure required isotope JSON files remain in `./isotope_data/`
+
+### TODO
+- Consider exposing CLI to select default isotope list via configuration file if more flexibility is needed
+
+### Last Updated
+2025-10-30 — Removed RAINIER pathways and enforced isotope-based primary generation
+
 ## Research Notes
 - 2025-10-24 Lead Shield Architecture: 10 cm Pb + 1 mm Cu liner recommended for soil analysis (15x background reduction, 50% Pb X-ray suppression)
   Key insight: Graded shield design suppresses 85 keV lead fluorescence using copper liner; nested cylindrical geometry optimal for implementation
