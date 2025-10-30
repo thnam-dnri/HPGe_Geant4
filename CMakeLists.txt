@@ -39,7 +39,7 @@ target_include_directories(HPGeSingle
 )
 
 # Link Geant4 libraries
-target_link_libraries(HPGeSingle ${Geant4_LIBRARIES})
+target_link_libraries(HPGeSingle PRIVATE ${Geant4_LIBRARIES})
 
 # GCC 8's std::filesystem lives in a separate support library; link it when needed
 if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 9)
