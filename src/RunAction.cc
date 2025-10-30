@@ -16,6 +16,7 @@
 #include "G4Threading.hh"
 #include <ctime>
 #include <sstream>
+#include <filesystem>
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -103,7 +104,15 @@ void RunAction::BeginOfRunAction(const G4Run*)
         std::strftime(buf, sizeof(buf), "%Y%m%d%H%M%S", std::localtime(&t));
         outfile = nuclide + "_" + fDetID + "_" + std::to_string(gapInt) + "mm_" + buf;
     }
-    fAnalysisManager->SetFileName(outfile);
+    const std::filesystem::path outputDir{"training_data"};
+    std::error_code dirErr;
+    std::filesystem::create_directories(outputDir, dirErr);
+    if (dirErr) {
+        G4cout << "[RunAction] Warning: unable to ensure training_data directory exists ("
+               << dirErr.message() << "). Files will be created relative to current path." << G4endl;
+    }
+    const std::filesystem::path outputPath = outputDir / outfile.c_str();
+    fAnalysisManager->SetFileName(outputPath.string());
     fAnalysisManager->OpenFile();
 
     // reset accumulables to their initial values

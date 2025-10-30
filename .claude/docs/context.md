@@ -184,6 +184,7 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
   - `PrimaryGeneratorAction` now defaults to Co-60 singles sourced from `isotope_data` and no longer parses external spectrum files
   - CLI defaults to the same Co-60 dataset while `--isotope` or a bare nuclide argument can override it
   - Entry point banner and logs now reflect the isotope-driven workflow
+- ROOT output now targets the `training_data/` directory; the folder is created automatically if missing
 - Updated run metadata strings and repository guidelines to drop obsolete RAINIER references
 
 ### Current State
