@@ -41,6 +41,11 @@ target_include_directories(HPGeSingle
 # Link Geant4 libraries
 target_link_libraries(HPGeSingle ${Geant4_LIBRARIES})
 
+# GCC 8's std::filesystem lives in a separate support library; link it when needed
+if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" AND CMAKE_CXX_COMPILER_VERSION VERSION_LESS 9)
+    target_link_libraries(HPGeSingle PRIVATE stdc++fs)
+endif()
+
 # Provide absolute isotope data directory to the code for robust loading
 target_compile_definitions(HPGeSingle PRIVATE ISOTOPE_DATA_DIR="${PROJECT_SOURCE_DIR}/isotope_data")
 

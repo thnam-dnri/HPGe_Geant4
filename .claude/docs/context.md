@@ -185,6 +185,7 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
   - CLI defaults to the same Co-60 dataset while `--isotope` or a bare nuclide argument can override it
   - Entry point banner and logs now reflect the isotope-driven workflow
 - ROOT output now targets the `training_data/` directory; the folder is created automatically if missing
+- Added a GCC 8 compatibility link step (`stdc++fs`) in `CMakeLists.txt` so the project builds on the remote saho-a host (CMake 3.20.6, GCC 8.3.1, Geant4 11.3.2)
 - Updated run metadata strings and repository guidelines to drop obsolete RAINIER references
 
 ### Current State
