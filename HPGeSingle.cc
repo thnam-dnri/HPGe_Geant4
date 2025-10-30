@@ -18,6 +18,7 @@
 #include <string>
 #include <sstream>
 #include <cctype>
+#include <algorithm>
 #include "G4SystemOfUnits.hh"
 
 int main(int argc, char** argv)
@@ -47,6 +48,7 @@ int main(int argc, char** argv)
     std::string detID = "HPGe1";
     G4String macroFile;
     G4double srcGap = 0.0; // default 0 distance (touching surfaces)
+    bool forceInteractive = false;
 
     auto parseLength = [](const std::string& s)->G4double {
         // Accept forms: 10mm, 1cm, 0.5m, or plain number = mm
@@ -85,6 +87,8 @@ int main(int argc, char** argv)
             detID = arg.substr(10);
         } else if (arg.size() > 4 && arg.substr(arg.size()-4) == ".mac") {
             macroFile = arg.c_str();
+        } else if (arg == "--interactive" || arg == "--ui") {
+            forceInteractive = true;
         } else if (rainierFile.empty() && isotopeSymbol.empty()) {
             // Backward-compat: first bare arg as RAINIER file if not a macro
             rainierFile = arg;
@@ -127,9 +131,35 @@ int main(int argc, char** argv)
 
     // Process macro or start UI session
     if (!macroFile.empty()) {
-        // batch mode
+        // batch mode (optionally keep UI session for visualization macros)
+        std::string macroName = macroFile;
+        size_t slash = macroName.find_last_of("/\\");
+        if (slash != std::string::npos) {
+            macroName = macroName.substr(slash + 1);
+        }
+        std::string macroLower = macroName;
+        std::transform(macroLower.begin(), macroLower.end(), macroLower.begin(),
+                       [](unsigned char c) { return static_cast<char>(std::tolower(c)); });
+        bool macroRequestsVisSession = (macroLower == "init_vis.mac");
+        bool startUISession = forceInteractive || macroRequestsVisSession;
+
+        G4UIExecutive* ui = nullptr;
+        if (startUISession) {
+            ui = new G4UIExecutive(argc, argv);
+        }
+
         G4String command = "/control/execute ";
         UImanager->ApplyCommand(command + macroFile);
+
+        if (ui && ui->IsGUI() && macroRequestsVisSession) {
+            UImanager->ApplyCommand("/control/execute gui.mac");
+        }
+
+        if (ui) {
+            ui->SessionStart();
+            delete ui;
+            ui = nullptr;
+        }
     } else {
         // interactive mode
         G4UIExecutive* ui = new G4UIExecutive(argc, argv);

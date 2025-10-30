@@ -148,6 +148,36 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 ### Last Updated
 2025-10-25 — Added `-isotope` gamma-chain singles generator and ML-oriented ROOT output; build verified
 
+## Progress Update - 2025-10-29
+
+- Updated visualization styling around the HPGe crystal
+  - Restored the original semi-transparent solids for the lead shield, copper liner, housing, window stack, and dead layers
+  - Outer aluminum cup now renders in wireframe so the crystal interface stays visible without hiding surrounding parts
+- Corrected bore hole orientation so it now extends from the rear (far) face of the germanium crystal
+- Added optional interactive mode for visualization macros
+  - Running `./build/HPGeSingle init_vis.mac` now keeps the UI session alive (mirrors launching without a macro)
+  - New `--interactive`/`--ui` flag can force the UI to stay open after any macro executes
+
+### Current State
+- Visualization macros should now display the crystal inside the shield without hiding external geometry
+- Build/run behavior unchanged from prior update; no new warnings introduced
+
+### Files Modified
+- HPGeSingle.cc — Allow `init_vis.mac` (or `--interactive`) to hand off to a `G4UIExecutive` session after executing macros, keeping visualization open
+- src/DetectorConstruction.cc — Restored shield/housing transparency, made only the outer aluminum cup wireframe, and repositioned the crystal bore hole to exit the back face
+
+### Dependencies
+- No changes
+
+### Issues
+- Interactive visualization not re-run in this session; manual confirmation still recommended
+
+### TODO
+- Launch `./build/HPGeSingle` with `init_vis.mac` (or `--interactive`) to verify the updated cup wireframe looks correct in your environment
+
+### Last Updated
+2025-10-29 — Adjusted detector visualization to keep the germanium crystal visible during rendering
+
 ## Research Notes
 - 2025-10-24 Lead Shield Architecture: 10 cm Pb + 1 mm Cu liner recommended for soil analysis (15x background reduction, 50% Pb X-ray suppression)
   Key insight: Graded shield design suppresses 85 keV lead fluorescence using copper liner; nested cylindrical geometry optimal for implementation

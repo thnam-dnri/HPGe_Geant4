@@ -296,8 +296,8 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     G4Tubs* geCrystalOuter = new G4Tubs("GeCrystalOuter", 0, geCrystalDiam/2, geCrystalLength/2, 0*deg, 360*deg);
     G4Tubs* boreHole = new G4Tubs("BoreHole", 0, boreHoleDiam/2, boreHoleDepth/2, 0*deg, 360*deg);
     
-    // Position bore hole from front face
-    G4double boreHoleZ = -geCrystalLength/2 + boreHoleDepth/2;
+    // Position bore hole from back face (farther from origin)
+    G4double boreHoleZ = geCrystalLength/2 - boreHoleDepth/2;
     G4SubtractionSolid* geCrystalSolid = new G4SubtractionSolid("GeCrystal", geCrystalOuter, boreHole, 
                                                                0, G4ThreeVector(0, 0, boreHoleZ));
     
@@ -351,7 +351,12 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     alVis->SetForceSolid(true);
     alWindowLV->SetVisAttributes(alVis);
     alFoilLV->SetVisAttributes(alVis);
-    alCupLV->SetVisAttributes(alVis);
+
+    // Outer aluminum cup - wireframe to reveal crystal interface
+    G4VisAttributes* alCupVis = new G4VisAttributes(G4Colour(0.7, 0.7, 0.7, 0.3));
+    alCupVis->SetForceWireframe(true);
+    alCupVis->SetForceAuxEdgeVisible(true);
+    alCupLV->SetVisAttributes(alCupVis);
 
     G4VisAttributes* mylarVis = new G4VisAttributes(G4Colour(0.8, 0.2, 0.8, 0.6));
     mylarVis->SetForceSolid(true);
