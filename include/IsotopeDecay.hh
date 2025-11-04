@@ -9,6 +9,8 @@
 
 #include <string>
 #include <vector>
+#include <unordered_map>
+#include <mutex>
 
 struct GammaLine {
     double energy_keV {0.0};
@@ -41,6 +43,11 @@ private:
     static bool ExtractNumber(const std::string& s, size_t start, const std::string& key, double& out);
     static bool FindArrayRange(const std::string& s, size_t keyPos, char open, char close, size_t& begin, size_t& end);
     static bool FindObjectRange(const std::string& s, size_t from, size_t& objBegin, size_t& objEnd);
+
+    // Simple in-memory cache to avoid re-reading/parsing JSON repeatedly.
+    // Thread-safety: guarded by fMutex; scope is the lifetime of the loader instance.
+    mutable std::unordered_map<std::string, IsotopeInfo> fCache;
+    mutable std::mutex fMutex;
 };
 
 #endif

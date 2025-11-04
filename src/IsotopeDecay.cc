@@ -77,6 +77,16 @@ bool IsotopeDataLoader::Load(const string& symbol, IsotopeInfo& info) const {
     info = IsotopeInfo{};
     info.symbol = symbol;
 
+    // Check cache first
+    {
+        std::lock_guard<std::mutex> lock(fMutex);
+        auto it = fCache.find(symbol);
+        if (it != fCache.end()) {
+            info = it->second;
+            return true;
+        }
+    }
+
     // Resolve candidate paths
     std::vector<string> candidates;
     candidates.push_back(string("isotope_data/") + symbol + ".json");
@@ -168,5 +178,11 @@ bool IsotopeDataLoader::Load(const string& symbol, IsotopeInfo& info) const {
 
     // If there are modes, not stable
     if (!info.modes.empty()) info.is_stable = false;
+
+    // Store in cache
+    {
+        std::lock_guard<std::mutex> lock(fMutex);
+        fCache[symbol] = info;
+    }
     return true;
 }

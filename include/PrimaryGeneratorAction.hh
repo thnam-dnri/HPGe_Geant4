@@ -13,6 +13,7 @@
 #include <random>
 #include <deque>
 #include <utility>
+#include <memory>
 
 class DetectorConstruction; // forward declaration
 
@@ -38,7 +39,7 @@ public:
 
     // Emission mode: parent-only (no daughter tracking) or full-chain
     enum class DecayEmissionMode { ParentOnly = 0, FullChain = 1 };
-    void SetDecayMode(DecayEmissionMode m) { fDecayMode = m; fTruthReady = false; }
+    void SetDecayMode(DecayEmissionMode m) { fDecayMode = m; fTruthReady = false; fSinglesReady = false; }
     DecayEmissionMode GetDecayMode() const { return fDecayMode; }
 
     // Last primary true energy (keV) for QA/optional output
@@ -58,6 +59,9 @@ public:
     };
     // Emitter-aware truth lines
     const std::vector<TruthLineDetailed>& GetTruthGammaLinesDetailed();
+
+    // Build a per-event singles sampling distribution from truth lines
+    void RebuildSinglesDistribution();
 
 private:
     G4ParticleGun* fParticleGun;
@@ -89,5 +93,11 @@ private:
     std::vector<TruthLineDetailed> fTruthLinesDetailed;
 
     DecayEmissionMode fDecayMode {DecayEmissionMode::ParentOnly};
+
+    // Precomputed singles sampling distribution (one gamma per event)
+    bool fSinglesReady {false};
+    std::vector<double> fSinglesEnergies_keV;
+    std::vector<double> fSinglesWeights;
+    std::discrete_distribution<size_t> fSinglesDist; // rebuilt when singles change
 };
 #endif

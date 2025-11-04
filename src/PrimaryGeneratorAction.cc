@@ -57,12 +57,33 @@ void PrimaryGeneratorAction::SetIsotopeSymbol(const std::string& s)
     fNgammaPrimaries = 0;
     fTruthReady = false;
     fTruthLines.clear();
+    fSinglesReady = false;
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 void PrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
+    // Fast path: precomputed singles sampling (one gamma per event)
+    if (!fSinglesReady) {
+        RebuildSinglesDistribution();
+    }
+
+    if (fSinglesReady && !fSinglesEnergies_keV.empty() && !fSinglesWeights.empty()) {
+        // Sample one gamma according to intensity weights
+        const size_t idx = fSinglesDist(fRandomGenerator);
+        fLastTrueEnergy_keV = fSinglesEnergies_keV[idx];
+        ++fNgammaPrimaries;
+        ++fNdecays; // treat one sample as one decay for counters
+
+        fParticleGun->SetParticleEnergy(fLastTrueEnergy_keV * keV);
+        fParticleGun->SetParticlePosition(SampleSourcePosition());
+        fParticleGun->SetParticleMomentumDirection(SampleDirection());
+        fParticleGun->GeneratePrimaryVertex(anEvent);
+        return;
+    }
+
+    // Fallback to legacy queue-based decay sampler if singles not available
     GenerateFromIsotope_Singles(anEvent);
 }
 
@@ -274,6 +295,33 @@ const std::vector<PrimaryGeneratorAction::TruthLineDetailed>& PrimaryGeneratorAc
     if (fIsotopeSymbol.empty()) return fTruthLinesDetailed;
     AccumulateTruthLinesDetailed(fIsotopeSymbol, 1.0);
     return fTruthLinesDetailed;
+}
+
+void PrimaryGeneratorAction::RebuildSinglesDistribution()
+{
+    fSinglesEnergies_keV.clear();
+    fSinglesWeights.clear();
+
+    // Build from truth lines respecting current decay mode
+    const auto& lines = GetTruthGammaLines();
+    double totalW = 0.0;
+    for (const auto& p : lines) {
+        const double e = p.first;
+        const double w = p.second;
+        if (e > 0.0 && w > 0.0) {
+            fSinglesEnergies_keV.push_back(e);
+            fSinglesWeights.push_back(w);
+            totalW += w;
+        }
+    }
+
+    if (!fSinglesWeights.empty() && totalW > 0.0) {
+        fSinglesDist = std::discrete_distribution<size_t>(fSinglesWeights.begin(), fSinglesWeights.end());
+        fSinglesReady = true;
+    } else {
+        // No valid lines available; mark ready but empty to trigger fallback
+        fSinglesReady = true;
+    }
 }
 
 void PrimaryGeneratorAction::AccumulateTruthLinesDetailed(const std::string& isoSymbol, double weight)

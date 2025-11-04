@@ -343,3 +343,20 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - Files Modified: `include/IsotopeDecay.hh`, `src/IsotopeDecay.cc`, `include/PrimaryGeneratorAction.hh`, `src/PrimaryGeneratorAction.cc`, `src/RunAction.cc`, `ml_pipeline/io.py`, `ml_pipeline/build_dataset.py`.
 - TODO: Optional prompt-only mode with daughter half-life cutoff; consider adding an `IsotopeMode` string to RunInfo for traceability.
 - Last Updated: 2025-11-04 — Emitter-aware truth plumbed through ROOT → HDF5.
+
+## Progress Update - 2025-11-04 (Isotope speed optimization)
+
+- Completed: Eliminated slow per-event JSON loads and retry loops when using `--isotope`.
+  - Added in-memory cache to `IsotopeDataLoader` to parse each `isotope_data/<Nuclide>.json` only once.
+  - Precompute a "singles" sampling distribution from truth gamma lines and sample one gamma per event using `std::discrete_distribution`.
+  - Default event generation now performs zero JSON I/O and no decay retries during the event loop.
+- Current State: Simulations with low-intensity parents run at similar speed to Co-60; full-chain remains available and is now precomputed once per run as well.
+- Files Modified:
+  - `include/IsotopeDecay.hh` — added cache members and mutex.
+  - `src/IsotopeDecay.cc` — implemented cache lookup/store in `Load()`.
+  - `include/PrimaryGeneratorAction.hh` — added singles distribution members and `RebuildSinglesDistribution()`; ensured mode switch invalidates singles.
+  - `src/PrimaryGeneratorAction.cc` — switched `GeneratePrimaries` to use precomputed singles distribution; preserved legacy path as fallback.
+- Dependencies: No new external libraries; uses standard `<unordered_map>`, `<mutex>`, and `<random>`.
+- Issues: `Ndecays` counter semantics now reflect one sampled gamma per event rather than simulated parent decay attempts; metadata remains compatible but values change (closer to NgammaPrimaries).
+- TODO: Optionally expose a flag to force legacy decay-queue behavior for comparison/validation; optionally record `IsotopeMode` into `RunInfo`.
+- Last Updated: 2025-11-04 — Cached loader + precomputed singles sampler for fast `--isotope` runs.
