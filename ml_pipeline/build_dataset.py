@@ -54,7 +54,7 @@ def build_dataset(
     # Aggregate spectra by isotope
     spectra_by_iso: Dict[str, List[np.ndarray]] = defaultdict(list)
     file_counts: Dict[str, int] = defaultdict(int)
-    truth_by_iso: Dict[str, List[Tuple[np.ndarray, np.ndarray]]] = defaultdict(list)
+    truth_by_iso: Dict[str, List[Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]]] = defaultdict(list)
 
     for path in files:
         runinfo = io_utils.read_runinfo(path)
@@ -76,10 +76,10 @@ def build_dataset(
         spectra_by_iso[label].append(spec)
         file_counts[label] += 1
 
-        # Truth lines (optional)
-        t_e, t_i = io_utils.read_truth_lines(path)
+        # Truth lines (optional, with emitter info)
+        t_e, t_i, t_emit, t_hl = io_utils.read_truth_lines_detailed(path)
         if t_e.size > 0 and t_i.size > 0:
-            truth_by_iso[label].append((t_e, t_i))
+            truth_by_iso[label].append((t_e, t_i, t_emit, t_hl))
 
     if not spectra_by_iso:
         raise RuntimeError("No spectra were produced. Check ROOT files and filters.")
@@ -108,27 +108,41 @@ def build_dataset(
             for iso, lists in truth_by_iso.items():
                 if not lists:
                     continue
-                # Concatenate and de-duplicate close energies (0.01 keV tolerance)
-                e_all = np.concatenate([e for e, _ in lists])
-                i_all = np.concatenate([i for _, i in lists])
+                # Concatenate
+                e_all = np.concatenate([e for e, _, __, ___ in lists])
+                i_all = np.concatenate([i for _, i, __, ___ in lists])
+                emit_all = np.concatenate([em for _, __, em, ___ in lists])
+                hl_all = np.concatenate([hl for _, __, ___, hl in lists])
                 if e_all.size == 0:
                     continue
+                # Sort by energy, and for near-duplicates keep the record with max intensity (preserves one emitter label)
                 order = np.argsort(e_all)
                 e_all = e_all[order]
                 i_all = i_all[order]
-                # Merge close energies by taking max intensity
-                merged_e = [e_all[0]]
-                merged_i = [i_all[0]]
+                emit_all = emit_all[order]
+                hl_all = hl_all[order]
+                merged_e = [float(e_all[0])]
+                merged_i = [float(i_all[0])]
+                merged_em = [emit_all[0]]
+                merged_hl = [float(hl_all[0])]
                 tol = 0.01
-                for e_val, i_val in zip(e_all[1:], i_all[1:]):
-                    if abs(e_val - merged_e[-1]) <= tol:
-                        merged_i[-1] = max(merged_i[-1], float(i_val))
+                for e_val, i_val, em_val, hl_val in zip(e_all[1:], i_all[1:], emit_all[1:], hl_all[1:]):
+                    if abs(float(e_val) - merged_e[-1]) <= tol:
+                        # replace if higher intensity
+                        if float(i_val) > merged_i[-1]:
+                            merged_i[-1] = float(i_val)
+                            merged_em[-1] = em_val
+                            merged_hl[-1] = float(hl_val)
                     else:
                         merged_e.append(float(e_val))
                         merged_i.append(float(i_val))
+                        merged_em.append(em_val)
+                        merged_hl.append(float(hl_val))
                 g = truth_grp.create_group(iso)
                 g.create_dataset("E_gamma_keV", data=np.asarray(merged_e, dtype=np.float32))
                 g.create_dataset("I_per_decay", data=np.asarray(merged_i, dtype=np.float32))
+                g.create_dataset("Emitter", data=np.asarray(merged_em, dtype="S12"))
+                g.create_dataset("EmitterHalfLife_s", data=np.asarray(merged_hl, dtype=np.float32))
 
         # Metadata and axes
         f.create_dataset("energy_axis", data=centers.astype(np.float32))

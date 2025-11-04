@@ -92,32 +92,71 @@ def read_events(path: str) -> Tuple[np.ndarray, Optional[np.ndarray]]:
 
 
 def read_truth_lines(path: str) -> Tuple[np.ndarray, np.ndarray]:
-    """Read Truth_gamma_lines ntuple (E_gamma_keV, I_per_decay) if present.
+    """Backward-compatible reader for (E_gamma_keV, I_per_decay)."""
+    e, i, _, _ = read_truth_lines_detailed(path)
+    return e, i
 
-    Returns (energies_keV, intensities) as 1D numpy arrays (float64). Empty arrays if missing.
+
+def read_truth_lines_detailed(path: str) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
+    """Read Truth_gamma_lines with emitter info if present.
+
+    Returns (E_gamma_keV, I_per_decay, Emitter[str], EmitterHalfLife_s)
+    as arrays of equal length. If emitter fields are missing, returns
+    empty strings and zeros for those arrays.
     """
     try:
         with uproot.open(path) as f:
             if "Truth_gamma_lines" not in f:
-                return np.array([], dtype=float), np.array([], dtype=float)
+                z = np.array([], dtype=float)
+                return z, z, np.array([], dtype="S1"), z
             tree = f["Truth_gamma_lines"]
             cols = []
+            have_emit = False
+            have_hl = False
             if "E_gamma_keV" in tree:
                 cols.append("E_gamma_keV")
             if "I_per_decay" in tree:
                 cols.append("I_per_decay")
+            if "Emitter" in tree:
+                cols.append("Emitter")
+                have_emit = True
+            if "EmitterHalfLife_s" in tree:
+                cols.append("EmitterHalfLife_s")
+                have_hl = True
             if not cols:
-                return np.array([], dtype=float), np.array([], dtype=float)
+                z = np.array([], dtype=float)
+                return z, z, np.array([], dtype="S1"), z
             arrays = tree.arrays(cols, library="np")
             e = np.asarray(arrays.get("E_gamma_keV", np.array([], dtype=float)), dtype=float)
             i = np.asarray(arrays.get("I_per_decay", np.array([], dtype=float)), dtype=float)
             if e.shape != i.shape:
-                # pad/truncate to the shorter length
                 n = min(e.size, i.size)
                 e, i = e[:n], i[:n]
-            return e, i
+            if have_emit:
+                em = arrays.get("Emitter")
+                if em is None:
+                    emit = np.array([b"" for _ in range(e.size)], dtype="S10")
+                else:
+                    emit = np.asarray(em)
+                    if emit.shape[0] != e.shape[0]:
+                        n = min(emit.shape[0], e.shape[0])
+                        emit = emit[:n]
+                        e, i = e[:n], i[:n]
+            else:
+                emit = np.array([b"" for _ in range(e.size)], dtype="S10")
+            if have_hl:
+                hl = arrays.get("EmitterHalfLife_s")
+                half = np.asarray(hl if hl is not None else np.zeros_like(e), dtype=float)
+                if half.shape[0] != e.shape[0]:
+                    n = min(half.shape[0], e.shape[0])
+                    half = half[:n]
+                    e, i, emit = e[:n], i[:n], emit[:n]
+            else:
+                half = np.zeros_like(e)
+            return e, i, emit, half
     except Exception:
-        return np.array([], dtype=float), np.array([], dtype=float)
+        z = np.array([], dtype=float)
+        return z, z, np.array([], dtype="S1"), z
 
 
 def infer_isotope_label(path: str, runinfo: Optional[Dict[str, object]] = None) -> str:

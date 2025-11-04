@@ -63,6 +63,9 @@ RunAction::RunAction()
     fAnalysisManager->CreateNtuple("Truth_gamma_lines", "Per-line truth");
     fAnalysisManager->CreateNtupleDColumn("E_gamma_keV");
     fAnalysisManager->CreateNtupleDColumn("I_per_decay");
+    // Emitter-aware fields
+    fAnalysisManager->CreateNtupleSColumn("Emitter");
+    fAnalysisManager->CreateNtupleDColumn("EmitterHalfLife_s");
     fAnalysisManager->FinishNtuple(); // id 3
 
     // Register accumulable to the accumulable manager
@@ -139,13 +142,26 @@ void RunAction::BeginOfRunAction(const G4Run*)
         fAnalysisManager->AddNtupleRow(2);
     }
 
-    // Fill ntuple 3: Truth lines from generator (aggregated I_per_decay)
+    // Fill ntuple 3: Truth lines from generator (with emitter symbol and half-life if available)
     if (gen) {
-        const auto& truth = const_cast<PrimaryGeneratorAction*>(gen)->GetTruthGammaLines();
-        for (const auto& p : truth) {
-            fAnalysisManager->FillNtupleDColumn(3, 0, p.first);
-            fAnalysisManager->FillNtupleDColumn(3, 1, p.second);
-            fAnalysisManager->AddNtupleRow(3);
+        const auto& dtruth = const_cast<PrimaryGeneratorAction*>(gen)->GetTruthGammaLinesDetailed();
+        if (!dtruth.empty()) {
+            for (const auto& t : dtruth) {
+                fAnalysisManager->FillNtupleDColumn(3, 0, t.energy_keV);
+                fAnalysisManager->FillNtupleDColumn(3, 1, t.intensity_per_decay);
+                fAnalysisManager->FillNtupleSColumn(3, 2, t.emitter_symbol.c_str());
+                fAnalysisManager->FillNtupleDColumn(3, 3, t.emitter_half_life_s);
+                fAnalysisManager->AddNtupleRow(3);
+            }
+        } else {
+            const auto& truth = const_cast<PrimaryGeneratorAction*>(gen)->GetTruthGammaLines();
+            for (const auto& p : truth) {
+                fAnalysisManager->FillNtupleDColumn(3, 0, p.first);
+                fAnalysisManager->FillNtupleDColumn(3, 1, p.second);
+                fAnalysisManager->FillNtupleSColumn(3, 2, "");
+                fAnalysisManager->FillNtupleDColumn(3, 3, 0.0);
+                fAnalysisManager->AddNtupleRow(3);
+            }
         }
     }
 }

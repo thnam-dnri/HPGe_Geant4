@@ -330,3 +330,16 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - Issues: For isotopes where main peaks originate from short-lived daughters (e.g., Cs-137 → Ba-137m), use `--isotope-mode full-chain` to include those lines.
 - TODO: Optionally add a prompt-only mode with daughter half-life cutoff for more realism without full chains.
 - Last Updated: 2025-11-04 — Introduced `--isotope-mode` flag and parent-only default.
+
+## Progress Update - 2025-11-04 (Emitter-aware truth export)
+
+- Completed (C++): Truth ntuple now includes emitter nuclide and half-life for each gamma line.
+  - Added `IsotopeInfo.half_life_seconds` in loader and parsed from JSON.
+  - Added `PrimaryGeneratorAction::GetTruthGammaLinesDetailed()` accumulating `(E, I, emitter, hl_s)` and respecting `--isotope-mode`.
+  - Extended `Truth_gamma_lines` tree with `Emitter` and `EmitterHalfLife_s` columns.
+- Completed (Python): ML pipeline reads detailed truth and writes to HDF5 under `truth_lines/<iso>/`:
+  - Datasets: `E_gamma_keV`, `I_per_decay`, `Emitter` (bytes), `EmitterHalfLife_s`.
+  - For near-duplicate energies, keeps the record with higher intensity and its emitter label.
+- Files Modified: `include/IsotopeDecay.hh`, `src/IsotopeDecay.cc`, `include/PrimaryGeneratorAction.hh`, `src/PrimaryGeneratorAction.cc`, `src/RunAction.cc`, `ml_pipeline/io.py`, `ml_pipeline/build_dataset.py`.
+- TODO: Optional prompt-only mode with daughter half-life cutoff; consider adding an `IsotopeMode` string to RunInfo for traceability.
+- Last Updated: 2025-11-04 — Emitter-aware truth plumbed through ROOT → HDF5.

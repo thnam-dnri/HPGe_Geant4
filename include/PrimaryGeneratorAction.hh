@@ -50,6 +50,14 @@ public:
 
     // Truth gamma lines aggregated to stability: (E_gamma_keV, I_per_decay)
     const std::vector<std::pair<double,double>>& GetTruthGammaLines();
+    struct TruthLineDetailed {
+        double energy_keV {0.0};
+        double intensity_per_decay {0.0};
+        std::string emitter_symbol; // emitter nuclide symbol
+        double emitter_half_life_s {0.0};
+    };
+    // Emitter-aware truth lines
+    const std::vector<TruthLineDetailed>& GetTruthGammaLinesDetailed();
 
 private:
     G4ParticleGun* fParticleGun;
@@ -68,6 +76,7 @@ private:
     void GenerateFromIsotope_Singles(G4Event*);
     bool PrepareNextDecayGammas();
     void AccumulateTruthLines(const std::string& iso, double weight);
+    void AccumulateTruthLinesDetailed(const std::string& iso, double weight);
     void AccumulateTruthLinesParentOnly(const std::string& iso);
 
     // Queue of gamma energies (keV) to emit, one per Geant4 event
@@ -77,6 +86,7 @@ private:
     unsigned long long fNgammaPrimaries {0};
     bool fTruthReady {false};
     std::vector<std::pair<double,double>> fTruthLines; // (E_gamma_keV, I_per_decay)
+    std::vector<TruthLineDetailed> fTruthLinesDetailed;
 
     DecayEmissionMode fDecayMode {DecayEmissionMode::ParentOnly};
 };

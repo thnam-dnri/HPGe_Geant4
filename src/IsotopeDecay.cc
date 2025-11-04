@@ -99,7 +99,7 @@ bool IsotopeDataLoader::Load(const string& symbol, IsotopeInfo& info) const {
     std::ostringstream ss; ss << in.rdbuf();
     const string content = ss.str();
 
-    // Detect stability
+    // Detect stability and read half-life seconds if provided
     // Stable examples have: "unit": "stable" and empty decay_modes
     size_t halfLifePos = content.find("\"half_life\"");
     if (halfLifePos != string::npos) {
@@ -108,6 +108,10 @@ bool IsotopeDataLoader::Load(const string& symbol, IsotopeInfo& info) const {
             if (unit == "stable") {
                 info.is_stable = true;
             }
+        }
+        double seconds = 0.0;
+        if (ExtractNumber(content, halfLifePos, "seconds", seconds)) {
+            info.half_life_seconds = seconds;
         }
     }
 

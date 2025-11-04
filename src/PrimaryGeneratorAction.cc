@@ -266,3 +266,38 @@ void PrimaryGeneratorAction::AccumulateTruthLines(const std::string& isoSymbol, 
         }
     }
 }
+
+const std::vector<PrimaryGeneratorAction::TruthLineDetailed>& PrimaryGeneratorAction::GetTruthGammaLinesDetailed()
+{
+    // Recompute detailed truth lines each call to ensure consistency with mode
+    fTruthLinesDetailed.clear();
+    if (fIsotopeSymbol.empty()) return fTruthLinesDetailed;
+    AccumulateTruthLinesDetailed(fIsotopeSymbol, 1.0);
+    return fTruthLinesDetailed;
+}
+
+void PrimaryGeneratorAction::AccumulateTruthLinesDetailed(const std::string& isoSymbol, double weight)
+{
+    static IsotopeDataLoader loader;
+    IsotopeInfo iso;
+    if (!loader.Load(isoSymbol, iso)) return;
+    if (iso.modes.empty()) return;
+    for (const auto& m : iso.modes) {
+        const double w = weight * m.branching_ratio;
+        if (w <= 0.0) continue;
+        for (const auto& gl : m.gammas) {
+            if (gl.absolute_intensity > 0.0) {
+                TruthLineDetailed tl;
+                tl.energy_keV = gl.energy_keV;
+                tl.intensity_per_decay = w * gl.absolute_intensity;
+                tl.emitter_symbol = iso.symbol;
+                tl.emitter_half_life_s = iso.half_life_seconds;
+                fTruthLinesDetailed.push_back(std::move(tl));
+            }
+        }
+        // Recurse into daughters only if FullChain is selected
+        if (!m.daughter.empty() && fDecayMode == DecayEmissionMode::FullChain) {
+            AccumulateTruthLinesDetailed(m.daughter, w);
+        }
+    }
+}

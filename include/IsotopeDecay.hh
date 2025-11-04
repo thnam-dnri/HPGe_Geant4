@@ -26,6 +26,7 @@ struct DecayMode {
 struct IsotopeInfo {
     std::string symbol;       // e.g., "Cs137"
     bool is_stable {false};
+    double half_life_seconds {0.0};
     std::vector<DecayMode> modes;
 };
 
@@ -43,4 +44,3 @@ private:
 };
 
 #endif
-
