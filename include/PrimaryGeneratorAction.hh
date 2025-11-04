@@ -36,6 +36,11 @@ public:
     const std::string& GetIsotopeSymbol() const { return fIsotopeSymbol; }
     G4double GetSourceSurfaceGap() const { return fSourceSurfaceGap; }
 
+    // Emission mode: parent-only (no daughter tracking) or full-chain
+    enum class DecayEmissionMode { ParentOnly = 0, FullChain = 1 };
+    void SetDecayMode(DecayEmissionMode m) { fDecayMode = m; fTruthReady = false; }
+    DecayEmissionMode GetDecayMode() const { return fDecayMode; }
+
     // Last primary true energy (keV) for QA/optional output
     double GetLastTrueEnergyKeV() const { return fLastTrueEnergy_keV; }
 
@@ -63,6 +68,7 @@ private:
     void GenerateFromIsotope_Singles(G4Event*);
     bool PrepareNextDecayGammas();
     void AccumulateTruthLines(const std::string& iso, double weight);
+    void AccumulateTruthLinesParentOnly(const std::string& iso);
 
     // Queue of gamma energies (keV) to emit, one per Geant4 event
     std::deque<double> fGammaQueue_keV;
@@ -71,5 +77,7 @@ private:
     unsigned long long fNgammaPrimaries {0};
     bool fTruthReady {false};
     std::vector<std::pair<double,double>> fTruthLines; // (E_gamma_keV, I_per_decay)
+
+    DecayEmissionMode fDecayMode {DecayEmissionMode::ParentOnly};
 };
 #endif

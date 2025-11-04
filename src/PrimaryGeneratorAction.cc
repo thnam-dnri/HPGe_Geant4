@@ -209,6 +209,10 @@ bool PrimaryGeneratorAction::PrepareNextDecayGammas()
                 anyGamma = true;
             }
         }
+        // In ParentOnly mode, do not traverse into daughters
+        if (fDecayMode == DecayEmissionMode::ParentOnly) {
+            break;
+        }
         current = chosen->daughter;
     }
     return anyGamma;
@@ -219,7 +223,25 @@ const std::vector<std::pair<double,double>>& PrimaryGeneratorAction::GetTruthGam
     if (fTruthReady) return fTruthLines;
     fTruthLines.clear();
     if (!fIsotopeSymbol.empty()) {
-        AccumulateTruthLines(fIsotopeSymbol, 1.0);
+        if (fDecayMode == DecayEmissionMode::ParentOnly) {
+            // Parent-only truth aggregation: immediate gammas only
+            // Weighted by parent branching ratios
+            static IsotopeDataLoader loader;
+            IsotopeInfo iso;
+            if (loader.Load(fIsotopeSymbol, iso)) {
+                for (const auto& m : iso.modes) {
+                    const double w = m.branching_ratio;
+                    if (w <= 0.0) continue;
+                    for (const auto& gl : m.gammas) {
+                        if (gl.absolute_intensity > 0.0) {
+                            fTruthLines.emplace_back(gl.energy_keV, w * gl.absolute_intensity);
+                        }
+                    }
+                }
+            }
+        } else {
+            AccumulateTruthLines(fIsotopeSymbol, 1.0);
+        }
     }
     fTruthReady = true;
     return fTruthLines;

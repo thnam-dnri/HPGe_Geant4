@@ -320,3 +320,13 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - **Issues**: Remember to rebuild and rerun macros after changing the toggle to ensure geometry overlaps are still absent.
 - **TODO**: Consider adding a runtime CLI or macro-driven control if frequent toggling is needed without recompilation.
 - **Last Updated**: 2025-10-30 — Added compile-time switch for shield geometry.
+
+## Progress Update - 2025-11-04 (Isotope emission mode)
+
+- Completed: Added runtime control for isotope gamma emission: `--isotope-mode parent-only|full-chain`. Parent-only emits only the selected isotope’s immediate gamma lines (no daughter tracking). Full-chain preserves prior behavior.
+- Default: Parent-only, to better match sources like Am-241 (e.g., 59.5 keV line; long-lived daughters suppressed).
+- Files Modified: `include/PrimaryGeneratorAction.hh`, `src/PrimaryGeneratorAction.cc`, `HPGeSingle.cc`.
+- Current State: Truth gamma lines now respect the selected mode: parent-only aggregates parent lines only; full-chain traverses to stability.
+- Issues: For isotopes where main peaks originate from short-lived daughters (e.g., Cs-137 → Ba-137m), use `--isotope-mode full-chain` to include those lines.
+- TODO: Optionally add a prompt-only mode with daughter half-life cutoff for more realism without full chains.
+- Last Updated: 2025-11-04 — Introduced `--isotope-mode` flag and parent-only default.

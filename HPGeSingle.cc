@@ -44,6 +44,7 @@ int main(int argc, char** argv)
 
     // Parse arguments: --src-gap <value[mm|cm|m]>, --isotope <Symbol>, --det-id <ID>, <macro.mac>
     std::string isotopeSymbol = "Co60";
+    std::string isotopeMode = "parent-only"; // parent-only | full-chain
     bool isotopeExplicit = false;
     std::string detID = "HPGe1";
     G4String macroFile;
@@ -81,6 +82,10 @@ int main(int argc, char** argv)
             if (i+1 < argc) srcGap = parseLength(argv[++i]);
         } else if (arg.rfind("--src-gap=",0)==0) {
             srcGap = parseLength(arg.substr(10));
+        } else if (arg == "--isotope-mode") {
+            if (i+1 < argc) isotopeMode = argv[++i];
+        } else if (arg.rfind("--isotope-mode=",0)==0) {
+            isotopeMode = arg.substr(std::string("--isotope-mode=").size());
         } else if (arg == "--det-id") {
             if (i+1 < argc) detID = argv[++i];
         } else if (arg.rfind("--det-id=",0)==0) {
@@ -99,11 +104,22 @@ int main(int argc, char** argv)
     if (!isotopeExplicit) {
         G4cout << "  (default selection; override with --isotope <Symbol>)" << G4endl;
     }
+    G4cout << "Isotope emission mode: " << isotopeMode << G4endl;
 
     PrimaryGeneratorAction* primaryGenerator = new PrimaryGeneratorAction();
     primaryGenerator->SetIsotopeSymbol(isotopeSymbol);
     primaryGenerator->SetDetectorConstruction(detConstruction);
     primaryGenerator->SetSourceSurfaceGap(srcGap);
+    // Map mode string to enum
+    {
+        std::string m = isotopeMode;
+        std::transform(m.begin(), m.end(), m.begin(), [](unsigned char c){ return std::tolower(c); });
+        if (m == "full-chain" || m == "full" || m == "chain") {
+            primaryGenerator->SetDecayMode(PrimaryGeneratorAction::DecayEmissionMode::FullChain);
+        } else {
+            primaryGenerator->SetDecayMode(PrimaryGeneratorAction::DecayEmissionMode::ParentOnly);
+        }
+    }
     runManager->SetUserAction(primaryGenerator);
 
     // Set user action classes
