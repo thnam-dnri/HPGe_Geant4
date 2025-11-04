@@ -310,3 +310,13 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 
 ### Last Updated
 2025-10-25 — Implemented ML pipeline Phase 2 (truth lines, peak features, feature CLI)
+
+## Progress Update - 2025-10-30 (Lead Shield Toggle)
+
+- **Completed**: Added a `constexpr bool kEnableLeadShield` switch at the top of `src/DetectorConstruction.cc` that gates construction/visualization of the entire lead + copper shield stack (ring, covers, liners, cavity) and falls back to placing the detector directly in the world when disabled.
+- **Current State**: Shield geometry is enabled by default; flip the constant to `false` before rebuilding to run an unshielded configuration. Build/tests not rerun after this refactor.
+- **Files Modified**: `src/DetectorConstruction.cc`
+- **Dependencies**: None added or removed.
+- **Issues**: Remember to rebuild and rerun macros after changing the toggle to ensure geometry overlaps are still absent.
+- **TODO**: Consider adding a runtime CLI or macro-driven control if frequent toggling is needed without recompilation.
+- **Last Updated**: 2025-10-30 — Added compile-time switch for shield geometry.

@@ -22,6 +22,11 @@
 #include "G4PhysicalConstants.hh"
 #include <algorithm>
 
+namespace {
+// Toggle to enable/disable the full lead + copper shield assembly.
+constexpr bool kEnableLeadShield = false;
+}
+
 // Static member definitions
 const G4double DetectorConstruction::fWorldSize = 80.0*cm; // expanded to accommodate top/bottom covers
 const G4double DetectorConstruction::fSourceDetectorDistance = 10.0*cm;
@@ -42,7 +47,8 @@ DetectorConstruction::DetectorConstruction()
   fVacuum(nullptr), fMylar(nullptr), fLithium(nullptr), fBoron(nullptr),
   fLead(nullptr), fCopper(nullptr),
   fWorldLV(nullptr), fScoringVolume(nullptr), fWorldPV(nullptr),
-  fLeadShieldLV(nullptr), fCopperLinerLV(nullptr), fShieldCavityLV(nullptr)
+  fLeadShieldLV(nullptr), fCopperLinerLV(nullptr), fShieldCavityLV(nullptr),
+  fLeadTopLV(nullptr), fCopperTopLV(nullptr), fLeadBottomLV(nullptr), fCopperBottomLV(nullptr)
 {
 }
 
@@ -114,109 +120,122 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     // ---------------------------------------------------------------------
     // Lead shield + copper liner + cavity (nested cylindrical volumes)
     // ---------------------------------------------------------------------
-    // 1) Lead shield (ring)
-    G4double leadInnerR = fShieldInnerRadius;
-    G4double leadOuterR = fShieldOuterRadius;
-    G4double leadHeight = fShieldHeight;
+    G4LogicalVolume* detectorMotherLV = fWorldLV;
 
-    G4Tubs* leadShieldS = new G4Tubs("LeadShield",
-                                     leadInnerR, leadOuterR,
-                                     leadHeight/2,
+    if (kEnableLeadShield) {
+        const G4double leadInnerR = fShieldInnerRadius;
+        const G4double leadOuterR = fShieldOuterRadius;
+        const G4double leadHeight = fShieldHeight;
+        const G4double leadCoverThick = fShieldThickness;
+
+        // 1) Lead shield (ring)
+        G4Tubs* leadShieldS = new G4Tubs("LeadShield",
+                                         leadInnerR, leadOuterR,
+                                         leadHeight/2,
+                                         0*deg, 360*deg);
+        fLeadShieldLV = new G4LogicalVolume(leadShieldS, fLead, "LeadShield");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ),
+                          fLeadShieldLV,
+                          "LeadShield",
+                          fWorldLV,
+                          false, 0, true);
+
+        // 2) Copper liner (thin ring, slightly shorter to avoid coincident surfaces)
+        const G4double cuOuterR = leadInnerR;
+        const G4double cuInnerR = std::max(0.0, (cuOuterR - fCopperLinerThickness));
+        const G4double cuHeight = std::max(0.0, (leadHeight - 2.0*mm));
+
+        G4Tubs* copperLinerS = new G4Tubs("CopperLiner",
+                                          cuInnerR, cuOuterR,
+                                          cuHeight/2,
+                                          0*deg, 360*deg);
+        fCopperLinerLV = new G4LogicalVolume(copperLinerS, fCopper, "CopperLiner");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ),
+                          fCopperLinerLV,
+                          "CopperLiner",
+                          fWorldLV,
+                          false, 0, true);
+
+        // 3) Shield cavity (air-filled space for detector and source)
+        const G4double cavityR = cuInnerR;
+        const G4double cavityH = leadHeight; // full height cavity
+        G4Tubs* cavityS = new G4Tubs("ShieldCavity",
+                                     0, cavityR,
+                                     cavityH/2,
                                      0*deg, 360*deg);
-    fLeadShieldLV = new G4LogicalVolume(leadShieldS, fLead, "LeadShield");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ),
-                      fLeadShieldLV,
-                      "LeadShield",
-                      fWorldLV,
-                      false, 0, true);
+        fShieldCavityLV = new G4LogicalVolume(cavityS, fWorldMaterial, "ShieldCavity");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ),
+                          fShieldCavityLV,
+                          "ShieldCavity",
+                          fWorldLV,
+                          false, 0, true);
+        detectorMotherLV = fShieldCavityLV;
 
-    // 2) Copper liner (thin ring, slightly shorter to avoid coincident surfaces)
-    G4double cuOuterR = leadInnerR;
-    G4double cuInnerR = std::max(0.0, (cuOuterR - fCopperLinerThickness));
-    G4double cuHeight = std::max(0.0, (leadHeight - 2.0*mm));
-
-    G4Tubs* copperLinerS = new G4Tubs("CopperLiner",
-                                      cuInnerR, cuOuterR,
-                                      cuHeight/2,
+        // 4) Top lead cover (same thickness as lead walls), sits above the shield
+        G4Tubs* leadTopS = new G4Tubs("LeadTopCover",
+                                      0, leadOuterR,
+                                      leadCoverThick/2,
                                       0*deg, 360*deg);
-    fCopperLinerLV = new G4LogicalVolume(copperLinerS, fCopper, "CopperLiner");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ),
-                      fCopperLinerLV,
-                      "CopperLiner",
-                      fWorldLV,
-                      false, 0, true);
+        fLeadTopLV = new G4LogicalVolume(leadTopS, fLead, "LeadTopCover");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ + (leadHeight/2 + leadCoverThick/2)),
+                          fLeadTopLV,
+                          "LeadTopCover",
+                          fWorldLV,
+                          false, 0, true);
 
-    // 3) Shield cavity (air-filled space for detector and source)
-    G4double cavityR = cuInnerR;
-    G4double cavityH = leadHeight; // full height cavity
-    G4Tubs* cavityS = new G4Tubs("ShieldCavity",
-                                 0, cavityR,
-                                 cavityH/2,
-                                 0*deg, 360*deg);
-    fShieldCavityLV = new G4LogicalVolume(cavityS, fWorldMaterial, "ShieldCavity");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ),
-                      fShieldCavityLV,
-                      "ShieldCavity",
-                      fWorldLV,
-                      false, 0, true);
+        // 5) Top copper liner (thin), mounted inside cavity just below the top plane
+        const G4double cuTopThick = fCopperLinerThickness;
+        G4Tubs* cuTopS = new G4Tubs("CopperTopLiner",
+                                    0, cavityR,
+                                    cuTopThick/2,
+                                    0*deg, 360*deg);
+        fCopperTopLV = new G4LogicalVolume(cuTopS, fCopper, "CopperTopLiner");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ + (cavityH/2 - cuTopThick/2)),
+                          fCopperTopLV,
+                          "CopperTopLiner",
+                          fShieldCavityLV,
+                          false, 0, true);
 
-    // 4) Top lead cover (same thickness as lead walls), sits above the shield
-    G4double topThick = fShieldThickness;
-    G4Tubs* leadTopS = new G4Tubs("LeadTopCover",
-                                  0, leadOuterR,
-                                  topThick/2,
-                                  0*deg, 360*deg);
-    fLeadTopLV = new G4LogicalVolume(leadTopS, fLead, "LeadTopCover");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ + (leadHeight/2 + topThick/2)),
-                      fLeadTopLV,
-                      "LeadTopCover",
-                      fWorldLV,
-                      false, 0, true);
+        // 6) Bottom lead cover (same thickness), sits below the shield
+        G4Tubs* leadBottomS = new G4Tubs("LeadBottomCover",
+                                         0, leadOuterR,
+                                         leadCoverThick/2,
+                                         0*deg, 360*deg);
+        fLeadBottomLV = new G4LogicalVolume(leadBottomS, fLead, "LeadBottomCover");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ - (leadHeight/2 + leadCoverThick/2)),
+                          fLeadBottomLV,
+                          "LeadBottomCover",
+                          fWorldLV,
+                          false, 0, true);
 
-    // 5) Top copper liner (thin), mounted inside cavity just below the top plane
-    G4double cuTopThick = fCopperLinerThickness;
-    G4Tubs* cuTopS = new G4Tubs("CopperTopLiner",
-                                0, cavityR,
-                                cuTopThick/2,
-                                0*deg, 360*deg);
-    fCopperTopLV = new G4LogicalVolume(cuTopS, fCopper, "CopperTopLiner");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ + (cavityH/2 - cuTopThick/2)),
-                      fCopperTopLV,
-                      "CopperTopLiner",
-                      fShieldCavityLV,
-                      false, 0, true);
-
-    // 6) Bottom lead cover (same thickness), sits below the shield
-    G4Tubs* leadBottomS = new G4Tubs("LeadBottomCover",
-                                     0, leadOuterR,
-                                     topThick/2,
-                                     0*deg, 360*deg);
-    fLeadBottomLV = new G4LogicalVolume(leadBottomS, fLead, "LeadBottomCover");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ - (leadHeight/2 + topThick/2)),
-                      fLeadBottomLV,
-                      "LeadBottomCover",
-                      fWorldLV,
-                      false, 0, true);
-
-    // 7) Bottom copper liner (thin), mounted inside cavity near bottom plane
-    G4double cuBottomThick = fCopperLinerThickness;
-    G4Tubs* cuBottomS = new G4Tubs("CopperBottomLiner",
-                                   0, cavityR,
-                                   cuBottomThick/2,
-                                   0*deg, 360*deg);
-    fCopperBottomLV = new G4LogicalVolume(cuBottomS, fCopper, "CopperBottomLiner");
-    new G4PVPlacement(0,
-                      G4ThreeVector(0, 0, fShieldCenterZ - (cavityH/2 - cuBottomThick/2)),
-                      fCopperBottomLV,
-                      "CopperBottomLiner",
-                      fShieldCavityLV,
-                      false, 0, true);
+        // 7) Bottom copper liner (thin), mounted inside cavity near bottom plane
+        const G4double cuBottomThick = fCopperLinerThickness;
+        G4Tubs* cuBottomS = new G4Tubs("CopperBottomLiner",
+                                       0, cavityR,
+                                       cuBottomThick/2,
+                                       0*deg, 360*deg);
+        fCopperBottomLV = new G4LogicalVolume(cuBottomS, fCopper, "CopperBottomLiner");
+        new G4PVPlacement(0,
+                          G4ThreeVector(0, 0, fShieldCenterZ - (cavityH/2 - cuBottomThick/2)),
+                          fCopperBottomLV,
+                          "CopperBottomLiner",
+                          fShieldCavityLV,
+                          false, 0, true);
+    } else {
+        fLeadShieldLV = nullptr;
+        fCopperLinerLV = nullptr;
+        fShieldCavityLV = nullptr;
+        fLeadTopLV = nullptr;
+        fCopperTopLV = nullptr;
+        fLeadBottomLV = nullptr;
+        fCopperBottomLV = nullptr;
+    }
 
     // Detector parameters (convert to G4 units)
     G4double housingInnerDiam = 64.46*mm;
@@ -259,13 +278,13 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
                                      housingInnerDiam/2, housingOuterDiam/2, 
                                      housingLength/2, 0*deg, 360*deg);
     G4LogicalVolume* housingLV = new G4LogicalVolume(housingSolid, fAluminum, "Housing");
-    new G4PVPlacement(0, G4ThreeVector(0, 0, housingZ), housingLV, "Housing", fShieldCavityLV, false, 0, true);
+    new G4PVPlacement(0, G4ThreeVector(0, 0, housingZ), housingLV, "Housing", detectorMotherLV, false, 0, true);
 
     // 1b. Vacuum inside housing (mother volume for detector components)
     G4Tubs* vacuumSolid = new G4Tubs("VacuumInside", 0, housingInnerDiam/2, 
                                     housingLength/2, 0*deg, 360*deg);
     G4LogicalVolume* vacuumLV = new G4LogicalVolume(vacuumSolid, fVacuum, "VacuumInside");
-    new G4PVPlacement(0, G4ThreeVector(0, 0, housingZ), vacuumLV, "VacuumInside", fShieldCavityLV, false, 0, true);
+    new G4PVPlacement(0, G4ThreeVector(0, 0, housingZ), vacuumLV, "VacuumInside", detectorMotherLV, false, 0, true);
 
     // Calculate relative positions within housing
     G4double relativeGeZ = geZ - housingZ;  // Ge position relative to housing center
@@ -324,22 +343,26 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
     // Visualization attributes
     fWorldLV->SetVisAttributes(G4VisAttributes::GetInvisible());
 
-    // Lead shield - dark gray, semi-transparent
-    G4VisAttributes* leadVis = new G4VisAttributes(G4Colour(0.4, 0.4, 0.4, 0.6));
-    leadVis->SetForceSolid(true);
-    fLeadShieldLV->SetVisAttributes(leadVis);
-    fLeadTopLV->SetVisAttributes(leadVis);
-    fLeadBottomLV->SetVisAttributes(leadVis);
+    if (kEnableLeadShield) {
+        // Lead shield - dark gray, semi-transparent
+        G4VisAttributes* leadVis = new G4VisAttributes(G4Colour(0.4, 0.4, 0.4, 0.6));
+        leadVis->SetForceSolid(true);
+        if (fLeadShieldLV) { fLeadShieldLV->SetVisAttributes(leadVis); }
+        if (fLeadTopLV) { fLeadTopLV->SetVisAttributes(leadVis); }
+        if (fLeadBottomLV) { fLeadBottomLV->SetVisAttributes(leadVis); }
 
-    // Copper liner - orange/brown, semi-transparent
-    G4VisAttributes* copperVis = new G4VisAttributes(G4Colour(0.8, 0.5, 0.2, 0.5));
-    copperVis->SetForceSolid(true);
-    fCopperLinerLV->SetVisAttributes(copperVis);
-    fCopperTopLV->SetVisAttributes(copperVis);
-    fCopperBottomLV->SetVisAttributes(copperVis);
+        // Copper liner - orange/brown, semi-transparent
+        G4VisAttributes* copperVis = new G4VisAttributes(G4Colour(0.8, 0.5, 0.2, 0.5));
+        copperVis->SetForceSolid(true);
+        if (fCopperLinerLV) { fCopperLinerLV->SetVisAttributes(copperVis); }
+        if (fCopperTopLV) { fCopperTopLV->SetVisAttributes(copperVis); }
+        if (fCopperBottomLV) { fCopperBottomLV->SetVisAttributes(copperVis); }
 
-    // Shield cavity - invisible (to see detector inside)
-    fShieldCavityLV->SetVisAttributes(G4VisAttributes::GetInvisible());
+        // Shield cavity - invisible (to see detector inside)
+        if (fShieldCavityLV) {
+            fShieldCavityLV->SetVisAttributes(G4VisAttributes::GetInvisible());
+        }
+    }
 
     // Housing - dark gray
     G4VisAttributes* housingVis = new G4VisAttributes(G4Colour(0.5, 0.5, 0.5, 0.8));
