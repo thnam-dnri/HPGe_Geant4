@@ -31,6 +31,8 @@ int main(int argc, char** argv)
 
     // Construct the default run manager
     G4RunManager* runManager = new G4RunManager();
+    // Print event progress every 100k events
+    runManager->SetPrintProgress(100000);
 
     // Set mandatory initialization classes
     

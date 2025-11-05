@@ -24,7 +24,7 @@
 
 namespace {
 // Toggle to enable/disable the full lead + copper shield assembly.
-constexpr bool kEnableLeadShield = false;
+constexpr bool kEnableLeadShield = true;
 }
 
 // Static member definitions

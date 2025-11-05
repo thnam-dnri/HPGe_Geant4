@@ -360,3 +360,14 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - Issues: `Ndecays` counter semantics now reflect one sampled gamma per event rather than simulated parent decay attempts; metadata remains compatible but values change (closer to NgammaPrimaries).
 - TODO: Optionally expose a flag to force legacy decay-queue behavior for comparison/validation; optionally record `IsotopeMode` into `RunInfo`.
 - Last Updated: 2025-11-04 — Cached loader + precomputed singles sampler for fast `--isotope` runs.
+
+## Progress Update - 2025-11-05 (Run progress verbosity)
+
+- Completed: Added periodic run progress output every 100,000 events.
+  - Set `G4RunManager::SetPrintProgress(100000)` after constructing the run manager in `HPGeSingle.cc`.
+- Current State: In batch runs (e.g., `run.mac` with 1,000,000 events), the console prints a progress line at each 100k-event boundary. No impact on analysis or output files.
+- Files Modified: `HPGeSingle.cc`.
+- Dependencies: No changes.
+- Issues: None observed.
+- TODO: Optionally add a CLI flag (e.g., `--print-progress <N>`) to make the interval configurable.
+- Last Updated: 2025-11-05 — Enabled periodic progress printing.
