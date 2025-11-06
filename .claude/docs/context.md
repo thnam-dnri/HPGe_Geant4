@@ -371,3 +371,14 @@ LD_LIBRARY_PATH=/home/nam/geant4-install/lib:$LD_LIBRARY_PATH ./build/HPGeSingle
 - Issues: None observed.
 - TODO: Optionally add a CLI flag (e.g., `--print-progress <N>`) to make the interval configurable.
 - Last Updated: 2025-11-05 — Enabled periodic progress printing.
+## Progress Update - 2025-11-06 (Gamma-less isotope guard)
+
+- Completed: End run and suppress output when the selected isotope produces no gamma lines under the current `--isotope-mode`.
+  - In `HPGeSingle.cc`, after setting the isotope and mode, the app queries truth gamma lines; if empty, it exits immediately without executing macros or creating any ROOT file.
+  - In `RunAction::BeginOfRunAction`, added a second guard that aborts the run and returns before `OpenFile()` if truth gamma lines are empty (defensive in case a `beamOn` is triggered anyway).
+- Current State: For gamma-less isotopes, no `training_data/*.root` is created; for others, behavior unchanged.
+- Files Modified: `HPGeSingle.cc`, `include/RunAction.hh`, `src/RunAction.cc`.
+- Dependencies: No changes.
+- Issues: Build not executed in this session; please rebuild to validate.
+- TODO: Optionally hint users to try `--isotope-mode full-chain` when parent-only yields no lines.
+- Last Updated: 2025-11-06 — Guard added to prevent output for gamma-less isotopes.

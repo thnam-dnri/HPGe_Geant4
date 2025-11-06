@@ -93,9 +93,22 @@ void RunAction::BeginOfRunAction(const G4Run*)
     // inform the runManager to save random number seed
     G4RunManager::GetRunManager()->SetRandomNumberStore(false);
 
+    // Check if current isotope configuration actually produces gamma lines
+    const auto* gen = static_cast<const PrimaryGeneratorAction*>(
+        G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
+    fOutputEnabled = true;
+    if (gen) {
+        const auto& truthCheck = const_cast<PrimaryGeneratorAction*>(gen)->GetTruthGammaLines();
+        if (truthCheck.empty()) {
+            G4cout << "[RunAction] Selected isotope has no gamma lines; aborting run and suppressing output file." << G4endl;
+            fOutputEnabled = false;
+            G4RunManager::GetRunManager()->AbortRun(true);
+            return; // do not open files or fill any ntuples
+        }
+    }
+
     // Compose output file name per spec if possible
     G4String outfile = "gamma_spectrum"; // fallback
-    const auto* gen = static_cast<const PrimaryGeneratorAction*>(G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
     if (gen && !gen->GetIsotopeSymbol().empty()) {
         // Build: <Nuclide>_<DetID>_<GapMM>_<runid>
         const G4String nuclide = gen->GetIsotopeSymbol().c_str();
@@ -247,21 +260,23 @@ void RunAction::EndOfRunAction(const G4Run* run)
     G4int ndec = gen2 ? static_cast<G4int>(gen2->GetNDecays()) : 0;
     G4int ngam = gen2 ? static_cast<G4int>(gen2->GetNGammaPrimaries()) : 0;
 
-    fAnalysisManager->FillNtupleSColumn(1, 0, nuclide);
-    fAnalysisManager->FillNtupleSColumn(1, 1, generator);
-    fAnalysisManager->FillNtupleSColumn(1, 2, g4ver);
-    fAnalysisManager->FillNtupleSColumn(1, 3, phys);
-    fAnalysisManager->FillNtupleSColumn(1, 4, fDetID);
-    fAnalysisManager->FillNtupleSColumn(1, 5, geom.str());
-    fAnalysisManager->FillNtupleSColumn(1, 6, binjson.str());
-    fAnalysisManager->FillNtupleSColumn(1, 7, srcjson);
-    fAnalysisManager->FillNtupleSColumn(1, 8, srchash);
-    fAnalysisManager->FillNtupleIColumn(1, 9, ndec);
-    fAnalysisManager->FillNtupleIColumn(1,10, ngam);
-    fAnalysisManager->AddNtupleRow(1);
+    if (fOutputEnabled) {
+        fAnalysisManager->FillNtupleSColumn(1, 0, nuclide);
+        fAnalysisManager->FillNtupleSColumn(1, 1, generator);
+        fAnalysisManager->FillNtupleSColumn(1, 2, g4ver);
+        fAnalysisManager->FillNtupleSColumn(1, 3, phys);
+        fAnalysisManager->FillNtupleSColumn(1, 4, fDetID);
+        fAnalysisManager->FillNtupleSColumn(1, 5, geom.str());
+        fAnalysisManager->FillNtupleSColumn(1, 6, binjson.str());
+        fAnalysisManager->FillNtupleSColumn(1, 7, srcjson);
+        fAnalysisManager->FillNtupleSColumn(1, 8, srchash);
+        fAnalysisManager->FillNtupleIColumn(1, 9, ndec);
+        fAnalysisManager->FillNtupleIColumn(1,10, ngam);
+        fAnalysisManager->AddNtupleRow(1);
 
-    fAnalysisManager->Write();
-    fAnalysisManager->CloseFile();
+        fAnalysisManager->Write();
+        fAnalysisManager->CloseFile();
+    }
 
 }
 

@@ -33,5 +33,6 @@ private:
     G4String fDetID {"HPGe1"};
     std::vector<G4double> fEnergyAxisCenters_keV; // for Axes ntuple
     G4bool fIncludeTrueEnergy {true};
+    G4bool fOutputEnabled {true};
 };
 #endif

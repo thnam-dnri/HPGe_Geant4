@@ -124,6 +124,19 @@ int main(int argc, char** argv)
     }
     runManager->SetUserAction(primaryGenerator);
 
+    // If the selected isotope (under current decay mode) has no gamma lines,
+    // end the program early without running or creating any output file.
+    {
+        const auto& truth = const_cast<PrimaryGeneratorAction*>(primaryGenerator)->GetTruthGammaLines();
+        if (truth.empty()) {
+            G4cout << "[Isotope] No gamma lines found for '" << isotopeSymbol
+                   << "' in mode '" << isotopeMode << "'. Exiting without output." << G4endl;
+            delete runManager;
+            G4cout << "\nSimulation ended: isotope emits no gamma." << G4endl;
+            return 0;
+        }
+    }
+
     // Set user action classes
     RunAction* runAction = new RunAction();
     runAction->SetDetID(detID.c_str());
